@@ -21,9 +21,20 @@ angular.module('app', [
         controller: 'appCtrl'
     })
 
+    .state('embed', {
+        url: '/embed',
+        templateUrl: 'modules/embed.html',
+    })
+
       $urlRouterProvider.otherwise('/404')
   }])
 
+.directive('mainContent', function(){
+    return {
+        templateUrl: 'modules/main-content.html',
+        controller: 'appCtrl'
+    }
+})
 .directive('ngEnter', function () {
     return function (scope, element, attrs) {
         element.bind("keydown keypress", function (event) {
