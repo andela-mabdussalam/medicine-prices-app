@@ -624,6 +624,11 @@ a {
   }
 }
 
+.main-content-container{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 7em;
+}
 .embed-copy{
   display: block;
   text-align: center;
@@ -658,4 +663,12 @@ a {
 
 .alert.ng-hide-add, .alert.ng-hide-remove {
   transition: all 0.5s linear;
+}
+
+.embed-container .sub-header, .embed-container .clickable {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.embed-container .header {
+  font-family: 'Playfair Display', serif;
 }
