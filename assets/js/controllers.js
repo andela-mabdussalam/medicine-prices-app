@@ -64,12 +64,30 @@ angular.module('app.controllers', ['ngAnimate'])
     	$scope.two = true;
         $scope.personNode = true;
         $scope.initTyper($scope.credentials.name, $scope.credentials.price, $scope.outcome, $scope.credentials.form, $scope.credentials.realPrice, $scope.credentials.strength);
-        $timeout(function(){$scope.loaded = true}, 1000);
+        $timeout(function(){$scope.loaded = true}, 2000);
         
     }
     
     $scope.close = function() {
         $scope.personNode = false;
         $state.reload();
+    }
+
+    $scope.embedDropdownOpen = false;
+
+    $scope.toggleEmdedDropdown = function () {
+        var host = $location.absUrl() + "#/embed";
+        $scope.embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", host)
+        $scope.embedDropdownOpen = !$scope.embedDropdownOpen
+    };
+
+    $scope.showSuccess = false;
+    
+    $scope.openSuccess = function (msg) {
+        $scope.successMsg = msg;
+        $scope.showSuccess = true;
+        $timeout(function () {
+            $scope.showSuccess = false;
+        }, 1000);
     }
 })

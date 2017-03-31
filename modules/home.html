@@ -9,6 +9,9 @@
 			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
 			ga('create', 'UA-89116337-1', 'auto');
+			$('.dropdown-menu').click(function(e) {
+				e.stopPropagation(); //keeps dropdown open
+			});
 		</script>
 		<div class="row">
 			<div class="col-md-12 tool-bar no-padder">
@@ -20,11 +23,29 @@
 					<li class="fa fa-facebook"></li>
 				</a>
 				<li class="b-r divider"></li>
+				<li class="dropdown dropdown-toggle" ng-click="toggleEmdedDropdown()">
+					<p>Embed this <span class="fa fa-caret-down"></span></p>
+					<ul class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
+						<li>
+							<input class="embed-code" id="embedCode" type="text" value="{{ embedCode }}" readonly/>
+						</li>
+						<span 
+							class="fa fa-files-o embed-copy" 
+							ngclipboard data-clipboard-target="#embedCode" 
+							ngclipboard-success="openSuccess('Embed code successfully copied!');toggleEmdedDropdown()">
+						</span>
+						<li><p class="embed-description">Click the icon above to copy the embed code</p></li>
+					</ul>
+				</li>
 				<li><a href="http://twitter.com/codefornigeria" target="_blank">Get in touch</a></li>
 			</div>
 		</div>
 	</div>
 </nav>
+
+<div class="alert alert-success" ng-show="showSuccess">
+  <strong>Success!</strong> {{ successMsg }}
+</div>
 
 <main-content></main-content>
 

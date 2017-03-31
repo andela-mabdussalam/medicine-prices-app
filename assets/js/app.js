@@ -5,6 +5,7 @@ angular.module('app', [
     'restangular',
     'ui.bootstrap',
     'app.controllers',
+    'ngclipboard',
     'angular-typed',
     'angulartics',
   'angulartics.google.analytics'
@@ -35,6 +36,7 @@ angular.module('app', [
         controller: 'appCtrl'
     }
 })
+
 .directive('ngEnter', function () {
     return function (scope, element, attrs) {
         element.bind("keydown keypress", function (event) {
