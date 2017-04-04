@@ -653,9 +653,9 @@ a {
 .embed-dropdown{
   display: table;
   height: 73%;
-  padding: 20px 20px;
+  padding: 20px 20px 27px 20px;
   top: 90%;
-  left: -100%;
+  left: -130%;
 }
 
 .embed-code {
@@ -670,11 +670,21 @@ a {
   width: 100%;
 }
 
+.embed-description-li:hover{
+  color: grey;
+}
+
+.embed-description-li h4{
+  text-transform: none;
+  color: #333;
+  font-size: 16px;
+}
+
 .embed-description{
   font-size: 0.9em;
   line-height: 20px;
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 8px;
   text-transform: none;
 }
 

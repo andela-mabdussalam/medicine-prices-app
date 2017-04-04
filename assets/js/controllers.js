@@ -80,6 +80,8 @@ angular.module('app.controllers', ['ngAnimate'])
         $scope.embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", host)
         $scope.embedDropdownOpen = !$scope.embedDropdownOpen
     };
+
+    $scope.closeEmbedDropdown = function (){ $scope.embedDropdownOpen = false }
     
     $scope.openSuccess = function (msg) {
         $scope.successMsg = msg;

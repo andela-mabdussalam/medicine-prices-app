@@ -23,9 +23,13 @@
 					<li class="fa fa-facebook"></li>
 				</a>
 				<li class="b-r divider"></li>
-				<li class="dropdown dropdown-toggle" ng-click="toggleEmdedDropdown()">
+				<li click-anywhere-but-here="closeEmbedDropdown()" class="dropdown dropdown-toggle" ng-click="toggleEmdedDropdown()">
 					<p>Embed this <span class="fa fa-caret-down"></span></p>
-					<ul thing class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
+					<ul class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
+						<li class="embed-description-li">
+							<h4>Embed this tool</h4>
+							<p class="embed-description">Copy the embed code and place it on your website!</p>
+						</li>
 						<li class="embed-input-li input-group">
 							<input class="embed-code" id="embedCode" type="text" value="{{ embedCode }}" readonly/>
 							<span 
@@ -35,7 +39,6 @@
 							>
 							</span>
 						</li>
-						<li class="embed-description-li"><p class="embed-description">Copy the embed code</p></li>
 					</ul>
 				</li>
 				<li><a href="https://twitter.com/code4africa" target="_blank">Get in touch</a></li>
@@ -45,7 +48,6 @@
 </nav>
 
 <div class="container-fluid main-content-container">
-
 	<main-content></main-content>
 
 	<div class="footer">
