@@ -8,36 +8,37 @@
 				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-			ga('create', 'UA-89116337-1', 'auto');
+			ga('create', 'UA-93090833-2', 'auto');
 			$('.dropdown-menu').click(function(e) {
 				e.stopPropagation(); //keeps dropdown open
 			});
 		</script>
 		<div class="row">
 			<div class="col-md-12 tool-bar no-padder">
-				<a href="http://www.codefornigeria.org"><img src="assets/img/logo.png" class="logo"></a>
-				<a href="https://twitter.com/codefornigeria" target="_blank">
+				<a href="#"><img src="assets/img/logo.png" class="logo"></a>
+				<a href="https://twitter.com/code4africa" target="_blank">
 					<li class="fa fa-twitter"></li>
 				</a>
-				<a href="https://web.facebook.com/codefornigeria" target="_blank">
+				<a href="https://facebook.com/CodeForAfrica" target="_blank">
 					<li class="fa fa-facebook"></li>
 				</a>
 				<li class="b-r divider"></li>
 				<li class="dropdown dropdown-toggle" ng-click="toggleEmdedDropdown()">
 					<p>Embed this <span class="fa fa-caret-down"></span></p>
-					<ul class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
-						<li>
+					<ul thing class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
+						<li class="embed-input-li input-group">
 							<input class="embed-code" id="embedCode" type="text" value="{{ embedCode }}" readonly/>
-						</li>
-						<span 
+							<span 
 							class="fa fa-files-o embed-copy" 
 							ngclipboard data-clipboard-target="#embedCode" 
-							ngclipboard-success="openSuccess('Embed code successfully copied!');toggleEmdedDropdown()">
-						</span>
-						<li><p class="embed-description">Click the icon above to copy the embed code</p></li>
+							tooltips tooltip-template="Copied!" tooltip-show-trigger="click" tooltip-side="bottom"
+							>
+							</span>
+						</li>
+						<li class="embed-description-li"><p class="embed-description">Copy the embed code</p></li>
 					</ul>
 				</li>
-				<li><a href="http://twitter.com/codefornigeria" target="_blank">Get in touch</a></li>
+				<li><a href="https://twitter.com/code4africa" target="_blank">Get in touch</a></li>
 			</div>
 		</div>
 	</div>
@@ -45,40 +46,36 @@
 
 <div class="container-fluid main-content-container">
 
-<div class="alert alert-success" ng-show="showSuccess">
-  <strong>Success!</strong> {{ successMsg }}
-</div>
+	<main-content></main-content>
 
-<main-content></main-content>
-
-<div class="footer">
-	<div class="col-md-12 no-padder min150 m-b-md">
-		<div class="col-md-8 min150">
-			<p class="footer-header">About</p>
-			<hr> Code for Nigeria is a non-profit civic technology movement. A network of civic-minded volunteers who contribute their
-			talents, skills, expertise, and community knowledge as technological tools to improve public service, bring governments
-			to account, and promote informed (data-driven) decision-making; leveraging open data + media, and backed by a core (full-time)
-			tech team.
+	<div class="footer">
+		<div class="col-md-12 no-padder min150 m-b-md">
+			<div class="col-md-8 min150">
+				<p class="footer-header">About</p>
+				<hr> Code for Nigeria is a non-profit civic technology movement. A network of civic-minded volunteers who contribute their
+				talents, skills, expertise, and community knowledge as technological tools to improve public service, bring governments
+				to account, and promote informed (data-driven) decision-making; leveraging open data + media, and backed by a core (full-time)
+				tech team.
+			</div>
+			<div class="col-md-4 p-t min150">
+				<p class="clickable"><i class="fa fa-facebook-square"></i><a href="https://facebook.com/CodeForAfrica" target="_blank"> Like us on Facebook</a></p>
+				<p class="clickable"><i class="fa fa-twitter-square"></i><a href="https://twitter.com/code4africa" target="_blank"> Follow us on Twitter</a></p>
+			</div>
 		</div>
-		<div class="col-md-4 p-t min150">
-			<p class="clickable"><i class="fa fa-facebook-square"></i><a href="http://facebook.com/codefornigeria" target="_blank"> Like us on Facebook</a></p>
-			<p class="clickable"><i class="fa fa-twitter-square"></i><a href="http://twitter.com/codefornigeria" target="_blank"> Follow us on Twitter</a></p>
+		<div class="col-md-12 min150">
+			<p class="footer-header">Data sources </p>
+			<hr>
+			<ul class="data-sources">
+				<li><a href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/"> World Health Organization</a></li>
+			</ul>
 		</div>
-	</div>
-	<div class="col-md-12 min150">
-		<p class="footer-header">Data sources </p>
-		<hr>
-		<ul class="data-sources">
-			<li><a href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/"> World Health Organization</a></li>
-		</ul>
-	</div>
-	<div class="col-md-12 partners">
-		<p class="footer-header">Built by Code for Nigeria, with thought leadership from</p>
-		<hr>
-		<a href="http://www.icfj.org" target="_blank"><img src="assets/img/icfj.png"></a>
-		<a href="http://www.codeforafrica.org" target="_blank"><img src="assets/img/cfafrica.png"></a>
-	</div>
+		<div class="col-md-12 partners">
+			<p class="footer-header">Built by Code for Nigeria, with thought leadership from</p>
+			<hr>
+			<a href="http://www.icfj.org" target="_blank"><img src="assets/img/icfj.png"></a>
+			<a href="http://www.codeforafrica.org" target="_blank"><img src="assets/img/cfafrica.png"></a>
+		</div>
 
-	<p class="text-center text-sm text-thin"><a href="https://github.com/codefornigeria/medicine-prices-ui" target="_blank">Fork this project on Github</a></p>
-</div>
+		<p class="text-center text-sm text-thin"><a href="https://github.com/Code4Nigeria/medicine-prices-app" target="_blank">Fork this project on Github</a></p>
+	</div>
 </div>

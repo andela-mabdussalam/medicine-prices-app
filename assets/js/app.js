@@ -8,6 +8,7 @@ angular.module('app', [
     'ngclipboard',
     'angular-typed',
     'angulartics',
+    '720kb.tooltips',
   'angulartics.google.analytics'
     ])
 

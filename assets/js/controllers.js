@@ -80,8 +80,6 @@ angular.module('app.controllers', ['ngAnimate'])
         $scope.embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", host)
         $scope.embedDropdownOpen = !$scope.embedDropdownOpen
     };
-
-    $scope.showSuccess = false;
     
     $scope.openSuccess = function (msg) {
         $scope.successMsg = msg;
@@ -90,4 +88,6 @@ angular.module('app.controllers', ['ngAnimate'])
             $scope.showSuccess = false;
         }, 1000);
     }
+
+    $scope.showIntro = $location.path() === "/embed" ? false : true;
 })
