@@ -116,7 +116,7 @@ a {
   position: absolute;
   border: 1px dashed #009925;
   margin: 0 auto;
-  top: -30px;
+  top: 0px;
   left: 0;
   right: 0;
 }
@@ -138,7 +138,7 @@ a {
   background: #ffffff;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.02);
   position: absolute;
-  margin: 15px auto;
+  margin: 0px auto;
   left: 0;
   right: 0;
 }
@@ -313,7 +313,11 @@ a {
 }
 .footer .fa-twitter-square {
   color: skyblue;
-  margin-right: 0;
+  margin-right: 10px;
+}
+.footer .fa-github {
+  color: white;
+  margin-right: 10px;
 }
 .footer .fa-facebook-square {
   color: #3B5998;
@@ -708,4 +712,8 @@ a {
 tooltip{
   text-transform: none;
   display: table-cell
+}
+
+.embed-container .hero{
+  min-height: 550px;
 }
