@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="dcterms.description" content="" />
     <meta property="og:description" content="" />
     <meta property="og:title" content="" />
-    <link rel="canonical" href=" />
+    <link rel="canonical" href="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="cleartype" content="on">
 
@@ -36,6 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/vendor/animate/animate.css" type="text/css" />
     <link rel="stylesheet" href="assets/vendor/bootstraps/bootstraps.css" type="text/css" />
     <link rel="stylesheet" href="assets/vendor/font-awesome/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/angular/angular-tooltips/angular-tooltips.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Playfair+Display" rel="stylesheet">
     <!--CSS_VENDORS END-->
 
     <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
@@ -53,7 +55,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="assets/vendor/angular/angulartics/dist/angulartics.min.js"></script>
     <script src="assets/vendor/angular/angulartics/dist/angulartics-gtm.min.js"></script>
     <script src="assets/vendor/angular/angulartics-google-analytics/dist/angulartics-ga.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script src="assets/vendor/angular/ng-clipboard/ngclipboard.min.js"></script>
+    <script src="assets/vendor/angular/angular-tooltips/angular-tooltips.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/codekraft-studio/angular-typed/master/dist/angular-typed.min.js"></script>
+    
     <!--JS_VENDORS END-->
 
     <!--JS_SCRIPTS-->
@@ -76,7 +82,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ga('create', 'UA-89116337-1', 'auto');
 
         </script>
-        <div ng-app="app" ui-view></div>
+        <ui-view ng-app="app" >
+          <p>Loading...</p><br>
+          <p>If this is taking longer than expected, you should whitelist this site on Adblock.</p>
+        </ui-view>
 
 
     </body>

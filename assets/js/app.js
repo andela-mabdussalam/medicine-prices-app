@@ -5,8 +5,10 @@ angular.module('app', [
     'restangular',
     'ui.bootstrap',
     'app.controllers',
+    'ngclipboard',
     'angular-typed',
     'angulartics',
+    '720kb.tooltips',
   'angulartics.google.analytics'
     ])
 
@@ -21,8 +23,68 @@ angular.module('app', [
         controller: 'appCtrl'
     })
 
+    .state('embed', {
+        url: '/embed',
+        templateUrl: 'modules/embed.html',
+    })
+
       $urlRouterProvider.otherwise('/404')
   }])
+
+.directive('mainContent', function(){
+    return {
+        templateUrl: 'modules/main-content.html',
+        controller: 'appCtrl'
+    }
+})
+
+.factory('clickAnywhereButHereService', function($document){
+    // This service was written at
+    // at http://stackoverflow.com/questions/12931369/click-everywhere-but-here-event
+    var tracker = [];
+
+    return function($scope, expr) {
+        var i, t, len;
+        for(i = 0, len = tracker.length; i < len; i++) {
+        t = tracker[i];
+        if(t.expr === expr && t.scope === $scope) {
+            return t;    
+        }
+        }
+        var handler = function() {
+        $scope.$apply(expr);
+        };
+
+        $document.on('click', handler);
+
+        // IMPORTANT! Tear down this event handler when the scope is destroyed.
+        $scope.$on('$destroy', function(){
+        $document.off('click', handler);
+        });
+
+        t = { scope: $scope, expr: expr };
+        tracker.push(t);
+        return t;
+    };
+})
+
+.directive('clickAnywhereButHere', function($document, clickAnywhereButHereService){
+    return {
+        restrict: 'A',
+        link: function(scope, elem, attr, ctrl) {
+        var handler = function(e) {
+            e.stopPropagation();
+        };
+        elem.on('click', handler);
+
+        scope.$on('$destroy', function(){
+            elem.off('click', handler);
+        });
+
+        clickAnywhereButHereService(scope, attr.clickAnywhereButHere);
+        }
+    };
+})
 
 .directive('ngEnter', function () {
     return function (scope, element, attrs) {
@@ -37,7 +99,7 @@ angular.module('app', [
     };
 })
 
-.service('anchorSmoothScroll', function(){
+.service('anchorSmoothScroll', function($location){
 
     this.scrollTo = function(eID) {
 
@@ -54,10 +116,11 @@ angular.module('app', [
         if (speed >= 100) speed = 100;
         var step = Math.round(distance / 25);
         var leapY = stopY > startY ? startY + step : startY - step;
+        var offset = $location.path() === "/embed" ? -document.getElementById('main').offsetHeight : -document.getElementById('navbar').offsetHeight;
         var timer = 0;
         if (stopY > startY) {
             for ( var i=startY; i<stopY; i+=step ) {
-                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                setTimeout("window.scrollTo(0, "+ leapY + offset +")", timer * speed);
                 leapY += step; if (leapY > stopY) leapY = stopY; timer++;
             } return;
         }

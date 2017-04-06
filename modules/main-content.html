@@ -1,0 +1,93 @@
+<div class="main-content">
+	<div class="hero" id="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 p-t-md">
+					<div class="intro" ng-show="showIntro">
+						<p class="sub-header sub">
+							According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who
+							live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per
+							day.
+						</p>
+						<p class="sub-header sub">
+							10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost
+							of medicines in Nigeria.
+						</p>
+					</div>
+					<p class="header p-t-sm">What should your medicine cost?</p>
+					<p class="sub-header">You might be paying too much for life saving drugs, let’s find out.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-8 col-md-offset-2 text-center m-t-xxl action animated animate-slow pulse infinite">
+			<p class="clickable" ng-click="scrollTo('main')"> Start</p>
+			<p class="fa fa-angle-down"></p>
+		</div>
+	</div>
+	<div class="gradient" id="main" ng-class="{min500: showCard}">
+		<div class="ghost-line" ng-show="showCard"></div>
+		<div class="animated fadeInUp " ng-show="showCard">
+
+			<div class="card z-index4" ng-hide="one">
+				<form name="priceForm">
+					<div class="body">
+						<h3 class="text-center">First, tell us how much you pay.</h3>
+						<p>I buy
+							<input type="text" ng-model="credentials.name" ng-change="textChanged()" placeholder="drug name" required>
+						</p>
+						<div class="search-result" ng-if="showResults">
+							<li class="" ng-repeat="med in medicines | filter: credentials.name" ng-click="select(med)">{{med.name}}</li>
+						</div>
+						<p>for &#8358<input type="number" ng-model="credentials.price" placeholder="unit price, e.g price per tablet" required></p>
+					</div>
+					<div class="footer">
+						<button class="btn btn-success" ng-click="step1()" ng-disabled="priceForm.$invalid">
+							NEXT
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="card z-index3" ng-hide="two">
+				<div class="pos-fixed">
+					<h3 class="text-center m-b-sm">Next, confirm dosage form and strength.</h3>
+
+					<div class="clearfix padder-md text-md m-t-md m-b-md">
+						<span class="col-md-5 text-bold text-ellipsis">Name</span>
+						<span class="col-md-4 text-bold text-ellipsis">Dosage Form</span>
+						<span class="col-md-3 text-bold text-ellipsis">Strength</span>
+					</div>
+				</div>
+				<div class="body-result">
+					<div class="m-t-xl">
+						<div class="result b-b text-md clickable text-ellipsis" ng-click="step2(select)" ng-repeat="select in choosen">
+							<span class="col-md-5 col-xs-3 text-ellipsis">{{select.name}}</span>
+							<span class="col-md-4 col-xs-3 text-ellipsis capitalize">{{select.form}}</span>
+							<span class="col-md-3 col-xs-3 text-ellipsis">
+								<p ng-if="select.strength">{{select.strength}}</p>
+								<p ng-if="!select.strength">-</p>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-dark text-center" ng-show="personNode">
+		<h3 class="text-fade text-thin" ng-if="!loaded">Calculating...</h3>
+		<div class="" id="results-container" ng-cloak>
+
+			<h2 class="m-b-md intro animated fadeIn" ng-if="loaded">The global average price for {{credentials.name}}, {{credentials.form}}, {{credentials.strength}} is <span class="text-thin">&#8358;{{credentials.realPrice | number:2}}</span>.</h2>
+			<h3 class="typing m-b-lg" ng-show="loaded">{{typing}}</h3>
+			<div ng-if="shout" class="animated animate-slow fadeIn">
+				<p class="call2action">Tell the world :)</p>
+				<a class="animated animate-slow fadeIn" href="https://twitter.com/intent/tweet?text=Hello world, I am paying {{outcome}} percent of the global average price for {{credentials.name}}!&hashtags=fixmedprices&url=https://medicine-prices.herokuapp.com"
+				target="_blank" ng-if="social"><i class="fa fa-twitter fa-3x animated animate-slow pulse infinite text-center"></i></a>
+				<p class="assumption" ng-if="social">Assumption: $1 = &#8358;304</p>
+				<p class="clickable text-bold go-back" ng-click="close()" ng-if="goBack"><i class="fa fa-long-arrow-left"></i> Check something else</p>
+			</div>
+		</div>
+	</div>
+</div>

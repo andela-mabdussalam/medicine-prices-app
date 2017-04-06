@@ -116,7 +116,7 @@ a {
   position: absolute;
   border: 1px dashed #009925;
   margin: 0 auto;
-  top: -30px;
+  top: 0px;
   left: 0;
   right: 0;
 }
@@ -138,7 +138,7 @@ a {
   background: #ffffff;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.02);
   position: absolute;
-  margin: 0 auto;
+  margin: 0px auto;
   left: 0;
   right: 0;
 }
@@ -313,7 +313,11 @@ a {
 }
 .footer .fa-twitter-square {
   color: skyblue;
-  margin-right: 0;
+  margin-right: 10px;
+}
+.footer .fa-github {
+  color: white;
+  margin-right: 10px;
 }
 .footer .fa-facebook-square {
   color: #3B5998;
@@ -622,4 +626,95 @@ a {
   .min500 {
     min-height: 100vh !important;
   }
+}
+
+.main-content-container{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 7em;
+}
+
+.embed-copy{
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  padding: 0.635em 0.625em 0.5625em 0.625em;
+  color: #333;
+  background: #eee;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  border: 1px solid #d5d5d5;
+}
+
+.embed-copy:hover{
+  color: #0F84D8
+}
+
+.embed-copy:focus, .embed-copy:active{
+  border-color: #51a7e8;
+  box-shadow: 0 0 5px rgba(81,167,232,0.5);
+}
+
+.embed-dropdown{
+  display: table;
+  height: 73%;
+  padding: 20px 20px 27px 20px;
+  top: 90%;
+  left: -130%;
+}
+
+.embed-code {
+  height: 20%;
+  display: table-cell;
+  padding: 0.5em 0.4375em 0.375em 0.4375em;
+  border: 1px solid #eee;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: 0px;
+}
+.embed-description-li{
+  width: 100%;
+}
+
+.embed-description-li:hover{
+  color: grey;
+}
+
+.embed-description-li h4{
+  text-transform: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.embed-description{
+  font-size: 0.9em;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-transform: none;
+}
+
+.alert.ng-hide-add, .alert.ng-hide-remove {
+  transition: all 0.5s linear;
+}
+
+.embed-container .sub-header, .embed-container .clickable,  .embed-container .body p, .embed-container .pos-fixed, .embed-container .text-ellipsis, .embed-container .text-fade {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.embed-container .header, .embed-container .body .text-center, .embed-container #results-container p, .embed-container #results-container h2, .embed-container #results-container h3{
+  font-family: 'Playfair Display', serif;
+}
+
+.tool-bar li.embed-input-li {
+  line-height: 20px;
+  display: table;
+}
+
+tooltip{
+  text-transform: none;
+  display: table-cell
+}
+
+.embed-container .hero{
+  min-height: 550px;
 }

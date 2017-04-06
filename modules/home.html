@@ -1,123 +1,68 @@
-
-<nav class="b-b">
+<nav class="b-b navbar-fixed-top" id="navbar">
 	<div class="container">
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-		  ga('create', 'UA-89116337-1', 'auto');
-
+			ga('create', 'UA-93090833-2', 'auto');
+			$('.dropdown-menu').click(function(e) {
+				e.stopPropagation(); //keeps dropdown open
+			});
 		</script>
 		<div class="row">
 			<div class="col-md-12 tool-bar no-padder">
-				<a href="http://www.codefornigeria.org"><img src="assets/img/logo.png" class="logo"></a>
-				<a href="https://twitter.com/codefornigeria" target="_blank"><li class="fa fa-twitter"></li></a>
-				<a href="https://web.facebook.com/codefornigeria" target="_blank"><li class="fa fa-facebook"></li></a>
+				<a href="#"><img src="assets/img/logo.png" class="logo"></a>
+				<a href="https://twitter.com/code4africa" target="_blank">
+					<li class="fa fa-twitter"></li>
+				</a>
+				<a href="https://facebook.com/CodeForAfrica" target="_blank">
+					<li class="fa fa-facebook"></li>
+				</a>
 				<li class="b-r divider"></li>
-				<li><a href="http://twitter.com/codefornigeria" target="_blank">Get in touch</a></li>
+				<li click-anywhere-but-here="closeEmbedDropdown()" class="dropdown dropdown-toggle" ng-click="toggleEmdedDropdown()">
+					<p>Embed this <span class="fa fa-caret-down"></span></p>
+					<ul class="dropdown-menu embed-dropdown" ng-show="embedDropdownOpen">
+						<li class="embed-description-li">
+							<h4>Embed this tool</h4>
+							<p class="embed-description">Copy the embed code and place it on your website!</p>
+						</li>
+						<li class="embed-input-li input-group">
+							<input class="embed-code" id="embedCode" type="text" value="{{ embedCode }}" readonly/>
+							<span 
+							class="fa fa-files-o embed-copy" 
+							ngclipboard data-clipboard-target="#embedCode" 
+							tooltips tooltip-template="Copied!" tooltip-show-trigger="click" tooltip-side="bottom"
+							>
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li><a href="https://twitter.com/code4africa" target="_blank">Get in touch</a></li>
 			</div>
 		</div>
 	</div>
 </nav>
-<div class="hero">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 p-t-md">
-				<p class="sub-header sub">
-					According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.
-				</p>
-				<p class="sub-header sub">
-					10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.
-				</p>
-				<p class="header p-t-sm">What should your medicine cost?</p>
-				<p class="sub-header">You might be paying too much for life saving drugs, let’s find out.</p>
-			</div>
-		</div>
-	</div>
 
-		<div class="col-md-8 col-md-offset-2 text-center m-t-xxl action animated animate-slow pulse infinite">
-			<p class="clickable" ng-click="scrollTo('main')"> Start</p>
-			<p class="fa fa-angle-down"></p>
-		</div>
-</div>
-	<div class="gradient" id="main" ng-class="{min500: showCard}">
-		<div class="ghost-line" ng-show="showCard"></div>
-		<div class="animated fadeInUp " ng-show="showCard">
-
-		<div class="card z-index4" ng-hide="one">
-			<form name="priceForm">
-				<div class="body">
-					<h3 class="text-center">First, tell us how much you pay.</h3>
-					<p>I buy
-						<input type="text" ng-model="credentials.name" ng-change="textChanged()" placeholder="drug name" required>
-					</p>
-					<div class="search-result" ng-if="showResults">
-						<li class="" ng-repeat="med in medicines | filter: credentials.name" ng-click="select(med)">{{med.name}}</li>
-					</div>
-					<p>for  &#8358<input type="number" ng-model="credentials.price" placeholder="unit price, e.g price per tablet" required></p>
-				</div>
-				<div class="footer">
-					<button class="btn btn-success" ng-click="step1()" ng-disabled="priceForm.$invalid">
-						NEXT
-					</button>
-				</div>
-			</form>
-		</div>
-		<div class="card z-index3" ng-hide="two">
-			<div class="pos-fixed">
-				<h3 class="text-center m-b-sm">Next, confirm dosage form and strength.</h3>
-
-				<div class="clearfix padder-md text-md m-t-md m-b-md">
-					<span class="col-md-5 text-bold text-ellipsis">Name</span>
-					<span class="col-md-4 text-bold text-ellipsis">Dosage Form</span>
-					<span class="col-md-3 text-bold text-ellipsis">Strength</span>
-				</div>
-			</div>
-			<div class="body-result">
-				<div class="m-t-xl">
-					<div class="result b-b text-md clickable text-ellipsis" ng-click="step2(select)" ng-repeat="select in choosen">
-						<span class="col-md-5 col-xs-3 text-ellipsis">{{select.name}}</span>
-						<span class="col-md-4 col-xs-3 text-ellipsis capitalize">{{select.form}}</span>
-						<span class="col-md-3 col-xs-3 text-ellipsis">
-							<p ng-if="select.strength">{{select.strength}}</p>
-							<p ng-if="!select.strength">-</p>
-						</span>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	</div>
-
-	<div class="overlay overlay-dark text-center" ng-show="personNode">
-		<h3 class="text-fade text-thin" ng-if="!loaded">Calculating...</h3>
-		<div class="" ng-cloak>
-
-			<h2 class="m-b-md intro animated fadeIn" ng-if="loaded">The global average price for {{credentials.name}}, {{credentials.form}}, {{credentials.strength}} is <span class="text-thin">&#8358;{{credentials.realPrice | number:2}}</span>.</h2>
-			<h3 class="typing m-b-lg" ng-show="loaded">{{typing}}</h3>
-			<div ng-if="shout" class="animated animate-slow fadeIn">
-				<p class="call2action">Tell the world :)</p>
-				<a class="animated animate-slow fadeIn" href="https://twitter.com/intent/tweet?text=Hello world, I am paying {{outcome}} percent of the global average price for {{credentials.name}}!&hashtags=fixmedprices&url=https://medicine-prices.herokuapp.com" target="_blank" ng-if="social"><i class="fa fa-twitter fa-3x animated animate-slow pulse infinite text-center"></i></a>
-  		<p class="assumption" ng-if="social">Assumption: $1 = &#8358;304</p>
-				<p class="clickable text-bold go-back" ng-click="close()" ng-if="goBack"><i class="fa fa-long-arrow-left"></i> Check something else</p>
-			</div>
-		</div>
-	</div>
-
+<div class="container-fluid main-content-container">
+	<main-content></main-content>
 
 	<div class="footer">
 		<div class="col-md-12 no-padder min150 m-b-md">
 			<div class="col-md-8 min150">
 				<p class="footer-header">About</p>
-				<hr>
-				Code for Nigeria is a non-profit civic technology movement. A network of civic-minded volunteers who contribute their talents, skills, expertise, and community knowledge as technological tools to improve public service, bring governments to account, and promote informed (data-driven) decision-making; leveraging open data + media, and backed by a core (full-time) tech team.
+				<hr> <a href="https://codefornigeria.org/">Code for Nigeria</a> is a non-profit civic technology movement. A network of civic-minded volunteers who contribute their
+				talents, skills, expertise, and community knowledge as technological tools to improve public service, bring governments
+				to account, and promote informed (data-driven) decision-making; leveraging open data + media, and backed by a core (full-time)
+				tech team.
 			</div>
 			<div class="col-md-4 p-t min150">
-				<p class="clickable"><i class="fa fa-facebook-square"></i><a href="http://facebook.com/codefornigeria" target="_blank"> Like us on Facebook</a></p>
-				<p class="clickable"><i class="fa fa-twitter-square"></i><a href="http://twitter.com/codefornigeria" target="_blank"> Follow us on Twitter</a></p>
+				<p class="clickable"><i class="fa fa-facebook-square"></i><a href="https://facebook.com/CodeForAfrica" target="_blank"> Like us on Facebook</a></p>
+				<p class="clickable"><i class="fa fa-twitter-square"></i><a href="https://twitter.com/code4africa" target="_blank"> Follow us on Twitter</a></p>
+				<p class="clickable"><i class="fa fa-github"></i><a href="https://github.com/Code4Nigeria/medicine-prices-app" target="_blank">Fork this on Github</a></p>
 			</div>
 		</div>
 		<div class="col-md-12 min150">
@@ -128,11 +73,12 @@
 			</ul>
 		</div>
 		<div class="col-md-12 partners">
-			<p class="footer-header">Built by Code for Nigeria, with thought leadership from</p>
+			<p class="footer-header">Built by <a href="https://codefornigeria.org/">Code for Nigeria</a>, with thought leadership from</p>
 			<hr>
 			<a href="http://www.icfj.org" target="_blank"><img src="assets/img/icfj.png"></a>
 			<a href="http://www.codeforafrica.org" target="_blank"><img src="assets/img/cfafrica.png"></a>
 		</div>
 
-		<p class="text-center text-sm text-thin"><a href="https://github.com/codefornigeria/medicine-prices-ui" target="_blank">Fork this project on Github</a></p>
+		<p class="text-center text-sm text-thin">&nbsp</p>
 	</div>
+</div>
