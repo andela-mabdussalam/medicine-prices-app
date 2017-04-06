@@ -637,8 +637,8 @@ a {
 .embed-copy{
   display: table-cell;
   text-align: center;
-  font-size: 17px;
-  padding: 7px;
+  font-size: 14px;
+  padding: 0.635em 0.625em 0.5625em 0.625em;
   color: #333;
   background: #eee;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -665,10 +665,11 @@ a {
 .embed-code {
   height: 20%;
   display: table-cell;
-  padding: 7px 7px 4px 7px;
-  border: 2px solid #eee;
+  padding: 0.5em 0.4375em 0.375em 0.4375em;
+  border: 1px solid #eee;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  border-right: 0px;
 }
 .embed-description-li{
   width: 100%;
