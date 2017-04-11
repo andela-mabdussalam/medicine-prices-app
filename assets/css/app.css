@@ -718,3 +718,7 @@ tooltip{
 .embed-container .hero{
   min-height: 550px;
 }
+
+.call2action a:hover{
+  text-decoration: none;
+}
