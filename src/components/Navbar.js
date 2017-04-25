@@ -12,7 +12,7 @@ class NavigationBar extends Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to="/"><img src="/logo.png" className="cfn-logo" /></NavLink>
+            <NavLink to="/"><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
