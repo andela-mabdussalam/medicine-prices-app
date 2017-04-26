@@ -15,12 +15,14 @@ class NavigationBar extends Component {
             <NavLink to="/"><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
           </Navbar.Brand>
         </Navbar.Header>
-        <Nav pullRight>
-          <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank">Get in touch</NavItem>
-          <OverlayTrigger trigger="click" placement="bottom" overlay={<EmbedPopup />} rootClose={true}>
-            <NavItem eventKey={2} href="#">Embed this</NavItem>
-          </OverlayTrigger>
-        </Nav>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank">Get in touch</NavItem>
+            <OverlayTrigger trigger="click" placement="bottom" overlay={<EmbedPopup />} rootClose={true}>
+              <NavItem eventKey={2} href="#">Embed this</NavItem>
+            </OverlayTrigger>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar >
     );
   }
