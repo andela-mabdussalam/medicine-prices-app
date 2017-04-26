@@ -17,21 +17,21 @@ export class PriceForm extends Component {
   }
 
   handleDrugChange(drug) {
-    this.setState({ drug: drug });
+    this.setState({ drug: drug }, () => this.handleSubmit());
   }
 
   handleUserDrugPriceChange(event) {
     // set state and update the currentDrug in calculator
     this.setState(
       { userDrugPrice: event.target.value },
-      () => { if (this.state.userDrugPrice > 0) { this.handleSubmit(event) } });
+      () => { if (this.state.userDrugPrice > 0) { this.handleSubmit() } });
   }
 
-  handleSubmit(event) {
-    // stop normal browser behaviour of submitting to site
-    event.preventDefault();
+  handleSubmit() {
     console.log('handleSubmit: ' + JSON.stringify(this.state));
-    this.props.onSubmit(this.state.drug, this.state.userDrugPrice);
+    if (this.formIsValid()) {
+      this.props.onSubmit(this.state.drug, this.state.userDrugPrice);
+    }
   }
 
   formIsValid() {
@@ -46,7 +46,7 @@ export class PriceForm extends Component {
           <Col sm={4}><Typeahead options={this.props.drugNames} placeholder="drug name" onInputChange={this.handleDrugChange} /></Col>
         </FormGroup>
         <FormGroup controlId="formHorizontalUserDrugPrice">
-          <Col componentClass={ControlLabel} sm={2} smOffset={2}>for</Col>
+          <Col componentClass={ControlLabel} sm={2} smOffset={2}>for {String.fromCharCode(8358)}</Col>
           <Col sm={4}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
         </FormGroup>
       </Form>

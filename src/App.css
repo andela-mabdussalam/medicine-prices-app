@@ -1,3 +1,28 @@
+*{
+  font-family: 'Open Sans', Helvetica;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none;
+}
+
 .App {
   text-align: center;
 }
@@ -24,22 +49,117 @@
 }
 
 .cfn-logo{
-  height: 3.75em;
+  height: 3.5em;
 }
 
 .calculator-container{
   min-height: 100vh;
+  margin-top: 150px;
 }
 
 .price-form{
   width: 80%;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .navbar{
   height: 7em;
+  background: white;
 }
 
 .navbar-right{
   padding-top: 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.navbar-right .fa-twitter:hover{
+  color: skyblue;
+}
+.navbar-right .fa-facebook:hover{
+  color: #3b5998;
+}
+
+.embed-nav-button{
+  font-size: 10px;
+}
+
+.navitem-divider{
+  border-left: 1px solid #f5f5f5;
+  padding: 15px 0px 0px 0px;
+  width: 0px;
+}
+
+.sub {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.pre-form-heading{
+  font-size: 50px;
+  font-weight: 900;
+  color: #0B5D97;
+  margin-bottom: 20px;
+}
+
+.pre-form-paragraph {
+  font-size: 20px;
+}
+
+.price-form input{
+  border: 0px;
+  border-bottom: 1px solid #b1bfd4;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+  color: #0B5D97;
+}
+
+.embed-code-input{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 1px solid #ccc;
+  border-right: 0px;
+}
+.embed-code-input[readonly]{
+  background-color: white;
+}
+
+.embed-copy-btn{
+  background-image: linear-gradient(#fcfcfc,#eee);
+  border: 1px solid #d5d5d5;
+}
+
+.global-average{
+  font-size: 20px;
+  font-weight: 200;
+  color: #999;
+  margin-bottom: 50px;
+}
+
+.calculation-result .pre-form-heading{
+  margin-bottom: 40px;
+}
+
+.call-to-action{
+  font-size: 40px;
+  color: #CE4415;
+  font-weight: 300;
+}
+
+.call-to-action:hover{
+  text-decoration: none;
+}
+
+.assumption{
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.reset-calculator{
+  cursor: pointer
 }

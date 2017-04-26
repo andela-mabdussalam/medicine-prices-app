@@ -107,7 +107,7 @@ export default class Calculator extends Component {
       showCalculator: false,
       showResult: true,
       currentDrug: drug
-    });
+    }, () => window.scrollTo(0, 0));
   }
 
   // Reset the calculator
@@ -117,12 +117,12 @@ export default class Calculator extends Component {
 
   render() {
     return (
-      <div className="container calculator-containter">
+      <div className="container calculator-container">
         {this.state.showCalculator ? <div className="calculator">
           <div className="price-form-container">
-            <p className="text-center">You might be paying too much for life saving drugs, let’s find out.</p>
-            <h1 className="text-center">What should your medicine cost?</h1>
-            <p className="text-center">Tell us how much you pay.</p>
+            <p className="sub text-center">You might be paying too much for life saving drugs, let’s find out.</p>
+            <h1 className="pre-form-heading text-center">What should your medicine cost?</h1>
+            <p className="pre-form-paragraph text-center">Tell us how much you pay.</p>
             <PriceForm drugs={this.state.drugs} drugNames={this.getListofDrugNames()} onSubmit={this.onSubmit} />
           </div>
           <Fade in={this.state.showDrugList}>

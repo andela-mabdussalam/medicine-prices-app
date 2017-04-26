@@ -9,18 +9,26 @@ import { Nav, Navbar, NavItem, OverlayTrigger, Popover, InputGroup, Button, Form
 class NavigationBar extends Component {
   render() {
     return (
-      <Navbar>
+      <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink to="/"><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
           </Navbar.Brand>
+          <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank">Get in touch</NavItem>
             <OverlayTrigger trigger="click" placement="bottom" overlay={<EmbedPopup />} rootClose={true}>
-              <NavItem eventKey={2} href="#">Embed this</NavItem>
+              <NavItem eventKey={2} href="#">Embed this <i className="fa fa-caret-down" aria-hidden="true"></i></NavItem>
             </OverlayTrigger>
+            <NavItem className="navitem-divider"></NavItem>
+            <NavItem eventKey={3} href=" https://facebook.com/CodeForAfrica" target="_blank">
+              <i className="fa fa-facebook" aria-hidden="true"></i>
+            </NavItem>
+            <NavItem href="https://twitter.com/code4africa" target="_blank">
+              <i className="fa fa-twitter" aria-hidden="true"></i>
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar >
@@ -65,13 +73,13 @@ class EmbedPopup extends Component {
       <Popover id="popover-positioned-bottom" title="Embed this tool" {...this.props}>
         <p>Copy the embed code below and place it on your website!</p>
         <InputGroup>
-          <FormControl type="text" readOnly value={this.generateEmbedCode()} ref={(input) => this.embedCodeInput = input} />
+          <FormControl className="embed-code-input" type="text" readOnly value={this.generateEmbedCode()} ref={(input) => this.embedCodeInput = input} />
           {
             /* Only display the button if the copy command exists */
             document.queryCommandSupported('copy') &&
             <InputGroup.Button>
               <OverlayTrigger placement="bottom" ref="tooltipOverlay" overlay={this.getTooltip()} trigger="click">
-                <Button onClick={this.copyEmbedCodeToClipboard}><Glyphicon glyph="copy" /></Button>
+                <Button className="embed-copy-btn" onClick={this.copyEmbedCodeToClipboard}><Glyphicon glyph="copy" /></Button>
               </OverlayTrigger>
             </InputGroup.Button>
           }
