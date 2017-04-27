@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import NavigationBar from './components/Navbar';
+import Home from './components/Home';
 import Calculator from './components/calculator/Calculator';
 
 class App extends Component {
@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <NavigationBar />
-          <Route path="/" component={Calculator} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/embed" component={Calculator} />
         </div>
       </BrowserRouter>
     );

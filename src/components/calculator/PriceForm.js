@@ -61,7 +61,7 @@ export class PriceForm extends Component {
           <Col sm={4}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
         </FormGroup>
         <FormGroup>
-          <Button className="show-result-btn" disabled={!this.formIsValid()} type="submit">NEXT</Button>
+          <Button className="show-result-btn col-sm-offset-5 col-xs-offset-3" disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
       </Form>
     )

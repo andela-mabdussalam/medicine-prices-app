@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Fade } from 'react-bootstrap';
 import { CalculationResult } from './CalculationResult';
 import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
