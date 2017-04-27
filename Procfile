@@ -1,1 +1,1 @@
-web: npm install --only=dev; npm run build; serve -s build
+web: npm install react-scripts; npm install -g serve; npm run build; serve -s build
