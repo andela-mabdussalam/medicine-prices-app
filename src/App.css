@@ -166,7 +166,6 @@ input[type="color"]:focus,
 
 .show-result-btn{
   padding: 11px 60px;
-  margin-left: 39%;
   background-color: #3cd682;
   border: none;
   color: white;
@@ -177,4 +176,53 @@ input[type="color"]:focus,
 {
   background-color: #5cb85c;
   color: white;
+}
+
+footer{
+  background: #000;
+  color:grey;
+  font-size: 14px;
+  padding: 50px 10%;
+  padding-bottom: 8%;
+}
+
+footer h3{
+  color: white;
+  font-size: 14px;
+}
+
+footer hr{
+  border: none;
+  border-top: 1px solid #999;
+  opacity: 0.4;
+}
+
+footer .social-icons{
+  margin-top: 5%;
+}
+
+footer .built-by{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .sponsors{
+  height: 50px;
+  margin: 10px;
+}
+
+footer .fa-twitter-square {
+  color: skyblue;
+  margin-right: 10px;
+}
+
+footer .fa-github {
+  color: white;
+  margin-right: 10px;
+}
+
+footer .fa-facebook-square {
+  color: #3B5998;
+  margin-right: 10px;
 }

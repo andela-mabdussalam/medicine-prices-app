@@ -49,8 +49,9 @@ class EmbedPopup extends Component {
   }
   generateEmbedCode() {
     // generate embed code
-    let host = document.location.origin;
-    let embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", host);
+    let url = document.location.origin;
+    url += "/embed";
+    let embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", url);
     return embedCode;
   }
   getTooltip(props) {
