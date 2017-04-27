@@ -44,7 +44,7 @@ class NavigationBar extends Component {
 class EmbedPopup extends Component {
   constructor(props) {
     super(props);
-    this.state = { showTooltip: false, tooltipText: "Copied" };
+    this.state = { toolTipClass: "hidden", tooltipText: "Copied" };
     this.copyEmbedCodeToClipboard = this.copyEmbedCodeToClipboard.bind(this);
   }
   generateEmbedCode() {
@@ -55,14 +55,16 @@ class EmbedPopup extends Component {
   }
   getTooltip(props) {
     return (
-      <Tooltip id="tooltip" >{this.state.tooltipText}</Tooltip >
+      <Tooltip className={this.state.toolTipClass} id="tooltip" >{this.state.tooltipText}</Tooltip >
     );
   }
 
   copyEmbedCodeToClipboard(event) {
     // copy embedcode from embedcode input to clipboard
     ReactDOM.findDOMNode(this.embedCodeInput).select();
-    this.setState({ tooltipText: "Copied" })
+    this.setState({ tooltipText: "Copied", toolTipClass: "visible" })
+    // schedule hiding of tooltip
+    setTimeout(() => this.setState({ toolTipClass: "hidden" }), 1000)
     document.execCommand('copy');
     // This is just personal preference.
     // I prefer to not show the the whole text area selected.
@@ -78,7 +80,7 @@ class EmbedPopup extends Component {
             /* Only display the button if the copy command exists */
             document.queryCommandSupported('copy') &&
             <InputGroup.Button>
-              <OverlayTrigger placement="bottom" ref="tooltipOverlay" overlay={this.getTooltip()} trigger="click">
+              <OverlayTrigger placement="bottom" overlay={this.getTooltip()} trigger="click">
                 <Button className="embed-copy-btn" onClick={this.copyEmbedCodeToClipboard}><Glyphicon glyph="copy" /></Button>
               </OverlayTrigger>
             </InputGroup.Button>

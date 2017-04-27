@@ -26,7 +26,7 @@ export class CalculationResult extends Component {
           The global average price for {this.props.drug.name}, {this.props.drug.form}
           : {this.props.drug.strength} is
           <span style={{ color: "black", fontWeight: 600 }}>
-            &nbsp;{(this.props.drug.price * this.props.exchangeRate).toFixed(4)}
+            &nbsp;&#8358;{(this.props.drug.price * this.props.exchangeRate).toFixed(4)}
           </span>
         </p>
         <TypeWriter typing={1} onTypingEnd={() => this.setState({ showTwitterLink: true })}>

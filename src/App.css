@@ -163,3 +163,18 @@ input[type="color"]:focus,
 .reset-calculator{
   cursor: pointer
 }
+
+.show-result-btn{
+  padding: 11px 60px;
+  margin-left: 39%;
+  background-color: #3cd682;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+.show-result-btn[disabled],.show-result-btn:hover,
+.show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
+{
+  background-color: #5cb85c;
+  color: white;
+}
