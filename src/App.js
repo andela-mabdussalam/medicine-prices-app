@@ -10,7 +10,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/embed" component={Calculator} />
+          <Route exact path="/embed" component={() => <Calculator headerFont="punch-ng-header" bodyFont="punch-ng-body" />} />
         </div>
       </BrowserRouter>
     );

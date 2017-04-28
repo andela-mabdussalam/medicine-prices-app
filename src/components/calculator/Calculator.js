@@ -63,10 +63,16 @@ export default class Calculator extends Component {
       <div className="container calculator-container">
         {this.state.showCalculator ? <div className="calculator">
           <div className="price-form-container">
-            <p className="sub text-center">You might be paying too much for life saving drugs, let’s find out.</p>
-            <h1 className="pre-form-heading text-center">What should your medicine cost?</h1>
-            <p className="pre-form-paragraph text-center">Tell us how much you pay.</p>
-            <PriceForm drugs={this.state.drugs} drugNames={this.getListofDrugNames()} onSubmit={this.onSubmit} />
+            <p className={"sub text-center " + this.props.bodyFont}>You might be paying too much for life saving drugs, let’s find out.</p>
+            <h1 className={"pre-form-heading text-center " + this.props.headerFont}>What should your medicine cost?</h1>
+            <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>Tell us how much you pay.</p>
+            <PriceForm
+              drugs={this.state.drugs}
+              drugNames={this.getListofDrugNames()}
+              onSubmit={this.onSubmit}
+              headerFont={this.props.headerFont}
+              bodyFont={this.props.bodyFont}
+            />
           </div>
         </div>
           : null
@@ -78,6 +84,8 @@ export default class Calculator extends Component {
             drug={this.state.currentDrug}
             exchangeRate={this.EXCHNG}
             resetCalculator={this.resetCalculator.bind(this)}
+            headerFont={this.props.headerFont}
+            bodyFont={this.props.bodyFont}
           />
           : null
         }

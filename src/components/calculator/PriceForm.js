@@ -39,15 +39,16 @@ export class PriceForm extends Component {
     return (
       <Form className="price-form" horizontal onSubmit={this.handleSubmit}>
         <FormGroup controlId="formHorizontalDrug">
-          <Col componentClass={ControlLabel} sm={2} smOffset={2}>I buy</Col>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} smOffset={2}>I buy</Col>
           <Col sm={4}>
             <Typeahead
+              className={this.props.bodyFont}
               labelKey="name" options={this.props.drugs} placeholder="drug name"
               renderMenuItemChildren={drug => (
                 <div onClick={() => this.handleDrugChange(drug)}>
-                  {drug.name}
+                  <span className={this.props.headerFont}>{drug.name}</span>
                   <div>
-                    <small>
+                    <small className={this.props.bodyFont}>
                       Dosage form: {drug.form}
                       &nbsp;Strength: <i>{drug.strength}</i>
                     </small>
@@ -57,11 +58,11 @@ export class PriceForm extends Component {
             /></Col>
         </FormGroup>
         <FormGroup controlId="formHorizontalUserDrugPrice">
-          <Col componentClass={ControlLabel} sm={2} smOffset={2}>for {String.fromCharCode(8358)}</Col>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} smOffset={2}>for {String.fromCharCode(8358)}</Col>
           <Col sm={4}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
         </FormGroup>
         <FormGroup>
-          <Button className="show-result-btn col-sm-offset-5 col-xs-offset-3" disabled={!this.formIsValid()} type="submit">NEXT</Button>
+          <Button className={"show-result-btn col-sm-offset-5 col-xs-offset-3 " + this.props.headerFont} disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
       </Form>
     )

@@ -226,3 +226,11 @@ footer .fa-facebook-square {
   color: #3B5998;
   margin-right: 10px;
 }
+
+.punch-ng-header{
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.punch-ng-body{
+  font-family: 'Playfair Display', serif;
+}
