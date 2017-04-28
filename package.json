@@ -10,8 +10,7 @@
     "react-router-dom": "^4.1.1",
     "react-scripts": "0.9.5",
     "react-typewriter": "^0.4.1",
-    "serve": "^5.1.4",
-    "react-scripts": "0.9.5"
+    "serve": "^5.1.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
