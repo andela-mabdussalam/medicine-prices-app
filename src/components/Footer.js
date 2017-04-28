@@ -26,8 +26,8 @@ export default class Footer extends Component {
           <a href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/"> World Health Organization</a>
           <p className="built-by">Built by <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria</a>, with thought leadership from</p>
           <hr></hr>
-          <a href="http://www.icfj.org" target="_blank"><img className="sponsors" src="/icfj.png" /></a>
-          <a href="http://www.codeforafrica.org" target="_blank"><img className="sponsors" src="/cfafrica.png" /></a>
+          <a href="http://www.icfj.org" target="_blank"><img className="sponsors" alt="ICFJ" src="/icfj.png" /></a>
+          <a href="http://www.codeforafrica.org" target="_blank"><img className="sponsors" alt="Code for Africa" src="/cfafrica.png" /></a>
         </div>
       </footer>
     )
