@@ -1,4 +1,4 @@
-FROM node
+FROM mhart/alpine-node
 COPY . /medprices-ng
 WORKDIR /medprices-ng
 RUN npm install
