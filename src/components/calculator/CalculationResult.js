@@ -19,6 +19,11 @@ export class CalculationResult extends Component {
       .replace("{drugName}", this.props.drug.name);
     return twitterLink;
   }
+
+  // return a number with commas if it's long
+  numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   render() {
     return (
       <div className="calculation-result">
@@ -30,8 +35,8 @@ export class CalculationResult extends Component {
           </span>
         </p>
         <TypeWriter typing={1} onTypingEnd={() => this.setState({ showTwitterLink: true })}>
-          <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>At {String.fromCharCode(8358)}{this.props.price}, you are paying</p>
-          <h2 className={"pre-form-heading text-center " + this.props.headerFont}>{String(this.props.percentage)}% of the global average price.</h2>
+          <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>At {String.fromCharCode(8358)}{this.numberWithCommas(this.props.price)} you are paying</p>
+          <h2 className={"pre-form-heading text-center " + this.props.headerFont}>{String(this.numberWithCommas(this.props.percentage))}% of the global average price.</h2>
         </TypeWriter>
         <Fade in={this.state.showTwitterLink} timeout={2000}>
           <div className="text-center">
