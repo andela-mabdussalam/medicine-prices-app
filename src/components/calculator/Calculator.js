@@ -73,6 +73,8 @@ export default class Calculator extends Component {
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
             />
+            <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
+            <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
           </div>
         </div>
           : null
