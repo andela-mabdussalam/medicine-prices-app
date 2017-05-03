@@ -13,10 +13,14 @@ export class CalculationResult extends Component {
       showTwitterLink: false
     }
   }
+
+  percentageDecreaseOrIncrease() {
+    return this.props.percentage >= 100 ? this.props.percentage - 100 : 100 - this.props.percentage;
+  }
   generateTwitterLink() {
-    let twitterLink = "https://twitter.com/intent/tweet?text=Hello world, I am paying {percentage} percent of the global average price for {drugName}!&hashtags=fixmedprices&url=https://medprices.codefornigeria.org";
-    twitterLink = twitterLink.replace("{percentage}", this.props.percentage)
-      .replace("{drugName}", this.props.drug.name);
+    let percentage = this.percentageDecreaseOrIncrease.apply(this);
+    let text = encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${this.props.drug.name}!`);
+    let twitterLink = `https://twitter.com/intent/tweet?text=${text}&hashtags=CheckYourMedPrices&url=https://medprices.codefornigeria.org`;
     return twitterLink;
   }
 
@@ -31,12 +35,12 @@ export class CalculationResult extends Component {
           The global average price for {this.props.drug.name}, {this.props.drug.form}
           : {this.props.drug.strength} is
           <span style={{ color: "black", fontWeight: 600 }}>
-            &nbsp;&#8358;{(this.props.drug.price * this.props.exchangeRate).toFixed(4)}
+            &nbsp;&#8358;{(this.props.drug.price * this.props.exchangeRate).toFixed(2)}
           </span>
         </p>
         <TypeWriter typing={1} onTypingEnd={() => this.setState({ showTwitterLink: true })}>
           <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>At {String.fromCharCode(8358)}{this.numberWithCommas(this.props.price)} you are paying</p>
-          <h2 className={"pre-form-heading text-center " + this.props.headerFont}>{String(this.numberWithCommas(this.props.percentage))}% of the global average price.</h2>
+          <h2 className={"pre-form-heading text-center " + this.props.headerFont}>{String(this.numberWithCommas(this.percentageDecreaseOrIncrease.apply(this)))}% {this.props.amount} than the global average price.</h2>
         </TypeWriter>
         <Fade in={this.state.showTwitterLink} timeout={2000}>
           <div className="text-center">

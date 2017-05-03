@@ -84,6 +84,7 @@ export default class Calculator extends Component {
             price={String(this.state.userDrugPrice)}
             percentage={this.state.userPercentage}
             drug={this.state.currentDrug}
+            amount={this.state.userPercentage >= 100 ? "more" : "less"}
             exchangeRate={this.EXCHNG}
             resetCalculator={this.resetCalculator.bind(this)}
             headerFont={this.props.headerFont}
