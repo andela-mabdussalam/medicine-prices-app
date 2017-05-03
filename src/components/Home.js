@@ -7,11 +7,14 @@ import Footer from './Footer';
 * Home component
 */
 export default class Home extends Component {
+  resetCalculator() {
+    this.calculator.resetCalculator();
+  }
   render() {
     return (
       <div>
-        <NavigationBar />
-        <Calculator />
+        <NavigationBar resetCalculator={this.resetCalculator.bind(this)} />
+        <Calculator ref={(calculator) => { this.calculator = calculator; }} />
         <Footer />
       </div>
     );

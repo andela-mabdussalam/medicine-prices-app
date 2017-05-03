@@ -1,6682 +1,7795 @@
 export function getMedicine() {
   let medicine = [
     {
+      "price": 0.0197,
+      "strength": "20 mg/ml",
       "name": "Abacavir",
       "form": "solution",
-      "strength": "20 mg/ml",
-      "price": 0.0197
+      "id": 0
     },
     {
+      "price": 0.2342,
+      "strength": "300 mg",
       "name": "Abacavir",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.2342
+      "id": 1
     },
     {
+      "price": 0.0943,
+      "strength": "60 mg",
       "name": "Abacavir Sulfate",
       "form": "tab-cap",
-      "strength": "60 mg",
-      "price": 0.0943
+      "id": 2
     },
     {
-      "name": "Abacavir+Lamivudine",
-      "form": "tab-cap",
+      "price": 0.0917,
       "strength": "60mg+30mg",
-      "price": 0.0917
-    },
-    {
       "name": "Abacavir+Lamivudine",
       "form": "tab-cap",
+      "id": 3
+    },
+    {
+      "price": 0.5074,
       "strength": "600 mg+300mg",
-      "price": 0.5074
-    },
-    {
       "name": "Abacavir+Lamivudine",
       "form": "tab-cap",
-      "strength": "60mg+30mg",
-      "price": 0.07
+      "id": 4
     },
     {
+      "price": 0.07,
+      "strength": "60mg+30mg",
+      "name": "Abacavir+Lamivudine",
+      "form": "tab-cap",
+      "id": 5
+    },
+    {
+      "price": 0.033,
+      "strength": "250 mg",
       "name": "Acetazolamide",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.033
+      "id": 6
     },
     {
-      "name": "Acetylsalicylic Acid",
-      "form": "tab-cap",
+      "price": 0.0033,
       "strength": "500 mg",
-      "price": 0.0033
-    },
-    {
       "name": "Acetylsalicylic Acid",
       "form": "tab-cap",
+      "id": 7
+    },
+    {
+      "price": 0.0074,
       "strength": "100 mg",
-      "price": 0.0074
-    },
-    {
       "name": "Acetylsalicylic Acid",
       "form": "tab-cap",
+      "id": 8
+    },
+    {
+      "price": 0.0074,
       "strength": "75 mg",
-      "price": 0.0074
-    },
-    {
       "name": "Acetylsalicylic Acid",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.0133
+      "id": 9
     },
     {
+      "price": 0.0133,
+      "strength": "300 mg",
+      "name": "Acetylsalicylic Acid",
+      "form": "tab-cap",
+      "id": 10
+    },
+    {
+      "price": 0.0352,
+      "strength": "200 mg",
       "name": "Aciclovir",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0352
+      "id": 11
     },
     {
+      "price": 0.036,
+      "strength": "5%",
       "name": "Aciclovir",
       "form": "cream",
-      "strength": "5%",
-      "price": 0.036
+      "id": 12
     },
     {
-      "name": "Aciclovir",
-      "form": "tab-cap",
+      "price": 0.0392,
       "strength": "400 mg",
-      "price": 0.0392
-    },
-    {
       "name": "Aciclovir",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0459
+      "id": 13
     },
     {
+      "price": 0.0459,
+      "strength": "200 mg",
+      "name": "Aciclovir",
+      "form": "tab-cap",
+      "id": 14
+    },
+    {
+      "price": 0.1664,
+      "strength": "200 mg/5 ml",
       "name": "Aciclovir",
       "form": "suspen",
-      "strength": "200 mg/5 ml",
-      "price": 0.1664
+      "id": 15
     },
     {
+      "price": 2.7292,
+      "strength": "3%",
       "name": "Aciclovir",
       "form": "opht oint",
-      "strength": "3%",
-      "price": 2.7292
+      "id": 16
     },
     {
+      "price": 5.6372,
+      "strength": "250 mg",
       "name": "Aciclovir",
       "form": "vial",
-      "strength": "250 mg",
-      "price": 5.6372
+      "id": 17
     },
     {
+      "price": 2.5816,
+      "strength": "3 mg/ml",
       "name": "Adenosine",
       "form": "ampoule",
-      "strength": "3 mg/ml",
-      "price": 2.5816
+      "id": 18
     },
     {
+      "price": 0.02,
+      "strength": "400 mg",
       "name": "Albendazole",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 0.02
+      "id": 19
     },
     {
-      "name": "Albendazole",
-      "form": "suspen",
+      "price": 0.0275,
       "strength": "100 mg/5 ml",
-      "price": 0.0275
-    },
-    {
       "name": "Albendazole",
       "form": "suspen",
+      "id": 20
+    },
+    {
+      "price": 0.029,
       "strength": "200 mg/5 ml",
-      "price": 0.029
+      "name": "Albendazole",
+      "form": "suspen",
+      "id": 21
     },
     {
-      "name": "Albendazole",
-      "form": "tab-cap",
+      "price": 0.0394,
       "strength": "200 mg",
-      "price": 0.0394
-    },
-    {
       "name": "Albendazole",
       "form": "tab-cap",
+      "id": 22
+    },
+    {
+      "price": 0.0182,
       "strength": "200 mg",
-      "price": 0.0182
-    },
-    {
       "name": "Albendazole",
       "form": "tab-cap",
+      "id": 23
+    },
+    {
+      "price": 0.0248,
       "strength": "400 mg",
-      "price": 0.0248
+      "name": "Albendazole",
+      "form": "tab-cap",
+      "id": 24
     },
     {
+      "price": 0.5632,
+      "strength": "20-25%",
       "name": "Albumin, Human Normal",
       "form": "vial",
-      "strength": "20-25%",
-      "price": 0.5632
+      "id": 25
     },
     {
+      "price": 0.004,
+      "strength": "95-96%",
       "name": "Alcohol",
       "form": "liquid",
-      "strength": "95-96%",
-      "price": 0.004
+      "id": 26
     },
     {
+      "price": 0.005,
+      "strength": "95-96%",
       "name": "Alcohol, Denatured",
       "form": "liquid",
-      "strength": "95-96%",
-      "price": 0.005
+      "id": 27
     },
     {
-      "name": "Alcohol, Denatured",
-      "form": "liquid",
+      "price": 0.005,
       "strength": "70%",
-      "price": 0.005
+      "name": "Alcohol, Denatured",
+      "form": "liquid",
+      "id": 28
     },
     {
+      "price": 0.0014,
+      "strength": "70%",
       "name": "Alcohol, Isopropyl",
       "form": "liquid",
-      "strength": "70%",
-      "price": 0.0014
+      "id": 29
     },
     {
+      "price": 0.0606,
+      "strength": "10 mg",
       "name": "Alendronate",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0606
+      "id": 30
     },
     {
-      "name": "Allopurinol",
-      "form": "tab-cap",
+      "price": 0.0273,
       "strength": "100 mg",
-      "price": 0.0273
-    },
-    {
       "name": "Allopurinol",
       "form": "tab-cap",
+      "id": 31
+    },
+    {
+      "price": 0.0545,
       "strength": "300 mg",
-      "price": 0.0545
+      "name": "Allopurinol",
+      "form": "tab-cap",
+      "id": 32
     },
     {
-      "name": "Alprazolam",
-      "form": "tab-cap",
+      "price": 0.0084,
       "strength": "0.25 mg",
-      "price": 0.0084
-    },
-    {
       "name": "Alprazolam",
       "form": "tab-cap",
-      "strength": "0.5 mg",
-      "price": 0.0672
+      "id": 33
     },
     {
+      "price": 0.0672,
+      "strength": "0.5 mg",
+      "name": "Alprazolam",
+      "form": "tab-cap",
+      "id": 34
+    },
+    {
+      "price": 0.0039,
+      "strength": "250+120 mg",
       "name": "Aluminium Hydr.+ Magnesium Hydr.",
       "form": "tab-cap",
-      "strength": "250+120 mg",
-      "price": 0.0039
+      "id": 35
     },
     {
+      "price": 0.012,
+      "strength": "500 mg",
       "name": "Aluminium Hydroxide",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.012
+      "id": 36
     },
     {
+      "price": 0.0061,
+      "strength": "500 mg",
       "name": "Aluminium Hydroxide",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0061
+      "id": 37
     },
     {
+      "price": 0.2744,
+      "strength": "76%",
       "name": "Amidotrizoate",
       "form": "ampoule",
-      "strength": "76%",
-      "price": 0.2744
+      "id": 38
     },
     {
-      "name": "Amikacin Sulfate",
-      "form": "vial",
+      "price": 0.1908,
       "strength": "250 mg/ml",
-      "price": 0.1908
+      "name": "Amikacin Sulfate",
+      "form": "vial",
+      "id": 39
     },
     {
+      "price": 0.2393,
+      "strength": "50 mg/ml",
       "name": "Amikacin Sulfate",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.2393
+      "id": 40
     },
     {
+      "price": 0.0058,
+      "strength": "100 mg",
       "name": "Aminophylline",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0058
+      "id": 41
     },
     {
+      "price": 0.048,
+      "strength": "25 mg/ml",
       "name": "Aminophylline",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 0.048
+      "id": 42
     },
     {
+      "price": 0.0711,
+      "strength": "200 mg",
       "name": "Amiodarone",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0711
+      "id": 43
     },
     {
+      "price": 0.4431,
+      "strength": "50 mg/ml",
       "name": "Amiodarone",
       "form": "vial",
-      "strength": "50 mg/ml",
-      "price": 0.4431
+      "id": 44
     },
     {
-      "name": "Amitriptyline",
-      "form": "tab-cap",
+      "price": 0.0226,
       "strength": "10 mg",
-      "price": 0.0226
-    },
-    {
       "name": "Amitriptyline",
       "form": "tab-cap",
+      "id": 45
+    },
+    {
+      "price": 0.0288,
       "strength": "25 mg",
-      "price": 0.0288
-    },
-    {
       "name": "Amitriptyline",
       "form": "tab-cap",
+      "id": 46
+    },
+    {
+      "price": 0.033,
       "strength": "50 mg",
-      "price": 0.033
+      "name": "Amitriptyline",
+      "form": "tab-cap",
+      "id": 47
     },
     {
-      "name": "Amlodipine",
-      "form": "tab-cap",
+      "price": 0.0094,
       "strength": "5 mg",
-      "price": 0.0094
-    },
-    {
       "name": "Amlodipine",
       "form": "tab-cap",
+      "id": 48
+    },
+    {
+      "price": 0.0102,
       "strength": "10 mg",
-      "price": 0.0102
+      "name": "Amlodipine",
+      "form": "tab-cap",
+      "id": 49
     },
     {
-      "name": "Amodiaquine",
-      "form": "suspen",
+      "price": 0.0086,
       "strength": "50 mg/5 ml",
-      "price": 0.0086
+      "name": "Amodiaquine",
+      "form": "suspen",
+      "id": 50
     },
     {
+      "price": 0.0121,
+      "strength": "150-200 mg",
       "name": "Amodiaquine",
       "form": "tab-cap",
-      "strength": "150-200 mg",
-      "price": 0.0121
+      "id": 51
     },
     {
-      "name": "Amoxicillin",
-      "form": "suspen",
+      "price": 0.0063,
       "strength": "250 mg/5 ml",
-      "price": 0.0063
-    },
-    {
       "name": "Amoxicillin",
       "form": "suspen",
+      "id": 52
+    },
+    {
+      "price": 0.009,
       "strength": "125 mg/5 ml",
-      "price": 0.009
+      "name": "Amoxicillin",
+      "form": "suspen",
+      "id": 53
     },
     {
-      "name": "Amoxicillin",
-      "form": "tab-cap",
+      "price": 0.0207,
       "strength": "250 mg",
-      "price": 0.0207
-    },
-    {
       "name": "Amoxicillin",
       "form": "tab-cap",
+      "id": 54
+    },
+    {
+      "price": 0.0228,
       "strength": "250 mg",
-      "price": 0.0228
-    },
-    {
       "name": "Amoxicillin",
       "form": "tab-cap",
+      "id": 55
+    },
+    {
+      "price": 0.032,
       "strength": "500 mg",
-      "price": 0.032
+      "name": "Amoxicillin",
+      "form": "tab-cap",
+      "id": 56
     },
     {
+      "price": 0.0167,
+      "strength": "125 MG",
       "name": "AMOXICILLIN",
       "form": "tab-cap",
-      "strength": "125 MG",
-      "price": 0.0167
+      "id": 57
     },
     {
+      "price": 0.0136,
+      "strength": "",
       "name": "Amoxicillin+Clavulanic Acid",
       "form": "suspen",
-      "strength": "",
-      "price": 0.0136
+      "id": 58
     },
     {
+      "price": 0.0161,
+      "strength": "",
       "name": "Amoxicillin+Clavulanic Acid",
       "form": "suspen",
-      "strength": "",
-      "price": 0.0161
+      "id": 59
     },
     {
-      "name": "Amoxicillin+Clavulanic Acid",
-      "form": "tab-cap",
+      "price": 0.1291,
       "strength": "875mg+125mg",
-      "price": 0.1291
-    },
-    {
       "name": "Amoxicillin+Clavulanic Acid",
       "form": "tab-cap",
+      "id": 60
+    },
+    {
+      "price": 0.1503,
       "strength": "250mg+125mg",
-      "price": 0.1503
-    },
-    {
       "name": "Amoxicillin+Clavulanic Acid",
       "form": "tab-cap",
+      "id": 61
+    },
+    {
+      "price": 0.1529,
       "strength": "500mg+125mg",
-      "price": 0.1529
+      "name": "Amoxicillin+Clavulanic Acid",
+      "form": "tab-cap",
+      "id": 62
     },
     {
-      "name": "Amoxicillin+Clavulanic Acid",
-      "form": "vial",
+      "price": 1.37,
       "strength": "1000+200 mg",
-      "price": 1.37
-    },
-    {
       "name": "Amoxicillin+Clavulanic Acid",
       "form": "vial",
-      "strength": "500mg+100mg",
-      "price": 1.5027
+      "id": 63
     },
     {
+      "price": 1.5027,
+      "strength": "500mg+100mg",
+      "name": "Amoxicillin+Clavulanic Acid",
+      "form": "vial",
+      "id": 64
+    },
+    {
+      "price": 14.1045,
+      "strength": "50 mg",
       "name": "Amphotericin B",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 14.1045
+      "id": 65
     },
     {
+      "price": 0.02,
+      "strength": "500 mg",
       "name": "Ampicillin",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.02
+      "id": 66
     },
     {
-      "name": "Ampicillin",
-      "form": "vial",
+      "price": 0.272,
       "strength": "1 g",
-      "price": 0.272
-    },
-    {
       "name": "Ampicillin",
       "form": "vial",
+      "id": 67
+    },
+    {
+      "price": 0.3313,
       "strength": "500 mg",
-      "price": 0.3313
-    },
-    {
       "name": "Ampicillin",
       "form": "vial",
-      "strength": "250 mg",
-      "price": 0.5294
+      "id": 68
     },
     {
+      "price": 0.5294,
+      "strength": "250 mg",
+      "name": "Ampicillin",
+      "form": "vial",
+      "id": 69
+    },
+    {
+      "price": 0.6358,
+      "strength": "1000mg+500mg",
       "name": "Ampicillin+Sulbactam",
       "form": "vial",
-      "strength": "1000mg+500mg",
-      "price": 0.6358
+      "id": 70
     },
     {
+      "price": 0.5457,
+      "strength": "1 mg",
       "name": "Anastrozole",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.5457
+      "id": 71
     },
     {
+      "price": 0.47,
+      "strength": "",
       "name": "Antihaemorrhoidal",
       "form": "suppos",
-      "strength": "",
-      "price": 0.47
+      "id": 72
     },
     {
+      "price": 0.0658,
+      "strength": "",
       "name": "Antihaemorrhoidal",
       "form": "ointment",
-      "strength": "",
-      "price": 0.0658
+      "id": 73
     },
     {
+      "price": 20.37,
+      "strength": "",
       "name": "Antivenom Serum",
       "form": "vial",
-      "strength": "",
-      "price": 20.37
+      "id": 74
     },
     {
-      "name": "Artemether",
-      "form": "ampoule",
+      "price": 0.66,
       "strength": "20 mg/ml",
-      "price": 0.66
-    },
-    {
       "name": "Artemether",
       "form": "ampoule",
-      "strength": "80 mg/ml",
-      "price": 1.09
+      "id": 75
     },
     {
+      "price": 1.09,
+      "strength": "80 mg/ml",
+      "name": "Artemether",
+      "form": "ampoule",
+      "id": 76
+    },
+    {
+      "price": 0.1472,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 0.1472
+      "id": 77
     },
     {
+      "price": 0.0708,
+      "strength": "15+90mg/5ml",
       "name": "Artemether+Lumefantrine",
       "form": "suspen",
-      "strength": "15+90mg/5ml",
-      "price": 0.0708
+      "id": 78
     },
     {
+      "price": 0.0942,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 0.0942
+      "id": 79
     },
     {
+      "price": 0.6152,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 0.6152
+      "id": 80
     },
     {
+      "price": 1.2188,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 1.2188
+      "id": 81
     },
     {
+      "price": 1.6802,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 1.6802
+      "id": 82
     },
     {
+      "price": 2.1163,
+      "strength": "20 mg+120 mg",
       "name": "Artemether+Lumefantrine",
       "form": "tab-cap",
-      "strength": "20 mg+120 mg",
-      "price": 2.1163
+      "id": 83
     },
     {
+      "price": 2.3022,
+      "strength": "60 mg",
       "name": "Artesunate",
       "form": "vial",
-      "strength": "60 mg",
-      "price": 2.3022
+      "id": 84
     },
     {
-      "name": "Artesunate+Amodiaquine",
-      "form": "tab-cap",
+      "price": 0.2434,
       "strength": "50 mg+153 mg",
-      "price": 0.2434
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 85
+    },
+    {
+      "price": 0.3906,
       "strength": "25mg+67.5mg",
-      "price": 0.3906
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 86
+    },
+    {
+      "price": 0.45,
       "strength": "50 mg+153 mg",
-      "price": 0.45
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 87
+    },
+    {
+      "price": 0.563,
       "strength": "50 mg+153 mg",
-      "price": 0.563
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 88
+    },
+    {
+      "price": 0.6363,
       "strength": "50 mg+135 mg",
-      "price": 0.6363
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 89
+    },
+    {
+      "price": 0.928,
       "strength": "100mg+270mg",
-      "price": 0.928
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
+      "id": 90
+    },
+    {
+      "price": 1.038,
       "strength": "50 mg+153 mg",
-      "price": 1.038
-    },
-    {
       "name": "Artesunate+Amodiaquine",
       "form": "tab-cap",
-      "strength": "100mg+270mg",
-      "price": 1.5
+      "id": 91
     },
     {
+      "price": 1.5,
+      "strength": "100mg+270mg",
+      "name": "Artesunate+Amodiaquine",
+      "form": "tab-cap",
+      "id": 92
+    },
+    {
+      "price": 1.9284,
+      "strength": "100+500/25mg",
       "name": "Artesunate+Sulfadoxine/Pyrimethamine",
       "form": "tab-cap",
-      "strength": "100+500/25mg",
-      "price": 1.9284
+      "id": 93
     },
     {
+      "price": 4.2,
+      "strength": "1,000 IU/ml",
       "name": "Asparaginase",
       "form": "ampoule",
-      "strength": "1,000 IU/ml",
-      "price": 4.2
+      "id": 94
     },
     {
+      "price": 14.7075,
+      "strength": "10,000 IU/ml",
       "name": "Asparaginase",
       "form": "vial",
-      "strength": "10,000 IU/ml",
-      "price": 14.7075
+      "id": 95
     },
     {
+      "price": 0.2622,
+      "strength": "150 mg",
       "name": "Atazanavir",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.2622
+      "id": 96
     },
     {
+      "price": 0.7105,
+      "strength": "300+100 mg",
       "name": "Atazanavir+Ritonavir",
       "form": "tab-cap",
-      "strength": "300+100 mg",
-      "price": 0.7105
+      "id": 97
     },
     {
-      "name": "Atenolol",
-      "form": "tab-cap",
+      "price": 0.0062,
       "strength": "50 mg",
-      "price": 0.0062
-    },
-    {
       "name": "Atenolol",
       "form": "tab-cap",
+      "id": 98
+    },
+    {
+      "price": 0.0217,
       "strength": "100 mg",
-      "price": 0.0217
+      "name": "Atenolol",
+      "form": "tab-cap",
+      "id": 99
     },
     {
-      "name": "Atorvastatin",
-      "form": "tab-cap",
+      "price": 0.0439,
       "strength": "20 mg",
-      "price": 0.0439
-    },
-    {
       "name": "Atorvastatin",
       "form": "tab-cap",
+      "id": 100
+    },
+    {
+      "price": 0.0533,
       "strength": "10 mg",
-      "price": 0.0533
-    },
-    {
       "name": "Atorvastatin",
       "form": "tab-cap",
-      "strength": "40 mg",
-      "price": 3.2494
+      "id": 101
     },
     {
+      "price": 3.2494,
+      "strength": "40 mg",
+      "name": "Atorvastatin",
+      "form": "tab-cap",
+      "id": 102
+    },
+    {
+      "price": 3.1742,
+      "strength": "250mg+100mg",
       "name": "Atovaquone+Proguanil",
       "form": "tab-cap",
-      "strength": "250mg+100mg",
-      "price": 3.1742
+      "id": 103
     },
     {
+      "price": 0.712,
+      "strength": "10 mg/ml",
       "name": "Atracurium",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.712
+      "id": 104
     },
     {
-      "name": "Atropine Sulfate",
-      "form": "ampoule",
+      "price": 0.0671,
       "strength": "0.25 mg/ml",
-      "price": 0.0671
-    },
-    {
       "name": "Atropine Sulfate",
       "form": "ampoule",
+      "id": 105
+    },
+    {
+      "price": 0.1067,
       "strength": "1 mg/ml",
-      "price": 0.1067
-    },
-    {
       "name": "Atropine Sulfate",
       "form": "ampoule",
-      "strength": "0.5 mg/ml",
-      "price": 0.1588
+      "id": 106
     },
     {
+      "price": 0.1588,
+      "strength": "0.5 mg/ml",
+      "name": "Atropine Sulfate",
+      "form": "ampoule",
+      "id": 107
+    },
+    {
+      "price": 0.615,
+      "strength": "1%",
       "name": "Atropine Sulfate",
       "form": "opht drop",
-      "strength": "1%",
-      "price": 0.615
+      "id": 108
     },
     {
+      "price": 0.0848,
+      "strength": "50 mg",
       "name": "Azathioprine",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0848
+      "id": 109
     },
     {
+      "price": 0.0177,
+      "strength": "200 mg/5 ml",
       "name": "Azithromycin",
       "form": "suspen",
-      "strength": "200 mg/5 ml",
-      "price": 0.0177
+      "id": 110
     },
     {
-      "name": "Azithromycin",
-      "form": "tab-cap",
+      "price": 0.2375,
       "strength": "250 mg",
-      "price": 0.2375
-    },
-    {
       "name": "Azithromycin",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.3777
+      "id": 111
     },
     {
+      "price": 0.3777,
+      "strength": "500 mg",
+      "name": "Azithromycin",
+      "form": "tab-cap",
+      "id": 112
+    },
+    {
+      "price": 0.0299,
+      "strength": "",
       "name": "Balanced Salt Solution",
       "form": "solution",
-      "strength": "",
-      "price": 0.0299
+      "id": 113
     },
     {
+      "price": 79.3269,
+      "strength": "",
       "name": "Barium Sulfate",
       "form": "powder",
-      "strength": "",
-      "price": 79.3269
+      "id": 114
     },
     {
+      "price": 0.0127,
+      "strength": "50 mcg",
       "name": "Beclometasone",
       "form": "nasal",
-      "strength": "50 mcg",
-      "price": 0.0127
+      "id": 115
     },
     {
-      "name": "Beclometasone",
-      "form": "inhaler",
+      "price": 0.0131,
       "strength": "50 mcg/dose",
-      "price": 0.0131
-    },
-    {
       "name": "Beclometasone",
       "form": "inhaler",
+      "id": 116
+    },
+    {
+      "price": 0.016,
       "strength": "100 mcg/dose",
-      "price": 0.016
-    },
-    {
       "name": "Beclometasone",
       "form": "inhaler",
+      "id": 117
+    },
+    {
+      "price": 0.017,
       "strength": "250 mcg/dose",
-      "price": 0.017
+      "name": "Beclometasone",
+      "form": "inhaler",
+      "id": 118
     },
     {
-      "name": "Bendroflumethiazide",
-      "form": "tab-cap",
+      "price": 0.0071,
       "strength": "2.5 mg",
-      "price": 0.0071
-    },
-    {
       "name": "Bendroflumethiazide",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0114
+      "id": 119
     },
     {
+      "price": 0.0114,
+      "strength": "5 mg",
+      "name": "Bendroflumethiazide",
+      "form": "tab-cap",
+      "id": 120
+    },
+    {
+      "price": 0.0346,
+      "strength": "2 mg",
       "name": "Benzatropine Mesilate",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 0.0346
+      "id": 121
     },
     {
+      "price": 2.65,
+      "strength": "1 mg/ml",
       "name": "Benzatropine Mesilate",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 2.65
+      "id": 122
     },
     {
+      "price": 0.0095,
+      "strength": "6% + 3%",
       "name": "Benzoic & Salicylic Acid",
       "form": "ointment",
-      "strength": "6% + 3%",
-      "price": 0.0095
+      "id": 123
     },
     {
+      "price": 0.0031,
+      "strength": "25%",
       "name": "Benzyl Benzoate",
       "form": "lotion",
-      "strength": "25%",
-      "price": 0.0031
+      "id": 124
     },
     {
+      "price": 0.0108,
+      "strength": "90%",
       "name": "Benzyl Benzoate",
       "form": "solution",
-      "strength": "90%",
-      "price": 0.0108
+      "id": 125
     },
     {
+      "price": 0.186,
+      "strength": "0.1%",
       "name": "Betamethasone",
       "form": "opht drop",
-      "strength": "0.1%",
-      "price": 0.186
+      "id": 126
     },
     {
+      "price": 0.7276,
+      "strength": "4 mg/ml",
       "name": "Betamethasone",
       "form": "ampoule",
-      "strength": "4 mg/ml",
-      "price": 0.7276
+      "id": 127
     },
     {
+      "price": 0.0516,
+      "strength": "0.1%",
       "name": "Betamethasone Valerate",
       "form": "cream",
-      "strength": "0.1%",
-      "price": 0.0516
+      "id": 128
     },
     {
+      "price": 0.0687,
+      "strength": "0.1%",
       "name": "Betamethasone Valerate",
       "form": "ointment",
-      "strength": "0.1%",
-      "price": 0.0687
+      "id": 129
     },
     {
+      "price": 159.635,
+      "strength": "25 mg/ml",
       "name": "Bevacizumab",
       "form": "vial",
-      "strength": "25 mg/ml",
-      "price": 159.635
+      "id": 130
     },
     {
+      "price": 0.3981,
+      "strength": "50 mg",
       "name": "Bicalutamide",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.3981
+      "id": 131
     },
     {
+      "price": 0.0101,
+      "strength": "2 mg",
       "name": "Biperiden",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 0.0101
+      "id": 132
     },
     {
+      "price": 0.0193,
+      "strength": "5 mg",
       "name": "Bisacodyl",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0193
+      "id": 133
     },
     {
+      "price": 0.1022,
+      "strength": "10 mg",
       "name": "Bisacodyl",
       "form": "suppos",
-      "strength": "10 mg",
-      "price": 0.1022
+      "id": 134
     },
     {
+      "price": 0.066,
+      "strength": "5 mg",
       "name": "Bisoprolol",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.066
+      "id": 135
     },
     {
+      "price": 16.715,
+      "strength": "15 IU",
       "name": "Bleomycin",
       "form": "vial",
-      "strength": "15 IU",
-      "price": 16.715
+      "id": 136
     },
     {
+      "price": 0.2024,
+      "strength": "2.5 mg",
       "name": "Bromocriptine Mesilate",
       "form": "tab-cap",
-      "strength": "2.5 mg",
-      "price": 0.2024
+      "id": 137
     },
     {
-      "name": "Budesonide",
-      "form": "inhaler",
+      "price": 0.007,
       "strength": "100 mcg/dose",
-      "price": 0.007
-    },
-    {
       "name": "Budesonide",
       "form": "inhaler",
+      "id": 138
+    },
+    {
+      "price": 0.0272,
       "strength": "200 mcg/dose",
-      "price": 0.0272
+      "name": "Budesonide",
+      "form": "inhaler",
+      "id": 139
     },
     {
-      "name": "Bupivacaine HCl",
-      "form": "ampoule",
+      "price": 0.0315,
       "strength": "0.5%",
-      "price": 0.0315
-    },
-    {
       "name": "Bupivacaine HCl",
       "form": "ampoule",
-      "strength": "0.25%",
-      "price": 0.105
+      "id": 140
     },
     {
+      "price": 0.105,
+      "strength": "0.25%",
+      "name": "Bupivacaine HCl",
+      "form": "ampoule",
+      "id": 141
+    },
+    {
+      "price": 0.08,
+      "strength": "0.5% + 8%",
       "name": "Bupivacaine HCl + Dextrose",
       "form": "ampoule",
-      "strength": "0.5% + 8%",
-      "price": 0.08
+      "id": 142
     },
     {
+      "price": 0.0793,
+      "strength": "",
       "name": "Bupivacaine HCl + Epinephrine",
       "form": "vial",
-      "strength": "",
-      "price": 0.0793
+      "id": 143
     },
     {
+      "price": 0.0051,
+      "strength": "",
       "name": "Calamine",
       "form": "lotion",
-      "strength": "",
-      "price": 0.0051
+      "id": 144
     },
     {
+      "price": 1.3307,
+      "strength": "15 mg",
       "name": "Calcium Folinate",
       "form": "tab-cap",
-      "strength": "15 mg",
-      "price": 1.3307
+      "id": 145
     },
     {
+      "price": 2.3861,
+      "strength": "50 mg",
       "name": "Calcium Folinate",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 2.3861
+      "id": 146
     },
     {
+      "price": 0.0431,
+      "strength": "100 mg/ml",
       "name": "Calcium Gluconate",
       "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 0.0431
+      "id": 147
     },
     {
+      "price": 0.0168,
+      "strength": "250-300 mg",
       "name": "Calcium Lactate",
       "form": "tab-cap",
-      "strength": "250-300 mg",
-      "price": 0.0168
+      "id": 148
     },
     {
+      "price": 0.0216,
+      "strength": "10%",
       "name": "Camphor",
       "form": "ointment",
-      "strength": "10%",
-      "price": 0.0216
+      "id": 149
     },
     {
-      "name": "Capecitabine",
-      "form": "tab-cap",
+      "price": 0.5194,
       "strength": "150 mg",
-      "price": 0.5194
-    },
-    {
       "name": "Capecitabine",
       "form": "tab-cap",
+      "id": 150
+    },
+    {
+      "price": 1.4212,
       "strength": "500 mg",
-      "price": 1.4212
+      "name": "Capecitabine",
+      "form": "tab-cap",
+      "id": 151
     },
     {
-      "name": "Capreomycin",
-      "form": "vial",
+      "price": 8.387,
       "strength": "1 g",
-      "price": 8.387
-    },
-    {
       "name": "Capreomycin",
       "form": "vial",
+      "id": 152
+    },
+    {
+      "price": 2.99,
       "strength": "0.5 g",
-      "price": 2.99
-    },
-    {
       "name": "Capreomycin",
       "form": "vial",
+      "id": 153
+    },
+    {
+      "price": 3.99,
       "strength": "0.75 g",
-      "price": 3.99
+      "name": "Capreomycin",
+      "form": "vial",
+      "id": 154
     },
     {
-      "name": "Captopril",
-      "form": "tab-cap",
+      "price": 0.0089,
       "strength": "25 mg",
-      "price": 0.0089
-    },
-    {
       "name": "Captopril",
       "form": "tab-cap",
+      "id": 155
+    },
+    {
+      "price": 0.0175,
       "strength": "12.5 mg",
-      "price": 0.0175
-    },
-    {
       "name": "Captopril",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.1276
+      "id": 156
     },
     {
+      "price": 0.1276,
+      "strength": "50 mg",
+      "name": "Captopril",
+      "form": "tab-cap",
+      "id": 157
+    },
+    {
+      "price": 0.0223,
+      "strength": "200 mg",
       "name": "Carbamazepine",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0223
+      "id": 158
     },
     {
+      "price": 0.0339,
+      "strength": "100 mg/5 ml",
       "name": "Carbamazepine",
       "form": "suspen",
-      "strength": "100 mg/5 ml",
-      "price": 0.0339
+      "id": 159
     },
     {
+      "price": 0.197,
+      "strength": "200 mg",
       "name": "Carbamazepine",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.197
+      "id": 160
     },
     {
+      "price": 0.0534,
+      "strength": "5 mg",
       "name": "Carbimazole",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0534
+      "id": 161
     },
     {
-      "name": "Carboplatin",
-      "form": "vial",
+      "price": 13.5103,
       "strength": "150 mg",
-      "price": 13.5103
-    },
-    {
       "name": "Carboplatin",
       "form": "vial",
+      "id": 162
+    },
+    {
+      "price": 35.35,
       "strength": "450 mg",
-      "price": 35.35
+      "name": "Carboplatin",
+      "form": "vial",
+      "id": 163
     },
     {
-      "name": "Carvedilol",
-      "form": "tab-cap",
+      "price": 0.03,
       "strength": "6.25 mg",
-      "price": 0.03
-    },
-    {
       "name": "Carvedilol",
       "form": "tab-cap",
+      "id": 164
+    },
+    {
+      "price": 0.0317,
       "strength": "12.5 mg",
-      "price": 0.0317
-    },
-    {
       "name": "Carvedilol",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0448
+      "id": 165
     },
     {
+      "price": 0.0448,
+      "strength": "25 mg",
+      "name": "Carvedilol",
+      "form": "tab-cap",
+      "id": 166
+    },
+    {
+      "price": 0.0181,
+      "strength": "250 mg/5 ml",
       "name": "Cefadroxil",
       "form": "suspen",
-      "strength": "250 mg/5 ml",
-      "price": 0.0181
+      "id": 167
     },
     {
+      "price": 0.0696,
+      "strength": "500 mg",
       "name": "Cefadroxil Monohydrate",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0696
+      "id": 168
     },
     {
-      "name": "Cefalexin",
-      "form": "suspen",
+      "price": 0.0097,
       "strength": "250 mg/5 ml",
-      "price": 0.0097
-    },
-    {
       "name": "Cefalexin",
       "form": "suspen",
+      "id": 169
+    },
+    {
+      "price": 0.0098,
       "strength": "125 mg/5 ml",
-      "price": 0.0098
-    },
-    {
-      "name": "Cefalexin",
-      "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.047
-    },
-    {
-      "name": "Cefalexin",
-      "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0621
-    },
-    {
       "name": "Cefalexin",
       "form": "suspen",
-      "strength": "125 mg/ml",
-      "price": 0.006
+      "id": 170
     },
     {
+      "price": 0.047,
+      "strength": "250 mg",
+      "name": "Cefalexin",
+      "form": "tab-cap",
+      "id": 171
+    },
+    {
+      "price": 0.0621,
+      "strength": "500 mg",
+      "name": "Cefalexin",
+      "form": "tab-cap",
+      "id": 172
+    },
+    {
+      "price": 0.006,
+      "strength": "125 mg/ml",
+      "name": "Cefalexin",
+      "form": "suspen",
+      "id": 173
+    },
+    {
+      "price": 0.4342,
+      "strength": "1 g",
       "name": "Cefazolin",
       "form": "vial",
-      "strength": "1 g",
-      "price": 0.4342
+      "id": 174
     },
     {
+      "price": 0.5412,
+      "strength": "500 mg",
       "name": "Cefazolin",
       "form": "ampoule",
-      "strength": "500 mg",
-      "price": 0.5412
+      "id": 175
     },
     {
+      "price": 1.6796,
+      "strength": "1 g",
       "name": "Cefepime",
       "form": "vial",
-      "strength": "1 g",
-      "price": 1.6796
+      "id": 176
     },
     {
-      "name": "Cefixime",
-      "form": "tab-cap",
+      "price": 0.2106,
       "strength": "200 mg",
-      "price": 0.2106
-    },
-    {
       "name": "Cefixime",
       "form": "tab-cap",
+      "id": 177
+    },
+    {
+      "price": 1.3371,
       "strength": "400 mg",
-      "price": 1.3371
+      "name": "Cefixime",
+      "form": "tab-cap",
+      "id": 178
     },
     {
+      "price": 0.0467,
+      "strength": "100 mg/5 ml",
       "name": "Cefixime",
       "form": "suspen",
-      "strength": "100 mg/5 ml",
-      "price": 0.0467
+      "id": 179
     },
     {
+      "price": 0.6004,
+      "strength": "500 mg",
       "name": "Cefotaxime",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 0.6004
+      "id": 180
     },
     {
+      "price": 0.8323,
+      "strength": "1 g",
       "name": "Cefotaxime",
       "form": "vial",
-      "strength": "1 g",
-      "price": 0.8323
+      "id": 181
     },
     {
+      "price": 1.11,
+      "strength": "1 g",
       "name": "Ceftazidime",
       "form": "vial",
-      "strength": "1 g",
-      "price": 1.11
+      "id": 182
     },
     {
-      "name": "Ceftazidime",
-      "form": "vial",
+      "price": 1.6128,
       "strength": "250 mg",
-      "price": 1.6128
+      "name": "Ceftazidime",
+      "form": "vial",
+      "id": 183
     },
     {
-      "name": "Ceftriaxone",
-      "form": "vial",
+      "price": 0.4192,
       "strength": "1 g",
-      "price": 0.4192
-    },
-    {
       "name": "Ceftriaxone",
       "form": "vial",
+      "id": 184
+    },
+    {
+      "price": 0.461,
       "strength": "500 mg",
-      "price": 0.461
-    },
-    {
       "name": "Ceftriaxone",
       "form": "vial",
-      "strength": "250 mg",
-      "price": 0.5726
+      "id": 185
     },
     {
+      "price": 0.5726,
+      "strength": "250 mg",
+      "name": "Ceftriaxone",
+      "form": "vial",
+      "id": 186
+    },
+    {
+      "price": 0.0532,
+      "strength": "125 mg/5 ml",
       "name": "Cefuroxime",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0532
+      "id": 187
     },
     {
-      "name": "Cefuroxime",
-      "form": "tab-cap",
+      "price": 0.1886,
       "strength": "250 mg",
-      "price": 0.1886
-    },
-    {
       "name": "Cefuroxime",
       "form": "tab-cap",
+      "id": 188
+    },
+    {
+      "price": 0.5503,
       "strength": "500 mg",
-      "price": 0.5503
+      "name": "Cefuroxime",
+      "form": "tab-cap",
+      "id": 189
     },
     {
-      "name": "Cefuroxime",
-      "form": "vial",
+      "price": 1.5775,
       "strength": "750 mg",
-      "price": 1.5775
-    },
-    {
       "name": "Cefuroxime",
       "form": "vial",
-      "strength": "1.5 g",
-      "price": 2.4997
+      "id": 190
     },
     {
+      "price": 2.4997,
+      "strength": "1.5 g",
+      "name": "Cefuroxime",
+      "form": "vial",
+      "id": 191
+    },
+    {
+      "price": 0.0049,
+      "strength": "5 mg/5 ml",
       "name": "Cetirizine",
       "form": "syrup",
-      "strength": "5 mg/5 ml",
-      "price": 0.0049
+      "id": 192
     },
     {
+      "price": 0.0086,
+      "strength": "10 mg",
       "name": "Cetirizine",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0086
+      "id": 193
     },
     {
+      "price": 0.0038,
+      "strength": "15%+1.5%",
       "name": "Cetrimide+Chlorhexidine Gluconate",
       "form": "solution",
-      "strength": "15%+1.5%",
-      "price": 0.0038
+      "id": 194
     },
     {
+      "price": 0.0161,
+      "strength": "125 mg",
       "name": "Charcoal, Activated",
       "form": "tab-cap",
-      "strength": "125 mg",
-      "price": 0.0161
+      "id": 195
     },
     {
+      "price": 1.2433,
+      "strength": "2 mg",
       "name": "Chlorambucil",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 1.2433
+      "id": 196
     },
     {
+      "price": 0.0155,
+      "strength": "500 mg",
       "name": "Chloramine",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0155
+      "id": 197
     },
     {
+      "price": 0.0102,
+      "strength": "125 mg/5 ml",
       "name": "Chloramphenicol",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0102
+      "id": 198
     },
     {
+      "price": 0.0241,
+      "strength": "0.5%",
       "name": "Chloramphenicol",
       "form": "opht drop",
-      "strength": "0.5%",
-      "price": 0.0241
+      "id": 199
     },
     {
-      "name": "Chloramphenicol",
-      "form": "tab-cap",
+      "price": 0.0455,
       "strength": "250 mg",
-      "price": 0.0455
-    },
-    {
       "name": "Chloramphenicol",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0455
+      "id": 200
     },
     {
+      "price": 0.0455,
+      "strength": "500 mg",
+      "name": "Chloramphenicol",
+      "form": "tab-cap",
+      "id": 201
+    },
+    {
+      "price": 0.1544,
+      "strength": "5%",
       "name": "Chloramphenicol",
       "form": "otic drop",
-      "strength": "5%",
-      "price": 0.1544
+      "id": 202
     },
     {
+      "price": 0.2956,
+      "strength": "1%",
       "name": "Chloramphenicol",
       "form": "opht oint",
-      "strength": "1%",
-      "price": 0.2956
+      "id": 203
     },
     {
+      "price": 0.483,
+      "strength": "1 g",
       "name": "Chloramphenicol",
       "form": "vial",
-      "strength": "1 g",
-      "price": 0.483
+      "id": 204
     },
     {
+      "price": 0.0888,
+      "strength": "10 mcg",
       "name": "Chloramphenicol",
       "form": "disc",
-      "strength": "10 mcg",
-      "price": 0.0888
+      "id": 205
     },
     {
+      "price": 0.3301,
+      "strength": "250 mg/ml",
       "name": "Chloramphenicol In Oil",
       "form": "ampoule",
-      "strength": "250 mg/ml",
-      "price": 0.3301
+      "id": 206
     },
     {
+      "price": 0.2042,
+      "strength": "0.5%+0.1%",
       "name": "Chloramphenicol+Dexamethasone",
       "form": "opht drop",
-      "strength": "0.5%+0.1%",
-      "price": 0.2042
+      "id": 207
     },
     {
+      "price": 0.0336,
+      "strength": "1%",
       "name": "Chlorhexidine",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.0336
+      "id": 208
     },
     {
-      "name": "Chlorhexidine Gluconate",
-      "form": "solution",
+      "price": 0.0041,
       "strength": "5%",
-      "price": 0.0041
-    },
-    {
       "name": "Chlorhexidine Gluconate",
       "form": "solution",
-      "strength": "20%",
-      "price": 0.0106
+      "id": 209
     },
     {
+      "price": 0.0106,
+      "strength": "20%",
+      "name": "Chlorhexidine Gluconate",
+      "form": "solution",
+      "id": 210
+    },
+    {
+      "price": 0.0059,
+      "strength": "4%",
       "name": "Chlorhexidine Surgical Scrub",
       "form": "liquid",
-      "strength": "4%",
-      "price": 0.0059
+      "id": 211
     },
     {
+      "price": 0.024,
+      "strength": "50 mg/5 ml",
       "name": "Chloroquine (Base)",
       "form": "syrup",
-      "strength": "50 mg/5 ml",
-      "price": 0.024
+      "id": 212
     },
     {
-      "name": "Chloroquine (Base)",
-      "form": "tab-cap",
+      "price": 0.0359,
       "strength": "150 mg",
-      "price": 0.0359
-    },
-    {
       "name": "Chloroquine (Base)",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0084
+      "id": 213
     },
     {
+      "price": 0.0084,
+      "strength": "100 mg",
+      "name": "Chloroquine (Base)",
+      "form": "tab-cap",
+      "id": 214
+    },
+    {
+      "price": 0.0062,
+      "strength": "4.8%",
       "name": "Chloroxylenol",
       "form": "solution",
-      "strength": "4.8%",
-      "price": 0.0062
+      "id": 215
     },
     {
+      "price": 0.0034,
+      "strength": "4 mg",
       "name": "Chlorphenamine Maleate",
       "form": "tab-cap",
-      "strength": "4 mg",
-      "price": 0.0034
+      "id": 216
     },
     {
+      "price": 0.0047,
+      "strength": "2 mg/5 ml",
       "name": "Chlorphenamine Maleate",
       "form": "elixir",
-      "strength": "2 mg/5 ml",
-      "price": 0.0047
+      "id": 217
     },
     {
+      "price": 0.1424,
+      "strength": "10 mg/ml",
       "name": "Chlorphenamine Maleate",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.1424
+      "id": 218
     },
     {
-      "name": "Chlorpromazine HCl",
-      "form": "tab-cap",
+      "price": 0.0117,
       "strength": "25 mg",
-      "price": 0.0117
-    },
-    {
       "name": "Chlorpromazine HCl",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0286
+      "id": 219
     },
     {
+      "price": 0.0286,
+      "strength": "100 mg",
+      "name": "Chlorpromazine HCl",
+      "form": "tab-cap",
+      "id": 220
+    },
+    {
+      "price": 0.0387,
+      "strength": "50 mg",
       "name": "Chlorpromazine Hcl",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0387
+      "id": 221
     },
     {
+      "price": 0.138,
+      "strength": "25 mg/ml",
       "name": "Chlorpromazine HCl",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 0.138
+      "id": 222
     },
     {
+      "price": 0.0367,
+      "strength": "250 mg",
       "name": "Chlorpropamide",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.0367
+      "id": 223
     },
     {
+      "price": 0.0375,
+      "strength": "50 mg",
       "name": "Chlorthalidone",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0375
+      "id": 224
     },
     {
-      "name": "Ciclosporin",
-      "form": "tab-cap",
+      "price": 0.3555,
       "strength": "25 mg",
-      "price": 0.3555
-    },
-    {
       "name": "Ciclosporin",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 1.4207
+      "id": 225
     },
     {
+      "price": 1.4207,
+      "strength": "100 mg",
+      "name": "Ciclosporin",
+      "form": "tab-cap",
+      "id": 226
+    },
+    {
+      "price": 1.5669,
+      "strength": "100 mg/ml",
       "name": "Ciclosporin",
       "form": "solution",
-      "strength": "100 mg/ml",
-      "price": 1.5669
+      "id": 227
     },
     {
-      "name": "Cimetidine",
-      "form": "tab-cap",
+      "price": 0.0167,
       "strength": "200 mg",
-      "price": 0.0167
-    },
-    {
       "name": "Cimetidine",
       "form": "tab-cap",
+      "id": 228
+    },
+    {
+      "price": 0.0273,
       "strength": "400 mg",
-      "price": 0.0273
+      "name": "Cimetidine",
+      "form": "tab-cap",
+      "id": 229
     },
     {
+      "price": 0.205,
+      "strength": "100 mg/ml",
       "name": "Cimetidine",
       "form": "vial",
-      "strength": "100 mg/ml",
-      "price": 0.205
+      "id": 230
     },
     {
+      "price": 0.0105,
+      "strength": "2 mg/ml",
       "name": "Ciprofloxacin",
       "form": "vial",
-      "strength": "2 mg/ml",
-      "price": 0.0105
+      "id": 231
     },
     {
-      "name": "Ciprofloxacin",
-      "form": "tab-cap",
+      "price": 0.0379,
       "strength": "500 mg",
-      "price": 0.0379
-    },
-    {
       "name": "Ciprofloxacin",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.0395
+      "id": 232
     },
     {
+      "price": 0.0395,
+      "strength": "250 mg",
+      "name": "Ciprofloxacin",
+      "form": "tab-cap",
+      "id": 233
+    },
+    {
+      "price": 0.141,
+      "strength": "250 mg/5 ml",
       "name": "Ciprofloxacin",
       "form": "suspen",
-      "strength": "250 mg/5 ml",
-      "price": 0.141
+      "id": 234
     },
     {
+      "price": 0.2437,
+      "strength": "3 mg/ml",
       "name": "Ciprofloxacin",
       "form": "opht drop",
-      "strength": "3 mg/ml",
-      "price": 0.2437
+      "id": 235
     },
     {
+      "price": 1.416,
+      "strength": "2 mg/ml",
       "name": "Cisatracurium",
       "form": "ampoule",
-      "strength": "2 mg/ml",
-      "price": 1.416
+      "id": 236
     },
     {
-      "name": "Cisplatin",
-      "form": "vial",
+      "price": 0.171,
       "strength": "10 mg",
-      "price": 0.171
-    },
-    {
       "name": "Cisplatin",
       "form": "vial",
+      "id": 237
+    },
+    {
+      "price": 0.3497,
       "strength": "1 mg/ml",
-      "price": 0.3497
-    },
-    {
       "name": "Cisplatin",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 6.7713
+      "id": 238
     },
     {
+      "price": 6.7713,
+      "strength": "50 mg",
+      "name": "Cisplatin",
+      "form": "vial",
+      "id": 239
+    },
+    {
+      "price": 0.14,
+      "strength": "20 mg",
       "name": "Citalopram",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.14
+      "id": 240
     },
     {
-      "name": "Clarithromycin",
-      "form": "suspen",
+      "price": 0.0431,
       "strength": "250 mg/5 ml",
-      "price": 0.0431
-    },
-    {
-      "name": "Clarithromycin",
-      "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.14
-    },
-    {
-      "name": "Clarithromycin",
-      "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.15
-    },
-    {
       "name": "Clarithromycin",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0528
+      "id": 241
     },
     {
+      "price": 0.14,
+      "strength": "500 mg",
+      "name": "Clarithromycin",
+      "form": "tab-cap",
+      "id": 242
+    },
+    {
+      "price": 0.15,
+      "strength": "250 mg",
+      "name": "Clarithromycin",
+      "form": "tab-cap",
+      "id": 243
+    },
+    {
+      "price": 0.0528,
+      "strength": "125 mg/5 ml",
+      "name": "Clarithromycin",
+      "form": "suspen",
+      "id": 244
+    },
+    {
+      "price": 0.07,
+      "strength": "300 mg",
       "name": "Clindamycin",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.07
+      "id": 245
     },
     {
+      "price": 0.0816,
+      "strength": "150 mg",
       "name": "Clindamycin (Base)",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.0816
+      "id": 246
     },
     {
+      "price": 0.083,
+      "strength": "150 mg/ml",
       "name": "Clindamycin (Base)",
       "form": "vial",
-      "strength": "150 mg/ml",
-      "price": 0.083
+      "id": 247
     },
     {
+      "price": 0.0462,
+      "strength": "0.05%",
       "name": "Clobetasol Proprionate",
       "form": "cream",
-      "strength": "0.05%",
-      "price": 0.0462
+      "id": 248
     },
     {
-      "name": "Clofazimine",
-      "form": "tab-cap",
+      "price": 0.667,
       "strength": "50 mg",
-      "price": 0.667
-    },
-    {
       "name": "Clofazimine",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 1.2672
+      "id": 249
     },
     {
+      "price": 1.2672,
+      "strength": "100 mg",
+      "name": "Clofazimine",
+      "form": "tab-cap",
+      "id": 250
+    },
+    {
+      "price": 0.2717,
+      "strength": "50 mg",
       "name": "Clomifene",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.2717
+      "id": 251
     },
     {
+      "price": 0.0538,
+      "strength": "25 mg",
       "name": "Clomipramine",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0538
+      "id": 252
     },
     {
-      "name": "Clonazepam",
-      "form": "tab-cap",
+      "price": 0.0326,
       "strength": "0.5 mg",
-      "price": 0.0326
-    },
-    {
       "name": "Clonazepam",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 0.0326
+      "id": 253
     },
     {
+      "price": 0.0326,
+      "strength": "2 mg",
+      "name": "Clonazepam",
+      "form": "tab-cap",
+      "id": 254
+    },
+    {
+      "price": 0.4589,
+      "strength": "2.5 mg/ml",
       "name": "Clonazepam",
       "form": "drops",
-      "strength": "2.5 mg/ml",
-      "price": 0.4589
+      "id": 255
     },
     {
+      "price": 0.0775,
+      "strength": "75 mg",
       "name": "Clopidogrel Bisulfate",
       "form": "tab-cap",
-      "strength": "75 mg",
-      "price": 0.0775
+      "id": 256
     },
     {
+      "price": 0.0125,
+      "strength": "1%",
       "name": "Clotrimazole",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.0125
+      "id": 257
     },
     {
+      "price": 0.0575,
+      "strength": "1%",
       "name": "Clotrimazole",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.0575
+      "id": 258
     },
     {
-      "name": "Clotrimazole",
-      "form": "pessary",
+      "price": 0.0977,
       "strength": "100 mg",
-      "price": 0.0977
-    },
-    {
       "name": "Clotrimazole",
       "form": "pessary",
-      "strength": "500 mg",
-      "price": 0.19
+      "id": 259
     },
     {
+      "price": 0.19,
+      "strength": "500 mg",
+      "name": "Clotrimazole",
+      "form": "pessary",
+      "id": 260
+    },
+    {
+      "price": 0.0079,
+      "strength": "125 mg/5 ml",
       "name": "Cloxacillin Sodium",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0079
+      "id": 261
     },
     {
-      "name": "Cloxacillin Sodium",
-      "form": "tab-cap",
+      "price": 0.0217,
       "strength": "250 mg",
-      "price": 0.0217
-    },
-    {
       "name": "Cloxacillin Sodium",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.034
+      "id": 262
     },
     {
+      "price": 0.034,
+      "strength": "500 mg",
+      "name": "Cloxacillin Sodium",
+      "form": "tab-cap",
+      "id": 263
+    },
+    {
+      "price": 0.8327,
+      "strength": "250 mg",
       "name": "Cloxacillin Sodium",
       "form": "vial",
-      "strength": "250 mg",
-      "price": 0.8327
+      "id": 264
     },
     {
+      "price": 0.8864,
+      "strength": "500 mg",
       "name": "Cloxacillin Sodium",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 0.8864
+      "id": 265
     },
     {
-      "name": "Clozapine",
-      "form": "tab-cap",
+      "price": 0.0994,
       "strength": "100 mg",
-      "price": 0.0994
-    },
-    {
       "name": "Clozapine",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.1055
+      "id": 266
     },
     {
+      "price": 0.1055,
+      "strength": "25 mg",
+      "name": "Clozapine",
+      "form": "tab-cap",
+      "id": 267
+    },
+    {
+      "price": 0.2889,
+      "strength": "30 mg",
       "name": "Codeine",
       "form": "tab-cap",
-      "strength": "30 mg",
-      "price": 0.2889
+      "id": 268
     },
     {
+      "price": 0.036,
+      "strength": "0.5-0.6 mg",
       "name": "Colchicine",
       "form": "tab-cap",
-      "strength": "0.5-0.6 mg",
-      "price": 0.036
+      "id": 269
     },
     {
+      "price": 0.7421,
+      "strength": "",
       "name": "Condom, Female",
       "form": "condom",
-      "strength": "",
-      "price": 0.7421
+      "id": 270
     },
     {
+      "price": 0.0341,
+      "strength": "",
       "name": "Condoms (Lubricated)",
       "form": "condom",
-      "strength": "",
-      "price": 0.0341
+      "id": 271
     },
     {
+      "price": 0.0059,
+      "strength": "",
       "name": "Cough Preparation",
       "form": "syrup",
-      "strength": "",
-      "price": 0.0059
+      "id": 272
     },
     {
+      "price": 0.169,
+      "strength": "2%",
       "name": "Cromoglicic Acid",
       "form": "opht drop",
-      "strength": "2%",
-      "price": 0.169
+      "id": 273
     },
     {
+      "price": 0.3337,
+      "strength": "1%",
       "name": "Cyclopentolate",
       "form": "opht drop",
-      "strength": "1%",
-      "price": 0.3337
+      "id": 274
     },
     {
+      "price": 0.3,
+      "strength": "50 mg",
       "name": "Cyclophosphamide",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.3
+      "id": 275
     },
     {
-      "name": "Cyclophosphamide",
-      "form": "vial",
+      "price": 6.3952,
       "strength": "500 mg",
-      "price": 6.3952
-    },
-    {
       "name": "Cyclophosphamide",
       "form": "vial",
+      "id": 276
+    },
+    {
+      "price": 10.1261,
       "strength": "1 g",
-      "price": 10.1261
-    },
-    {
       "name": "Cyclophosphamide",
       "form": "vial",
-      "strength": "200 mg",
-      "price": 2.31
+      "id": 277
     },
     {
+      "price": 2.31,
+      "strength": "200 mg",
+      "name": "Cyclophosphamide",
+      "form": "vial",
+      "id": 278
+    },
+    {
+      "price": 0.4887,
+      "strength": "250 mg",
       "name": "Cycloserine",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.4887
+      "id": 279
     },
     {
+      "price": 0.2271,
+      "strength": "50 mg",
       "name": "Cyproterone Acetate",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.2271
+      "id": 280
     },
     {
-      "name": "Cytarabine",
-      "form": "vial",
+      "price": 4.2004,
       "strength": "100 mg",
-      "price": 4.2004
-    },
-    {
       "name": "Cytarabine",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 5.3864
+      "id": 281
     },
     {
+      "price": 5.3864,
+      "strength": "500 mg",
+      "name": "Cytarabine",
+      "form": "vial",
+      "id": 282
+    },
+    {
+      "price": 12.8428,
+      "strength": "200 mg",
       "name": "Dacarbazine",
       "form": "vial",
-      "strength": "200 mg",
-      "price": 12.8428
+      "id": 283
     },
     {
+      "price": 24.733,
+      "strength": "500 mcg",
       "name": "Dactinomycin",
       "form": "vial",
-      "strength": "500 mcg",
-      "price": 24.733
+      "id": 284
     },
     {
+      "price": 0.9402,
+      "strength": "200 mg",
       "name": "Danazol",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.9402
+      "id": 285
     },
     {
+      "price": 0.25,
+      "strength": "100 mg",
       "name": "Dapsone",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.25
+      "id": 286
     },
     {
+      "price": 0.5475,
+      "strength": "300 mg",
       "name": "Darunavir",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.5475
+      "id": 287
     },
     {
+      "price": 21.4896,
+      "strength": "20 mg",
       "name": "Daunorubicin",
       "form": "vial",
-      "strength": "20 mg",
-      "price": 21.4896
+      "id": 288
     },
     {
+      "price": 6.7579,
+      "strength": "500 mg",
       "name": "Deferoxamine Mesilate",
       "form": "ampoule",
-      "strength": "500 mg",
-      "price": 6.7579
+      "id": 289
     },
     {
+      "price": 0.0328,
+      "strength": "",
       "name": "Determine Chase Buffer",
       "form": "vial",
-      "strength": "",
-      "price": 0.0328
+      "id": 290
     },
     {
+      "price": 0.03,
+      "strength": "0.5 mg",
       "name": "Dexamethasone",
       "form": "tab-cap",
-      "strength": "0.5 mg",
-      "price": 0.03
+      "id": 291
     },
     {
-      "name": "Dexamethasone",
-      "form": "ampoule",
+      "price": 0.0825,
       "strength": "5 mg/ml",
-      "price": 0.0825
-    },
-    {
       "name": "Dexamethasone",
       "form": "ampoule",
-      "strength": "4 mg/ml",
-      "price": 0.1695
+      "id": 292
     },
     {
+      "price": 0.1695,
+      "strength": "4 mg/ml",
+      "name": "Dexamethasone",
+      "form": "ampoule",
+      "id": 293
+    },
+    {
+      "price": 0.2206,
+      "strength": "0.1%",
       "name": "Dexamethasone",
       "form": "opht drop",
-      "strength": "0.1%",
-      "price": 0.2206
+      "id": 294
     },
     {
+      "price": 0.0101,
+      "strength": "",
       "name": "Dextran 70 6% In Sod. Chloride 0.9%",
       "form": "solution",
-      "strength": "",
-      "price": 0.0101
+      "id": 295
     },
     {
+      "price": 0.0013,
+      "strength": "",
       "name": "Dextrose 10% In Water",
       "form": "solution",
-      "strength": "",
-      "price": 0.0013
+      "id": 296
     },
     {
+      "price": 0.0018,
+      "strength": "",
       "name": "Dextrose 2.5% In Sod. Chloride 0.45%",
       "form": "solution",
-      "strength": "",
-      "price": 0.0018
+      "id": 297
     },
     {
+      "price": 0.0009,
+      "strength": "",
       "name": "Dextrose 4.3-5% In Water",
       "form": "solution",
-      "strength": "",
-      "price": 0.0009
+      "id": 298
     },
     {
+      "price": 0.0009,
+      "strength": "",
       "name": "Dextrose 5% In Sodium Chloride 0.45%",
       "form": "solution",
-      "strength": "",
-      "price": 0.0009
+      "id": 299
     },
     {
+      "price": 0.0011,
+      "strength": "",
       "name": "Dextrose 5% In Sodium Chloride 0.9%",
       "form": "solution",
-      "strength": "",
-      "price": 0.0011
+      "id": 300
     },
     {
+      "price": 0.001,
+      "strength": "",
       "name": "Dextrose 5% In Water",
       "form": "solution",
-      "strength": "",
-      "price": 0.001
+      "id": 301
     },
     {
+      "price": 0.0082,
+      "strength": "",
       "name": "Dextrose 50% In Water",
       "form": "solution",
-      "strength": "",
-      "price": 0.0082
+      "id": 302
     },
     {
+      "price": 0.0036,
+      "strength": "1.5%",
       "name": "Dialysis Sol. Peritoneal W/ Dextrose",
       "form": "solution",
-      "strength": "1.5%",
-      "price": 0.0036
+      "id": 303
     },
     {
-      "name": "Diazepam",
-      "form": "tab-cap",
+      "price": 0.01,
       "strength": "10 mg",
-      "price": 0.01
-    },
-    {
       "name": "Diazepam",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0235
+      "id": 304
     },
     {
+      "price": 0.0235,
+      "strength": "5 mg",
+      "name": "Diazepam",
+      "form": "tab-cap",
+      "id": 305
+    },
+    {
+      "price": 0.0876,
+      "strength": "5 mg/ml",
       "name": "Diazepam",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.0876
+      "id": 306
     },
     {
+      "price": 0.0063,
+      "strength": "1.8 mg/ml",
       "name": "Diclofenac",
       "form": "suspen",
-      "strength": "1.8 mg/ml",
-      "price": 0.0063
+      "id": 307
     },
     {
+      "price": 0.007,
+      "strength": "1%",
       "name": "Diclofenac",
       "form": "ointment",
-      "strength": "1%",
-      "price": 0.007
+      "id": 308
     },
     {
-      "name": "Diclofenac",
-      "form": "suppos",
+      "price": 0.23,
       "strength": "12.5 mg",
-      "price": 0.23
-    },
-    {
       "name": "Diclofenac",
       "form": "suppos",
+      "id": 309
+    },
+    {
+      "price": 0.1152,
       "strength": "100 mg",
-      "price": 0.1152
+      "name": "Diclofenac",
+      "form": "suppos",
+      "id": 310
     },
     {
-      "name": "Diclofenac Sodium",
-      "form": "tab-cap",
+      "price": 0.0086,
       "strength": "25 mg",
-      "price": 0.0086
-    },
-    {
       "name": "Diclofenac Sodium",
       "form": "tab-cap",
+      "id": 311
+    },
+    {
+      "price": 0.0095,
       "strength": "50 mg",
-      "price": 0.0095
-    },
-    {
       "name": "Diclofenac Sodium",
       "form": "tab-cap",
-      "strength": "75 mg",
-      "price": 0.0153
+      "id": 312
     },
     {
+      "price": 0.0153,
+      "strength": "75 mg",
+      "name": "Diclofenac Sodium",
+      "form": "tab-cap",
+      "id": 313
+    },
+    {
+      "price": 0.0345,
+      "strength": "25 mg/ml",
       "name": "Diclofenac Sodium",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 0.0345
+      "id": 314
     },
     {
+      "price": 0.1759,
+      "strength": "0.1%",
       "name": "Diclofenac Sodium",
       "form": "opht drop",
-      "strength": "0.1%",
-      "price": 0.1759
+      "id": 315
     },
     {
-      "name": "Dicloxacillin",
-      "form": "tab-cap",
+      "price": 0.06,
       "strength": "500 mg",
-      "price": 0.06
-    },
-    {
       "name": "Dicloxacillin",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.064
+      "id": 316
     },
     {
+      "price": 0.064,
+      "strength": "250 mg",
+      "name": "Dicloxacillin",
+      "form": "tab-cap",
+      "id": 317
+    },
+    {
+      "price": 1.07,
+      "strength": "500 mg",
       "name": "Dicloxacillin",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 1.07
+      "id": 318
     },
     {
-      "name": "Didanosine",
-      "form": "tab-cap",
+      "price": 0.0709,
       "strength": "25 mg",
-      "price": 0.0709
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 319
+    },
+    {
+      "price": 0.0924,
       "strength": "50 mg",
-      "price": 0.0924
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 320
+    },
+    {
+      "price": 0.1183,
       "strength": "100 mg",
-      "price": 0.1183
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 321
+    },
+    {
+      "price": 0.2329,
       "strength": "250 mg",
-      "price": 0.2329
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 322
+    },
+    {
+      "price": 0.3717,
       "strength": "400 mg",
-      "price": 0.3717
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 323
+    },
+    {
+      "price": 0.6764,
       "strength": "400 mg",
-      "price": 0.6764
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 324
+    },
+    {
+      "price": 2.2386,
       "strength": "400 mg",
-      "price": 2.2386
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 325
+    },
+    {
+      "price": 0.2392,
       "strength": "200 mg",
-      "price": 0.2392
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 326
+    },
+    {
+      "price": 0.2975,
       "strength": "125 mg",
-      "price": 0.2975
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 327
+    },
+    {
+      "price": 0.385,
       "strength": "200 mg",
-      "price": 0.385
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 328
+    },
+    {
+      "price": 0.4463,
       "strength": "200 mg",
-      "price": 0.4463
-    },
-    {
       "name": "Didanosine",
       "form": "tab-cap",
+      "id": 329
+    },
+    {
+      "price": 0.5085,
       "strength": "250 mg",
-      "price": 0.5085
+      "name": "Didanosine",
+      "form": "tab-cap",
+      "id": 330
     },
     {
+      "price": 6.6098,
+      "strength": "10 mg/ml",
       "name": "Didanosine",
       "form": "powder",
-      "strength": "10 mg/ml",
-      "price": 6.6098
+      "id": 331
     },
     {
+      "price": 0.0057,
+      "strength": "50 mg",
       "name": "Diethylcarbamazine Citrate",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0057
+      "id": 332
     },
     {
-      "name": "Digoxin",
-      "form": "tab-cap",
+      "price": 0.0318,
       "strength": "0.125 mg",
-      "price": 0.0318
-    },
-    {
       "name": "Digoxin",
       "form": "tab-cap",
-      "strength": "0.25 mg",
-      "price": 0.0482
+      "id": 333
     },
     {
+      "price": 0.0482,
+      "strength": "0.25 mg",
+      "name": "Digoxin",
+      "form": "tab-cap",
+      "id": 334
+    },
+    {
+      "price": 0.1127,
+      "strength": "0.05 mg/ml",
       "name": "Digoxin",
       "form": "solution",
-      "strength": "0.05 mg/ml",
-      "price": 0.1127
+      "id": 335
     },
     {
+      "price": 0.3788,
+      "strength": "0.25 mg/ml",
       "name": "Digoxin",
       "form": "ampoule",
-      "strength": "0.25 mg/ml",
-      "price": 0.3788
+      "id": 336
     },
     {
+      "price": 0.4009,
+      "strength": "40 + 320 mg",
       "name": "Dihydroartemisinin + Piperaquine",
       "form": "tab-cap",
-      "strength": "40 + 320 mg",
-      "price": 0.4009
+      "id": 337
     },
     {
+      "price": 0.0812,
+      "strength": "30 mg",
       "name": "Dihydrocodeine",
       "form": "tab-cap",
-      "strength": "30 mg",
-      "price": 0.0812
+      "id": 338
     },
     {
+      "price": 0.0599,
+      "strength": "60 mg",
       "name": "Diltiazem HCl",
       "form": "tab-cap",
-      "strength": "60 mg",
-      "price": 0.0599
+      "id": 339
     },
     {
+      "price": 0.01,
+      "strength": "50 mg",
       "name": "Dimenhydrinate",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.01
+      "id": 340
     },
     {
+      "price": 0.213,
+      "strength": "50 mg/ml",
       "name": "Dimenhydrinate",
       "form": "vial",
-      "strength": "50 mg/ml",
-      "price": 0.213
+      "id": 341
     },
     {
+      "price": 0.01,
+      "strength": "25 mg",
       "name": "Diphenhydramine",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.01
+      "id": 342
     },
     {
+      "price": 0.0848,
+      "strength": "12.5 mg/ml",
       "name": "Dobutamine",
       "form": "vial",
-      "strength": "12.5 mg/ml",
-      "price": 0.0848
+      "id": 343
     },
     {
-      "name": "Docetaxel",
-      "form": "vial",
+      "price": 10.83,
       "strength": "20 mg",
-      "price": 10.83
-    },
-    {
       "name": "Docetaxel",
       "form": "vial",
+      "id": 344
+    },
+    {
+      "price": 27.89,
       "strength": "80 mg",
-      "price": 27.89
-    },
-    {
       "name": "Docetaxel",
       "form": "vial",
-      "strength": "40 mg",
-      "price": 108
+      "id": 345
     },
     {
+      "price": 108,
+      "strength": "40 mg",
+      "name": "Docetaxel",
+      "form": "vial",
+      "id": 346
+    },
+    {
+      "price": 0.0625,
+      "strength": "40 mg/ml",
       "name": "Dopamine HCl",
       "form": "ampoule",
-      "strength": "40 mg/ml",
-      "price": 0.0625
+      "id": 347
     },
     {
+      "price": 1.534,
+      "strength": "2%",
       "name": "Dorzolamide Chlorhydrate",
       "form": "opht drop",
-      "strength": "2%",
-      "price": 1.534
+      "id": 348
     },
     {
+      "price": 0.0913,
+      "strength": "4 mg",
       "name": "Doxazosin",
       "form": "tab-cap",
-      "strength": "4 mg",
-      "price": 0.0913
+      "id": 349
     },
     {
-      "name": "Doxorubicin HCl",
-      "form": "vial",
+      "price": 2.55,
       "strength": "10 mg",
-      "price": 2.55
-    },
-    {
       "name": "Doxorubicin HCl",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 6.0044
+      "id": 350
     },
     {
+      "price": 6.0044,
+      "strength": "50 mg",
+      "name": "Doxorubicin HCl",
+      "form": "vial",
+      "id": 351
+    },
+    {
+      "price": 0.0191,
+      "strength": "100 mg",
       "name": "Doxycycline",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0191
+      "id": 352
     },
     {
+      "price": 0.535,
+      "strength": "2.5 mg/ml",
       "name": "Droperidol",
       "form": "ampoule",
-      "strength": "2.5 mg/ml",
-      "price": 0.535
+      "id": 353
     },
     {
-      "name": "Efavirenz",
-      "form": "tab-cap",
+      "price": 0.0391,
       "strength": "50 mg",
-      "price": 0.0391
-    },
-    {
       "name": "Efavirenz",
       "form": "tab-cap",
+      "id": 354
+    },
+    {
+      "price": 0.0461,
       "strength": "200 mg",
-      "price": 0.0461
-    },
-    {
       "name": "Efavirenz",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.1414
+      "id": 355
     },
     {
+      "price": 0.1414,
+      "strength": "600 mg",
+      "name": "Efavirenz",
+      "form": "tab-cap",
+      "id": 356
+    },
+    {
+      "price": 0.0989,
+      "strength": "30 mg/ml",
       "name": "Efavirenz",
       "form": "syrup",
-      "strength": "30 mg/ml",
-      "price": 0.0989
+      "id": 357
     },
     {
+      "price": 0.154,
+      "strength": "100 mg",
       "name": "Efavirenz",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.154
+      "id": 358
     },
     {
+      "price": 0.4151,
+      "strength": "",
       "name": "Efavirenz+Emtricitabine+Tenofovir DF",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.4151
+      "id": 359
     },
     {
+      "price": 0.3857,
+      "strength": "",
       "name": "Efavirenz+Lamivudine+Tenofovir Disop.",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.3857
+      "id": 360
     },
     {
-      "name": "Enalapril",
-      "form": "tab-cap",
+      "price": 0.0059,
       "strength": "10 mg",
-      "price": 0.0059
-    },
-    {
       "name": "Enalapril",
       "form": "tab-cap",
+      "id": 361
+    },
+    {
+      "price": 0.0095,
       "strength": "5 mg",
-      "price": 0.0095
-    },
-    {
       "name": "Enalapril",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0097
+      "id": 362
     },
     {
-      "name": "Enoxaparin",
-      "form": "syringe",
+      "price": 0.0097,
       "strength": "20 mg",
-      "price": 3.21
+      "name": "Enalapril",
+      "form": "tab-cap",
+      "id": 363
     },
     {
+      "price": 3.21,
+      "strength": "20 mg",
       "name": "Enoxaparin",
       "form": "syringe",
+      "id": 364
+    },
+    {
+      "price": 3.34,
       "strength": "40 mg",
-      "price": 3.34
-    },
-    {
       "name": "Enoxaparin",
       "form": "syringe",
+      "id": 365
+    },
+    {
+      "price": 3.4119,
       "strength": "60 mg",
-      "price": 3.4119
-    },
-    {
       "name": "Enoxaparin",
       "form": "syringe",
+      "id": 366
+    },
+    {
+      "price": 4.0318,
       "strength": "100 mg",
-      "price": 4.0318
-    },
-    {
       "name": "Enoxaparin",
       "form": "syringe",
-      "strength": "80 mg",
-      "price": 6.4507
+      "id": 367
     },
     {
+      "price": 6.4507,
+      "strength": "80 mg",
+      "name": "Enoxaparin",
+      "form": "syringe",
+      "id": 368
+    },
+    {
+      "price": 0.0329,
+      "strength": "0.5%",
       "name": "Ephedrine",
       "form": "nasal",
-      "strength": "0.5%",
-      "price": 0.0329
+      "id": 369
     },
     {
+      "price": 0.975,
+      "strength": "30 mg/ml",
       "name": "Ephedrine",
       "form": "vial",
-      "strength": "30 mg/ml",
-      "price": 0.975
+      "id": 370
     },
     {
+      "price": 0.0066,
+      "strength": "30 mg",
       "name": "Ephedrine HCl",
       "form": "tab-cap",
-      "strength": "30 mg",
-      "price": 0.0066
+      "id": 371
     },
     {
+      "price": 1.9501,
+      "strength": "50 mg/ml",
       "name": "Ephedrine Sulfate",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 1.9501
+      "id": 372
     },
     {
+      "price": 0.2531,
+      "strength": "1 mg/ml",
       "name": "Epinephrine",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 0.2531
+      "id": 373
     },
     {
-      "name": "Epirubicin",
-      "form": "vial",
+      "price": 7.23,
       "strength": "10 mg",
-      "price": 7.23
-    },
-    {
       "name": "Epirubicin",
       "form": "vial",
+      "id": 374
+    },
+    {
+      "price": 42,
       "strength": "50 mg",
-      "price": 42
+      "name": "Epirubicin",
+      "form": "vial",
+      "id": 375
     },
     {
-      "name": "Epoetin Alpha",
-      "form": "vial",
+      "price": 1.844,
       "strength": "2000 IU",
-      "price": 1.844
-    },
-    {
       "name": "Epoetin Alpha",
       "form": "vial",
-      "strength": "4000 IU",
-      "price": 6.5629
+      "id": 376
     },
     {
+      "price": 6.5629,
+      "strength": "4000 IU",
+      "name": "Epoetin Alpha",
+      "form": "vial",
+      "id": 377
+    },
+    {
+      "price": 149.6,
+      "strength": "50,000 IU",
       "name": "Epoetin Beta",
       "form": "vial",
-      "strength": "50,000 IU",
-      "price": 149.6
+      "id": 378
     },
     {
-      "name": "Ergometrine Maleate",
-      "form": "ampoule",
+      "price": 0.2777,
       "strength": "0.2 mg/ml",
-      "price": 0.2777
-    },
-    {
       "name": "Ergometrine Maleate",
       "form": "ampoule",
+      "id": 379
+    },
+    {
+      "price": 0.6345,
       "strength": "0.5 mg/ml",
-      "price": 0.6345
+      "name": "Ergometrine Maleate",
+      "form": "ampoule",
+      "id": 380
     },
     {
-      "name": "Ergometrine Maleate",
-      "form": "tab-cap",
+      "price": 0.0119,
       "strength": "0.5 mg",
-      "price": 0.0119
-    },
-    {
       "name": "Ergometrine Maleate",
       "form": "tab-cap",
-      "strength": "0.2 mg",
-      "price": 0.0129
+      "id": 381
     },
     {
+      "price": 0.0129,
+      "strength": "0.2 mg",
+      "name": "Ergometrine Maleate",
+      "form": "tab-cap",
+      "id": 382
+    },
+    {
+      "price": 0.2688,
+      "strength": "1+100 mg",
       "name": "Ergotamine+Caffeine",
       "form": "tab-cap",
-      "strength": "1+100 mg",
-      "price": 0.2688
+      "id": 383
     },
     {
-      "name": "Erythromycin",
-      "form": "suspen",
+      "price": 0.0092,
       "strength": "125 mg/5 ml",
-      "price": 0.0092
-    },
-    {
       "name": "Erythromycin",
       "form": "suspen",
+      "id": 384
+    },
+    {
+      "price": 0.0141,
       "strength": "250 mg/5 ml",
-      "price": 0.0141
+      "name": "Erythromycin",
+      "form": "suspen",
+      "id": 385
     },
     {
-      "name": "Erythromycin",
-      "form": "tab-cap",
+      "price": 0.0428,
       "strength": "250 mg",
-      "price": 0.0428
-    },
-    {
       "name": "Erythromycin",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0738
+      "id": 386
     },
     {
+      "price": 0.0738,
+      "strength": "500 mg",
+      "name": "Erythromycin",
+      "form": "tab-cap",
+      "id": 387
+    },
+    {
+      "price": 0.0888,
+      "strength": "15 mcg",
       "name": "Erythromycin",
       "form": "disc",
-      "strength": "15 mcg",
-      "price": 0.0888
+      "id": 388
     },
     {
+      "price": 16.815,
+      "strength": "500 mg",
       "name": "Erythromycin Lactobionate",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 16.815
+      "id": 389
     },
     {
+      "price": 0.2281,
+      "strength": "0.625 mg",
       "name": "Estrogens, Conjugated",
       "form": "tab-cap",
-      "strength": "0.625 mg",
-      "price": 0.2281
+      "id": 390
     },
     {
-      "name": "Ethambutol",
-      "form": "tab-cap",
+      "price": 0.0358,
       "strength": "400 mg",
-      "price": 0.0358
-    },
-    {
       "name": "Ethambutol",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.036
+      "id": 391
     },
     {
+      "price": 0.036,
+      "strength": "100 mg",
+      "name": "Ethambutol",
+      "form": "tab-cap",
+      "id": 392
+    },
+    {
+      "price": 0.0288,
+      "strength": "400mg+150 mg",
       "name": "Ethambutol+Isoniazid",
       "form": "tab-cap",
-      "strength": "400mg+150 mg",
-      "price": 0.0288
+      "id": 393
     },
     {
+      "price": 0.0094,
+      "strength": "",
       "name": "Ether, Anaesthetic",
       "form": "solution",
-      "strength": "",
-      "price": 0.0094
+      "id": 394
     },
     {
+      "price": 0.7245,
+      "strength": "0.03+0.15mg",
       "name": "Ethinylestradiol+Desogestrel",
       "form": "tab-cap",
-      "strength": "0.03+0.15mg",
-      "price": 0.7245
+      "id": 395
     },
     {
+      "price": 0.2167,
+      "strength": "0.03+0.15 mg",
       "name": "Ethinylestradiol+Levonorgestrel",
       "form": "tab-cap",
-      "strength": "0.03+0.15 mg",
-      "price": 0.2167
+      "id": 396
     },
     {
+      "price": 0.2741,
+      "strength": "0.05+0.5 mg",
       "name": "Ethinylestradiol+Norgestrel",
       "form": "tab-cap",
-      "strength": "0.05+0.5 mg",
-      "price": 0.2741
+      "id": 397
     },
     {
-      "name": "Ethionamide",
-      "form": "tab-cap",
+      "price": 0.1513,
       "strength": "250 mg",
-      "price": 0.1513
-    },
-    {
       "name": "Ethionamide",
       "form": "tab-cap",
-      "strength": "125 mg",
-      "price": 0.1118
+      "id": 398
     },
     {
+      "price": 0.1118,
+      "strength": "125 mg",
+      "name": "Ethionamide",
+      "form": "tab-cap",
+      "id": 399
+    },
+    {
+      "price": 0.1845,
+      "strength": "250 mg",
       "name": "Ethosuximide",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.1845
+      "id": 400
     },
     {
+      "price": 0.3655,
+      "strength": "2 mg/ml",
       "name": "Etomidate",
       "form": "ampoule",
-      "strength": "2 mg/ml",
-      "price": 0.3655
+      "id": 401
     },
     {
+      "price": 10.0172,
+      "strength": "68 mg/rod",
       "name": "Etonogestrel",
       "form": "rod",
-      "strength": "68 mg/rod",
-      "price": 10.0172
+      "id": 402
     },
     {
+      "price": 0.78,
+      "strength": "20 mg/ml",
       "name": "Etoposide",
       "form": "vial",
-      "strength": "20 mg/ml",
-      "price": 0.78
+      "id": 403
     },
     {
+      "price": 0.2981,
+      "strength": "100 mg",
       "name": "Etravirine",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.2981
+      "id": 404
     },
     {
+      "price": 1154.8958,
+      "strength": "100,000 U",
       "name": "Factor VIIa",
       "form": "vial",
-      "strength": "100,000 U",
-      "price": 1154.8958
+      "id": 405
     },
     {
-      "name": "Factor VIII",
-      "form": "vial",
+      "price": 75.8056,
       "strength": "300 IU",
-      "price": 75.8056
-    },
-    {
       "name": "Factor VIII",
       "form": "vial",
+      "id": 406
+    },
+    {
+      "price": 238.9703,
       "strength": "1000 IU",
-      "price": 238.9703
-    },
-    {
       "name": "Factor VIII",
       "form": "vial",
+      "id": 407
+    },
+    {
+      "price": 308.5571,
       "strength": "500 IU",
-      "price": 308.5571
+      "name": "Factor VIII",
+      "form": "vial",
+      "id": 408
     },
     {
-      "name": "Famotidine",
-      "form": "tab-cap",
+      "price": 0.0062,
       "strength": "20 mg",
-      "price": 0.0062
-    },
-    {
       "name": "Famotidine",
       "form": "tab-cap",
-      "strength": "40 mg",
-      "price": 0.0217
+      "id": 409
     },
     {
+      "price": 0.0217,
+      "strength": "40 mg",
+      "name": "Famotidine",
+      "form": "tab-cap",
+      "id": 410
+    },
+    {
+      "price": 0.3675,
+      "strength": "50 mcg/ml",
       "name": "Fentanyl Citrate",
       "form": "vial",
-      "strength": "50 mcg/ml",
-      "price": 0.3675
+      "id": 411
     },
     {
+      "price": 0.0109,
+      "strength": "200 mg",
       "name": "Ferrous Salt",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0109
+      "id": 412
     },
     {
+      "price": 0.0944,
+      "strength": "20 mg/ml",
       "name": "Ferrous Salt",
       "form": "suspen",
-      "strength": "20 mg/ml",
-      "price": 0.0944
+      "id": 413
     },
     {
+      "price": 0.0471,
+      "strength": "40 mg/ml",
       "name": "Ferrous Salt",
       "form": "solution",
-      "strength": "40 mg/ml",
-      "price": 0.0471
+      "id": 414
     },
     {
-      "name": "Ferrous Salt+Folic Acid",
-      "form": "tab-cap",
+      "price": 0.0052,
       "strength": "200+0.25 mg",
-      "price": 0.0052
-    },
-    {
       "name": "Ferrous Salt+Folic Acid",
       "form": "tab-cap",
-      "strength": "200 mg+0.4mg",
-      "price": 0.034
+      "id": 415
     },
     {
+      "price": 0.034,
+      "strength": "200 mg+0.4mg",
+      "name": "Ferrous Salt+Folic Acid",
+      "form": "tab-cap",
+      "id": 416
+    },
+    {
+      "price": 0.0167,
+      "strength": "125 mg/ml",
       "name": "Ferrous Sulfate",
       "form": "drops",
-      "strength": "125 mg/ml",
-      "price": 0.0167
+      "id": 417
     },
     {
+      "price": 3.9523,
+      "strength": "300 mcg/ml",
       "name": "Filgrastim",
       "form": "vial",
-      "strength": "300 mcg/ml",
-      "price": 3.9523
+      "id": 418
     },
     {
+      "price": 62.8625,
+      "strength": "480mcg/0.8ml",
       "name": "Filgrastim",
       "form": "syringe",
-      "strength": "480mcg/0.8ml",
-      "price": 62.8625
+      "id": 419
     },
     {
+      "price": 94.6576,
+      "strength": "480mcg/1.6ml",
       "name": "Filgrastim",
       "form": "vial",
-      "strength": "480mcg/1.6ml",
-      "price": 94.6576
+      "id": 420
     },
     {
+      "price": 0.0415,
+      "strength": "250 mg",
       "name": "Flucloxacillin",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.0415
+      "id": 421
     },
     {
+      "price": 0.0463,
+      "strength": "2 mg/ml",
       "name": "Fluconazole",
       "form": "vial",
-      "strength": "2 mg/ml",
-      "price": 0.0463
+      "id": 422
     },
     {
-      "name": "Fluconazole",
-      "form": "tab-cap",
+      "price": 0.0565,
       "strength": "50 mg",
-      "price": 0.0565
-    },
-    {
       "name": "Fluconazole",
       "form": "tab-cap",
+      "id": 423
+    },
+    {
+      "price": 0.0662,
       "strength": "200 mg",
-      "price": 0.0662
-    },
-    {
       "name": "Fluconazole",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.1285
+      "id": 424
     },
     {
+      "price": 0.1285,
+      "strength": "150 mg",
+      "name": "Fluconazole",
+      "form": "tab-cap",
+      "id": 425
+    },
+    {
+      "price": 0.0182,
+      "strength": "50 mg/5 ml",
       "name": "Fluconazole",
       "form": "suspen",
-      "strength": "50 mg/5 ml",
-      "price": 0.0182
+      "id": 426
     },
     {
+      "price": 0.0472,
+      "strength": "100 mg",
       "name": "Fluconazole",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0472
+      "id": 427
     },
     {
+      "price": 54.2553,
+      "strength": "50 mg",
       "name": "Fludarabine Phosphate",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 54.2553
+      "id": 428
     },
     {
+      "price": 1.4565,
+      "strength": "0.1 mg/ml",
       "name": "Flumazenil",
       "form": "vial",
-      "strength": "0.1 mg/ml",
-      "price": 1.4565
+      "id": 429
     },
     {
+      "price": 0.0813,
+      "strength": "0.025%",
       "name": "Fluocinolone",
       "form": "cream",
-      "strength": "0.025%",
-      "price": 0.0813
+      "id": 430
     },
     {
+      "price": 2.4498,
+      "strength": "100 mg/ml",
       "name": "Fluorescein",
       "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 2.4498
+      "id": 431
     },
     {
+      "price": 0.1522,
+      "strength": "",
       "name": "Fluorescein Sodium",
       "form": "opht strp",
-      "strength": "",
-      "price": 0.1522
+      "id": 432
     },
     {
+      "price": 0.2839,
+      "strength": "50 mg/ml",
       "name": "Fluorouracil",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.2839
+      "id": 433
     },
     {
+      "price": 1.1392,
+      "strength": "25 mg/ml",
       "name": "Fluorouracil",
       "form": "vial",
-      "strength": "25 mg/ml",
-      "price": 1.1392
+      "id": 434
     },
     {
+      "price": 0.0168,
+      "strength": "20 mg",
       "name": "Fluoxetine",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0168
+      "id": 435
     },
     {
+      "price": 1.7279,
+      "strength": "25 mg/ml",
       "name": "Fluphenazine Decanoate",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 1.7279
+      "id": 436
     },
     {
+      "price": 0.099,
+      "strength": "250 mg",
       "name": "Flutamide",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.099
+      "id": 437
     },
     {
-      "name": "Folic Acid",
-      "form": "tab-cap",
+      "price": 0.0035,
       "strength": "5 mg",
-      "price": 0.0035
-    },
-    {
       "name": "Folic Acid",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.017
+      "id": 438
     },
     {
+      "price": 0.017,
+      "strength": "1 mg",
+      "name": "Folic Acid",
+      "form": "tab-cap",
+      "id": 439
+    },
+    {
+      "price": 0.007,
+      "strength": "40%",
       "name": "Formaldehyde",
       "form": "liquid",
-      "strength": "40%",
-      "price": 0.007
+      "id": 440
     },
     {
+      "price": 0.0083,
+      "strength": "40 mg",
       "name": "Furosemide",
       "form": "tab-cap",
-      "strength": "40 mg",
-      "price": 0.0083
+      "id": 441
     },
     {
+      "price": 0.0742,
+      "strength": "10 mg/ml",
       "name": "Furosemide",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.0742
+      "id": 442
     },
     {
+      "price": 0.2009,
+      "strength": "10 mg/ml",
       "name": "Furosemide",
       "form": "solution",
-      "strength": "10 mg/ml",
-      "price": 0.2009
+      "id": 443
     },
     {
+      "price": 0.1302,
+      "strength": "2%",
       "name": "Fusidic Acid",
       "form": "cream",
-      "strength": "2%",
-      "price": 0.1302
+      "id": 444
     },
     {
-      "name": "Gabapentin",
-      "form": "tab-cap",
+      "price": 0.06,
       "strength": "300 mg",
-      "price": 0.06
-    },
-    {
       "name": "Gabapentin",
       "form": "tab-cap",
+      "id": 445
+    },
+    {
+      "price": 0.1282,
       "strength": "100 mg",
-      "price": 0.1282
-    },
-    {
       "name": "Gabapentin",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 0.2956
+      "id": 446
     },
     {
+      "price": 0.2956,
+      "strength": "400 mg",
+      "name": "Gabapentin",
+      "form": "tab-cap",
+      "id": 447
+    },
+    {
+      "price": 48,
+      "strength": "500 mg",
       "name": "Ganciclovir",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 48
+      "id": 448
     },
     {
-      "name": "Gemcitabine",
-      "form": "vial",
+      "price": 16.6145,
       "strength": "200 mg",
-      "price": 16.6145
-    },
-    {
       "name": "Gemcitabine",
       "form": "vial",
-      "strength": "1 g",
-      "price": 25.8472
+      "id": 449
     },
     {
+      "price": 25.8472,
+      "strength": "1 g",
+      "name": "Gemcitabine",
+      "form": "vial",
+      "id": 450
+    },
+    {
+      "price": 0.1,
+      "strength": "600 mg",
       "name": "Gemfibrozil",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.1
+      "id": 451
     },
     {
+      "price": 0.187,
+      "strength": "0.3%",
       "name": "Gentamicin",
       "form": "opht drop",
-      "strength": "0.3%",
-      "price": 0.187
+      "id": 452
     },
     {
+      "price": 0.099,
+      "strength": "10 mcg",
       "name": "Gentamicin",
       "form": "disc",
-      "strength": "10 mcg",
-      "price": 0.099
+      "id": 453
     },
     {
-      "name": "Gentamicin Sulfate",
-      "form": "ampoule",
+      "price": 0.0802,
       "strength": "40 mg/ml",
-      "price": 0.0802
-    },
-    {
       "name": "Gentamicin Sulfate",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.0942
+      "id": 454
     },
     {
+      "price": 0.0942,
+      "strength": "10 mg/ml",
+      "name": "Gentamicin Sulfate",
+      "form": "ampoule",
+      "id": 455
+    },
+    {
+      "price": 0.0208,
+      "strength": "",
       "name": "Gentian Violet",
       "form": "powder",
-      "strength": "",
-      "price": 0.0208
+      "id": 456
     },
     {
+      "price": 0.0083,
+      "strength": "5 mg",
       "name": "Glibenclamide",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0083
+      "id": 457
     },
     {
-      "name": "Gliclazide",
-      "form": "tab-cap",
+      "price": 0.035,
       "strength": "30 mg",
-      "price": 0.035
-    },
-    {
       "name": "Gliclazide",
       "form": "tab-cap",
+      "id": 458
+    },
+    {
+      "price": 0.0455,
       "strength": "80 mg",
-      "price": 0.0455
+      "name": "Gliclazide",
+      "form": "tab-cap",
+      "id": 459
     },
     {
-      "name": "Glimepiride",
-      "form": "tab-cap",
+      "price": 0.04,
       "strength": "2 mg",
-      "price": 0.04
-    },
-    {
       "name": "Glimepiride",
       "form": "tab-cap",
-      "strength": "4 mg",
-      "price": 0.0469
+      "id": 460
     },
     {
+      "price": 0.0469,
+      "strength": "4 mg",
+      "name": "Glimepiride",
+      "form": "tab-cap",
+      "id": 461
+    },
+    {
+      "price": 25.7458,
+      "strength": "1 mg",
       "name": "Glucagon",
       "form": "vial",
-      "strength": "1 mg",
-      "price": 25.7458
+      "id": 462
     },
     {
+      "price": 0.0074,
+      "strength": "2%",
       "name": "Glutaraldehyde",
       "form": "solution",
-      "strength": "2%",
-      "price": 0.0074
+      "id": 463
     },
     {
-      "name": "Glycerin",
-      "form": "suppos",
+      "price": 0.1058,
       "strength": "2 g",
-      "price": 0.1058
-    },
-    {
       "name": "Glycerin",
       "form": "suppos",
+      "id": 464
+    },
+    {
+      "price": 0.1075,
       "strength": "4 g",
-      "price": 0.1075
-    },
-    {
       "name": "Glycerin",
       "form": "suppos",
-      "strength": "1 g",
-      "price": 0.2051
+      "id": 465
     },
     {
+      "price": 0.2051,
+      "strength": "1 g",
+      "name": "Glycerin",
+      "form": "suppos",
+      "id": 466
+    },
+    {
+      "price": 0.0298,
+      "strength": "0.4 mg/dose",
       "name": "Glyceryl Trinitrate",
       "form": "nasal spr",
-      "strength": "0.4 mg/dose",
-      "price": 0.0298
+      "id": 467
     },
     {
-      "name": "Glyceryl Trinitrate",
-      "form": "tab-cap",
+      "price": 0.1634,
       "strength": "0.5 mg",
-      "price": 0.1634
+      "name": "Glyceryl Trinitrate",
+      "form": "tab-cap",
+      "id": 468
     },
     {
+      "price": 0.7436,
+      "strength": "5 mg/ml",
       "name": "Glyceryl Trinitrate",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.7436
+      "id": 469
     },
     {
+      "price": 0.1582,
+      "strength": "1 mg",
       "name": "Granisetron",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.1582
+      "id": 470
     },
     {
+      "price": 6.5,
+      "strength": "1 mg/ml",
       "name": "Granisetron",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 6.5
+      "id": 471
     },
     {
-      "name": "Griseofulvin",
-      "form": "tab-cap",
+      "price": 0.0231,
       "strength": "125 mg",
-      "price": 0.0231
-    },
-    {
       "name": "Griseofulvin",
       "form": "tab-cap",
+      "id": 472
+    },
+    {
+      "price": 0.1201,
       "strength": "500 mg",
-      "price": 0.1201
-    },
-    {
       "name": "Griseofulvin",
       "form": "tab-cap",
+      "id": 473
+    },
+    {
+      "price": 0.0358,
       "strength": "250 mg",
-      "price": 0.0358
+      "name": "Griseofulvin",
+      "form": "tab-cap",
+      "id": 474
     },
     {
-      "name": "Haloperidol",
-      "form": "tab-cap",
+      "price": 0.0155,
       "strength": "10 mg",
-      "price": 0.0155
-    },
-    {
       "name": "Haloperidol",
       "form": "tab-cap",
+      "id": 475
+    },
+    {
+      "price": 0.02,
       "strength": "5 mg",
-      "price": 0.02
-    },
-    {
       "name": "Haloperidol",
       "form": "tab-cap",
-      "strength": "1.5-2 mg",
-      "price": 0.026
+      "id": 476
     },
     {
+      "price": 0.026,
+      "strength": "1.5-2 mg",
+      "name": "Haloperidol",
+      "form": "tab-cap",
+      "id": 477
+    },
+    {
+      "price": 0.0311,
+      "strength": "2 mg/ml",
       "name": "Haloperidol",
       "form": "syrup",
-      "strength": "2 mg/ml",
-      "price": 0.0311
+      "id": 478
     },
     {
+      "price": 0.0894,
+      "strength": "0.5 mg",
       "name": "Haloperidol",
       "form": "tab-cap",
-      "strength": "0.5 mg",
-      "price": 0.0894
+      "id": 479
     },
     {
+      "price": 0.4723,
+      "strength": "5 mg/ml",
       "name": "Haloperidol",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.4723
+      "id": 480
     },
     {
+      "price": 0.1855,
+      "strength": "",
       "name": "Halothane",
       "form": "liquid",
-      "strength": "",
-      "price": 0.1855
+      "id": 481
     },
     {
-      "name": "Heparin",
-      "form": "ampoule",
+      "price": 0.2159,
       "strength": "1000 IU/ml",
-      "price": 0.2159
-    },
-    {
       "name": "Heparin",
       "form": "ampoule",
-      "strength": "5000 IU/ml",
-      "price": 0.448
+      "id": 482
     },
     {
+      "price": 0.448,
+      "strength": "5000 IU/ml",
+      "name": "Heparin",
+      "form": "ampoule",
+      "id": 483
+    },
+    {
+      "price": 11.8309,
+      "strength": "5000 IU",
       "name": "Human Chorionic Gonadotrophin",
       "form": "ampoule",
-      "strength": "5000 IU",
-      "price": 11.8309
+      "id": 484
     },
     {
+      "price": 17.5,
+      "strength": "75 IU",
       "name": "Human Menopausal Gonadotrophin",
       "form": "vial",
-      "strength": "75 IU",
-      "price": 17.5
+      "id": 485
     },
     {
-      "name": "Hydralazine",
-      "form": "tab-cap",
+      "price": 0.0475,
       "strength": "25 mg",
-      "price": 0.0475
-    },
-    {
       "name": "Hydralazine",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0557
+      "id": 486
     },
     {
+      "price": 0.0557,
+      "strength": "50 mg",
+      "name": "Hydralazine",
+      "form": "tab-cap",
+      "id": 487
+    },
+    {
+      "price": 4.16,
+      "strength": "20 mg",
       "name": "Hydralazine",
       "form": "ampoule",
-      "strength": "20 mg",
-      "price": 4.16
+      "id": 488
     },
     {
-      "name": "Hydrochlorothiazide",
-      "form": "tab-cap",
+      "price": 0.0041,
       "strength": "50 mg",
-      "price": 0.0041
-    },
-    {
       "name": "Hydrochlorothiazide",
       "form": "tab-cap",
+      "id": 489
+    },
+    {
+      "price": 0.0087,
       "strength": "12.5 mg",
-      "price": 0.0087
-    },
-    {
       "name": "Hydrochlorothiazide",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0094
+      "id": 490
     },
     {
+      "price": 0.0094,
+      "strength": "25 mg",
+      "name": "Hydrochlorothiazide",
+      "form": "tab-cap",
+      "id": 491
+    },
+    {
+      "price": 0.021,
+      "strength": "25 mg+50 mg",
       "name": "Hydrochlorothiazide+Triamterene",
       "form": "tab-cap",
-      "strength": "25 mg+50 mg",
-      "price": 0.021
+      "id": 492
     },
     {
+      "price": 0.0529,
+      "strength": "1%",
       "name": "Hydrocortisone",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.0529
+      "id": 493
     },
     {
+      "price": 0.0903,
+      "strength": "10 mg",
       "name": "Hydrocortisone",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0903
+      "id": 494
     },
     {
+      "price": 0.1003,
+      "strength": "1%",
       "name": "Hydrocortisone",
       "form": "ointment",
-      "strength": "1%",
-      "price": 0.1003
+      "id": 495
     },
     {
+      "price": 0.5517,
+      "strength": "100 mg",
       "name": "Hydrocortisone",
       "form": "vial",
-      "strength": "100 mg",
-      "price": 0.5517
+      "id": 496
     },
     {
+      "price": 0.0988,
+      "strength": "1%",
       "name": "Hydrocortisone",
       "form": "opht drop",
-      "strength": "1%",
-      "price": 0.0988
+      "id": 497
     },
     {
-      "name": "Hydrogen Peroxide",
-      "form": "solution",
+      "price": 0.0012,
       "strength": "6%",
-      "price": 0.0012
-    },
-    {
       "name": "Hydrogen Peroxide",
       "form": "solution",
-      "strength": "3%",
-      "price": 0.0023
+      "id": 498
     },
     {
+      "price": 0.0023,
+      "strength": "3%",
+      "name": "Hydrogen Peroxide",
+      "form": "solution",
+      "id": 499
+    },
+    {
+      "price": 0.118,
+      "strength": "500 mg",
       "name": "Hydroxycarbamide",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.118
+      "id": 500
     },
     {
+      "price": 0.3532,
+      "strength": "300 mg",
       "name": "Hydroxychloroquine",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.3532
+      "id": 501
     },
     {
+      "price": 0.124,
+      "strength": "200 mg",
       "name": "Hydroxychloroquine Sulfate",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.124
+      "id": 502
     },
     {
+      "price": 0.0073,
+      "strength": "25 mg",
       "name": "Hydroxyzine",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0073
+      "id": 503
     },
     {
+      "price": 0.0093,
+      "strength": "10 mg/5 ml",
       "name": "Hydroxyzine",
       "form": "syrup",
-      "strength": "10 mg/5 ml",
-      "price": 0.0093
+      "id": 504
     },
     {
-      "name": "Hyoscine Butylbromide",
-      "form": "tab-cap",
+      "price": 0.0344,
       "strength": "10 mg",
-      "price": 0.0344
-    },
-    {
-      "name": "Hyoscine Butylbromide",
-      "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.1207
-    },
-    {
-      "name": "Hyoscine Butylbromide",
-      "form": "ampoule",
-      "strength": "20 mg/ml",
-      "price": 0.1835
-    },
-    {
       "name": "Hyoscine Butylbromide",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0644
+      "id": 505
     },
     {
+      "price": 0.1207,
+      "strength": "10 mg/ml",
+      "name": "Hyoscine Butylbromide",
+      "form": "ampoule",
+      "id": 506
+    },
+    {
+      "price": 0.1835,
+      "strength": "20 mg/ml",
+      "name": "Hyoscine Butylbromide",
+      "form": "ampoule",
+      "id": 507
+    },
+    {
+      "price": 0.0644,
+      "strength": "20 mg",
+      "name": "Hyoscine Butylbromide",
+      "form": "tab-cap",
+      "id": 508
+    },
+    {
+      "price": 0.117,
+      "strength": "0.3%",
       "name": "Hypromellose",
       "form": "opht drop",
-      "strength": "0.3%",
-      "price": 0.117
+      "id": 509
     },
     {
+      "price": 0.0107,
+      "strength": "100 mg/5 ml",
       "name": "Ibuprofen",
       "form": "suspen",
-      "strength": "100 mg/5 ml",
-      "price": 0.0107
+      "id": 510
     },
     {
-      "name": "Ibuprofen",
-      "form": "tab-cap",
+      "price": 0.0148,
       "strength": "400 mg",
-      "price": 0.0148
-    },
-    {
       "name": "Ibuprofen",
       "form": "tab-cap",
+      "id": 511
+    },
+    {
+      "price": 0.0193,
       "strength": "200 mg",
-      "price": 0.0193
-    },
-    {
       "name": "Ibuprofen",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.0398
+      "id": 512
     },
     {
+      "price": 0.0398,
+      "strength": "600 mg",
+      "name": "Ibuprofen",
+      "form": "tab-cap",
+      "id": 513
+    },
+    {
+      "price": 0.0374,
+      "strength": "20%",
       "name": "Ichthammol",
       "form": "ointment",
-      "strength": "20%",
-      "price": 0.0374
+      "id": 514
     },
     {
-      "name": "Idarubicin",
-      "form": "vial",
+      "price": 83.0288,
       "strength": "10 mg",
-      "price": 83.0288
-    },
-    {
       "name": "Idarubicin",
       "form": "vial",
+      "id": 515
+    },
+    {
+      "price": 140,
       "strength": "5 mg",
-      "price": 140
+      "name": "Idarubicin",
+      "form": "vial",
+      "id": 516
     },
     {
-      "name": "Ifosfamide",
-      "form": "vial",
+      "price": 8.595,
       "strength": "1 g",
-      "price": 8.595
-    },
-    {
       "name": "Ifosfamide",
       "form": "vial",
+      "id": 517
+    },
+    {
+      "price": 25.0054,
       "strength": "500 mg",
-      "price": 25.0054
-    },
-    {
       "name": "Ifosfamide",
       "form": "vial",
+      "id": 518
+    },
+    {
+      "price": 39.0245,
       "strength": "2 g",
-      "price": 39.0245
+      "name": "Ifosfamide",
+      "form": "vial",
+      "id": 519
     },
     {
-      "name": "Imatinib",
-      "form": "tab-cap",
+      "price": 0.7446,
       "strength": "100 mg",
-      "price": 0.7446
-    },
-    {
       "name": "Imatinib",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 28.1493
+      "id": 520
     },
     {
+      "price": 28.1493,
+      "strength": "400 mg",
+      "name": "Imatinib",
+      "form": "tab-cap",
+      "id": 521
+    },
+    {
+      "price": 5.1105,
+      "strength": "500mg+500mg",
       "name": "Imipenem+Cilastatin",
       "form": "vial",
-      "strength": "500mg+500mg",
-      "price": 5.1105
+      "id": 522
     },
     {
-      "name": "Imipramine HCl",
-      "form": "tab-cap",
+      "price": 0.0217,
       "strength": "10 mg",
-      "price": 0.0217
-    },
-    {
       "name": "Imipramine HCl",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0309
+      "id": 523
     },
     {
+      "price": 0.0309,
+      "strength": "25 mg",
+      "name": "Imipramine HCl",
+      "form": "tab-cap",
+      "id": 524
+    },
+    {
+      "price": 32.72,
+      "strength": "200 U",
       "name": "Immunoglobulin, Anti-Hepatitis B",
       "form": "ampoule",
-      "strength": "200 U",
-      "price": 32.72
+      "id": 525
     },
     {
+      "price": 29.28,
+      "strength": "250 IU",
       "name": "Immunoglobulin, Anti-Tetanus",
       "form": "vial",
-      "strength": "250 IU",
-      "price": 29.28
+      "id": 526
     },
     {
+      "price": 125.65,
+      "strength": "125 IU/ml",
       "name": "Immunoglobulin, Varicella Zoster",
       "form": "vial",
-      "strength": "125 IU/ml",
-      "price": 125.65
+      "id": 527
     },
     {
+      "price": 0.2917,
+      "strength": "400 mg",
       "name": "Indinavir",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 0.2917
+      "id": 528
     },
     {
+      "price": 0.0076,
+      "strength": "25 mg",
       "name": "Indometacin",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0076
+      "id": 529
     },
     {
+      "price": 0.0995,
+      "strength": "100 mg",
       "name": "Indometacin",
       "form": "suppos",
-      "strength": "100 mg",
-      "price": 0.0995
+      "id": 530
     },
     {
-      "name": "Insulin, Isophane",
-      "form": "vial",
+      "price": 0.26,
       "strength": "40 IU/ml",
-      "price": 0.26
-    },
-    {
       "name": "Insulin, Isophane",
       "form": "vial",
-      "strength": "100 IU/ml",
-      "price": 0.3603
+      "id": 531
     },
     {
+      "price": 0.3603,
+      "strength": "100 IU/ml",
+      "name": "Insulin, Isophane",
+      "form": "vial",
+      "id": 532
+    },
+    {
+      "price": 0.3603,
+      "strength": "100 IU/ml",
       "name": "Insulin, Neut. Sol/Isophane 30/70",
       "form": "vial",
-      "strength": "100 IU/ml",
-      "price": 0.3603
+      "id": 533
     },
     {
-      "name": "Insulin, Neutral Soluble",
-      "form": "vial",
+      "price": 0.26,
       "strength": "40 IU/ml",
-      "price": 0.26
-    },
-    {
       "name": "Insulin, Neutral Soluble",
       "form": "vial",
-      "strength": "100 IU/ml",
-      "price": 0.4919
+      "id": 534
     },
     {
+      "price": 0.4919,
+      "strength": "100 IU/ml",
+      "name": "Insulin, Neutral Soluble",
+      "form": "vial",
+      "id": 535
+    },
+    {
+      "price": 1.114,
+      "strength": "100 IU/ml",
       "name": "Insulin, Zinc Susp",
       "form": "vial",
-      "strength": "100 IU/ml",
-      "price": 1.114
+      "id": 536
     },
     {
+      "price": 0.2198,
+      "strength": "350 mg/ml",
       "name": "Iohexol",
       "form": "vial",
-      "strength": "350 mg/ml",
-      "price": 0.2198
+      "id": 537
     },
     {
+      "price": 0.0328,
+      "strength": "20 mcg/dose",
       "name": "Ipratropium Bromide",
       "form": "inhaler",
-      "strength": "20 mcg/dose",
-      "price": 0.0328
+      "id": 538
     },
     {
+      "price": 0.4086,
+      "strength": "250 mcg/ml",
       "name": "Ipratropium Bromide",
       "form": "respsol",
-      "strength": "250 mcg/ml",
-      "price": 0.4086
+      "id": 539
     },
     {
+      "price": 0.24,
+      "strength": "150 mg",
       "name": "Irbesartan",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.24
+      "id": 540
     },
     {
+      "price": 1.4261,
+      "strength": "50 mg/ml",
       "name": "Iron Dextran",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 1.4261
+      "id": 541
     },
     {
+      "price": 0.2182,
+      "strength": "",
       "name": "Isoflurane",
       "form": "liquid",
-      "strength": "",
-      "price": 0.2182
+      "id": 542
     },
     {
+      "price": 0.0139,
+      "strength": "100 mg",
       "name": "Isoniazid",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0139
+      "id": 543
     },
     {
+      "price": 0.0319,
+      "strength": "50 mg/5 ml",
       "name": "Isoniazid",
       "form": "elixir",
-      "strength": "50 mg/5 ml",
-      "price": 0.0319
+      "id": 544
     },
     {
-      "name": "Isoniazid",
-      "form": "tab-cap",
+      "price": 0.0472,
       "strength": "300 mg",
-      "price": 0.0472
-    },
-    {
       "name": "Isoniazid",
       "form": "tab-cap",
+      "id": 545
+    },
+    {
+      "price": 0.0093,
       "strength": "100 mg",
-      "price": 0.0093
+      "name": "Isoniazid",
+      "form": "tab-cap",
+      "id": 546
     },
     {
-      "name": "Isosorbide Dinitrate",
-      "form": "tab-cap",
+      "price": 0.0263,
       "strength": "10 mg",
-      "price": 0.0263
-    },
-    {
       "name": "Isosorbide Dinitrate",
       "form": "tab-cap",
+      "id": 547
+    },
+    {
+      "price": 0.0407,
       "strength": "5 mg",
-      "price": 0.0407
-    },
-    {
       "name": "Isosorbide Dinitrate",
       "form": "tab-cap",
+      "id": 548
+    },
+    {
+      "price": 0.0707,
       "strength": "20 mg",
-      "price": 0.0707
-    },
-    {
       "name": "Isosorbide Dinitrate",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0771
+      "id": 549
     },
     {
+      "price": 0.0771,
+      "strength": "5 mg",
+      "name": "Isosorbide Dinitrate",
+      "form": "tab-cap",
+      "id": 550
+    },
+    {
+      "price": 0.1769,
+      "strength": "20 mg",
       "name": "Isosorbide Mononitrate",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.1769
+      "id": 551
     },
     {
+      "price": 0.1606,
+      "strength": "100 mg",
       "name": "Itraconazole",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.1606
+      "id": 552
     },
     {
+      "price": 3,
+      "strength": "",
       "name": "IUD (Copper)",
       "form": "iud",
-      "strength": "",
-      "price": 3
+      "id": 553
     },
     {
+      "price": 122.46,
+      "strength": "52 mg",
       "name": "IUD (Levonorgestrel)",
       "form": "iud",
-      "strength": "52 mg",
-      "price": 122.46
+      "id": 554
     },
     {
+      "price": 1.1851,
+      "strength": "1 g",
       "name": "Kanamycin Sulfate",
       "form": "vial",
-      "strength": "1 g",
-      "price": 1.1851
+      "id": 555
     },
     {
-      "name": "Ketamine",
-      "form": "vial",
+      "price": 0.1654,
       "strength": "50 mg/ml",
-      "price": 0.1654
-    },
-    {
       "name": "Ketamine",
       "form": "vial",
-      "strength": "10 mg/ml",
-      "price": 0.2206
+      "id": 556
     },
     {
+      "price": 0.2206,
+      "strength": "10 mg/ml",
+      "name": "Ketamine",
+      "form": "vial",
+      "id": 557
+    },
+    {
+      "price": 0.0354,
+      "strength": "2%",
       "name": "Ketoconazole",
       "form": "cream",
-      "strength": "2%",
-      "price": 0.0354
+      "id": 558
     },
     {
+      "price": 0.0421,
+      "strength": "200 mg",
       "name": "Ketoconazole",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0421
+      "id": 559
     },
     {
+      "price": 0.117,
+      "strength": "5 mg/ml",
       "name": "Labetalol",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.117
+      "id": 560
     },
     {
+      "price": 0.0118,
+      "strength": "3.35 g/5 ml",
       "name": "Lactulose",
       "form": "solution",
-      "strength": "3.35 g/5 ml",
-      "price": 0.0118
+      "id": 561
     },
     {
+      "price": 0.0099,
+      "strength": "10 mg/ml",
       "name": "Lamivudine",
       "form": "solution",
-      "strength": "10 mg/ml",
-      "price": 0.0099
+      "id": 562
     },
     {
-      "name": "Lamivudine",
-      "form": "tab-cap",
+      "price": 0.0569,
       "strength": "150 mg",
-      "price": 0.0569
-    },
-    {
       "name": "Lamivudine",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.0587
+      "id": 563
     },
     {
+      "price": 0.0587,
+      "strength": "300 mg",
+      "name": "Lamivudine",
+      "form": "tab-cap",
+      "id": 564
+    },
+    {
+      "price": 0.1811,
+      "strength": "150/300+600m",
       "name": "Lamivudine/Zidovudine + Efavirenz",
       "form": "tab-cap",
-      "strength": "150/300+600m",
-      "price": 0.1811
+      "id": 565
     },
     {
+      "price": 0.1446,
+      "strength": "150/300+200m",
       "name": "Lamivudine/Zidovudine + Nevirapine",
       "form": "tab-cap",
-      "strength": "150/300+200m",
-      "price": 0.1446
+      "id": 566
     },
     {
+      "price": 0.3894,
+      "strength": "",
       "name": "Lamivudine/Zidovudine+Abacavir",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.3894
+      "id": 567
     },
     {
-      "name": "Lamivudine+Stavudine",
-      "form": "tab-cap",
+      "price": 0.0332,
       "strength": "30 mg+6 mg",
-      "price": 0.0332
-    },
-    {
       "name": "Lamivudine+Stavudine",
       "form": "tab-cap",
+      "id": 568
+    },
+    {
+      "price": 0.0577,
       "strength": "60+12 mg",
-      "price": 0.0577
-    },
-    {
       "name": "Lamivudine+Stavudine",
       "form": "tab-cap",
+      "id": 569
+    },
+    {
+      "price": 0.073,
       "strength": "150 mg+30 mg",
-      "price": 0.073
-    },
-    {
       "name": "Lamivudine+Stavudine",
       "form": "tab-cap",
+      "id": 570
+    },
+    {
+      "price": 0.1584,
       "strength": "150 mg+40 mg",
-      "price": 0.1584
+      "name": "Lamivudine+Stavudine",
+      "form": "tab-cap",
+      "id": 571
     },
     {
-      "name": "Lamivudine+Stavudine+Nevirapine",
-      "form": "tab-cap",
+      "price": 0.1533,
       "strength": "150+30+200mg",
-      "price": 0.1533
-    },
-    {
       "name": "Lamivudine+Stavudine+Nevirapine",
       "form": "tab-cap",
+      "id": 572
+    },
+    {
+      "price": 0.0399,
       "strength": "30+6+50 mg",
-      "price": 0.0399
-    },
-    {
       "name": "Lamivudine+Stavudine+Nevirapine",
       "form": "tab-cap",
+      "id": 573
+    },
+    {
+      "price": 0.0752,
       "strength": "60+12+100 mg",
-      "price": 0.0752
-    },
-    {
       "name": "Lamivudine+Stavudine+Nevirapine",
       "form": "tab-cap",
-      "strength": "150+40+200mg",
-      "price": 0.2949
+      "id": 574
     },
     {
+      "price": 0.2949,
+      "strength": "150+40+200mg",
+      "name": "Lamivudine+Stavudine+Nevirapine",
+      "form": "tab-cap",
+      "id": 575
+    },
+    {
+      "price": 0.1759,
+      "strength": "300+300 mg",
       "name": "Lamivudine+Tenofovir Df",
       "form": "tab-cap",
-      "strength": "300+300 mg",
-      "price": 0.1759
+      "id": 576
     },
     {
-      "name": "Lamivudine+Zidovudine",
-      "form": "tab-cap",
+      "price": 0.0471,
       "strength": "30 mg+60 mg",
-      "price": 0.0471
-    },
-    {
       "name": "Lamivudine+Zidovudine",
       "form": "tab-cap",
+      "id": 577
+    },
+    {
+      "price": 0.1412,
       "strength": "150mg+300mg",
-      "price": 0.1412
-    },
-    {
       "name": "Lamivudine+Zidovudine",
       "form": "tab-cap",
-      "strength": "30+60 mg",
-      "price": 0.0362
+      "id": 578
     },
     {
+      "price": 0.0362,
+      "strength": "30+60 mg",
+      "name": "Lamivudine+Zidovudine",
+      "form": "tab-cap",
+      "id": 579
+    },
+    {
+      "price": 0.4486,
+      "strength": "",
       "name": "Lamivudine+Zidovudine+Abacavir",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.4486
+      "id": 580
     },
     {
-      "name": "Lamivudine+Zidovudine+Nevirapine",
-      "form": "tab-cap",
+      "price": 0.3157,
       "strength": "3TC+AZT+NVP",
-      "price": 0.3157
-    },
-    {
       "name": "Lamivudine+Zidovudine+Nevirapine",
       "form": "tab-cap",
-      "strength": "30+60+50 mg",
-      "price": 0.0643
+      "id": 581
     },
     {
+      "price": 0.0643,
+      "strength": "30+60+50 mg",
       "name": "Lamivudine+Zidovudine+Nevirapine",
       "form": "tab-cap",
-      "strength": "30+60+50 mg",
-      "price": 0.0653
+      "id": 582
     },
     {
-      "name": "Lamotrigine",
+      "price": 0.0653,
+      "strength": "30+60+50 mg",
+      "name": "Lamivudine+Zidovudine+Nevirapine",
       "form": "tab-cap",
+      "id": 583
+    },
+    {
+      "price": 0.0096,
       "strength": "25 mg",
-      "price": 0.0096
-    },
-    {
       "name": "Lamotrigine",
       "form": "tab-cap",
+      "id": 584
+    },
+    {
+      "price": 0.0385,
       "strength": "100 mg",
-      "price": 0.0385
-    },
-    {
       "name": "Lamotrigine",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.1462
+      "id": 585
     },
     {
+      "price": 0.1462,
+      "strength": "50 mg",
+      "name": "Lamotrigine",
+      "form": "tab-cap",
+      "id": 586
+    },
+    {
+      "price": 0.0171,
+      "strength": "",
       "name": "Lancet, Blood",
       "form": "each",
-      "strength": "",
-      "price": 0.0171
+      "id": 587
     },
     {
+      "price": 0.8965,
+      "strength": "0.005%",
       "name": "Latanoprost",
       "form": "opht drop",
-      "strength": "0.005%",
-      "price": 0.8965
+      "id": 588
     },
     {
+      "price": 3.53,
+      "strength": "2.5 mg",
       "name": "Letrozole",
       "form": "tab-cap",
-      "strength": "2.5 mg",
-      "price": 3.53
+      "id": 589
     },
     {
-      "name": "Levamisole",
-      "form": "tab-cap",
+      "price": 0.0106,
       "strength": "50 mg",
-      "price": 0.0106
-    },
-    {
       "name": "Levamisole",
       "form": "tab-cap",
+      "id": 590
+    },
+    {
+      "price": 0.0157,
       "strength": "40 mg",
-      "price": 0.0157
+      "name": "Levamisole",
+      "form": "tab-cap",
+      "id": 591
     },
     {
-      "name": "Levodopa+Carbidopa",
-      "form": "tab-cap",
+      "price": 0.078,
       "strength": "100+25 mg",
-      "price": 0.078
-    },
-    {
       "name": "Levodopa+Carbidopa",
       "form": "tab-cap",
-      "strength": "250+25 mg",
-      "price": 0.1
+      "id": 592
     },
     {
+      "price": 0.1,
+      "strength": "250+25 mg",
+      "name": "Levodopa+Carbidopa",
+      "form": "tab-cap",
+      "id": 593
+    },
+    {
+      "price": 0.0087,
+      "strength": "5 mg/ml",
       "name": "Levofloxacin",
       "form": "vial",
-      "strength": "5 mg/ml",
-      "price": 0.0087
+      "id": 594
     },
     {
-      "name": "Levofloxacin",
-      "form": "tab-cap",
+      "price": 0.0867,
       "strength": "500 mg",
-      "price": 0.0867
-    },
-    {
       "name": "Levofloxacin",
       "form": "tab-cap",
+      "id": 595
+    },
+    {
+      "price": 0.2357,
       "strength": "250 mg",
-      "price": 0.2357
+      "name": "Levofloxacin",
+      "form": "tab-cap",
+      "id": 596
     },
     {
-      "name": "Levonorgestrel",
-      "form": "tab-cap",
+      "price": 0.8062,
       "strength": "0.03 mg",
-      "price": 0.8062
-    },
-    {
       "name": "Levonorgestrel",
       "form": "tab-cap",
-      "strength": "1.5 mg",
-      "price": 1.6485
+      "id": 597
     },
     {
+      "price": 1.6485,
+      "strength": "1.5 mg",
+      "name": "Levonorgestrel",
+      "form": "tab-cap",
+      "id": 598
+    },
+    {
+      "price": 4.792,
+      "strength": "75 mg/rod",
       "name": "Levonorgestrel",
       "form": "rod",
-      "strength": "75 mg/rod",
-      "price": 4.792
+      "id": 599
     },
     {
+      "price": 0.2341,
+      "strength": "0.75 mg",
       "name": "Levonorgestrel",
       "form": "tab-cap",
-      "strength": "0.75 mg",
-      "price": 0.2341
+      "id": 600
     },
     {
-      "name": "Levothyroxine",
-      "form": "tab-cap",
+      "price": 0.0138,
       "strength": "50 mcg",
-      "price": 0.0138
-    },
-    {
       "name": "Levothyroxine",
       "form": "tab-cap",
+      "id": 601
+    },
+    {
+      "price": 0.0194,
       "strength": "100 mcg",
-      "price": 0.0194
-    },
-    {
       "name": "Levothyroxine",
       "form": "tab-cap",
+      "id": 602
+    },
+    {
+      "price": 0.02,
       "strength": "200 mcg",
-      "price": 0.02
+      "name": "Levothyroxine",
+      "form": "tab-cap",
+      "id": 603
     },
     {
-      "name": "Lidocaine HCl",
-      "form": "vial",
+      "price": 0.0272,
       "strength": "2%",
-      "price": 0.0272
-    },
-    {
       "name": "Lidocaine HCl",
       "form": "vial",
-      "strength": "1%",
-      "price": 0.0288
+      "id": 604
     },
     {
+      "price": 0.0288,
+      "strength": "1%",
+      "name": "Lidocaine HCl",
+      "form": "vial",
+      "id": 605
+    },
+    {
+      "price": 0.1639,
+      "strength": "2%",
       "name": "Lidocaine HCl",
       "form": "gel",
-      "strength": "2%",
-      "price": 0.1639
+      "id": 606
     },
     {
+      "price": 0.2334,
+      "strength": "2%+1:80000",
       "name": "Lidocaine HCl + Epinephrine Dental",
       "form": "crtdgs",
-      "strength": "2%+1:80000",
-      "price": 0.2334
+      "id": 607
     },
     {
+      "price": 3.68,
+      "strength": "",
       "name": "Lidocaine HCl 5% (In Dextrose 7.5%)",
       "form": "vial",
-      "strength": "",
-      "price": 3.68
+      "id": 608
     },
     {
-      "name": "Lidocaine+Epinephrine",
-      "form": "vial",
+      "price": 0.0424,
       "strength": "2%+1:100000",
-      "price": 0.0424
-    },
-    {
       "name": "Lidocaine+Epinephrine",
       "form": "vial",
-      "strength": "1%+1:100000",
-      "price": 0.0973
+      "id": 609
     },
     {
+      "price": 0.0973,
+      "strength": "1%+1:100000",
+      "name": "Lidocaine+Epinephrine",
+      "form": "vial",
+      "id": 610
+    },
+    {
+      "price": 0.1035,
+      "strength": "2 mg/ml",
       "name": "Linezolid",
       "form": "vial",
-      "strength": "2 mg/ml",
-      "price": 0.1035
+      "id": 611
     },
     {
+      "price": 6.9,
+      "strength": "600 mg",
       "name": "Linezolid",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 6.9
+      "id": 612
     },
     {
-      "name": "Lisinopril",
-      "form": "tab-cap",
+      "price": 0.0353,
       "strength": "10 mg",
-      "price": 0.0353
-    },
-    {
       "name": "Lisinopril",
       "form": "tab-cap",
+      "id": 613
+    },
+    {
+      "price": 0.06,
       "strength": "5 mg",
-      "price": 0.06
-    },
-    {
       "name": "Lisinopril",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0707
+      "id": 614
     },
     {
+      "price": 0.0707,
+      "strength": "20 mg",
+      "name": "Lisinopril",
+      "form": "tab-cap",
+      "id": 615
+    },
+    {
+      "price": 0.041,
+      "strength": "300 mg",
       "name": "Lithium Carbonate",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.041
+      "id": 616
     },
     {
+      "price": 0.0275,
+      "strength": "2 mg",
       "name": "Loperamide HCl",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 0.0275
+      "id": 617
     },
     {
+      "price": 0.08,
+      "strength": "100 mg+25 mg",
       "name": "Lopinavir+Ritonavir",
       "form": "tab-cap",
-      "strength": "100 mg+25 mg",
-      "price": 0.08
+      "id": 618
     },
     {
+      "price": 0.0846,
+      "strength": "80+20 mg/ml",
       "name": "Lopinavir+Ritonavir",
       "form": "solution",
-      "strength": "80+20 mg/ml",
-      "price": 0.0846
+      "id": 619
     },
     {
-      "name": "Lopinavir+Ritonavir",
-      "form": "tab-cap",
+      "price": 0.207,
       "strength": "200 mg+50 mg",
-      "price": 0.207
-    },
-    {
       "name": "Lopinavir+Ritonavir",
       "form": "tab-cap",
-      "strength": "133.3+33.3mg",
-      "price": 0.2398
+      "id": 620
     },
     {
+      "price": 0.2398,
+      "strength": "133.3+33.3mg",
+      "name": "Lopinavir+Ritonavir",
+      "form": "tab-cap",
+      "id": 621
+    },
+    {
+      "price": 0.0073,
+      "strength": "5 mg/5 ml",
       "name": "Loratadine",
       "form": "syrup",
-      "strength": "5 mg/5 ml",
-      "price": 0.0073
+      "id": 622
     },
     {
+      "price": 0.011,
+      "strength": "10 mg",
       "name": "Loratadine",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.011
+      "id": 623
     },
     {
-      "name": "Lorazepam",
-      "form": "tab-cap",
+      "price": 0.0085,
       "strength": "2 mg",
-      "price": 0.0085
-    },
-    {
       "name": "Lorazepam",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.0815
+      "id": 624
     },
     {
+      "price": 0.0815,
+      "strength": "1 mg",
+      "name": "Lorazepam",
+      "form": "tab-cap",
+      "id": 625
+    },
+    {
+      "price": 0.0202,
+      "strength": "50 mg",
       "name": "Losartan",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0202
+      "id": 626
     },
     {
+      "price": 0.0156,
+      "strength": "20 mg",
       "name": "Lovastatin",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0156
+      "id": 627
     },
     {
+      "price": 0.0145,
+      "strength": "",
       "name": "Lubricating Jelly",
       "form": "ointment",
-      "strength": "",
-      "price": 0.0145
+      "id": 628
     },
     {
+      "price": 0.4305,
+      "strength": "0.5 mg",
       "name": "Lynestrenol",
       "form": "tab-cap",
-      "strength": "0.5 mg",
-      "price": 0.4305
+      "id": 629
     },
     {
+      "price": 0.0015,
+      "strength": "",
       "name": "Magnesium Sulfate",
       "form": "powder",
-      "strength": "",
-      "price": 0.0015
+      "id": 630
     },
     {
-      "name": "Magnesium Sulfate",
-      "form": "vial",
+      "price": 0.0186,
       "strength": "20%",
-      "price": 0.0186
-    },
-    {
       "name": "Magnesium Sulfate",
       "form": "vial",
-      "strength": "50%",
-      "price": 0.291
+      "id": 631
     },
     {
+      "price": 0.291,
+      "strength": "50%",
+      "name": "Magnesium Sulfate",
+      "form": "vial",
+      "id": 632
+    },
+    {
+      "price": 0.0053,
+      "strength": "",
       "name": "Magnesium Trisilicate Compound",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.0053
+      "id": 633
     },
     {
+      "price": 0.0057,
+      "strength": "20%",
       "name": "Mannitol",
       "form": "solution",
-      "strength": "20%",
-      "price": 0.0057
+      "id": 634
     },
     {
+      "price": 0.0103,
+      "strength": "100 mg/5 ml",
       "name": "Mebendazole",
       "form": "suspen",
-      "strength": "100 mg/5 ml",
-      "price": 0.0103
+      "id": 635
     },
     {
-      "name": "Mebendazole",
-      "form": "tab-cap",
+      "price": 0.0117,
       "strength": "100 mg",
-      "price": 0.0117
-    },
-    {
       "name": "Mebendazole",
       "form": "tab-cap",
+      "id": 636
+    },
+    {
+      "price": 0.2355,
       "strength": "500 mg",
-      "price": 0.2355
-    },
-    {
       "name": "Mebendazole",
       "form": "tab-cap",
+      "id": 637
+    },
+    {
+      "price": 0.0067,
       "strength": "100 mg",
-      "price": 0.0067
-    },
-    {
       "name": "Mebendazole",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0334
+      "id": 638
     },
     {
-      "name": "Medroxyprogesterone",
+      "price": 0.0334,
+      "strength": "500 mg",
+      "name": "Mebendazole",
       "form": "tab-cap",
+      "id": 639
+    },
+    {
+      "price": 0.0888,
       "strength": "5 mg",
-      "price": 0.0888
-    },
-    {
       "name": "Medroxyprogesterone",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.1997
+      "id": 640
     },
     {
+      "price": 0.1997,
+      "strength": "10 mg",
+      "name": "Medroxyprogesterone",
+      "form": "tab-cap",
+      "id": 641
+    },
+    {
+      "price": 0.7912,
+      "strength": "150 mg/ml",
       "name": "Medroxyprogesterone Acetate",
       "form": "vial",
-      "strength": "150 mg/ml",
-      "price": 0.7912
+      "id": 642
     },
     {
-      "name": "Mefenamic Acid",
-      "form": "tab-cap",
+      "price": 0.0184,
       "strength": "500 mg",
-      "price": 0.0184
-    },
-    {
       "name": "Mefenamic Acid",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.023
+      "id": 643
     },
     {
+      "price": 0.023,
+      "strength": "250 mg",
+      "name": "Mefenamic Acid",
+      "form": "tab-cap",
+      "id": 644
+    },
+    {
+      "price": 0.899,
+      "strength": "250 mg",
       "name": "Mefloquine",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.899
+      "id": 645
     },
     {
+      "price": 0.864,
+      "strength": "30-45%",
       "name": "Meglumine Antimonate",
       "form": "ampoule",
-      "strength": "30-45%",
-      "price": 0.864
+      "id": 646
     },
     {
+      "price": 0.0146,
+      "strength": "7.5 mg",
       "name": "Meloxicam",
       "form": "tab-cap",
-      "strength": "7.5 mg",
-      "price": 0.0146
+      "id": 647
     },
     {
+      "price": 1.7313,
+      "strength": "2 mg",
       "name": "Melphalan",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 1.7313
+      "id": 648
     },
     {
+      "price": 47.1707,
+      "strength": "50 mg",
       "name": "Melphalan",
       "form": "vial",
-      "strength": "50 mg",
-      "price": 47.1707
+      "id": 649
     },
     {
+      "price": 1.943,
+      "strength": "50 mg",
       "name": "Mercaptopurine",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 1.943
+      "id": 650
     },
     {
-      "name": "Meropenem",
-      "form": "vial",
+      "price": 6.7545,
       "strength": "500 mg",
-      "price": 6.7545
-    },
-    {
       "name": "Meropenem",
       "form": "vial",
+      "id": 651
+    },
+    {
+      "price": 9.255,
       "strength": "1 g",
-      "price": 9.255
+      "name": "Meropenem",
+      "form": "vial",
+      "id": 652
     },
     {
-      "name": "Mesna",
-      "form": "ampoule",
+      "price": 0.48,
       "strength": "100 mg/ml",
-      "price": 0.48
-    },
-    {
       "name": "Mesna",
       "form": "ampoule",
+      "id": 653
+    },
+    {
+      "price": 3.4976,
       "strength": "400 mg",
-      "price": 3.4976
+      "name": "Mesna",
+      "form": "ampoule",
+      "id": 654
     },
     {
-      "name": "Metformin HCl",
-      "form": "tab-cap",
+      "price": 0.014,
       "strength": "850 mg",
-      "price": 0.014
-    },
-    {
       "name": "Metformin HCl",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0262
+      "id": 655
     },
     {
+      "price": 0.0262,
+      "strength": "500 mg",
+      "name": "Metformin HCl",
+      "form": "tab-cap",
+      "id": 656
+    },
+    {
+      "price": 5,
+      "strength": "5 mg",
       "name": "Methadone",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 5
+      "id": 657
     },
     {
+      "price": 0.069,
+      "strength": "2.5 mg",
       "name": "Methotrexate Sodium",
       "form": "tab-cap",
-      "strength": "2.5 mg",
-      "price": 0.069
+      "id": 658
     },
     {
+      "price": 2.9775,
+      "strength": "25 mg/ml",
       "name": "Methotrexate Sodium",
       "form": "vial",
-      "strength": "25 mg/ml",
-      "price": 2.9775
+      "id": 659
     },
     {
-      "name": "Methyldopa",
-      "form": "tab-cap",
+      "price": 0.0436,
       "strength": "250 mg",
-      "price": 0.0436
-    },
-    {
       "name": "Methyldopa",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.12
+      "id": 660
     },
     {
+      "price": 0.12,
+      "strength": "500 mg",
+      "name": "Methyldopa",
+      "form": "tab-cap",
+      "id": 661
+    },
+    {
+      "price": 0.186,
+      "strength": "0.2 mg/ml",
       "name": "Methylergometrine Maleate",
       "form": "ampoule",
-      "strength": "0.2 mg/ml",
-      "price": 0.186
+      "id": 662
     },
     {
+      "price": 0.0543,
+      "strength": "10 mg",
       "name": "Methylphenidate Hydrochloride",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0543
+      "id": 663
     },
     {
-      "name": "Methylprednisolone",
-      "form": "vial",
+      "price": 5.8527,
       "strength": "500 mg",
-      "price": 5.8527
-    },
-    {
       "name": "Methylprednisolone",
       "form": "vial",
-      "strength": "1 g",
-      "price": 12.6473
+      "id": 664
     },
     {
+      "price": 12.6473,
+      "strength": "1 g",
+      "name": "Methylprednisolone",
+      "form": "vial",
+      "id": 665
+    },
+    {
+      "price": 1.559,
+      "strength": "40 mg",
       "name": "Methylprednisolone Acetate",
       "form": "vial",
-      "strength": "40 mg",
-      "price": 1.559
+      "id": 666
     },
     {
+      "price": 0.0083,
+      "strength": "5 mg/5 ml",
       "name": "Metoclopramide HCl",
       "form": "syrup",
-      "strength": "5 mg/5 ml",
-      "price": 0.0083
+      "id": 667
     },
     {
+      "price": 0.0174,
+      "strength": "10 mg",
       "name": "Metoclopramide HCl",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0174
+      "id": 668
     },
     {
+      "price": 0.0497,
+      "strength": "5 mg/ml",
       "name": "Metoclopramide HCl",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.0497
+      "id": 669
     },
     {
+      "price": 0.0982,
+      "strength": "4 mg/ml",
       "name": "Metoclopramide HCl",
       "form": "drops",
-      "strength": "4 mg/ml",
-      "price": 0.0982
+      "id": 670
     },
     {
+      "price": 0.02,
+      "strength": "100 mg",
       "name": "Metoprolol",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.02
+      "id": 671
     },
     {
+      "price": 0.0045,
+      "strength": "5 mg/ml",
       "name": "Metronidazole",
       "form": "vial",
-      "strength": "5 mg/ml",
-      "price": 0.0045
+      "id": 672
     },
     {
-      "name": "Metronidazole",
-      "form": "tab-cap",
+      "price": 0.0053,
       "strength": "200-250 mg",
-      "price": 0.0053
-    },
-    {
-      "name": "Metronidazole",
-      "form": "syrup",
-      "strength": "200 mg/5 ml",
-      "price": 0.0069
-    },
-    {
       "name": "Metronidazole",
       "form": "tab-cap",
-      "strength": "400-500 mg",
-      "price": 0.017
+      "id": 673
     },
     {
-      "name": "Metronidazole",
-      "form": "suppos",
-      "strength": "500 mg",
-      "price": 0.2054
-    },
-    {
-      "name": "Metronidazole",
-      "form": "suppos",
-      "strength": "1 g",
-      "price": 0.6624
-    },
-    {
+      "price": 0.0069,
+      "strength": "200 mg/5 ml",
       "name": "Metronidazole",
       "form": "syrup",
-      "strength": "125 mg/5 ml",
-      "price": 0.0069
+      "id": 674
     },
     {
+      "price": 0.017,
+      "strength": "400-500 mg",
+      "name": "Metronidazole",
+      "form": "tab-cap",
+      "id": 675
+    },
+    {
+      "price": 0.2054,
+      "strength": "500 mg",
+      "name": "Metronidazole",
+      "form": "suppos",
+      "id": 676
+    },
+    {
+      "price": 0.6624,
+      "strength": "1 g",
+      "name": "Metronidazole",
+      "form": "suppos",
+      "id": 677
+    },
+    {
+      "price": 0.0069,
+      "strength": "125 mg/5 ml",
+      "name": "Metronidazole",
+      "form": "syrup",
+      "id": 678
+    },
+    {
+      "price": 0.0344,
+      "strength": "500 mg",
       "name": "Metronidazole",
       "form": "pessary",
-      "strength": "500 mg",
-      "price": 0.0344
+      "id": 679
     },
     {
+      "price": 0.0991,
+      "strength": "25 mg/ml",
       "name": "Miconazole",
       "form": "oral gel",
-      "strength": "25 mg/ml",
-      "price": 0.0991
+      "id": 680
     },
     {
+      "price": 0.0077,
+      "strength": "2%",
       "name": "Miconazole Nitrate",
       "form": "cream",
-      "strength": "2%",
-      "price": 0.0077
+      "id": 681
     },
     {
+      "price": 0.2491,
+      "strength": "10 mg",
       "name": "Miconazole Nitrate",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.2491
+      "id": 682
     },
     {
-      "name": "Midazolam",
-      "form": "ampoule",
+      "price": 0.0614,
       "strength": "1 mg/ml",
-      "price": 0.0614
-    },
-    {
       "name": "Midazolam",
       "form": "ampoule",
-      "strength": "5 mg/ml",
-      "price": 0.22
+      "id": 683
     },
     {
+      "price": 0.22,
+      "strength": "5 mg/ml",
+      "name": "Midazolam",
+      "form": "ampoule",
+      "id": 684
+    },
+    {
+      "price": 0.2922,
+      "strength": "15 mg",
       "name": "Midazolam",
       "form": "tab-cap",
-      "strength": "15 mg",
-      "price": 0.2922
+      "id": 685
     },
     {
+      "price": 0.4696,
+      "strength": "10 mg",
       "name": "Minoxidil",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.4696
+      "id": 686
     },
     {
-      "name": "Misoprostol",
-      "form": "tab-cap",
+      "price": 0.2269,
       "strength": "200 mcg",
-      "price": 0.2269
-    },
-    {
       "name": "Misoprostol",
       "form": "tab-cap",
-      "strength": "100 mcg",
-      "price": 0.2046
+      "id": 687
     },
     {
+      "price": 0.2046,
+      "strength": "100 mcg",
+      "name": "Misoprostol",
+      "form": "tab-cap",
+      "id": 688
+    },
+    {
+      "price": 21.5,
+      "strength": "5 mg",
       "name": "Mitomycin",
       "form": "vial",
-      "strength": "5 mg",
-      "price": 21.5
+      "id": 689
     },
     {
+      "price": 0.1513,
+      "strength": "10 mg",
       "name": "Morphine",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.1513
+      "id": 690
     },
     {
-      "name": "Morphine Sulfate",
-      "form": "tab-cap",
+      "price": 0.44,
       "strength": "30 mg",
-      "price": 0.44
-    },
-    {
       "name": "Morphine Sulfate",
       "form": "tab-cap",
+      "id": 691
+    },
+    {
+      "price": 0.5103,
       "strength": "60 mg",
-      "price": 0.5103
+      "name": "Morphine Sulfate",
+      "form": "tab-cap",
+      "id": 692
     },
     {
-      "name": "Morphine Sulfate",
-      "form": "ampoule",
+      "price": 0.618,
       "strength": "15 mg/ml",
-      "price": 0.618
-    },
-    {
-      "name": "Morphine Sulfate",
-      "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.8054
-    },
-    {
       "name": "Morphine Sulfate",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 1.063
+      "id": 693
     },
     {
+      "price": 0.8054,
+      "strength": "100 mg",
       "name": "Morphine Sulfate",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.9302
+      "id": 694
     },
     {
+      "price": 1.063,
+      "strength": "10 mg/ml",
+      "name": "Morphine Sulfate",
+      "form": "ampoule",
+      "id": 695
+    },
+    {
+      "price": 0.9302,
+      "strength": "10 mg",
+      "name": "Morphine Sulfate",
+      "form": "tab-cap",
+      "id": 696
+    },
+    {
+      "price": 6.1654,
+      "strength": "",
       "name": "Mosquito Net, 1-Person, LLIN",
       "form": "net",
-      "strength": "",
-      "price": 6.1654
+      "id": 697
     },
     {
+      "price": 5.394,
+      "strength": "",
       "name": "Mosquito Net, 2-Person, Impregnated",
       "form": "net",
-      "strength": "",
-      "price": 5.394
+      "id": 698
     },
     {
+      "price": 3.4036,
+      "strength": "",
       "name": "Mosquito Net, 2-Person, LLIN",
       "form": "net",
-      "strength": "",
-      "price": 3.4036
+      "id": 699
     },
     {
+      "price": 5.343,
+      "strength": "",
       "name": "Mosquito Net, Family, Impregnated",
       "form": "net",
-      "strength": "",
-      "price": 5.343
+      "id": 700
     },
     {
+      "price": 6.9,
+      "strength": "",
       "name": "Mosquito Net, Family, LLIN",
       "form": "net",
-      "strength": "",
-      "price": 6.9
+      "id": 701
     },
     {
+      "price": 1.14,
+      "strength": "",
       "name": "Mosquito Net, Family, Non-Impreg.",
       "form": "net",
-      "strength": "",
-      "price": 1.14
+      "id": 702
     },
     {
+      "price": 4.485,
+      "strength": "",
       "name": "Mosquito Net, Impregnated",
       "form": "net",
-      "strength": "",
-      "price": 4.485
+      "id": 703
     },
     {
+      "price": 5.46,
+      "strength": "",
       "name": "Mosquito Net, Impregnated",
       "form": "net",
-      "strength": "",
-      "price": 5.46
+      "id": 704
     },
     {
+      "price": 5.0879,
+      "strength": "",
       "name": "Mosquito Net, LLIN",
       "form": "net",
-      "strength": "",
-      "price": 5.0879
+      "id": 705
     },
     {
+      "price": 1.6423,
+      "strength": "400 mg",
       "name": "Moxifloxacin",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 1.6423
+      "id": 706
     },
     {
+      "price": 0.1448,
+      "strength": "2%",
       "name": "Mupirocin",
       "form": "cream",
-      "strength": "2%",
-      "price": 0.1448
+      "id": 707
     },
     {
+      "price": 0.1673,
+      "strength": "2%",
       "name": "Mupirocin",
       "form": "ointment",
-      "strength": "2%",
-      "price": 0.1673
+      "id": 708
     },
     {
+      "price": 0.3521,
+      "strength": "250 mg",
       "name": "Mycophenolate Mofetil",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.3521
+      "id": 709
     },
     {
+      "price": 0.98,
+      "strength": "10 mg/ml",
       "name": "Nalbufine Chlorhydrate",
       "form": "vial",
-      "strength": "10 mg/ml",
-      "price": 0.98
+      "id": 710
     },
     {
+      "price": 0.1215,
+      "strength": "500 mg",
       "name": "Nalidixic Acid",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.1215
+      "id": 711
     },
     {
+      "price": 0.1903,
+      "strength": "0.02 mg/ml",
       "name": "Naloxone HCl",
       "form": "vial",
-      "strength": "0.02 mg/ml",
-      "price": 0.1903
+      "id": 712
     },
     {
+      "price": 0.7039,
+      "strength": "0.4 mg/ml",
       "name": "Naloxone HCl",
       "form": "ampoule",
-      "strength": "0.4 mg/ml",
-      "price": 0.7039
+      "id": 713
     },
     {
-      "name": "Naproxen",
-      "form": "tab-cap",
+      "price": 0.0557,
       "strength": "250 mg",
-      "price": 0.0557
-    },
-    {
       "name": "Naproxen",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0873
+      "id": 714
     },
     {
+      "price": 0.0873,
+      "strength": "500 mg",
+      "name": "Naproxen",
+      "form": "tab-cap",
+      "id": 715
+    },
+    {
+      "price": 4.8903,
+      "strength": "50 mg/ml",
       "name": "Natamycin",
       "form": "opht drop",
-      "strength": "50 mg/ml",
-      "price": 4.8903
+      "id": 716
     },
     {
+      "price": 0.8,
+      "strength": "250 mg",
       "name": "Nelfinavir",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.8
+      "id": 717
     },
     {
+      "price": 0.2956,
+      "strength": "50 mg/g",
       "name": "Nelfinavir",
       "form": "powder",
-      "strength": "50 mg/g",
-      "price": 0.2956
+      "id": 718
     },
     {
+      "price": 0.0414,
+      "strength": "5mg+500IU/g",
       "name": "Neomycin+Bacitracin",
       "form": "ointment",
-      "strength": "5mg+500IU/g",
-      "price": 0.0414
+      "id": 719
     },
     {
-      "name": "Neostigmine Methylsulfate",
-      "form": "ampoule",
+      "price": 0.1978,
       "strength": "0.5 mg/ml",
-      "price": 0.1978
-    },
-    {
       "name": "Neostigmine Methylsulfate",
       "form": "ampoule",
-      "strength": "2.5 mg/ml",
-      "price": 1.3942
+      "id": 720
     },
     {
+      "price": 1.3942,
+      "strength": "2.5 mg/ml",
+      "name": "Neostigmine Methylsulfate",
+      "form": "ampoule",
+      "id": 721
+    },
+    {
+      "price": 0.0054,
+      "strength": "50 mg/5 ml",
       "name": "Nevirapine",
       "form": "suspen",
-      "strength": "50 mg/5 ml",
-      "price": 0.0054
+      "id": 722
     },
     {
+      "price": 0.0487,
+      "strength": "200 mg",
       "name": "Nevirapine",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0487
+      "id": 723
     },
     {
+      "price": 0.029,
+      "strength": "500 mg",
       "name": "Niclosamide",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.029
+      "id": 724
     },
     {
+      "price": 0.0607,
+      "strength": "500 mg",
       "name": "Niclosamide",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0607
+      "id": 725
     },
     {
-      "name": "Nifedipine",
-      "form": "tab-cap",
+      "price": 0.0294,
       "strength": "10 mg",
-      "price": 0.0294
-    },
-    {
       "name": "Nifedipine",
       "form": "tab-cap",
+      "id": 726
+    },
+    {
+      "price": 0.0297,
       "strength": "20 mg",
-      "price": 0.0297
-    },
-    {
       "name": "Nifedipine",
       "form": "tab-cap",
+      "id": 727
+    },
+    {
+      "price": 0.0387,
       "strength": "20 mg",
-      "price": 0.0387
-    },
-    {
       "name": "Nifedipine",
       "form": "tab-cap",
+      "id": 728
+    },
+    {
+      "price": 0.0629,
       "strength": "30 mg",
-      "price": 0.0629
-    },
-    {
       "name": "Nifedipine",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0142
+      "id": 729
     },
     {
+      "price": 0.0142,
+      "strength": "10 mg",
+      "name": "Nifedipine",
+      "form": "tab-cap",
+      "id": 730
+    },
+    {
+      "price": 0.0285,
+      "strength": "30 mg",
       "name": "Nimodipine",
       "form": "tab-cap",
-      "strength": "30 mg",
-      "price": 0.0285
+      "id": 731
     },
     {
+      "price": 0.0084,
+      "strength": "25 mg/5 ml",
       "name": "Nitrofurantoin",
       "form": "suspen",
-      "strength": "25 mg/5 ml",
-      "price": 0.0084
+      "id": 732
     },
     {
-      "name": "Nitrofurantoin",
-      "form": "tab-cap",
+      "price": 0.0285,
       "strength": "50 mg",
-      "price": 0.0285
-    },
-    {
       "name": "Nitrofurantoin",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.072
+      "id": 733
     },
     {
+      "price": 0.072,
+      "strength": "100 mg",
+      "name": "Nitrofurantoin",
+      "form": "tab-cap",
+      "id": 734
+    },
+    {
+      "price": 0.0391,
+      "strength": "0.2%",
       "name": "Nitrofurazone",
       "form": "ointment",
-      "strength": "0.2%",
-      "price": 0.0391
+      "id": 735
     },
     {
+      "price": 0.2093,
+      "strength": "1 mg/ml",
       "name": "Norepinephrine",
       "form": "vial",
-      "strength": "1 mg/ml",
-      "price": 0.2093
+      "id": 736
     },
     {
+      "price": 0.1996,
+      "strength": "5 mg",
       "name": "Norethisterone",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.1996
+      "id": 737
     },
     {
+      "price": 4.5131,
+      "strength": "200 mg/ml",
       "name": "Norethisterone",
       "form": "ampoule",
-      "strength": "200 mg/ml",
-      "price": 4.5131
+      "id": 738
     },
     {
+      "price": 4.39,
+      "strength": "50mg+5mg/ml",
       "name": "Norethisterone+Estradiol Cypionate",
       "form": "vial",
-      "strength": "50mg+5mg/ml",
-      "price": 4.39
+      "id": 739
     },
     {
+      "price": 0.0261,
+      "strength": "400 mg",
       "name": "Norfloxacin",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 0.0261
+      "id": 740
     },
     {
+      "price": 0.0294,
+      "strength": "15 mg",
       "name": "Noscapine",
       "form": "tab-cap",
-      "strength": "15 mg",
-      "price": 0.0294
+      "id": 741
     },
     {
+      "price": 0.0346,
+      "strength": "100000 IU/ml",
       "name": "Nystatin",
       "form": "suspen",
-      "strength": "100000 IU/ml",
-      "price": 0.0346
+      "id": 742
     },
     {
+      "price": 0.0805,
+      "strength": "500,000 IU",
       "name": "Nystatin",
       "form": "tab-cap",
-      "strength": "500,000 IU",
-      "price": 0.0805
+      "id": 743
     },
     {
+      "price": 0.0992,
+      "strength": "100,000 IU/g",
       "name": "Nystatin",
       "form": "ointment",
-      "strength": "100,000 IU/g",
-      "price": 0.0992
+      "id": 744
     },
     {
+      "price": 0.1,
+      "strength": "100,000 IU",
       "name": "Nystatin",
       "form": "pessary",
-      "strength": "100,000 IU",
-      "price": 0.1
+      "id": 745
     },
     {
+      "price": 0.0231,
+      "strength": "100,000 IU/g",
       "name": "Nystatin",
       "form": "cream",
-      "strength": "100,000 IU/g",
-      "price": 0.0231
+      "id": 746
     },
     {
+      "price": 0.0319,
+      "strength": "100,000 IU",
       "name": "Nystatin",
       "form": "tab-cap",
-      "strength": "100,000 IU",
-      "price": 0.0319
+      "id": 747
     },
     {
+      "price": 9.769,
+      "strength": "0.1 mg/ml",
       "name": "Octreotide",
       "form": "ampoule",
-      "strength": "0.1 mg/ml",
-      "price": 9.769
+      "id": 748
     },
     {
+      "price": 0.309,
+      "strength": "0.3%",
       "name": "Ofloxacin",
       "form": "opht drop",
-      "strength": "0.3%",
-      "price": 0.309
+      "id": 749
     },
     {
-      "name": "Ofloxacin",
-      "form": "tab-cap",
+      "price": 0.058,
       "strength": "200 mg",
-      "price": 0.058
-    },
-    {
       "name": "Ofloxacin",
       "form": "tab-cap",
+      "id": 750
+    },
+    {
+      "price": 0.109,
       "strength": "400 mg",
-      "price": 0.109
+      "name": "Ofloxacin",
+      "form": "tab-cap",
+      "id": 751
     },
     {
-      "name": "Olanzapine",
-      "form": "tab-cap",
+      "price": 0.12,
       "strength": "5 mg",
-      "price": 0.12
-    },
-    {
       "name": "Olanzapine",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.43
+      "id": 752
     },
     {
-      "name": "Omeprazole",
+      "price": 0.43,
+      "strength": "10 mg",
+      "name": "Olanzapine",
       "form": "tab-cap",
+      "id": 753
+    },
+    {
+      "price": 0.0191,
       "strength": "20 mg",
-      "price": 0.0191
-    },
-    {
       "name": "Omeprazole",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.1249
+      "id": 754
     },
     {
+      "price": 0.1249,
+      "strength": "10 mg",
+      "name": "Omeprazole",
+      "form": "tab-cap",
+      "id": 755
+    },
+    {
+      "price": 0.4534,
+      "strength": "40 mg",
       "name": "Omeprazole",
       "form": "vial",
-      "strength": "40 mg",
-      "price": 0.4534
+      "id": 756
     },
     {
+      "price": 0.1771,
+      "strength": "2 mg/ml",
       "name": "Ondansetron",
       "form": "ampoule",
-      "strength": "2 mg/ml",
-      "price": 0.1771
+      "id": 757
     },
     {
-      "name": "Ondansetron",
-      "form": "tab-cap",
+      "price": 0.2537,
       "strength": "4 mg",
-      "price": 0.2537
-    },
-    {
       "name": "Ondansetron",
       "form": "tab-cap",
+      "id": 758
+    },
+    {
+      "price": 1.4247,
       "strength": "8 mg",
-      "price": 1.4247
+      "name": "Ondansetron",
+      "form": "tab-cap",
+      "id": 759
     },
     {
-      "name": "Oral Rehydration Salts",
-      "form": "powder",
+      "price": 0.05,
       "strength": "1 PKT/1 l",
-      "price": 0.05
-    },
-    {
       "name": "Oral Rehydration Salts",
       "form": "powder",
+      "id": 760
+    },
+    {
+      "price": 0.0532,
       "strength": "1 pkt/500 ml",
-      "price": 0.0532
+      "name": "Oral Rehydration Salts",
+      "form": "powder",
+      "id": 761
     },
     {
-      "name": "ORS+Zinc Co-Pack",
-      "form": "each",
+      "price": 0.45,
       "strength": "2 ORS+20 mg",
-      "price": 0.45
-    },
-    {
       "name": "ORS+Zinc Co-Pack",
       "form": "each",
+      "id": 762
+    },
+    {
+      "price": 0.58,
       "strength": "1 ORS+20 mg",
-      "price": 0.58
-    },
-    {
       "name": "ORS+Zinc Co-Pack",
       "form": "each",
+      "id": 763
+    },
+    {
+      "price": 0.8,
       "strength": "2 ORS+20 mg",
-      "price": 0.8
-    },
-    {
       "name": "ORS+Zinc Co-Pack",
       "form": "each",
-      "strength": "4 ORS+20 mg",
-      "price": 0.504
+      "id": 764
     },
     {
+      "price": 0.504,
+      "strength": "4 ORS+20 mg",
+      "name": "ORS+Zinc Co-Pack",
+      "form": "each",
+      "id": 765
+    },
+    {
+      "price": 2.133,
+      "strength": "75 mg",
       "name": "Oseltamivir",
       "form": "tab-cap",
-      "strength": "75 mg",
-      "price": 2.133
+      "id": 766
     },
     {
+      "price": 0.2049,
+      "strength": "500 mg",
       "name": "Oxacillin",
       "form": "ampoule",
-      "strength": "500 mg",
-      "price": 0.2049
+      "id": 767
     },
     {
+      "price": 0.6472,
+      "strength": "1 g",
       "name": "Oxacillin",
       "form": "vial",
-      "strength": "1 g",
-      "price": 0.6472
+      "id": 768
     },
     {
+      "price": 0.198,
+      "strength": "1 mcg",
       "name": "Oxacillin",
       "form": "disc",
-      "strength": "1 mcg",
-      "price": 0.198
+      "id": 769
     },
     {
-      "name": "Oxaliplatin",
-      "form": "vial",
+      "price": 37.5858,
       "strength": "50 mg",
-      "price": 37.5858
-    },
-    {
       "name": "Oxaliplatin",
       "form": "vial",
-      "strength": "100 mg",
-      "price": 59.0858
+      "id": 770
     },
     {
+      "price": 59.0858,
+      "strength": "100 mg",
+      "name": "Oxaliplatin",
+      "form": "vial",
+      "id": 771
+    },
+    {
+      "price": 0.3953,
+      "strength": "0.4%",
       "name": "Oxybuprocaine",
       "form": "opht drop",
-      "strength": "0.4%",
-      "price": 0.3953
+      "id": 772
     },
     {
+      "price": 0.0819,
+      "strength": "5 mg",
       "name": "Oxybutynin",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0819
+      "id": 773
     },
     {
-      "name": "Oxytocin",
-      "form": "ampoule",
+      "price": 0.1252,
       "strength": "10 IU",
-      "price": 0.1252
-    },
-    {
       "name": "Oxytocin",
       "form": "ampoule",
+      "id": 774
+    },
+    {
+      "price": 0.4946,
       "strength": "5 IU",
-      "price": 0.4946
+      "name": "Oxytocin",
+      "form": "ampoule",
+      "id": 775
     },
     {
-      "name": "Paclitaxel",
-      "form": "vial",
+      "price": 0.9491,
       "strength": "6 mg/ml",
-      "price": 0.9491
-    },
-    {
       "name": "Paclitaxel",
       "form": "vial",
+      "id": 776
+    },
+    {
+      "price": 10.2734,
       "strength": "100 mg",
-      "price": 10.2734
+      "name": "Paclitaxel",
+      "form": "vial",
+      "id": 777
     },
     {
-      "name": "P-Aminosalicylic Acid (PAS)",
-      "form": "powder",
+      "price": 2.7516,
       "strength": "4 g",
-      "price": 2.7516
-    },
-    {
-      "name": "P-Aminosalicylic Acid (PAS)",
-      "form": "granules",
-      "strength": "60% w/w",
-      "price": 0.1249
-    },
-    {
-      "name": "P-Aminosalicylic Acid (PAS)",
-      "form": "granules",
-      "strength": "9.2 g",
-      "price": 1.15
-    },
-    {
       "name": "P-Aminosalicylic Acid (PAS)",
       "form": "powder",
-      "strength": "5.52 g",
-      "price": 1.37
+      "id": 778
     },
     {
+      "price": 0.1249,
+      "strength": "60% w/w",
+      "name": "P-Aminosalicylic Acid (PAS)",
+      "form": "granules",
+      "id": 779
+    },
+    {
+      "price": 1.15,
+      "strength": "9.2 g",
+      "name": "P-Aminosalicylic Acid (PAS)",
+      "form": "granules",
+      "id": 780
+    },
+    {
+      "price": 1.37,
+      "strength": "5.52 g",
+      "name": "P-Aminosalicylic Acid (PAS)",
+      "form": "powder",
+      "id": 781
+    },
+    {
+      "price": 0.6727,
+      "strength": "2 mg/ml",
       "name": "Pancuronium Bromide",
       "form": "ampoule",
-      "strength": "2 mg/ml",
-      "price": 0.6727
+      "id": 782
     },
     {
-      "name": "Paracetamol",
-      "form": "suspen",
+      "price": 0.0042,
       "strength": "120 mg/5 ml",
-      "price": 0.0042
-    },
-    {
-      "name": "Paracetamol",
-      "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0051
-    },
-    {
       "name": "Paracetamol",
       "form": "suspen",
-      "strength": "100 mg/ml",
-      "price": 0.0231
+      "id": 783
     },
     {
-      "name": "Paracetamol",
-      "form": "suppos",
-      "strength": "125 mg",
-      "price": 0.2103
-    },
-    {
-      "name": "Paracetamol",
-      "form": "suppos",
-      "strength": "250 mg",
-      "price": 0.23
-    },
-    {
-      "name": "Paracetamol",
-      "form": "suppos",
+      "price": 0.0051,
       "strength": "500 mg",
-      "price": 2.132
-    },
-    {
       "name": "Paracetamol",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.002
+      "id": 784
     },
     {
+      "price": 0.0231,
+      "strength": "100 mg/ml",
+      "name": "Paracetamol",
+      "form": "suspen",
+      "id": 785
+    },
+    {
+      "price": 0.2103,
+      "strength": "125 mg",
       "name": "Paracetamol",
       "form": "suppos",
-      "strength": "100 mg",
-      "price": 0.07
+      "id": 786
     },
     {
+      "price": 0.23,
+      "strength": "250 mg",
+      "name": "Paracetamol",
+      "form": "suppos",
+      "id": 787
+    },
+    {
+      "price": 2.132,
+      "strength": "500 mg",
+      "name": "Paracetamol",
+      "form": "suppos",
+      "id": 788
+    },
+    {
+      "price": 0.002,
+      "strength": "100 mg",
+      "name": "Paracetamol",
+      "form": "tab-cap",
+      "id": 789
+    },
+    {
+      "price": 0.07,
+      "strength": "100 mg",
+      "name": "Paracetamol",
+      "form": "suppos",
+      "id": 790
+    },
+    {
+      "price": 0.0089,
+      "strength": "",
       "name": "Paraffin, Liquid",
       "form": "liquid",
-      "strength": "",
-      "price": 0.0089
+      "id": 791
     },
     {
+      "price": 0.0029,
+      "strength": "",
       "name": "Paraffin, White Soft",
       "form": "ointment",
-      "strength": "",
-      "price": 0.0029
+      "id": 792
     },
     {
+      "price": 0.4381,
+      "strength": "250 mg",
       "name": "Penicillamine",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.4381
+      "id": 793
     },
     {
-      "name": "Penicillin, Benzathine Benzyl",
-      "form": "powder",
+      "price": 0.2155,
       "strength": "1.2M IU",
-      "price": 0.2155
-    },
-    {
       "name": "Penicillin, Benzathine Benzyl",
       "form": "powder",
+      "id": 794
+    },
+    {
+      "price": 0.276,
       "strength": "2.4M IU",
-      "price": 0.276
+      "name": "Penicillin, Benzathine Benzyl",
+      "form": "powder",
+      "id": 795
     },
     {
-      "name": "Penicillin, Benzyl",
-      "form": "powder",
+      "price": 0.3238,
       "strength": "1M IU",
-      "price": 0.3238
-    },
-    {
       "name": "Penicillin, Benzyl",
       "form": "powder",
-      "strength": "5M IU",
-      "price": 0.68
+      "id": 796
     },
     {
+      "price": 0.68,
+      "strength": "5M IU",
+      "name": "Penicillin, Benzyl",
+      "form": "powder",
+      "id": 797
+    },
+    {
+      "price": 0.0069,
+      "strength": "125 mg/5 ml",
       "name": "Penicillin, Phenoxymethyl",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0069
+      "id": 798
     },
     {
+      "price": 0.0071,
+      "strength": "250 mg/5 ml",
       "name": "Penicillin, Phenoxymethyl",
       "form": "syrup",
-      "strength": "250 mg/5 ml",
-      "price": 0.0071
+      "id": 799
     },
     {
+      "price": 0.02,
+      "strength": "250 mg",
       "name": "Penicillin, Phenoxymethyl",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.02
+      "id": 800
     },
     {
-      "name": "Penicillin, Procaine Benzyl",
-      "form": "powder",
+      "price": 0.1801,
       "strength": "1M IU",
-      "price": 0.1801
-    },
-    {
       "name": "Penicillin, Procaine Benzyl",
       "form": "powder",
+      "id": 801
+    },
+    {
+      "price": 0.233,
       "strength": "4M IU",
-      "price": 0.233
-    },
-    {
       "name": "Penicillin, Procaine Benzyl",
       "form": "powder",
-      "strength": "3M IU",
-      "price": 0.2164
+      "id": 802
     },
     {
+      "price": 0.2164,
+      "strength": "3M IU",
+      "name": "Penicillin, Procaine Benzyl",
+      "form": "powder",
+      "id": 803
+    },
+    {
+      "price": 0.2987,
+      "strength": "3M IU+1M IU",
       "name": "Penicillin, Procaine+Benzyl",
       "form": "vial",
-      "strength": "3M IU+1M IU",
-      "price": 0.2987
+      "id": 804
     },
     {
+      "price": 0.1485,
+      "strength": "30 mg/ml",
       "name": "Pentazocine",
       "form": "ampoule",
-      "strength": "30 mg/ml",
-      "price": 0.1485
+      "id": 805
     },
     {
+      "price": 0.0355,
+      "strength": "5%",
       "name": "Permethrin",
       "form": "cream",
-      "strength": "5%",
-      "price": 0.0355
+      "id": 806
     },
     {
+      "price": 0.0275,
+      "strength": "1%",
       "name": "Permethrin",
       "form": "lotion",
-      "strength": "1%",
-      "price": 0.0275
+      "id": 807
     },
     {
+      "price": 0.0416,
+      "strength": "2.5%",
       "name": "Permethrin",
       "form": "ointment",
-      "strength": "2.5%",
-      "price": 0.0416
+      "id": 808
     },
     {
+      "price": 0.1631,
+      "strength": "10%",
       "name": "Permethrin",
       "form": "solution",
-      "strength": "10%",
-      "price": 0.1631
+      "id": 809
     },
     {
+      "price": 0.2734,
+      "strength": "50 mg",
       "name": "Pethidine",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.2734
+      "id": 810
     },
     {
+      "price": 0.2634,
+      "strength": "50 mg/ml",
       "name": "Pethidine HCl",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.2634
+      "id": 811
     },
     {
-      "name": "Phenobarbital",
-      "form": "elixir",
+      "price": 0.0043,
       "strength": "20 mg/5 ml",
-      "price": 0.0043
-    },
-    {
-      "name": "Phenobarbital",
-      "form": "tab-cap",
-      "strength": "30 mg",
-      "price": 0.0099
-    },
-    {
-      "name": "Phenobarbital",
-      "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.02
-    },
-    {
-      "name": "Phenobarbital",
-      "form": "tab-cap",
-      "strength": "50-60 mg",
-      "price": 0.0472
-    },
-    {
       "name": "Phenobarbital",
       "form": "elixir",
-      "strength": "15 mg/5 ml",
-      "price": 0.0762
+      "id": 812
     },
     {
+      "price": 0.0099,
+      "strength": "30 mg",
+      "name": "Phenobarbital",
+      "form": "tab-cap",
+      "id": 813
+    },
+    {
+      "price": 0.02,
+      "strength": "100 mg",
+      "name": "Phenobarbital",
+      "form": "tab-cap",
+      "id": 814
+    },
+    {
+      "price": 0.0472,
+      "strength": "50-60 mg",
+      "name": "Phenobarbital",
+      "form": "tab-cap",
+      "id": 815
+    },
+    {
+      "price": 0.0762,
+      "strength": "15 mg/5 ml",
+      "name": "Phenobarbital",
+      "form": "elixir",
+      "id": 816
+    },
+    {
+      "price": 1.008,
+      "strength": "100 mg/ml",
       "name": "Phenobarbital",
       "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 1.008
+      "id": 817
     },
     {
+      "price": 3.283,
+      "strength": "200 mg/ml",
       "name": "Phenobarbital",
       "form": "vial",
-      "strength": "200 mg/ml",
-      "price": 3.283
+      "id": 818
     },
     {
+      "price": 0.0279,
+      "strength": "125 mg/5 ml",
       "name": "Phenytoin",
       "form": "suspen",
-      "strength": "125 mg/5 ml",
-      "price": 0.0279
+      "id": 819
     },
     {
+      "price": 0.0359,
+      "strength": "100 mg",
       "name": "Phenytoin",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0359
+      "id": 820
     },
     {
+      "price": 0.3866,
+      "strength": "50 mg/ml",
       "name": "Phenytoin",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.3866
+      "id": 821
     },
     {
-      "name": "Pilocarpine",
-      "form": "opht drop",
+      "price": 0.228,
       "strength": "1%",
-      "price": 0.228
-    },
-    {
       "name": "Pilocarpine",
       "form": "opht drop",
+      "id": 822
+    },
+    {
+      "price": 0.381,
       "strength": "2%",
-      "price": 0.381
-    },
-    {
       "name": "Pilocarpine",
       "form": "opht drop",
-      "strength": "4%",
-      "price": 0.573
+      "id": 823
     },
     {
+      "price": 0.573,
+      "strength": "4%",
+      "name": "Pilocarpine",
+      "form": "opht drop",
+      "id": 824
+    },
+    {
+      "price": 4.1276,
+      "strength": "4 g+500 mg",
       "name": "Piperacillin+Tazobactam",
       "form": "vial",
-      "strength": "4 g+500 mg",
-      "price": 4.1276
+      "id": 825
     },
     {
+      "price": 0.0252,
+      "strength": "20 mg",
       "name": "Piroxicam",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0252
+      "id": 826
     },
     {
+      "price": 0.0239,
+      "strength": "3.5%",
       "name": "Polygeline",
       "form": "solution",
-      "strength": "3.5%",
-      "price": 0.0239
+      "id": 827
     },
     {
-      "name": "Potassium Chloride",
-      "form": "vial",
+      "price": 0.0224,
       "strength": "15%",
-      "price": 0.0224
-    },
-    {
-      "name": "Potassium Chloride",
-      "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.0385
-    },
-    {
-      "name": "Potassium Chloride",
-      "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.0987
-    },
-    {
       "name": "Potassium Chloride",
       "form": "vial",
-      "strength": "10%",
-      "price": 0.0439
+      "id": 828
     },
     {
+      "price": 0.0385,
+      "strength": "600 mg",
+      "name": "Potassium Chloride",
+      "form": "tab-cap",
+      "id": 829
+    },
+    {
+      "price": 0.0987,
+      "strength": "600 mg",
+      "name": "Potassium Chloride",
+      "form": "tab-cap",
+      "id": 830
+    },
+    {
+      "price": 0.0439,
+      "strength": "10%",
+      "name": "Potassium Chloride",
+      "form": "vial",
+      "id": 831
+    },
+    {
+      "price": 0.0106,
+      "strength": "",
       "name": "Potassium Permanganate",
       "form": "powder",
-      "strength": "",
-      "price": 0.0106
+      "id": 832
     },
     {
+      "price": 0.0059,
+      "strength": "10%",
       "name": "Povidone Iodine",
       "form": "solution",
-      "strength": "10%",
-      "price": 0.0059
+      "id": 833
     },
     {
+      "price": 0.0107,
+      "strength": "7.5%",
       "name": "Povidone Iodine",
       "form": "liquid",
-      "strength": "7.5%",
-      "price": 0.0107
+      "id": 834
     },
     {
+      "price": 0.0133,
+      "strength": "10%",
       "name": "Povidone Iodine",
       "form": "ointment",
-      "strength": "10%",
-      "price": 0.0133
+      "id": 835
     },
     {
+      "price": 0.3174,
+      "strength": "600 mg",
       "name": "Praziquantel",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.3174
+      "id": 836
     },
     {
-      "name": "Prednisolone",
-      "form": "tab-cap",
+      "price": 0.0157,
       "strength": "5 mg",
-      "price": 0.0157
-    },
-    {
       "name": "Prednisolone",
       "form": "tab-cap",
+      "id": 837
+    },
+    {
+      "price": 0.039,
       "strength": "25 mg",
-      "price": 0.039
-    },
-    {
       "name": "Prednisolone",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.1
+      "id": 838
     },
     {
+      "price": 0.1,
+      "strength": "1 mg",
+      "name": "Prednisolone",
+      "form": "tab-cap",
+      "id": 839
+    },
+    {
+      "price": 0.3796,
+      "strength": "1%",
       "name": "Prednisolone",
       "form": "opht drop",
-      "strength": "1%",
-      "price": 0.3796
+      "id": 840
     },
     {
+      "price": 0.0305,
+      "strength": "15 mg/5 ml",
       "name": "Prednisolone (Base)",
       "form": "syrup",
-      "strength": "15 mg/5 ml",
-      "price": 0.0305
+      "id": 841
     },
     {
-      "name": "Prednisone",
-      "form": "tab-cap",
+      "price": 0.01,
       "strength": "5 mg",
-      "price": 0.01
-    },
-    {
       "name": "Prednisone",
       "form": "tab-cap",
+      "id": 842
+    },
+    {
+      "price": 0.0837,
       "strength": "50 mg",
-      "price": 0.0837
-    },
-    {
       "name": "Prednisone",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 2.8256
+      "id": 843
     },
     {
+      "price": 2.8256,
+      "strength": "20 mg",
+      "name": "Prednisone",
+      "form": "tab-cap",
+      "id": 844
+    },
+    {
+      "price": 0.0554,
+      "strength": "15 mg",
       "name": "Primaquine",
       "form": "tab-cap",
-      "strength": "15 mg",
-      "price": 0.0554
+      "id": 845
     },
     {
+      "price": 0.02,
+      "strength": "5 mg",
       "name": "Prochlorperazine",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.02
+      "id": 846
     },
     {
+      "price": 0.252,
+      "strength": "100 mg",
       "name": "Proguanil",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.252
+      "id": 847
     },
     {
+      "price": 0.0043,
+      "strength": "25 mg",
       "name": "Promethazine HCl",
       "form": "tab-cap",
-      "strength": "25 mg",
-      "price": 0.0043
+      "id": 848
     },
     {
+      "price": 0.0055,
+      "strength": "5 mg/5 ml",
       "name": "Promethazine HCl",
       "form": "suspen",
-      "strength": "5 mg/5 ml",
-      "price": 0.0055
+      "id": 849
     },
     {
+      "price": 0.2493,
+      "strength": "25 mg/ml",
       "name": "Promethazine HCl",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 0.2493
+      "id": 850
     },
     {
+      "price": 0.342,
+      "strength": "0.5%",
       "name": "Proparacaine",
       "form": "opht drop",
-      "strength": "0.5%",
-      "price": 0.342
+      "id": 851
     },
     {
+      "price": 0.0708,
+      "strength": "10 mg/ml",
       "name": "Propofol",
       "form": "vial",
-      "strength": "10 mg/ml",
-      "price": 0.0708
+      "id": 852
     },
     {
+      "price": 10.8,
+      "strength": "1 mg/ml",
       "name": "Propranolol",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 10.8
+      "id": 853
     },
     {
-      "name": "Propranolol HCl",
-      "form": "tab-cap",
+      "price": 0.0106,
       "strength": "40 mg",
-      "price": 0.0106
-    },
-    {
       "name": "Propranolol HCl",
       "form": "tab-cap",
+      "id": 854
+    },
+    {
+      "price": 0.0246,
       "strength": "10 mg",
-      "price": 0.0246
-    },
-    {
       "name": "Propranolol HCl",
       "form": "tab-cap",
-      "strength": "80 mg",
-      "price": 0.0795
+      "id": 855
     },
     {
+      "price": 0.0795,
+      "strength": "80 mg",
+      "name": "Propranolol HCl",
+      "form": "tab-cap",
+      "id": 856
+    },
+    {
+      "price": 0.0604,
+      "strength": "50 mg",
       "name": "Propylthiouracil",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0604
+      "id": 857
     },
     {
+      "price": 1.4811,
+      "strength": "10 mg/ml",
       "name": "Protamine Sulfate",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 1.4811
+      "id": 858
     },
     {
+      "price": 0.1293,
+      "strength": "250 mg",
       "name": "Protionamide",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.1293
+      "id": 859
     },
     {
-      "name": "Pyrazinamide",
-      "form": "tab-cap",
+      "price": 0.0429,
       "strength": "500 mg",
-      "price": 0.0429
-    },
-    {
       "name": "Pyrazinamide",
       "form": "tab-cap",
+      "id": 860
+    },
+    {
+      "price": 0.0276,
       "strength": "400 mg",
-      "price": 0.0276
-    },
-    {
       "name": "Pyrazinamide",
       "form": "tab-cap",
-      "strength": "750 mg",
-      "price": 0.0461
+      "id": 861
     },
     {
+      "price": 0.0461,
+      "strength": "750 mg",
+      "name": "Pyrazinamide",
+      "form": "tab-cap",
+      "id": 862
+    },
+    {
+      "price": 0.282,
+      "strength": "60 mg",
       "name": "Pyridostigmine Bromide",
       "form": "tab-cap",
-      "strength": "60 mg",
-      "price": 0.282
+      "id": 863
     },
     {
+      "price": 0.35,
+      "strength": "200 mg",
       "name": "Quinidine Sulfate",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.35
+      "id": 864
     },
     {
+      "price": 0.4987,
+      "strength": "250-300mg/ml",
       "name": "Quinine Dihydrochloride",
       "form": "ampoule",
-      "strength": "250-300mg/ml",
-      "price": 0.4987
+      "id": 865
     },
     {
+      "price": 0.0446,
+      "strength": "100 mg/5 ml",
       "name": "Quinine Dihydrochloride",
       "form": "syrup",
-      "strength": "100 mg/5 ml",
-      "price": 0.0446
+      "id": 866
     },
     {
+      "price": 0.243,
+      "strength": "125-150mg/ml",
       "name": "Quinine Dihydrochloride",
       "form": "ampoule",
-      "strength": "125-150mg/ml",
-      "price": 0.243
+      "id": 867
     },
     {
+      "price": 0.12,
+      "strength": "300 mg/ml",
       "name": "Quinine Hydrochloride",
       "form": "ampoule",
-      "strength": "300 mg/ml",
-      "price": 0.12
+      "id": 868
     },
     {
-      "name": "Quinine Sulfate",
-      "form": "tab-cap",
+      "price": 0.0911,
       "strength": "300 mg",
-      "price": 0.0911
+      "name": "Quinine Sulfate",
+      "form": "tab-cap",
+      "id": 869
     },
     {
-      "name": "Quinine Sulfate",
-      "form": "syrup",
+      "price": 0.0086,
       "strength": "50 mg/5 ml",
-      "price": 0.0086
-    },
-    {
       "name": "Quinine Sulfate",
       "form": "syrup",
+      "id": 870
+    },
+    {
+      "price": 0.0112,
       "strength": "100 mg/5 ml",
-      "price": 0.0112
+      "name": "Quinine Sulfate",
+      "form": "syrup",
+      "id": 871
     },
     {
-      "name": "Quinine Sulfate",
-      "form": "tab-cap",
+      "price": 0.0398,
       "strength": "200-250 mg",
-      "price": 0.0398
-    },
-    {
       "name": "Quinine Sulfate",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0645
+      "id": 872
     },
     {
+      "price": 0.0645,
+      "strength": "500 mg",
+      "name": "Quinine Sulfate",
+      "form": "tab-cap",
+      "id": 873
+    },
+    {
+      "price": 0.8364,
+      "strength": "400 mg",
       "name": "Raltegravir",
       "form": "tab-cap",
-      "strength": "400 mg",
-      "price": 0.8364
+      "id": 874
     },
     {
-      "name": "Ranitidine",
-      "form": "tab-cap",
+      "price": 0.0194,
       "strength": "300 mg",
-      "price": 0.0194
-    },
-    {
       "name": "Ranitidine",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.0204
+      "id": 875
     },
     {
+      "price": 0.0204,
+      "strength": "150 mg",
+      "name": "Ranitidine",
+      "form": "tab-cap",
+      "id": 876
+    },
+    {
+      "price": 0.1736,
+      "strength": "25 mg/ml",
       "name": "Ranitidine",
       "form": "ampoule",
-      "strength": "25 mg/ml",
-      "price": 0.1736
+      "id": 877
     },
     {
+      "price": 1,
+      "strength": "150 mg",
       "name": "Rifabutin",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 1
+      "id": 878
     },
     {
+      "price": 0.0756,
+      "strength": "",
       "name": "Rifamp.+Isoniazid+Pyrazin.+Ethambut.",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.0756
+      "id": 879
     },
     {
-      "name": "Rifampicin",
-      "form": "tab-cap",
+      "price": 0.0841,
       "strength": "150 mg",
-      "price": 0.0841
-    },
-    {
       "name": "Rifampicin",
       "form": "tab-cap",
+      "id": 880
+    },
+    {
+      "price": 0.1193,
       "strength": "300 mg",
-      "price": 0.1193
-    },
-    {
       "name": "Rifampicin",
       "form": "tab-cap",
-      "strength": "600 mg",
-      "price": 0.1265
+      "id": 881
     },
     {
+      "price": 0.1265,
+      "strength": "600 mg",
+      "name": "Rifampicin",
+      "form": "tab-cap",
+      "id": 882
+    },
+    {
+      "price": 0.1386,
+      "strength": "100 mg/5 ml",
       "name": "Rifampicin",
       "form": "syrup",
-      "strength": "100 mg/5 ml",
-      "price": 0.1386
+      "id": 883
     },
     {
-      "name": "Rifampicin+Isoniazid",
-      "form": "tab-cap",
+      "price": 0.0445,
       "strength": "60 mg+60 mg",
-      "price": 0.0445
-    },
-    {
       "name": "Rifampicin+Isoniazid",
       "form": "tab-cap",
+      "id": 884
+    },
+    {
+      "price": 0.0629,
       "strength": "150+75 mg",
-      "price": 0.0629
-    },
-    {
       "name": "Rifampicin+Isoniazid",
       "form": "tab-cap",
+      "id": 885
+    },
+    {
+      "price": 0.0837,
       "strength": "300+150 mg",
-      "price": 0.0837
-    },
-    {
       "name": "Rifampicin+Isoniazid",
       "form": "tab-cap",
+      "id": 886
+    },
+    {
+      "price": 0.0175,
       "strength": "60 mg+30 mg",
-      "price": 0.0175
-    },
-    {
       "name": "Rifampicin+Isoniazid",
       "form": "tab-cap",
-      "strength": "150mg+150mg",
-      "price": 0.0343
+      "id": 887
     },
     {
+      "price": 0.0343,
+      "strength": "150mg+150mg",
+      "name": "Rifampicin+Isoniazid",
+      "form": "tab-cap",
+      "id": 888
+    },
+    {
+      "price": 0.0729,
+      "strength": "150+75+275mg",
       "name": "Rifampicin+Isoniazid+Ethambutol",
       "form": "tab-cap",
-      "strength": "150+75+275mg",
-      "price": 0.0729
+      "id": 889
     },
     {
+      "price": 0.0255,
+      "strength": "60+30+150 mg",
       "name": "Rifampicin+Isoniazid+Pyrazinamide",
       "form": "tab-cap",
-      "strength": "60+30+150 mg",
-      "price": 0.0255
+      "id": 890
     },
     {
-      "name": "Risperidone",
-      "form": "tab-cap",
+      "price": 0.0182,
       "strength": "0.5 mg",
-      "price": 0.0182
-    },
-    {
       "name": "Risperidone",
       "form": "tab-cap",
+      "id": 891
+    },
+    {
+      "price": 0.02,
       "strength": "2 mg",
-      "price": 0.02
-    },
-    {
       "name": "Risperidone",
       "form": "tab-cap",
+      "id": 892
+    },
+    {
+      "price": 0.0268,
       "strength": "1 mg",
-      "price": 0.0268
-    },
-    {
       "name": "Risperidone",
       "form": "tab-cap",
+      "id": 893
+    },
+    {
+      "price": 0.0906,
       "strength": "3 mg",
-      "price": 0.0906
+      "name": "Risperidone",
+      "form": "tab-cap",
+      "id": 894
     },
     {
+      "price": 0.5978,
+      "strength": "1 mg/ml",
       "name": "Risperidone",
       "form": "solution",
-      "strength": "1 mg/ml",
-      "price": 0.5978
+      "id": 895
     },
     {
+      "price": 0.063,
+      "strength": "80 mg/ml",
       "name": "Ritonavir",
       "form": "solution",
-      "strength": "80 mg/ml",
-      "price": 0.063
+      "id": 896
     },
     {
+      "price": 0.1288,
+      "strength": "100 mg",
       "name": "Ritonavir",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.1288
+      "id": 897
     },
     {
+      "price": 15.9293,
+      "strength": "10 mg/ml",
       "name": "Rituximab",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 15.9293
+      "id": 898
     },
     {
+      "price": 0.6595,
+      "strength": "50 mg/5 ml",
       "name": "Rocuronium Bromide",
       "form": "vial",
-      "strength": "50 mg/5 ml",
-      "price": 0.6595
+      "id": 899
     },
     {
+      "price": 0.0037,
+      "strength": "2 mg/5 ml",
       "name": "Salbutamol",
       "form": "syrup",
-      "strength": "2 mg/5 ml",
-      "price": 0.0037
+      "id": 900
     },
     {
+      "price": 0.0068,
+      "strength": "4 mg",
       "name": "Salbutamol",
       "form": "tab-cap",
-      "strength": "4 mg",
-      "price": 0.0068
+      "id": 901
     },
     {
+      "price": 0.0078,
+      "strength": "100 mcg/dose",
       "name": "Salbutamol",
       "form": "inhaler",
-      "strength": "100 mcg/dose",
-      "price": 0.0078
+      "id": 902
     },
     {
+      "price": 0.047,
+      "strength": "0.5%",
       "name": "Salbutamol",
       "form": "respsol",
-      "strength": "0.5%",
-      "price": 0.047
+      "id": 903
     },
     {
+      "price": 1.983,
+      "strength": "0.5 mg/ml",
       "name": "Salbutamol",
       "form": "ampoule",
-      "strength": "0.5 mg/ml",
-      "price": 1.983
+      "id": 904
     },
     {
+      "price": 0.0026,
+      "strength": "2 mg",
       "name": "Salbutamol",
       "form": "tab-cap",
-      "strength": "2 mg",
-      "price": 0.0026
+      "id": 905
     },
     {
+      "price": 0.1456,
+      "strength": "0.2%",
       "name": "Salbutamol",
       "form": "respsol",
-      "strength": "0.2%",
-      "price": 0.1456
+      "id": 906
     },
     {
+      "price": 0.0568,
+      "strength": "",
       "name": "Salmeterol+Fluticasone",
       "form": "inhaler",
-      "strength": "",
-      "price": 0.0568
+      "id": 907
     },
     {
-      "name": "Saquinavir",
-      "form": "tab-cap",
+      "price": 0.244,
       "strength": "200 mg",
-      "price": 0.244
-    },
-    {
       "name": "Saquinavir",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 1.1308
+      "id": 908
     },
     {
+      "price": 1.1308,
+      "strength": "500 mg",
+      "name": "Saquinavir",
+      "form": "tab-cap",
+      "id": 909
+    },
+    {
+      "price": 0.0112,
+      "strength": "7.5 mg",
       "name": "Senna",
       "form": "tab-cap",
-      "strength": "7.5 mg",
-      "price": 0.0112
+      "id": 910
     },
     {
+      "price": 0.0382,
+      "strength": "50 mg",
       "name": "Sertraline",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0382
+      "id": 911
     },
     {
+      "price": 0.4105,
+      "strength": "",
       "name": "Sevoflurane",
       "form": "solution",
-      "strength": "",
-      "price": 0.4105
+      "id": 912
     },
     {
+      "price": 0.0247,
+      "strength": "1%",
       "name": "Silver Sulfadiazine",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.0247
+      "id": 913
     },
     {
-      "name": "Simvastatin",
-      "form": "tab-cap",
+      "price": 0.0245,
       "strength": "20 mg",
-      "price": 0.0245
-    },
-    {
       "name": "Simvastatin",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.0658
+      "id": 914
     },
     {
+      "price": 0.0658,
+      "strength": "10 mg",
+      "name": "Simvastatin",
+      "form": "tab-cap",
+      "id": 915
+    },
+    {
+      "price": 0.4725,
+      "strength": "76%",
       "name": "Sodium Amidotrizoate",
       "form": "vial",
-      "strength": "76%",
-      "price": 0.4725
+      "id": 916
     },
     {
+      "price": 0.014,
+      "strength": "8.4%",
       "name": "Sodium Bicarbonate",
       "form": "solution",
-      "strength": "8.4%",
-      "price": 0.014
+      "id": 917
     },
     {
-      "name": "Sodium Chloride In Water",
-      "form": "solution",
+      "price": 0.001,
       "strength": "0.9%",
-      "price": 0.001
-    },
-    {
       "name": "Sodium Chloride In Water",
       "form": "solution",
+      "id": 918
+    },
+    {
+      "price": 0.0011,
       "strength": "0.45%",
-      "price": 0.0011
+      "name": "Sodium Chloride In Water",
+      "form": "solution",
+      "id": 919
     },
     {
-      "name": "Sodium Dichloroisocyanurate",
-      "form": "tab-cap",
+      "price": 0.0445,
       "strength": "1.67 g",
-      "price": 0.0445
-    },
-    {
       "name": "Sodium Dichloroisocyanurate",
       "form": "tab-cap",
-      "strength": "8.5 mg",
-      "price": 0.0295
+      "id": 920
     },
     {
+      "price": 0.0295,
+      "strength": "8.5 mg",
+      "name": "Sodium Dichloroisocyanurate",
+      "form": "tab-cap",
+      "id": 921
+    },
+    {
+      "price": 0.0007,
+      "strength": "",
       "name": "Sodium Lactate Compound",
       "form": "solution",
-      "strength": "",
-      "price": 0.0007
+      "id": 922
     },
     {
+      "price": 0.3218,
+      "strength": "33%",
       "name": "Sodium Stibogluconate",
       "form": "vial",
-      "strength": "33%",
-      "price": 0.3218
+      "id": 923
     },
     {
+      "price": 0.0447,
+      "strength": "250 mg/5 ml",
       "name": "Sodium Valproate",
       "form": "suspen",
-      "strength": "250 mg/5 ml",
-      "price": 0.0447
+      "id": 924
     },
     {
-      "name": "Sodium Valproate",
-      "form": "tab-cap",
+      "price": 0.1702,
       "strength": "500 mg",
-      "price": 0.1702
-    },
-    {
       "name": "Sodium Valproate",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.0704
+      "id": 925
     },
     {
+      "price": 0.0704,
+      "strength": "200 mg",
+      "name": "Sodium Valproate",
+      "form": "tab-cap",
+      "id": 926
+    },
+    {
+      "price": 4.8,
+      "strength": "2 g",
       "name": "Spectinomycin",
       "form": "vial",
-      "strength": "2 g",
-      "price": 4.8
+      "id": 927
     },
     {
-      "name": "Spironolactone",
-      "form": "tab-cap",
+      "price": 0.0597,
       "strength": "25 mg",
-      "price": 0.0597
-    },
-    {
       "name": "Spironolactone",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0692
+      "id": 928
     },
     {
+      "price": 0.0692,
+      "strength": "100 mg",
+      "name": "Spironolactone",
+      "form": "tab-cap",
+      "id": 929
+    },
+    {
+      "price": 0.0062,
+      "strength": "1 mg/ml",
       "name": "Stavudine",
       "form": "solution",
-      "strength": "1 mg/ml",
-      "price": 0.0062
+      "id": 930
     },
     {
-      "name": "Stavudine",
-      "form": "tab-cap",
+      "price": 0.0206,
       "strength": "15 mg",
-      "price": 0.0206
-    },
-    {
       "name": "Stavudine",
       "form": "tab-cap",
+      "id": 931
+    },
+    {
+      "price": 0.0233,
       "strength": "20 mg",
-      "price": 0.0233
-    },
-    {
       "name": "Stavudine",
       "form": "tab-cap",
+      "id": 932
+    },
+    {
+      "price": 0.0409,
       "strength": "30 mg",
-      "price": 0.0409
-    },
-    {
       "name": "Stavudine",
       "form": "tab-cap",
-      "strength": "40 mg",
-      "price": 0.0606
+      "id": 933
     },
     {
+      "price": 0.0606,
+      "strength": "40 mg",
+      "name": "Stavudine",
+      "form": "tab-cap",
+      "id": 934
+    },
+    {
+      "price": 50.085,
+      "strength": "1,500,000 IU",
       "name": "Streptokinase",
       "form": "vial",
-      "strength": "1,500,000 IU",
-      "price": 50.085
+      "id": 935
     },
     {
+      "price": 4.391,
+      "strength": "1 g",
       "name": "Streptomycin Sulfate",
       "form": "vial",
-      "strength": "1 g",
-      "price": 4.391
+      "id": 936
     },
     {
+      "price": 0.2946,
+      "strength": "10%",
       "name": "Sulfacetamide Sodium",
       "form": "opht drop",
-      "strength": "10%",
-      "price": 0.2946
+      "id": 937
     },
     {
+      "price": 0.0529,
+      "strength": "500 mg",
       "name": "Sulfadiazine",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0529
+      "id": 938
     },
     {
-      "name": "Sulfadoxine+Pyrimethamine",
-      "form": "suspen",
+      "price": 0.0782,
       "strength": "250+12mg/5ml",
-      "price": 0.0782
+      "name": "Sulfadoxine+Pyrimethamine",
+      "form": "suspen",
+      "id": 939
     },
     {
+      "price": 0.106,
+      "strength": "500 mg+25 mg",
       "name": "Sulfadoxine+Pyrimethamine",
       "form": "tab-cap",
-      "strength": "500 mg+25 mg",
-      "price": 0.106
+      "id": 940
     },
     {
+      "price": 0.0048,
+      "strength": "200+40mg/5ml",
       "name": "Sulfamethoxazole+Trimethoprim",
       "form": "suspen",
-      "strength": "200+40mg/5ml",
-      "price": 0.0048
+      "id": 941
     },
     {
-      "name": "Sulfamethoxazole+Trimethoprim",
-      "form": "tab-cap",
+      "price": 0.0127,
       "strength": "400 mg+80 mg",
-      "price": 0.0127
-    },
-    {
       "name": "Sulfamethoxazole+Trimethoprim",
       "form": "tab-cap",
-      "strength": "800 mg+160mg",
-      "price": 0.0274
+      "id": 942
     },
     {
+      "price": 0.0274,
+      "strength": "800 mg+160mg",
+      "name": "Sulfamethoxazole+Trimethoprim",
+      "form": "tab-cap",
+      "id": 943
+    },
+    {
+      "price": 0.0501,
+      "strength": "80+16 mg/ml",
       "name": "Sulfamethoxazole+Trimethoprim",
       "form": "ampoule",
-      "strength": "80+16 mg/ml",
-      "price": 0.0501
+      "id": 944
     },
     {
-      "name": "Sulfamethoxazole+Trimethoprim",
-      "form": "tab-cap",
+      "price": 0.0051,
       "strength": "100 mg+20 mg",
-      "price": 0.0051
-    },
-    {
       "name": "Sulfamethoxazole+Trimethoprim",
       "form": "tab-cap",
+      "id": 945
+    },
+    {
+      "price": 0.0085,
       "strength": "100 mg+20 mg",
-      "price": 0.0085
-    },
-    {
       "name": "Sulfamethoxazole+Trimethoprim",
       "form": "tab-cap",
+      "id": 946
+    },
+    {
+      "price": 0.0133,
       "strength": "200 mg+40 mg",
-      "price": 0.0133
+      "name": "Sulfamethoxazole+Trimethoprim",
+      "form": "tab-cap",
+      "id": 947
     },
     {
+      "price": 0.1673,
+      "strength": "500 mg",
       "name": "Sulfasalazine",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.1673
+      "id": 948
     },
     {
+      "price": 0.2156,
+      "strength": "500+25 mg",
       "name": "Sulphametopyrazine-Pyrimethamine",
       "form": "tab-cap",
-      "strength": "500+25 mg",
-      "price": 0.2156
+      "id": 949
     },
     {
+      "price": 0.4067,
+      "strength": "20 mg/ml",
       "name": "Suxamethonium Cl",
       "form": "vial",
-      "strength": "20 mg/ml",
-      "price": 0.4067
+      "id": 950
     },
     {
+      "price": 0.4485,
+      "strength": "50 mg/ml",
       "name": "Suxamethonium Cl",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.4485
+      "id": 951
     },
     {
+      "price": 0.9307,
+      "strength": "1 mg",
       "name": "Tacrolimus",
       "form": "tab-cap",
-      "strength": "1 mg",
-      "price": 0.9307
+      "id": 952
     },
     {
-      "name": "Tamoxifen Citrate",
-      "form": "tab-cap",
+      "price": 0.0417,
       "strength": "10 mg",
-      "price": 0.0417
-    },
-    {
       "name": "Tamoxifen Citrate",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.16
+      "id": 953
     },
     {
+      "price": 0.16,
+      "strength": "20 mg",
+      "name": "Tamoxifen Citrate",
+      "form": "tab-cap",
+      "id": 954
+    },
+    {
+      "price": 0.0471,
+      "strength": "0.4 mg",
       "name": "Tamsulosin",
       "form": "tab-cap",
-      "strength": "0.4 mg",
-      "price": 0.0471
+      "id": 955
     },
     {
+      "price": 46.424,
+      "strength": "100 mg",
       "name": "Temozolomide",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 46.424
+      "id": 956
     },
     {
+      "price": 0.2251,
+      "strength": "300 mg+200mg",
       "name": "Tenofovir DF+Emtricitabine",
       "form": "tab-cap",
-      "strength": "300 mg+200mg",
-      "price": 0.2251
+      "id": 957
     },
     {
+      "price": 0.2178,
+      "strength": "300mg+300mg",
       "name": "Tenofovir DF+Lamivudine",
       "form": "tab-cap",
-      "strength": "300mg+300mg",
-      "price": 0.2178
+      "id": 958
     },
     {
+      "price": 0.5411,
+      "strength": "300 mg",
       "name": "Tenofovir Disoproxil Fumerate (TDF)",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.5411
+      "id": 959
     },
     {
+      "price": 0.0692,
+      "strength": "20 mg",
       "name": "Tenoxicam",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0692
+      "id": 960
     },
     {
+      "price": 0.11,
+      "strength": "1%",
       "name": "Terbinafine",
       "form": "cream",
-      "strength": "1%",
-      "price": 0.11
+      "id": 961
     },
     {
+      "price": 0.7117,
+      "strength": "250 mg",
       "name": "Terizidone",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.7117
+      "id": 962
     },
     {
+      "price": 0.1853,
+      "strength": "",
       "name": "Test, Bloodgroup Anti-A, Monoclonal",
       "form": "test",
-      "strength": "",
-      "price": 0.1853
+      "id": 963
     },
     {
+      "price": 0.2651,
+      "strength": "",
       "name": "Test, Bloodgroup Anti-A/B, Monoclonal",
       "form": "test",
-      "strength": "",
-      "price": 0.2651
+      "id": 964
     },
     {
+      "price": 0.1853,
+      "strength": "",
       "name": "Test, Bloodgroup, Anti-B, Monoclonal",
       "form": "test",
-      "strength": "",
-      "price": 0.1853
+      "id": 965
     },
     {
+      "price": 0.3307,
+      "strength": "",
       "name": "Test, Bloodgroup, Anti-D, Monoclonal",
       "form": "test",
-      "strength": "",
-      "price": 0.3307
+      "id": 966
     },
     {
+      "price": 0.1897,
+      "strength": "",
       "name": "Test, Brucella Melitensis Antigen",
       "form": "test",
-      "strength": "",
-      "price": 0.1897
+      "id": 967
     },
     {
+      "price": 0.0702,
+      "strength": "",
       "name": "Test, Glucose In Urine",
       "form": "test",
-      "strength": "",
-      "price": 0.0702
+      "id": 968
     },
     {
+      "price": 19.353,
+      "strength": "",
       "name": "Test, Glucose Meter",
       "form": "each",
-      "strength": "",
-      "price": 19.353
+      "id": 969
     },
     {
+      "price": 53.8583,
+      "strength": "",
       "name": "Test, Glucose Meter",
       "form": "each",
-      "strength": "",
-      "price": 53.8583
+      "id": 970
     },
     {
+      "price": 0.3042,
+      "strength": "",
       "name": "Test, Glucose Meter Strips",
       "form": "test",
-      "strength": "",
-      "price": 0.3042
+      "id": 971
     },
     {
+      "price": 0.3793,
+      "strength": "",
       "name": "Test, Glucose Meter Strips",
       "form": "each",
-      "strength": "",
-      "price": 0.3793
+      "id": 972
     },
     {
+      "price": 1.997,
+      "strength": "",
       "name": "Test, Hepatitis B HBsAg Elisa",
       "form": "test",
-      "strength": "",
-      "price": 1.997
+      "id": 973
     },
     {
+      "price": 1.2854,
+      "strength": "",
       "name": "Test, Hepatitis B, HBsAg, Determine",
       "form": "test",
-      "strength": "",
-      "price": 1.2854
+      "id": 974
     },
     {
+      "price": 0.5313,
+      "strength": "",
       "name": "Test, Hepatitis BsAg",
       "form": "test",
-      "strength": "",
-      "price": 0.5313
+      "id": 975
     },
     {
+      "price": 3.3638,
+      "strength": "",
       "name": "Test, Hepatitis C Elisa",
       "form": "test",
-      "strength": "",
-      "price": 3.3638
+      "id": 976
     },
     {
+      "price": 2.6333,
+      "strength": "",
       "name": "Test, Hepatitis C, HCVScan (TM)",
       "form": "test",
-      "strength": "",
-      "price": 2.6333
+      "id": 977
     },
     {
+      "price": 1.8755,
+      "strength": "",
       "name": "Test, HIV 1+2 Instantchek (TM)",
       "form": "test",
-      "strength": "",
-      "price": 1.8755
+      "id": 978
     },
     {
+      "price": 1.68,
+      "strength": "",
       "name": "Test, HIV 1+2 SD Bioline 3.0 (TM)",
       "form": "test",
-      "strength": "",
-      "price": 1.68
+      "id": 979
     },
     {
+      "price": 2.7854,
+      "strength": "",
       "name": "Test, HIV 1+2 Stat Pak (TM)",
       "form": "test",
-      "strength": "",
-      "price": 2.7854
+      "id": 980
     },
     {
+      "price": 0.5916,
+      "strength": "",
       "name": "Test, HIV 1+2, Intec",
       "form": "test",
-      "strength": "",
-      "price": 0.5916
+      "id": 981
     },
     {
+      "price": 2.7061,
+      "strength": "",
       "name": "Test, HIV 1+2+O Ag/Ab Murex (TM)",
       "form": "test",
-      "strength": "",
-      "price": 2.7061
+      "id": 982
     },
     {
+      "price": 0.9828,
+      "strength": "",
       "name": "Test, HIV, Capillus HIV-1/2 (TM)",
       "form": "test",
-      "strength": "",
-      "price": 0.9828
+      "id": 983
     },
     {
+      "price": 1.0699,
+      "strength": "",
       "name": "Test, HIV, Determine HIV-1/2 (TM)",
       "form": "test",
-      "strength": "",
-      "price": 1.0699
+      "id": 984
     },
     {
+      "price": 3.3696,
+      "strength": "",
       "name": "Test, HIV, Unigold I/II (TM)",
       "form": "test",
-      "strength": "",
-      "price": 3.3696
+      "id": 985
     },
     {
+      "price": 0.8915,
+      "strength": "",
       "name": "Test, Malaria P. Falciparum",
       "form": "test",
-      "strength": "",
-      "price": 0.8915
+      "id": 986
     },
     {
+      "price": 0.6203,
+      "strength": "",
       "name": "Test, Malaria, P. Falciparum",
       "form": "test",
-      "strength": "",
-      "price": 0.6203
+      "id": 987
     },
     {
+      "price": 1.7126,
+      "strength": "",
       "name": "Test, Malaria, P. Falciparum",
       "form": "test",
-      "strength": "",
-      "price": 1.7126
+      "id": 988
     },
     {
+      "price": 0.616,
+      "strength": "",
       "name": "Test, Malaria, P. Falciparum/P. Ovale",
       "form": "test",
-      "strength": "",
-      "price": 0.616
+      "id": 989
     },
     {
+      "price": 0.9947,
+      "strength": "",
       "name": "Test, Malaria, P. Falciparum+P. Pan",
       "form": "test",
-      "strength": "",
-      "price": 0.9947
+      "id": 990
     },
     {
+      "price": 1.0614,
+      "strength": "",
       "name": "Test, Malaria, P.Falciparum, P.Vivax",
       "form": "test",
-      "strength": "",
-      "price": 1.0614
+      "id": 991
     },
     {
+      "price": 1.0036,
+      "strength": "",
       "name": "Test, Malaria, SD-Bioline",
       "form": "test",
-      "strength": "",
-      "price": 1.0036
+      "id": 992
     },
     {
+      "price": 0.069,
+      "strength": "",
       "name": "Test, Pregnancy",
       "form": "test",
-      "strength": "",
-      "price": 0.069
+      "id": 993
     },
     {
+      "price": 0.1506,
+      "strength": "",
       "name": "Test, Syphilis",
       "form": "test",
-      "strength": "",
-      "price": 0.1506
+      "id": 994
     },
     {
+      "price": 1.9032,
+      "strength": "",
       "name": "Test, Syphilis",
       "form": "bott",
-      "strength": "",
-      "price": 1.9032
+      "id": 995
     },
     {
+      "price": 1.75,
+      "strength": "",
       "name": "Test, Syphilis Determine (TM)",
       "form": "test",
-      "strength": "",
-      "price": 1.75
+      "id": 996
     },
     {
+      "price": 0.125,
+      "strength": "",
       "name": "Test, Syphilis RPR (TM)",
       "form": "test",
-      "strength": "",
-      "price": 0.125
+      "id": 997
     },
     {
+      "price": 0.9987,
+      "strength": "",
       "name": "Test, Syphilis SD Bioline 3.0 (TM)",
       "form": "test",
-      "strength": "",
-      "price": 0.9987
+      "id": 998
     },
     {
+      "price": 0.043,
+      "strength": "",
       "name": "Test, Urine Glucose/Protein Strip",
       "form": "test",
-      "strength": "",
-      "price": 0.043
+      "id": 999
     },
     {
+      "price": 1.25,
+      "strength": "1500 IU",
       "name": "Tetanus Antitoxin",
       "form": "ampoule",
-      "strength": "1500 IU",
-      "price": 1.25
+      "id": 1000
     },
     {
+      "price": 0.1514,
+      "strength": "0.5%",
       "name": "Tetracaine",
       "form": "opht drop",
-      "strength": "0.5%",
-      "price": 0.1514
+      "id": 1001
     },
     {
+      "price": 0.036,
+      "strength": "500 mg",
       "name": "Tetracycline",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.036
+      "id": 1002
     },
     {
+      "price": 0.0457,
+      "strength": "3%",
       "name": "Tetracycline",
       "form": "ointment",
-      "strength": "3%",
-      "price": 0.0457
+      "id": 1003
     },
     {
+      "price": 0.0128,
+      "strength": "250 mg",
       "name": "Tetracycline HCl",
       "form": "tab-cap",
-      "strength": "250 mg",
-      "price": 0.0128
+      "id": 1004
     },
     {
+      "price": 0.069,
+      "strength": "1%",
       "name": "Tetracycline HCl",
       "form": "opht oint",
-      "strength": "1%",
-      "price": 0.069
+      "id": 1005
     },
     {
+      "price": 0.0512,
+      "strength": "1%",
       "name": "Tetracycline HCl",
       "form": "ointment",
-      "strength": "1%",
-      "price": 0.0512
+      "id": 1006
     },
     {
+      "price": 0.4168,
+      "strength": "100 mg",
       "name": "Thalidomide",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.4168
+      "id": 1007
     },
     {
+      "price": 0.024,
+      "strength": "200 mg",
       "name": "Theophylline",
       "form": "tab-cap",
-      "strength": "200 mg",
-      "price": 0.024
+      "id": 1008
     },
     {
-      "name": "Thiopental Sodium",
-      "form": "vial",
+      "price": 1.375,
       "strength": "500 mg",
-      "price": 1.375
-    },
-    {
       "name": "Thiopental Sodium",
       "form": "vial",
+      "id": 1009
+    },
+    {
+      "price": 2.03,
       "strength": "1 g",
-      "price": 2.03
+      "name": "Thiopental Sodium",
+      "form": "vial",
+      "id": 1010
     },
     {
+      "price": 0.0617,
+      "strength": "500 mg",
       "name": "Tiabendazole",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0617
+      "id": 1011
     },
     {
+      "price": 0.1066,
+      "strength": "500 mg",
       "name": "Tiabendazole",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.1066
+      "id": 1012
     },
     {
-      "name": "Timolol Maleate",
-      "form": "opht drop",
+      "price": 0.1814,
       "strength": "0.25%",
-      "price": 0.1814
-    },
-    {
       "name": "Timolol Maleate",
       "form": "opht drop",
-      "strength": "0.5%",
-      "price": 0.1932
+      "id": 1013
     },
     {
+      "price": 0.1932,
+      "strength": "0.5%",
+      "name": "Timolol Maleate",
+      "form": "opht drop",
+      "id": 1014
+    },
+    {
+      "price": 0.0675,
+      "strength": "500 mg",
       "name": "Tinidazole",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.0675
+      "id": 1015
     },
     {
+      "price": 7.0688,
+      "strength": "40 mg",
       "name": "Tioguanine",
       "form": "tab-cap",
-      "strength": "40 mg",
-      "price": 7.0688
+      "id": 1016
     },
     {
-      "name": "Topiramate",
-      "form": "tab-cap",
+      "price": 0.0243,
       "strength": "25 mg",
-      "price": 0.0243
-    },
-    {
       "name": "Topiramate",
       "form": "tab-cap",
-      "strength": "100 mg",
-      "price": 0.0546
+      "id": 1017
     },
     {
+      "price": 0.0546,
+      "strength": "100 mg",
+      "name": "Topiramate",
+      "form": "tab-cap",
+      "id": 1018
+    },
+    {
+      "price": 0.0218,
+      "strength": "50 mg",
       "name": "Tramadol Hydrochloride",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0218
+      "id": 1019
     },
     {
+      "price": 0.0766,
+      "strength": "100 mg/ml",
       "name": "Tramadol Hydrochloride",
       "form": "solution",
-      "strength": "100 mg/ml",
-      "price": 0.0766
+      "id": 1020
     },
     {
-      "name": "Tramadol Hydrochloride",
-      "form": "ampoule",
+      "price": 0.209,
       "strength": "50 mg/ml",
-      "price": 0.209
-    },
-    {
       "name": "Tramadol Hydrochloride",
       "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 0.0559
+      "id": 1021
     },
     {
+      "price": 0.0559,
+      "strength": "100 mg/ml",
+      "name": "Tramadol Hydrochloride",
+      "form": "ampoule",
+      "id": 1022
+    },
+    {
+      "price": 1.1599,
+      "strength": "100 mg/ml",
       "name": "Tranexamic Acid",
       "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 1.1599
+      "id": 1023
     },
     {
+      "price": 1877.355,
+      "strength": "440 mg",
       "name": "Trastuzumab",
       "form": "vial",
-      "strength": "440 mg",
-      "price": 1877.355
+      "id": 1024
     },
     {
+      "price": 0.9628,
+      "strength": "10 mg/ml",
       "name": "Triamcinolone Acetonide",
       "form": "ampoule",
-      "strength": "10 mg/ml",
-      "price": 0.9628
+      "id": 1025
     },
     {
+      "price": 0.0815,
+      "strength": "5 mg",
       "name": "Trifluoperazine",
       "form": "tab-cap",
-      "strength": "5 mg",
-      "price": 0.0815
+      "id": 1026
     },
     {
-      "name": "Trihexyphenidyl",
-      "form": "tab-cap",
+      "price": 0.022,
       "strength": "2 mg",
-      "price": 0.022
-    },
-    {
       "name": "Trihexyphenidyl",
       "form": "tab-cap",
+      "id": 1027
+    },
+    {
+      "price": 0.023,
       "strength": "5 mg",
-      "price": 0.023
+      "name": "Trihexyphenidyl",
+      "form": "tab-cap",
+      "id": 1028
     },
     {
-      "name": "Tropicamide",
-      "form": "opht drop",
+      "price": 0.2914,
       "strength": "1%",
-      "price": 0.2914
-    },
-    {
       "name": "Tropicamide",
       "form": "opht drop",
-      "strength": "0.5%",
-      "price": 0.374
+      "id": 1029
     },
     {
+      "price": 0.374,
+      "strength": "0.5%",
+      "name": "Tropicamide",
+      "form": "opht drop",
+      "id": 1030
+    },
+    {
+      "price": 0.218,
+      "strength": "5 IU",
       "name": "Tuberculin",
       "form": "vial",
-      "strength": "5 IU",
-      "price": 0.218
+      "id": 1031
     },
     {
+      "price": 4.914,
+      "strength": "76%",
       "name": "Urographin",
       "form": "solution",
-      "strength": "76%",
-      "price": 4.914
+      "id": 1032
     },
     {
+      "price": 0.1564,
+      "strength": "",
       "name": "Vaccine, BCG",
       "form": "powder",
-      "strength": "",
-      "price": 0.1564
+      "id": 1033
     },
     {
+      "price": 0.5593,
+      "strength": "",
       "name": "Vaccine, Diphtheria-Tetanus",
       "form": "vial",
-      "strength": "",
-      "price": 0.5593
+      "id": 1034
     },
     {
+      "price": 1.1209,
+      "strength": "",
       "name": "Vaccine, Hepatitis B",
       "form": "vial",
-      "strength": "",
-      "price": 1.1209
+      "id": 1035
     },
     {
+      "price": 94.5,
+      "strength": "",
       "name": "Vaccine, HPV",
       "form": "vial",
-      "strength": "",
-      "price": 94.5
+      "id": 1036
     },
     {
+      "price": 5.2592,
+      "strength": "0.5 ml",
       "name": "Vaccine, Influenza",
       "form": "ampoule",
-      "strength": "0.5 ml",
-      "price": 5.2592
+      "id": 1037
     },
     {
+      "price": 0.7016,
+      "strength": "",
       "name": "Vaccine, Measles",
       "form": "vial",
-      "strength": "",
-      "price": 0.7016
+      "id": 1038
     },
     {
+      "price": 0.237,
+      "strength": "",
       "name": "Vaccine, Measles-Mumps-Rubella",
       "form": "vial",
-      "strength": "",
-      "price": 0.237
+      "id": 1039
     },
     {
+      "price": 10.7708,
+      "strength": "",
       "name": "Vaccine, Meningococcal",
       "form": "vial",
-      "strength": "",
-      "price": 10.7708
+      "id": 1040
     },
     {
+      "price": 15.4111,
+      "strength": "",
       "name": "Vaccine, Pentavalent",
       "form": "vial",
-      "strength": "",
-      "price": 15.4111
+      "id": 1041
     },
     {
+      "price": 16.9838,
+      "strength": "",
       "name": "Vaccine, Pneumococcal",
       "form": "vial",
-      "strength": "",
-      "price": 16.9838
+      "id": 1042
     },
     {
+      "price": 0.2465,
+      "strength": "",
       "name": "Vaccine, Polio",
       "form": "vial",
-      "strength": "",
-      "price": 0.2465
+      "id": 1043
     },
     {
+      "price": 15.6334,
+      "strength": "",
       "name": "Vaccine, Rabies",
       "form": "vial",
-      "strength": "",
-      "price": 15.6334
+      "id": 1044
     },
     {
+      "price": 6.9614,
+      "strength": "",
       "name": "Vaccine, Rotavirus",
       "form": "vial",
-      "strength": "",
-      "price": 6.9614
+      "id": 1045
     },
     {
+      "price": 0.6526,
+      "strength": "",
       "name": "Vaccine, Tetanus Toxoid",
       "form": "vial",
-      "strength": "",
-      "price": 0.6526
+      "id": 1046
     },
     {
+      "price": 4.4352,
+      "strength": "",
       "name": "Vaccine, Typhoid",
       "form": "vial",
-      "strength": "",
-      "price": 4.4352
+      "id": 1047
     },
     {
+      "price": 21.2817,
+      "strength": "",
       "name": "Vaccine, Yellow Fever",
       "form": "vial",
-      "strength": "",
-      "price": 21.2817
+      "id": 1048
     },
     {
+      "price": 0.625,
+      "strength": "500 mg",
       "name": "Valaciclovir",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.625
+      "id": 1049
     },
     {
+      "price": 20.5755,
+      "strength": "450 mg",
       "name": "Valganciclovir",
       "form": "tab-cap",
-      "strength": "450 mg",
-      "price": 20.5755
+      "id": 1050
     },
     {
+      "price": 0.0333,
+      "strength": "200 mg/5 ml",
       "name": "Valproic Acid",
       "form": "syrup",
-      "strength": "200 mg/5 ml",
-      "price": 0.0333
+      "id": 1051
     },
     {
-      "name": "Valproic Acid",
-      "form": "tab-cap",
+      "price": 0.1755,
       "strength": "200 mg",
-      "price": 0.1755
-    },
-    {
       "name": "Valproic Acid",
       "form": "tab-cap",
+      "id": 1052
+    },
+    {
+      "price": 0.31,
       "strength": "500 mg",
-      "price": 0.31
-    },
-    {
       "name": "Valproic Acid",
       "form": "tab-cap",
-      "strength": "150 mg",
-      "price": 0.0822
+      "id": 1053
     },
     {
+      "price": 0.0822,
+      "strength": "150 mg",
+      "name": "Valproic Acid",
+      "form": "tab-cap",
+      "id": 1054
+    },
+    {
+      "price": 1.75,
+      "strength": "500 mg",
       "name": "Vancomycin",
       "form": "vial",
-      "strength": "500 mg",
-      "price": 1.75
+      "id": 1055
     },
     {
+      "price": 2.805,
+      "strength": "",
       "name": "VDRL Carbon Antigen",
       "form": "solution",
-      "strength": "",
-      "price": 2.805
+      "id": 1056
     },
     {
+      "price": 0.8512,
+      "strength": "4 mg",
       "name": "Vecuronium",
       "form": "vial",
-      "strength": "4 mg",
-      "price": 0.8512
+      "id": 1057
     },
     {
+      "price": 0.1425,
+      "strength": "75 mg",
       "name": "Venlafaxine",
       "form": "tab-cap",
-      "strength": "75 mg",
-      "price": 0.1425
+      "id": 1058
     },
     {
-      "name": "Verapamil HCl",
-      "form": "tab-cap",
+      "price": 0.0247,
       "strength": "80 mg",
-      "price": 0.0247
-    },
-    {
       "name": "Verapamil HCl",
       "form": "tab-cap",
+      "id": 1059
+    },
+    {
+      "price": 0.0448,
       "strength": "40 mg",
-      "price": 0.0448
-    },
-    {
       "name": "Verapamil HCl",
       "form": "tab-cap",
-      "strength": "240 mg",
-      "price": 0.0879
+      "id": 1060
     },
     {
+      "price": 0.0879,
+      "strength": "240 mg",
+      "name": "Verapamil HCl",
+      "form": "tab-cap",
+      "id": 1061
+    },
+    {
+      "price": 1.4905,
+      "strength": "2.5 mg/ml",
       "name": "Verapamil HCl",
       "form": "vial",
-      "strength": "2.5 mg/ml",
-      "price": 1.4905
+      "id": 1062
     },
     {
+      "price": 15.575,
+      "strength": "10 mg",
       "name": "Vinblastine",
       "form": "vial",
-      "strength": "10 mg",
-      "price": 15.575
+      "id": 1063
     },
     {
+      "price": 3.2783,
+      "strength": "1 mg",
       "name": "Vincristine",
       "form": "vial",
-      "strength": "1 mg",
-      "price": 3.2783
+      "id": 1064
     },
     {
-      "name": "Vinorelbine",
-      "form": "vial",
+      "price": 8.6146,
       "strength": "10 mg/1 ml",
-      "price": 8.6146
-    },
-    {
       "name": "Vinorelbine",
       "form": "vial",
+      "id": 1065
+    },
+    {
+      "price": 30.4579,
       "strength": "50 mg/5 ml",
-      "price": 30.4579
+      "name": "Vinorelbine",
+      "form": "vial",
+      "id": 1066
     },
     {
-      "name": "Vitamin A",
-      "form": "tab-cap",
+      "price": 0.0376,
       "strength": "30 mg",
-      "price": 0.0376
-    },
-    {
       "name": "Vitamin A",
       "form": "tab-cap",
+      "id": 1067
+    },
+    {
+      "price": 0.039,
       "strength": "7.5 mg",
-      "price": 0.039
-    },
-    {
       "name": "Vitamin A",
       "form": "tab-cap",
+      "id": 1068
+    },
+    {
+      "price": 0.0451,
       "strength": "15 mg",
-      "price": 0.0451
-    },
-    {
       "name": "Vitamin A",
       "form": "tab-cap",
+      "id": 1069
+    },
+    {
+      "price": 0.0558,
       "strength": "60 mg",
-      "price": 0.0558
-    },
-    {
       "name": "Vitamin A",
       "form": "tab-cap",
-      "strength": "3 mg",
-      "price": 0.0374
+      "id": 1070
     },
     {
+      "price": 0.0374,
+      "strength": "3 mg",
+      "name": "Vitamin A",
+      "form": "tab-cap",
+      "id": 1071
+    },
+    {
+      "price": 0.0037,
+      "strength": "",
       "name": "Vitamin B Complex",
       "form": "syrup",
-      "strength": "",
-      "price": 0.0037
+      "id": 1072
     },
     {
+      "price": 0.0052,
+      "strength": "",
       "name": "Vitamin B Complex",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.0052
+      "id": 1073
     },
     {
+      "price": 0.0669,
+      "strength": "",
       "name": "Vitamin B Complex",
       "form": "ampoule",
-      "strength": "",
-      "price": 0.0669
+      "id": 1074
     },
     {
-      "name": "Vitamin B1",
-      "form": "tab-cap",
+      "price": 0.0221,
       "strength": "100 mg",
-      "price": 0.0221
-    },
-    {
-      "name": "Vitamin B1",
-      "form": "ampoule",
-      "strength": "100 mg/ml",
-      "price": 0.217
-    },
-    {
       "name": "Vitamin B1",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0067
+      "id": 1075
     },
     {
+      "price": 0.217,
+      "strength": "100 mg/ml",
+      "name": "Vitamin B1",
+      "form": "ampoule",
+      "id": 1076
+    },
+    {
+      "price": 0.0067,
+      "strength": "50 mg",
+      "name": "Vitamin B1",
+      "form": "tab-cap",
+      "id": 1077
+    },
+    {
+      "price": 0.6915,
+      "strength": "1 mg/ml",
       "name": "Vitamin B12",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 0.6915
+      "id": 1078
     },
     {
-      "name": "Vitamin B6",
-      "form": "tab-cap",
+      "price": 0.0059,
       "strength": "25 mg",
-      "price": 0.0059
-    },
-    {
       "name": "Vitamin B6",
       "form": "tab-cap",
-      "strength": "50 mg",
-      "price": 0.0179
+      "id": 1079
     },
     {
+      "price": 0.0179,
+      "strength": "50 mg",
+      "name": "Vitamin B6",
+      "form": "tab-cap",
+      "id": 1080
+    },
+    {
+      "price": 0.4384,
+      "strength": "50 mg/ml",
       "name": "Vitamin B6",
       "form": "ampoule",
-      "strength": "50 mg/ml",
-      "price": 0.4384
+      "id": 1081
     },
     {
-      "name": "Vitamin C",
-      "form": "tab-cap",
+      "price": 0.0062,
       "strength": "100 mg",
-      "price": 0.0062
-    },
-    {
       "name": "Vitamin C",
       "form": "tab-cap",
+      "id": 1082
+    },
+    {
+      "price": 0.0071,
       "strength": "250 mg",
-      "price": 0.0071
-    },
-    {
       "name": "Vitamin C",
       "form": "tab-cap",
-      "strength": "500 mg",
-      "price": 0.02
+      "id": 1083
     },
     {
+      "price": 0.02,
+      "strength": "500 mg",
+      "name": "Vitamin C",
+      "form": "tab-cap",
+      "id": 1084
+    },
+    {
+      "price": 0.3407,
+      "strength": "0.25 mcg",
       "name": "Vitamin D",
       "form": "tab-cap",
-      "strength": "0.25 mcg",
-      "price": 0.3407
+      "id": 1085
     },
     {
+      "price": 0.0713,
+      "strength": "10,000 IU/ml",
       "name": "Vitamin D3",
       "form": "drops",
-      "strength": "10,000 IU/ml",
-      "price": 0.0713
+      "id": 1086
     },
     {
+      "price": 0.2702,
+      "strength": "10 mg",
       "name": "Vitamin K1",
       "form": "tab-cap",
-      "strength": "10 mg",
-      "price": 0.2702
+      "id": 1087
     },
     {
-      "name": "Vitamin K1",
-      "form": "ampoule",
+      "price": 0.3612,
       "strength": "10 mg/ml",
-      "price": 0.3612
-    },
-    {
       "name": "Vitamin K1",
       "form": "ampoule",
-      "strength": "1 mg/ml",
-      "price": 0.3738
+      "id": 1088
     },
     {
+      "price": 0.3738,
+      "strength": "1 mg/ml",
+      "name": "Vitamin K1",
+      "form": "ampoule",
+      "id": 1089
+    },
+    {
+      "price": 0.0101,
+      "strength": "",
       "name": "Vitamin, Multi",
       "form": "syrup",
-      "strength": "",
-      "price": 0.0101
+      "id": 1090
     },
     {
+      "price": 0.0166,
+      "strength": "",
       "name": "Vitamin, Multi",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.0166
+      "id": 1091
     },
     {
+      "price": 0.0274,
+      "strength": "",
       "name": "Vitamin, Multi",
       "form": "drops",
-      "strength": "",
-      "price": 0.0274
+      "id": 1092
     },
     {
+      "price": 0.0575,
+      "strength": "",
       "name": "Vitamin, Multi + Iron",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.0575
+      "id": 1093
     },
     {
+      "price": 0.02,
+      "strength": "",
       "name": "Vitamin, Multi + Minerals",
       "form": "tab-cap",
-      "strength": "",
-      "price": 0.02
+      "id": 1094
     },
     {
-      "name": "Warfarin Sodium",
-      "form": "tab-cap",
+      "price": 0.0336,
       "strength": "3 mg",
-      "price": 0.0336
-    },
-    {
       "name": "Warfarin Sodium",
       "form": "tab-cap",
+      "id": 1095
+    },
+    {
+      "price": 0.04,
       "strength": "1 mg",
-      "price": 0.04
-    },
-    {
       "name": "Warfarin Sodium",
       "form": "tab-cap",
+      "id": 1096
+    },
+    {
+      "price": 0.0453,
       "strength": "5 mg",
-      "price": 0.0453
-    },
-    {
       "name": "Warfarin Sodium",
       "form": "tab-cap",
+      "id": 1097
+    },
+    {
+      "price": 0.0458,
       "strength": "2 mg",
-      "price": 0.0458
+      "name": "Warfarin Sodium",
+      "form": "tab-cap",
+      "id": 1098
     },
     {
-      "name": "Water For Injection",
-      "form": "ampoule",
+      "price": 0.0399,
       "strength": "5 ml",
-      "price": 0.0399
-    },
-    {
       "name": "Water For Injection",
       "form": "ampoule",
-      "strength": "10 ml",
-      "price": 0.0584
+      "id": 1099
     },
     {
+      "price": 0.0584,
+      "strength": "10 ml",
+      "name": "Water For Injection",
+      "form": "ampoule",
+      "id": 1100
+    },
+    {
+      "price": 0.85,
+      "strength": "100 ml",
       "name": "Water For Injection",
       "form": "vial",
-      "strength": "100 ml",
-      "price": 0.85
+      "id": 1101
     },
     {
+      "price": 0.0747,
+      "strength": "0.05%",
       "name": "Xylometazoline",
       "form": "nasal",
-      "strength": "0.05%",
-      "price": 0.0747
+      "id": 1102
     },
     {
+      "price": 0.0103,
+      "strength": "50 mg/5 ml",
       "name": "Zidovudine",
       "form": "solution",
-      "strength": "50 mg/5 ml",
-      "price": 0.0103
+      "id": 1103
     },
     {
-      "name": "Zidovudine",
-      "form": "tab-cap",
+      "price": 0.0662,
       "strength": "100 mg",
-      "price": 0.0662
-    },
-    {
       "name": "Zidovudine",
       "form": "tab-cap",
-      "strength": "300 mg",
-      "price": 0.1888
+      "id": 1104
     },
     {
+      "price": 0.1888,
+      "strength": "300 mg",
+      "name": "Zidovudine",
+      "form": "tab-cap",
+      "id": 1105
+    },
+    {
+      "price": 0.012,
+      "strength": "10%",
       "name": "Zinc Oxide",
       "form": "ointment",
-      "strength": "10%",
-      "price": 0.012
+      "id": 1106
     },
     {
-      "name": "Zinc Sulfate",
-      "form": "syrup",
+      "price": 0.0019,
       "strength": "10 mg/5 ml",
-      "price": 0.0019
-    },
-    {
       "name": "Zinc Sulfate",
       "form": "syrup",
+      "id": 1107
+    },
+    {
+      "price": 0.0025,
       "strength": "20 mg/5 ml",
-      "price": 0.0025
+      "name": "Zinc Sulfate",
+      "form": "syrup",
+      "id": 1108
     },
     {
-      "name": "Zinc Sulfate",
-      "form": "tab-cap",
+      "price": 0.0072,
       "strength": "10 mg",
-      "price": 0.0072
-    },
-    {
       "name": "Zinc Sulfate",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.011
+      "id": 1109
     },
     {
+      "price": 0.011,
+      "strength": "20 mg",
       "name": "Zinc Sulfate",
       "form": "tab-cap",
-      "strength": "20 mg",
-      "price": 0.0452
+      "id": 1110
     },
     {
+      "price": 0.0452,
+      "strength": "20 mg",
+      "name": "Zinc Sulfate",
+      "form": "tab-cap",
+      "id": 1111
+    },
+    {
+      "price": 29.38,
+      "strength": "4 mg/5 ml",
       "name": "Zoledronic Acid",
       "form": "vial",
-      "strength": "4 mg/5 ml",
-      "price": 29.38
+      "id": 1112
     }
   ];
   return medicine;

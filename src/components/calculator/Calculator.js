@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { CalculationResult } from './CalculationResult';
 import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
+
+let ReactGA = require('react-ga');
+ReactGA.initialize('UA-93090833-2');
+
 /*
 * The Calculator Component
 */
@@ -29,6 +33,12 @@ export default class Calculator extends Component {
       userDrugPrice: userDrugPrice,
       currentDrug: drug
     }, this.calculate);
+    ReactGA.event({
+      category: "Search",
+      action: "search",
+      label: `${drug.id};${drug.name};${drug.price};${userDrugPrice}`,
+      value: userDrugPrice / (drug.price * this.EXCHNG)
+    });
   }
 
   // get list of drug names from list of drug objects
@@ -73,8 +83,10 @@ export default class Calculator extends Component {
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
             />
-            <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
-            <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
+            {!document.location.pathname.includes("embed") ? <div className="about">
+              <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
+              <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
+            </div> : null}
           </div>
         </div>
           : null

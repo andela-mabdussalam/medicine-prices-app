@@ -154,11 +154,11 @@ input[type="color"]:focus,
 
 .call-to-action{
   font-size: 40px;
-  color: #CE4415;
   font-weight: 300;
 }
 
 .call-to-action:hover{
+  color: black;
   text-decoration: none;
 }
 
@@ -241,4 +241,25 @@ footer .fa-facebook-square {
 
 .punch-ng-body{
   font-family: 'Playfair Display', serif;
+}
+
+.share-results-links a{
+  margin-right: 20px;
+}
+
+.share-results-links p{
+  font-size: 30px;
+  font-weight: 300;
+  color: #CE4415;
+}
+
+.fa-whatsapp{
+  color: #65bc54
+}
+.fa-twitter{
+  color: #25a9df;
+}
+
+.fa-facebook{
+  color: #3B5998;
 }

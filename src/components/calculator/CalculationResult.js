@@ -19,7 +19,7 @@ export class CalculationResult extends Component {
   }
   generateTwitterLink() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
-    let text = encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${this.props.drug.name}!`);
+    let text = encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${this.props.drug.name}! pic.twitter.com/HaRC0NujLF`);
     let twitterLink = `https://twitter.com/intent/tweet?text=${text}&hashtags=CheckYourMedPrices&url=https://medprices.codefornigeria.org`;
     return twitterLink;
   }
@@ -44,11 +44,19 @@ export class CalculationResult extends Component {
         </TypeWriter>
         <Fade in={this.state.showTwitterLink} timeout={2000}>
           <div className="text-center">
-            <a className={"call-to-action " + this.props.bodyFont} href={this.generateTwitterLink.apply(this)} target="blank" >
-              <i className="fa fa-twitter fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
-              &nbsp;Share on Twitter...
-            </a>
-            <p className={"assumption text-center " + this.props.bodyFont}>Assumption: $1 = &#8358;{this.props.exchangeRate}</p>
+            <div className="share-results-links">
+              <p className="text-center">Share</p>
+              <a className="call-to-action" href={this.generateTwitterLink.apply(this)} target="blank" >
+                <i className="fa fa-twitter fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
+              </a>
+              <a className="call-to-action" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" target="blank">
+                <i className="fa fa-whatsapp fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
+              </a>
+              <a className="call-to-action" href="#" target="blank">
+                <i className="fa fa-facebook fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p className={"assumption text-center " + this.props.bodyFont}>The tool assumes that $1 is changed for &#8358;{this.props.exchangeRate}</p>
             <p className="reset-calculator text-center" onClick={this.props.resetCalculator}>
               <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
               <span className={this.props.bodyFont}>&nbsp;Check something else</span>
