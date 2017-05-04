@@ -4,7 +4,7 @@ import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
 
 let ReactGA = require('react-ga');
-ReactGA.initialize('UA-93090833-2');
+ReactGA.initialize('UA-93090833-2', { debug: true });
 
 /*
 * The Calculator Component

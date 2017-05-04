@@ -17,10 +17,22 @@ export class CalculationResult extends Component {
   percentageDecreaseOrIncrease() {
     return this.props.percentage >= 100 ? this.props.percentage - 100 : 100 - this.props.percentage;
   }
-  generateTwitterLink() {
+
+  generateQuote() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
-    let text = encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${this.props.drug.name}! pic.twitter.com/HaRC0NujLF`);
-    let twitterLink = `https://twitter.com/intent/tweet?text=${text}&hashtags=CheckYourMedPrices&url=https://medprices.codefornigeria.org`;
+    return encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${this.props.drug.name} 💊`);
+  }
+
+  generateFacebookLink() {
+    let href = "https://medprices.codefornigeria.org";
+    let quote = this.generateQuote.apply(this);
+    let appID = 106054503300342;
+    let facebookLink = `https://www.facebook.com/dialog/share?app_id=${appID}&display=popup&href=${href}&quote=${quote}&hashtag=CheckYourMedPrices`
+    return facebookLink;
+  }
+  generateTwitterLink() {
+    let quote = this.generateQuote.apply(this);
+    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=CheckYourMedPrices&url=http://bit.ly/2pvICr5`;
     return twitterLink;
   }
 
@@ -49,10 +61,10 @@ export class CalculationResult extends Component {
               <a className="call-to-action" href={this.generateTwitterLink.apply(this)} target="blank" >
                 <i className="fa fa-twitter fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
-              <a className="call-to-action" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" target="blank">
+              <a className="call-to-action" href={"whatsapp://send?text=" + this.generateQuote.apply(this)} data-action="share/whatsapp/share" target="blank">
                 <i className="fa fa-whatsapp fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
-              <a className="call-to-action" href="#" target="blank">
+              <a className="call-to-action" href={this.generateFacebookLink.apply(this)} target="blank">
                 <i className="fa fa-facebook fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
             </div>
