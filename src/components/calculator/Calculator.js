@@ -37,7 +37,7 @@ export default class Calculator extends Component {
       category: "Search",
       action: "search",
       label: `${drug.id};${drug.name};${drug.price};${userDrugPrice}`,
-      value: userDrugPrice / (drug.price * this.EXCHNG)
+      value: Number((userDrugPrice / (drug.price * this.EXCHNG) * 100).toFixed(0))
     });
   }
 
@@ -55,7 +55,6 @@ export default class Calculator extends Component {
   calculate() {
     let userPercentage = (this.state.userDrugPrice / (this.state.currentDrug.price * this.EXCHNG)) * 100
     userPercentage = Math.round(userPercentage);
-    console.log(userPercentage);
     this.setState({
       userPercentage: userPercentage,
       showCalculator: false,
@@ -75,7 +74,9 @@ export default class Calculator extends Component {
           <div className="price-form-container">
             <p className={"sub text-center " + this.props.bodyFont}>You might be paying too much for life saving drugs, let’s find out.</p>
             <h1 className={"pre-form-heading text-center " + this.props.headerFont}>What should your medicine cost?</h1>
-            <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>Tell us how much you pay.</p>
+            <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>
+              Tell us how much you pay.
+            </p>
             <PriceForm
               drugs={this.state.drugs}
               drugNames={this.getListofDrugNames()}

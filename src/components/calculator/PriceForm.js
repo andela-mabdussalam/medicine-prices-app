@@ -64,6 +64,11 @@ export class PriceForm extends Component {
         <FormGroup>
           <Button className={"show-result-btn col-sm-offset-5 col-xs-offset-3 " + this.props.headerFont} disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
+        <p className={"sub sachet " + this.props.bodyFont}>
+          * (If you bought your medicine in a sachet, count the number of tablets in a
+            sachet and divide the price by the number of tablets. Most sachets in Nigeria
+            contain 10 tablets.)
+        </p>
       </Form>
     )
   }

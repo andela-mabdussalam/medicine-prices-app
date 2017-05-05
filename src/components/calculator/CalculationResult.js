@@ -31,8 +31,8 @@ export class CalculationResult extends Component {
     return facebookLink;
   }
   generateTwitterLink() {
-    let quote = this.generateQuote.apply(this);
-    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=CheckYourMedPrices&url=http://bit.ly/2pvICr5`;
+    let quote = this.generateQuote.apply(this) + " https://pic.twitter.com/HaRC0NujLF";
+    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=CheckYourMedPrices&url=http://bit.ly/CheckMedPrices`;
     return twitterLink;
   }
 
@@ -61,7 +61,7 @@ export class CalculationResult extends Component {
               <a className="call-to-action" href={this.generateTwitterLink.apply(this)} target="blank" >
                 <i className="fa fa-twitter fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
-              <a className="call-to-action" href={"whatsapp://send?text=" + this.generateQuote.apply(this)} data-action="share/whatsapp/share" target="blank">
+              <a className="call-to-action" href={"whatsapp://send?text=" + this.generateQuote.apply(this) + " #CheckYourMedPrices http://bit.ly/CheckMedPrices"} data-action="share/whatsapp/share" target="blank">
                 <i className="fa fa-whatsapp fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
               <a className="call-to-action" href={this.generateFacebookLink.apply(this)} target="blank">
