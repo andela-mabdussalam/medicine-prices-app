@@ -76,7 +76,7 @@ function getRemoteAndPush() {
       process.exit(1);
     }
     if (!stdout.includes("dev")) {
-      console.log("[ERROR] No remote named 'dev' found");
+      console.log("[ERROR] No remote named 'dokku' found");
       process.exit(1);
     }
     console.log("Pushing to dokku...");
