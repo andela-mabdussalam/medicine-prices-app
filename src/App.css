@@ -53,7 +53,7 @@ input[type="color"]:focus,
 }
 
 .calculator-container{
-  min-height: 100vh;
+  min-height: 115vh;
   margin-top: 150px;
 }
 
@@ -104,14 +104,14 @@ input[type="color"]:focus,
   margin-bottom: 10px;
 }
 
-.pre-form-heading{
+.medprices-heading{
   font-size: 50px;
   font-weight: 900;
   color: #0B5D97;
   margin-bottom: 20px;
 }
 
-.pre-form-paragraph {
+.medprices-paragraph {
   font-size: 20px;
 }
 
@@ -148,7 +148,7 @@ input[type="color"]:focus,
   margin-bottom: 50px;
 }
 
-.calculation-result .pre-form-heading{
+.calculation-result .medprices-heading{
   margin-bottom: 40px;
 }
 

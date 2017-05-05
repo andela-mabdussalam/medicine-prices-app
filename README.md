@@ -1,4 +1,4 @@
-### Medicine Prices Nigeria
+# Medicine Prices Nigeria
 This is the repository for https://medprices.codefornigeria.org. It has been built using
 react and generated using create-react-app.
 
