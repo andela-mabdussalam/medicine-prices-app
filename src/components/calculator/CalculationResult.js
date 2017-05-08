@@ -4,8 +4,9 @@ import TypeWriter from 'react-typewriter';
 
 /*
 * This contains the display for the result
-* of the calculator
+* of the calculator. I don't fancy how it's written.
 */
+
 export class CalculationResult extends Component {
   constructor(props) {
     super(props);
@@ -34,9 +35,9 @@ export class CalculationResult extends Component {
   generateTwitterLink() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
     let drugName = this.props.drug.name.split(/\s|\+/)[0];
-    let quote = encodeURI(`I’m paying ${percentage}% ${this.props.amount} than the global average price for ${drugName} 💊`);
+    let quote = encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${drugName} 💊`);
     quote += " https://pic.twitter.com/HaRC0NujLF";
-    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=CheckYourMedPrices&url=http://bit.ly/CheckMedPrices`;
+    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=FixMedPrices&url=http://bit.ly/CheckMedPrices`;
     return twitterLink;
   }
 
@@ -65,14 +66,14 @@ export class CalculationResult extends Component {
               <a className="call-to-action" href={this.generateTwitterLink.apply(this)} target="blank" >
                 <i className="fa fa-twitter fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
-              <a className="call-to-action" href={"whatsapp://send?text=" + this.generateQuote.apply(this) + " #FixMedPrices http://bit.ly/CheckMedPrices"} data-action="share/whatsapp/share" target="blank">
+              <a className="call-to-action" href={"whatsapp://send?text=" + this.generateQuote.apply(this) + " #CheckMedPrices http://bit.ly/CheckMedPrices"} data-action="share/whatsapp/share" target="blank">
                 <i className="fa fa-whatsapp fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
               <a className="call-to-action" href={this.generateFacebookLink.apply(this)} target="blank">
                 <i className="fa fa-facebook fa-lg animated animate-slow pulse infinite" aria-hidden="true"></i>
               </a>
             </div>
-            <p className={"assumption text-center " + this.props.bodyFont}>The tool assumes that $1 is changed for &#8358;{this.props.exchangeRate}</p>
+            <p className={"assumption text-center " + this.props.bodyFont}>The tool assumes that $1 is changed for &#8358;{this.props.exchangeRate.toFixed(2)}</p>
             <p className="reset-calculator text-center" onClick={this.props.resetCalculator}>
               <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
               <span className={this.props.bodyFont}>&nbsp;Check something else</span>

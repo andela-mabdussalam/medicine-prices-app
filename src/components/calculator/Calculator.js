@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { CalculationResult } from './CalculationResult';
 import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
+import axios from 'axios';
 
 let ReactGA = require('react-ga');
-ReactGA.initialize('UA-93090833-2', { debug: true });
+ReactGA.initialize('UA-93090833-2');
 
 /*
 * The Calculator Component
@@ -27,8 +28,14 @@ export default class Calculator extends Component {
     this.calculate = this.calculate.bind(this);
   }
 
+  componentDidMount() {
+    axios.get("https://dc.sourceafrica.net/javascripts/rates.json").then(
+      res => { this.EXCHNG = res.data.rates.NGN; console.log(this.EXCHNG) }
+    ).catch((error) => {
+      alert(error);
+    });;
+  }
   onSubmit(drug, userDrugPrice) {
-    console.log(JSON.stringify(drug))
     this.setState({
       userDrugPrice: userDrugPrice,
       currentDrug: drug

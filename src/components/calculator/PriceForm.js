@@ -27,7 +27,6 @@ export class PriceForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('handleSubmit: ' + JSON.stringify(this.state));
     this.props.onSubmit(this.state.drug, this.state.userDrugPrice);
   }
 
