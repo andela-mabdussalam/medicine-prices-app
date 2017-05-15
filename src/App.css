@@ -268,3 +268,7 @@ footer .fa-facebook-square {
   font-size: 13px;
   width: 35%;
 }
+
+#brand-name-tooltip .tooltip-inner{
+  max-width: none;
+}
