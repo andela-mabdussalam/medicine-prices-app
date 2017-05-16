@@ -45,20 +45,21 @@ export class PriceForm extends Component {
               labelKey="name" options={this.props.drugs} placeholder="drug name"
               filterBy={["name", "brand_names"]}
               renderMenuItemChildren={drug => (
-                <OverlayTrigger placement="right" overlay={
-                  <Tooltip id="brand-name-tooltip">
-                    Brand names: {drug.brand_names.join()}
-                  </Tooltip>}>
-                  <div onClick={() => this.handleDrugChange(drug)}>
-                    <span className={this.props.headerFont}>{drug.name}</span>
-                    <div>
-                      <small className={this.props.bodyFont}>
-                        Dosage form: {drug.form}
-                        &nbsp;Strength: <i>{drug.strength}</i>
-                      </small>
-                    </div>
+                <div onClick={() => this.handleDrugChange(drug)}>
+                  <span className={this.props.headerFont}>{drug.name}</span>
+                  <div>
+                    <small className={this.props.bodyFont}>
+                      Dosage form: {drug.form}
+                      &nbsp;Strength: <i>{drug.strength}</i>
+                    </small>
                   </div>
-                </OverlayTrigger>
+                  <OverlayTrigger placement="right" overlay={
+                    <Tooltip id="brand-name-tooltip">
+                      Brand names: {drug.brand_names.join()}
+                    </Tooltip>}>
+                    <i className="fa fa-info-circle" style={{ float: "right" }} aria-hidden="true"></i>
+                  </OverlayTrigger>
+                </div>
               )}
             /></Col>
         </FormGroup>

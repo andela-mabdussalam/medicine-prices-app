@@ -272,3 +272,7 @@ footer .fa-facebook-square {
 #brand-name-tooltip .tooltip-inner{
   max-width: none;
 }
+
+.dropdown-menu li a{
+  padding-bottom: 20px;
+}
