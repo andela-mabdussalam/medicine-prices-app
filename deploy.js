@@ -57,7 +57,7 @@ function commitBuild() {
 
 // push build to dokku
 function pushBuild() {
-  exec(`git push dev deploy:master`, function (error, stdout, stderr) {
+  exec(`git push dokku deploy:master`, function (error, stdout, stderr) {
     if (error !== null) {
       console.log('exec error: ' + error);
       process.exit(1);
@@ -75,7 +75,7 @@ function getRemoteAndPush() {
       console.log('exec error: ' + error);
       process.exit(1);
     }
-    if (!stdout.includes("dev")) {
+    if (!stdout.includes('dokku')) {
       console.log("[ERROR] No remote named 'dokku' found");
       process.exit(1);
     }
