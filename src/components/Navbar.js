@@ -12,7 +12,7 @@ class NavigationBar extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to="/"><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
+            <NavLink to="/" onClick={this.props.resetCalculator}><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

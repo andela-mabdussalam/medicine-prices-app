@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, FormControl, Col, ControlLabel, Button } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Col, ControlLabel, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
 /*
@@ -27,7 +27,6 @@ export class PriceForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('handleSubmit: ' + JSON.stringify(this.state));
     this.props.onSubmit(this.state.drug, this.state.userDrugPrice);
   }
 
@@ -44,6 +43,7 @@ export class PriceForm extends Component {
             <Typeahead
               className={this.props.bodyFont}
               labelKey="name" options={this.props.drugs} placeholder="drug name"
+              filterBy={["name", "brand_names"]}
               renderMenuItemChildren={drug => (
                 <div onClick={() => this.handleDrugChange(drug)}>
                   <span className={this.props.headerFont}>{drug.name}</span>
@@ -53,6 +53,12 @@ export class PriceForm extends Component {
                       &nbsp;Strength: <i>{drug.strength}</i>
                     </small>
                   </div>
+                  <OverlayTrigger placement="right" overlay={
+                    <Tooltip id="brand-name-tooltip">
+                      Brand names: {drug.brand_names.join()}
+                    </Tooltip>}>
+                    <i className="fa fa-info-circle" style={{ float: "right" }} aria-hidden="true"></i>
+                  </OverlayTrigger>
                 </div>
               )}
             /></Col>
@@ -64,6 +70,11 @@ export class PriceForm extends Component {
         <FormGroup>
           <Button className={"show-result-btn col-sm-offset-5 col-xs-offset-3 " + this.props.headerFont} disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
+        <p className={"sub sachet " + this.props.bodyFont}>
+          * (If you bought your medicine in a sachet, count the number of tablets in a
+            sachet and divide the price by the number of tablets. Most sachets in Nigeria
+            contain 10 tablets.)
+        </p>
       </Form>
     )
   }

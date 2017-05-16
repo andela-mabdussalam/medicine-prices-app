@@ -53,7 +53,7 @@ input[type="color"]:focus,
 }
 
 .calculator-container{
-  min-height: 100vh;
+  min-height: 115vh;
   margin-top: 150px;
 }
 
@@ -104,14 +104,14 @@ input[type="color"]:focus,
   margin-bottom: 10px;
 }
 
-.pre-form-heading{
+.medprices-heading{
   font-size: 50px;
   font-weight: 900;
   color: #0B5D97;
   margin-bottom: 20px;
 }
 
-.pre-form-paragraph {
+.medprices-paragraph {
   font-size: 20px;
 }
 
@@ -148,17 +148,17 @@ input[type="color"]:focus,
   margin-bottom: 50px;
 }
 
-.calculation-result .pre-form-heading{
+.calculation-result .medprices-heading{
   margin-bottom: 40px;
 }
 
 .call-to-action{
   font-size: 40px;
-  color: #CE4415;
   font-weight: 300;
 }
 
 .call-to-action:hover{
+  color: black;
   text-decoration: none;
 }
 
@@ -241,4 +241,38 @@ footer .fa-facebook-square {
 
 .punch-ng-body{
   font-family: 'Playfair Display', serif;
+}
+
+.share-results-links a{
+  margin-right: 20px;
+}
+
+.share-results-links p{
+  font-size: 30px;
+  font-weight: 300;
+  color: #CE4415;
+}
+
+.fa-whatsapp{
+  color: #65bc54
+}
+.fa-twitter{
+  color: #25a9df;
+}
+
+.fa-facebook{
+  color: #3B5998;
+}
+
+.sachet{
+  font-size: 13px;
+  width: 35%;
+}
+
+#brand-name-tooltip .tooltip-inner{
+  max-width: none;
+}
+
+.dropdown-menu li a{
+  padding-bottom: 20px;
 }

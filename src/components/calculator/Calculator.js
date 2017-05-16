@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { CalculationResult } from './CalculationResult';
 import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
+import axios from 'axios';
+
+let ReactGA = require('react-ga');
+ReactGA.initialize('UA-93090833-2');
+
 /*
 * The Calculator Component
 */
@@ -23,12 +28,24 @@ export default class Calculator extends Component {
     this.calculate = this.calculate.bind(this);
   }
 
+  componentDidMount() {
+    axios.get("https://dc.sourceafrica.net/javascripts/rates.json").then(
+      res => { this.EXCHNG = res.data.rates.NGN; console.log(this.EXCHNG) }
+    ).catch((error) => {
+      alert(error);
+    });;
+  }
   onSubmit(drug, userDrugPrice) {
-    console.log(JSON.stringify(drug))
     this.setState({
       userDrugPrice: userDrugPrice,
       currentDrug: drug
     }, this.calculate);
+    ReactGA.event({
+      category: "Search",
+      action: "search",
+      label: `${drug.id};${drug.name};${drug.price};${userDrugPrice}`,
+      value: Number((userDrugPrice / (drug.price * this.EXCHNG) * 100).toFixed(0))
+    });
   }
 
   // get list of drug names from list of drug objects
@@ -45,7 +62,6 @@ export default class Calculator extends Component {
   calculate() {
     let userPercentage = (this.state.userDrugPrice / (this.state.currentDrug.price * this.EXCHNG)) * 100
     userPercentage = Math.round(userPercentage);
-    console.log(userPercentage);
     this.setState({
       userPercentage: userPercentage,
       showCalculator: false,
@@ -64,8 +80,10 @@ export default class Calculator extends Component {
         {this.state.showCalculator ? <div className="calculator">
           <div className="price-form-container">
             <p className={"sub text-center " + this.props.bodyFont}>You might be paying too much for life saving drugs, let’s find out.</p>
-            <h1 className={"pre-form-heading text-center " + this.props.headerFont}>What should your medicine cost?</h1>
-            <p className={"pre-form-paragraph text-center " + this.props.bodyFont}>Tell us how much you pay.</p>
+            <h1 className={"medprices-heading text-center " + this.props.headerFont}>What should your medicine cost?</h1>
+            <p className={"medprices-paragraph text-center " + this.props.bodyFont}>
+              Tell us how much you pay.
+            </p>
             <PriceForm
               drugs={this.state.drugs}
               drugNames={this.getListofDrugNames()}
@@ -73,8 +91,10 @@ export default class Calculator extends Component {
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
             />
-            <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
-            <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
+            {!document.location.pathname.includes("embed") ? <div className="about">
+              <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
+              <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
+            </div> : null}
           </div>
         </div>
           : null
@@ -84,6 +104,7 @@ export default class Calculator extends Component {
             price={String(this.state.userDrugPrice)}
             percentage={this.state.userPercentage}
             drug={this.state.currentDrug}
+            amount={this.state.userPercentage >= 100 ? "more" : "less"}
             exchangeRate={this.EXCHNG}
             resetCalculator={this.resetCalculator.bind(this)}
             headerFont={this.props.headerFont}
