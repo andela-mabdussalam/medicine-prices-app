@@ -93,19 +93,18 @@ input[type="color"]:focus,
 .sub {
   color: #999;
   font-size: 16px;
-  margin-bottom: 30px;
-  width: 54%;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .post-form-paragraph{
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .medprices-heading{
-  font-size: 50px;
+  font-size: 2.343em;
   font-weight: 900;
   color: #0B5D97;
   margin-bottom: 20px;
@@ -163,13 +162,14 @@ input[type="color"]:focus,
 }
 
 .assumption{
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .reset-calculator{
-  cursor: pointer
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .show-result-btn{
@@ -210,7 +210,7 @@ footer .social-icons{
 }
 
 footer .built-by{
-  color: white;
+  color: grey;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -244,29 +244,18 @@ footer .fa-facebook-square {
 }
 
 .share-results-links a{
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-.share-results-links p{
+.share-results-links .share-header{
   font-size: 30px;
   font-weight: 300;
   color: #CE4415;
 }
 
-.fa-whatsapp{
-  color: #65bc54
-}
-.fa-twitter{
-  color: #25a9df;
-}
-
-.fa-facebook{
-  color: #3B5998;
-}
-
 .sachet{
   font-size: 13px;
-  width: 35%;
+  float: none;
 }
 
 #brand-name-tooltip .tooltip-inner{
@@ -275,4 +264,14 @@ footer .fa-facebook-square {
 
 .dropdown-menu li a{
   padding-bottom: 20px;
+}
+
+.share-context{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px
+}
+
+.about{
+  float: none;
 }
