@@ -165,11 +165,18 @@ input[type="color"]:focus,
   font-size: 14px;
   margin-top: 40px;
   margin-bottom: 20px;
+  color: #999;
 }
 
 .reset-calculator{
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
+  color: #999
+}
+
+.reset-calculator span{
+  color: black;
+  font-size: 20px;
 }
 
 .show-result-btn{
@@ -244,7 +251,7 @@ footer .fa-facebook-square {
 }
 
 .share-results-links a{
-  margin-right: 30px;
+  margin: 15px;
 }
 
 .share-results-links .share-header{
@@ -267,9 +274,10 @@ footer .fa-facebook-square {
 }
 
 .share-context{
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  font-size: 20px
 }
 
 .about{
