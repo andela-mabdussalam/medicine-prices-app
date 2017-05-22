@@ -171,7 +171,6 @@ input[type="color"]:focus,
 .reset-calculator{
   cursor: pointer;
   font-size: 14px;
-  color: #999
 }
 
 .reset-calculator span{
@@ -213,7 +212,8 @@ footer hr{
 }
 
 footer .social-icons{
-  margin-top: 5%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 footer .built-by{

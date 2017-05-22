@@ -88,7 +88,7 @@ export class CalculationResult extends Component {
             <p className="reset-calculator text-center" onClick={this.props.resetCalculator}>
               <p className={this.props.bodyFont}>Want to check more prices?</p>
               <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
-              <span className={this.props.bodyFont}>&nbsp;Click here</span>
+              <span className={this.props.bodyFont}>&nbsp;Go back</span>
             </p>
           </div>
         </Fade >
