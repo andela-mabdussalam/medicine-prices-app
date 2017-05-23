@@ -21,7 +21,7 @@ export class CalculationResult extends Component {
 
   generateQuote() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
-    return encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} 💊`);
+    return encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} 💊 in Nigeria🇳🇬`);
   }
 
   generateFacebookLink() {
@@ -35,7 +35,8 @@ export class CalculationResult extends Component {
   generateTwitterLink() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
     let drugName = this.props.drug.name.split(/\s|\+/)[0];
-    let quote = encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${drugName} 💊`);
+    // repeated instead of using this.generateQuote to slot in a shortened drug name
+    let quote = encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${drugName} 💊🇳🇬`);
     quote += " https://pic.twitter.com/HaRC0NujLF";
     let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=FixMedPrices&url=http://bit.ly/CheckMedPrices`;
     return twitterLink;
