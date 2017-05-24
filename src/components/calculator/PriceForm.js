@@ -42,7 +42,7 @@ export class PriceForm extends Component {
           <Col sm={4}>
             <Typeahead
               className={this.props.bodyFont}
-              labelKey="name" options={this.props.drugs} placeholder="drug name"
+              labelKey={option => `${option.brand_names}`} options={this.props.drugs} placeholder="drug name"
               filterBy={["name", "brand_names"]}
               renderMenuItemChildren={drug => (
                 <div onClick={() => this.handleDrugChange(drug)}>
@@ -55,7 +55,7 @@ export class PriceForm extends Component {
                   </div>
                   <OverlayTrigger placement="right" overlay={
                     <Tooltip id="brand-name-tooltip">
-                      Brand names: {drug.brand_names.join()}
+                      Brand names: {drug.brand_names}
                     </Tooltip>}>
                     <i className="fa fa-info-circle" style={{ float: "right" }} aria-hidden="true"></i>
                   </OverlayTrigger>
