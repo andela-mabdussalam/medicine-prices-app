@@ -12,41 +12,43 @@ export default class Footer extends Component {
           <div className="credits">
             <p>Journalist:
               <a href="https://twitter.com/badebayopunch" target="_blank" rel="noopener noreferrer">
-                <strong> Bukola Adebayo (Nigeria)</strong>
+                Bukola Adebayo (Nigeria)
               </a>
             </p>
             <p>Project Manager:
               <a href="https://twitter.com/enkayfreda" target="_blank" rel="noopener noreferrer">
-                <strong> Nkechi Okwuone (Nigeria)</strong>
+                Nkechi Okwuone (Nigeria)
               </a>
             </p>
             <p>Data Visualizations:
               <a href="https://github.com/ryansept" target="_blank" rel="noopener noreferrer">
-                <strong> Ryan Marvin (Kenya)</strong>
+                Ryan Marvin (Kenya)
               </a>
             </p>
-            <p>DData Source:
+            <p>Data Source:
               <a href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/" target=" _blank" rel="noopener noreferrer">
-                <strong> World Health Organisation</strong>
+                World Health Organisation
               </a>
             </p>
           </div>
 
           <div className="post-credits col-sm-6 center-block">
             <p>
-              Produced by <strong>PUNCH</strong> in partnership with the <strong>African Network of
-              Centres for Investigative Reporting (ANCIR)</strong> with technology support
+              Produced by <a href="http://punchng.com" target="_blank">PUNCH </a>
+              in partnership with the <a href="https://investigativecenters.org" target="_blank">
+                African Network of Centres for Investigative Reporting (ANCIR) </a>
+              with technology support
               from <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria</a>.
-              ANCIR's Cost of Life project seeks to shine an investigative light on the
+               ANCIR's Cost of Life project seeks to shine an investigative light on the
               human cost of profiteering and abuses in the healthcare industry.
             </p>
-            <p>Funded by the <strong>Bill and Melinda Gates Foundation </strong>
-              through the <strong>International Center for Journalists</strong>.
+            <p>Funded by the <a href="http://www.gatesfoundation.org/" target="_blank">Bill and Melinda Gates Foundation </a>
+              through the <a href="http://www.icfj.org" target="_blank">International Center for Journalists</a>.
             </p>
           </div>
-          <a href="http://punchng.com" target="_blank"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
-          <a href="http://www.icfj.org" target="_blank"><img className="sponsors" alt="ICFJ" src="/icfj-white.png" /></a>
-          <a href="http://www.codeforafrica.org" target="_blank"><img className="sponsors" alt="Code for Africa" src="/cfafrica-white.png" /></a>
+          <a href="http://punchng.com" className="sponsors-link" target="_blank"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
+          <a href="http://www.icfj.org" className="sponsors-link" target="_blank"><img className="sponsors" alt="ICFJ" src="/icfj-white.png" /></a>
+          <a href="http://www.codeforafrica.org" className="sponsors-link" target="_blank"><img className="sponsors" alt="Code for Africa" src="/cfafrica-white.png" /></a>
         </div>
       </footer >
     )

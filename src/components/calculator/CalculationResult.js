@@ -50,7 +50,7 @@ export class CalculationResult extends Component {
   render() {
     return (
       <div className="calculation-result">
-        <p className={"global-average text-center " + this.props.bodyFont}>
+        <p className={"global-average text-center " + (this.props.bodyFont || "")}>
           The global average price for {this.props.drug.name}, {this.props.drug.form}
           : {this.props.drug.strength} is
           <span style={{ color: "black", fontWeight: 600 }}>
@@ -58,17 +58,17 @@ export class CalculationResult extends Component {
           </span>
         </p>
         <TypeWriter typing={1} onTypingEnd={() => this.setState({ showTwitterLink: true })}>
-          <p className={"medprices-paragraph text-center " + this.props.bodyFont}>
+          <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
             At {String.fromCharCode(8358)}{this.numberWithCommas(this.props.price)}
             &nbsp;per unit, you are paying
           </p>
-          <h2 className={"medprices-heading text-center " + this.props.headerFont}>{String(this.numberWithCommas(this.percentageDecreaseOrIncrease.apply(this)))}% {this.props.amount} than the global average price.</h2>
+          <h2 className={"medprices-heading text-center " + (this.props.headerFont || "")}>{String(this.numberWithCommas(this.percentageDecreaseOrIncrease.apply(this)))}% {this.props.amount} than the global average price.</h2>
         </TypeWriter>
         <Fade in={this.state.showTwitterLink} timeout={2000}>
           <div className="text-center">
             <div className="share-results-links">
               <p className="share-header text-center">Share</p>
-              <p className={"share-context text-center " + this.props.bodyFont}>
+              <p className={"share-context text-center " + (this.props.bodyFont || "")}>
                 Medicine profiteers are going to continue over-charging
                 Nigerians unless we speak out. Tell the world how much
                 you're paying.
@@ -83,7 +83,7 @@ export class CalculationResult extends Component {
                 <i className="fa fa-facebook" aria-hidden="true"></i>
               </a>
             </div>
-            <p className={"assumption text-center " + this.props.bodyFont}>
+            <p className={"assumption text-center " + (this.props.bodyFont || "")}>
               This tool assumes that $1 equals &#8358;
               {this.props.exchangeRate.toFixed(2)}
             </p>
