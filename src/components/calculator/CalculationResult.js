@@ -35,10 +35,11 @@ export class CalculationResult extends Component {
   generateTwitterLink() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
     let drugName = this.props.drug.name.split(/\s|\+/)[0];
-    // repeated instead of using this.generateQuote to slot in a shortened drug name
-    let quote = encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${drugName} 💊🇳🇬`);
-    quote += " https://pic.twitter.com/HaRC0NujLF";
-    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&hashtags=FixMedPrices&url=http://bit.ly/CheckMedPrices`;
+    // repeated instead of using this.generateQuote so as to slot in a shortened drug name
+    let quote = encodeURIComponent(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global avg price for ${drugName}💊 #CheckMedPrices here🇳🇬`);
+    // add image
+    quote += " pic.twitter.com/J93jVY2oNQ";
+    let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&url=http://bit.ly/CheckMedPrices`;
     return twitterLink;
   }
 

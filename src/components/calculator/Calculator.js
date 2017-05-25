@@ -85,17 +85,7 @@ export default class Calculator extends Component {
               Let's find out. Tell us how much you pay.
             </p>
             <PriceForm
-              drugs={this.state.drugs.map(
-                (drug) => {
-                  console.log(typeof drug.brand_names);
-                  // add name as brand_name for drugs with empty brand_names
-                  !drug.brand_names.length > 0 ? drug.brand_names.push(drug.name) : null;
-                  // make brand_names a string
-                  console.log(this.state.drugs, drug.brand_names);
-                  drug.brand_names = drug.brand_names.join();
-                  return drug;
-                }
-              )}
+              drugs={this.state.drugs}
               drugNames={this.getListofDrugNames()}
               onSubmit={this.onSubmit}
               headerFont={this.props.headerFont}

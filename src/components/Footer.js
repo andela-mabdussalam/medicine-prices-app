@@ -7,27 +7,48 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="row footer">
-        <div className="data-sources col-sm-12">
-          <a className="center-block text-center"
-            href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/">
-            World Health Organization 2015
-          </a>
-          <p className="built-by text-center">Built by <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria,</a> with thought leadership from</p>
+        <div className="about col-sm-12 center-block text-center">
+          <h3>This is a <span>&nbsp;Cost of Life&nbsp;</span> project</h3>
+          <div className="credits">
+            <p>Journalist:
+              <a href="https://twitter.com/badebayopunch" target="_blank" rel="noopener noreferrer">
+                <strong> Bukola Adebayo (Nigeria)</strong>
+              </a>
+            </p>
+            <p>Project Manager:
+              <a href="https://twitter.com/enkayfreda" target="_blank" rel="noopener noreferrer">
+                <strong> Nkechi Okwuone (Nigeria)</strong>
+              </a>
+            </p>
+            <p>Data Visualizations:
+              <a href="https://github.com/ryansept" target="_blank" rel="noopener noreferrer">
+                <strong> Ryan Marvin (Kenya)</strong>
+              </a>
+            </p>
+            <p>DData Source:
+              <a href="http://apps.who.int/medicinedocs/en/m/abstract/Js21983en/" target=" _blank" rel="noopener noreferrer">
+                <strong> World Health Organisation</strong>
+              </a>
+            </p>
+          </div>
+
+          <div className="post-credits col-sm-6 center-block">
+            <p>
+              Produced by <strong>PUNCH</strong> in partnership with the <strong>African Network of
+              Centres for Investigative Reporting (ANCIR)</strong> with technology support
+              from <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria</a>.
+              ANCIR's Cost of Life project seeks to shine an investigative light on the
+              human cost of profiteering and abuses in the healthcare industry.
+            </p>
+            <p>Funded by the <strong>Bill and Melinda Gates Foundation </strong>
+              through the <strong>International Center for Journalists</strong>.
+            </p>
+          </div>
+          <a href="http://punchng.com" target="_blank"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
+          <a href="http://www.icfj.org" target="_blank"><img className="sponsors" alt="ICFJ" src="/icfj-white.png" /></a>
+          <a href="http://www.codeforafrica.org" target="_blank"><img className="sponsors" alt="Code for Africa" src="/cfafrica-white.png" /></a>
         </div>
-        <div className="social-icons col-sm-12 text-center">
-          <p className="clickable"><i className="fa fa-facebook-square"></i><a href="https://facebook.com/CodeForAfrica" target="_blank"> Like us on Facebook</a></p>
-          <p className="clickable"><i className="fa fa-twitter-square"></i><a href="https://twitter.com/code4africa" target="_blank"> Follow us on Twitter</a></p>
-          <p className="clickable"><i className="fa fa-github"></i><a href="https://github.com/Code4Nigeria/medicine-prices-app" target="_blank">Fork this on Github</a></p>
-        </div>
-        <div className="about col-sm-7 center-block text-center">
-          <p>
-            <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria</a> is a non-profit civic technology movement.
-            A network of civic-minded volunteers who contribute their talents, skills, expertise, and community knowledge as technological tools to improve public service, bring governments to account, and promote informed (data-driven) decision-making; leveraging open data + media, and backed by a core (full-time) tech team.
-          </p>
-          <a href="http://www.icfj.org" target="_blank"><img className="sponsors" alt="ICFJ" src="/icfj.png" /></a>
-          <a href="http://www.codeforafrica.org" target="_blank"><img className="sponsors" alt="Code for Africa" src="/cfafrica.png" /></a>
-        </div>
-      </footer>
+      </footer >
     )
   }
 }
