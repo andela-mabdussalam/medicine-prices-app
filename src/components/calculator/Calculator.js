@@ -91,7 +91,7 @@ export default class Calculator extends Component {
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
             />
-            {!document.location.pathname.includes("embed") ? <div className="row"><div className="about col-xs-10 col-sm-12 col-md-7 center-block">
+            {!document.location.pathname.includes("embed") ? <div className="row"><div className="about col-xs-12 col-sm-12 col-md-7 center-block">
               <p className={"sub post-form-paragraph " + (this.props.bodyFont || "")}>
                 Most Nigerians struggle to afford medicines. Ministry of Health
                  research, going as far back as 2006, indicates that 90.2% of

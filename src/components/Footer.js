@@ -8,7 +8,7 @@ export default class Footer extends Component {
     return (
       <footer className="row footer">
         <div className="about col-sm-12 center-block text-center">
-          <h3>This is a <span>&nbsp;Cost of Life&nbsp;</span> project</h3>
+          <h3>This is a <span>&nbsp;Cost of Life&nbsp;</span> Project</h3>
           <div className="credits">
             <p>Journalist:
               <a href="https://twitter.com/badebayopunch" target="_blank" rel="noopener noreferrer">

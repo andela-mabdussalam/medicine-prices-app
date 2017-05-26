@@ -38,8 +38,8 @@ export class PriceForm extends Component {
     return (
       <Form className="price-form" horizontal onSubmit={this.handleSubmit}>
         <FormGroup controlId="formHorizontalDrug">
-          <Col componentClass={ControlLabel} className={this.props.headerFont} xs={1} sm={2} md={2} mdOffset={2}>I buy</Col>
-          <Col md={4} sm={8} xs={10}>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} md={2} mdOffset={2}>I buy</Col>
+          <Col md={4} sm={8} xs={12}>
             <Typeahead
               className={this.props.bodyFont}
               labelKey="name" options={this.props.drugs} placeholder="drug name"
@@ -64,14 +64,14 @@ export class PriceForm extends Component {
             /></Col>
         </FormGroup>
         <FormGroup controlId="formHorizontalUserDrugPrice">
-          <Col componentClass={ControlLabel} className={this.props.headerFont} xs={1} sm={2} md={2} mdOffset={2} >for {String.fromCharCode(8358)}</Col>
-          <Col md={4} sm={8} xs={10}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} md={2} mdOffset={2} >for {String.fromCharCode(8358)}</Col>
+          <Col md={4} sm={8} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
         </FormGroup>
         <FormGroup>
-          <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-4 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">NEXT</Button>
+          <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
         <div className="row">
-          <p className={"sub sachet col-xs-10 col-sm-8 col-md-5 center-block " + (this.props.bodyFont || "")}>
+          <p className={"sub sachet col-xs-12 col-sm-8 col-md-5 center-block " + (this.props.bodyFont || "")}>
             * (Most medicine in Nigeria comes in sachets, containing 10 tablets.
           If yours did, simply divide the cost of your sachet by 10 to get to
           a unit cost. If your sachet has more more/less than 10 tablets,
