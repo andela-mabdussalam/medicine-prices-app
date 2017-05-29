@@ -329,3 +329,38 @@ footer .fa-facebook-square {
 .about{
   float: none;
 }
+
+.suggest-med{
+  float: right;
+  font-size: 16px;
+  margin: 5px;
+  color: #0B5D97;
+}
+
+.suggest-med:hover, .suggest-med:focus{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .price-form-container .medprices-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price-form-container .medprices-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .price-form-container .medprices-heading{
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-form-container .medprices-heading {
+    font-size: 45px;
+  }
+}

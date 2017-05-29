@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormControl, Col, ControlLabel, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
+// tooltip for link to suggestions form
+const suggestMedTooltip = (
+  <Tooltip id="suggest-med-tooltip">
+    Didn't find what you were looking for? Click here and let us know.
+  </Tooltip>
+);
+
 /*
 * The form querying the user on how much they usually pay for a certain medicine
 */
@@ -61,7 +68,16 @@ export class PriceForm extends Component {
                   </OverlayTrigger>
                 </div>
               )}
-            /></Col>
+            />
+            <OverlayTrigger placement="right" overlay={suggestMedTooltip}>
+              <a href="https://goo.gl/forms/DADVeRMpRcNIKqqA3"
+                className="fa fa-question-circle suggest-med"
+                aria-hidden="true"
+                target="_blank" rel="noopener noreferrer"
+              >
+              </a>
+            </OverlayTrigger>
+          </Col>
         </FormGroup>
         <FormGroup controlId="formHorizontalUserDrugPrice">
           <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} md={2} mdOffset={2} >for {String.fromCharCode(8358)}</Col>
@@ -79,7 +95,7 @@ export class PriceForm extends Component {
           of tablets.)
         </p>
         </div>
-      </Form>
+      </Form >
     )
   }
 }
