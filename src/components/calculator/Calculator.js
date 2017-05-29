@@ -79,10 +79,10 @@ export default class Calculator extends Component {
       <div className="container calculator-container">
         {this.state.showCalculator ? <div className="calculator">
           <div className="price-form-container">
-            <p className={"sub text-center " + this.props.bodyFont}>You might be paying too much for life saving drugs, let’s find out.</p>
-            <h1 className={"medprices-heading text-center " + this.props.headerFont}>What should your medicine cost?</h1>
-            <p className={"medprices-paragraph text-center " + this.props.bodyFont}>
-              Tell us how much you pay.
+            <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
+            <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
+            <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
+              Let's find out. Tell us how much you pay.
             </p>
             <PriceForm
               drugs={this.state.drugs}
@@ -91,10 +91,20 @@ export default class Calculator extends Component {
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
             />
-            {!document.location.pathname.includes("embed") ? <div className="about">
-              <p className={"sub post-form-paragraph " + this.props.bodyFont}>According to a 2006 report of the Ministry of Health, medicines are unaffordable to the majority of Nigerians (90.2%) who live below the income level of 2 USD a day as well as the government worker that earns a minimum wage of 1.4 USD per day.</p>
-              <p className={"sub " + this.props.bodyFont}>10 years later, the story is not different. This tool is intended to call the attention of policy makers to the soaring cost of medicines in Nigeria.</p>
-            </div> : null}
+            {!document.location.pathname.includes("embed") ? <div className="row"><div className="about col-xs-12 col-sm-12 col-md-7 center-block">
+              <p className={"sub post-form-paragraph " + (this.props.bodyFont || "")}>
+                Most Nigerians struggle to afford medicines. Ministry of Health
+                 research, going as far back as 2006, indicates that 90.2% of
+                citizens survive on income of just US$2 a day. Even government
+                workers earn, on average, just US$1.4 per day.
+              </p>
+              <p className={"sub " + (this.props.bodyFont || "")}>
+                Income levels haven’t improved much over the past 10 years but
+                medicine prices continue to soar. This tool helps shine a spotlight
+                on just how expensive medicine is and asks why Nigeria pays more
+                than the rest of the world.
+              </p>
+            </div></div> : null}
           </div>
         </div>
           : null

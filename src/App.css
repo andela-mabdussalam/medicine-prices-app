@@ -2,6 +2,10 @@
   font-family: 'Open Sans', Helvetica;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -63,6 +67,15 @@ input[type="color"]:focus,
   margin-top: 40px;
 }
 
+.price-form-container .medprices-heading{
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.price-form-container .sub{
+  margin-bottom: 15px;
+}
+
 .navbar{
   height: 7em;
   background: white;
@@ -93,19 +106,18 @@ input[type="color"]:focus,
 .sub {
   color: #999;
   font-size: 16px;
-  margin-bottom: 30px;
-  width: 54%;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .post-form-paragraph{
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .medprices-heading{
-  font-size: 50px;
+  font-size: 2.343em;
   font-weight: 900;
   color: #0B5D97;
   margin-bottom: 20px;
@@ -163,13 +175,20 @@ input[type="color"]:focus,
 }
 
 .assumption{
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 40px;
   margin-bottom: 20px;
+  color: #999;
 }
 
 .reset-calculator{
-  cursor: pointer
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reset-calculator span{
+  color: black;
+  font-size: 20px;
 }
 
 .show-result-btn{
@@ -188,36 +207,65 @@ input[type="color"]:focus,
 
 footer{
   background: #000;
-  color:grey;
+  color:white;
   font-size: 14px;
-  padding: 50px 10%;
-  padding-bottom: 8%;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 footer h3{
-  color: white;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 25px;
 }
 
-footer hr{
-  border: none;
-  border-top: 1px solid #999;
-  opacity: 0.4;
+footer h3 span{
+  font-size: 46px;
+  text-transform: capitalize;
 }
 
-footer .social-icons{
-  margin-top: 5%;
+footer .credits{
+  margin-bottom: 25px;
 }
 
-footer .built-by{
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
+footer .credits p{
+  font-size: 16px;
+  margin: 16px 0px;
+  font-weight: 200;
+}
+
+footer a{
+  color: #339966;
+}
+
+footer a:hover{
+  color: #339966;
+}
+
+footer .credits p a{
+  margin-left: 7px
+}
+
+footer .post-credits{
+  float: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 200;
 }
 
 footer .sponsors{
   height: 50px;
-  margin: 10px;
+  padding-bottom: 5px
+}
+
+footer .sponsors-link{
+  display: inline-block;
+  margin: 30px;
+  padding-bottom: 10px
+}
+
+footer .sponsors-link:hover{
+  border-bottom: 1px solid #339966;
 }
 
 footer .fa-twitter-square {
@@ -244,29 +292,18 @@ footer .fa-facebook-square {
 }
 
 .share-results-links a{
-  margin-right: 20px;
+  margin: 15px;
 }
 
-.share-results-links p{
+.share-results-links .share-header{
   font-size: 30px;
   font-weight: 300;
   color: #CE4415;
 }
 
-.fa-whatsapp{
-  color: #65bc54
-}
-.fa-twitter{
-  color: #25a9df;
-}
-
-.fa-facebook{
-  color: #3B5998;
-}
-
 .sachet{
   font-size: 13px;
-  width: 35%;
+  float: none;
 }
 
 #brand-name-tooltip .tooltip-inner{
@@ -274,5 +311,56 @@ footer .fa-facebook-square {
 }
 
 .dropdown-menu li a{
+  padding: 0px;
+}
+
+.dropdown-drug{
+  padding: 3px 20px;
   padding-bottom: 20px;
+}
+
+.share-context{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 20px
+}
+
+.about{
+  float: none;
+}
+
+.suggest-med{
+  float: right;
+  font-size: 16px;
+  margin: 5px;
+  color: #0B5D97;
+}
+
+.suggest-med:hover, .suggest-med:focus{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .price-form-container .medprices-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price-form-container .medprices-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .price-form-container .medprices-heading{
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-form-container .medprices-heading {
+    font-size: 45px;
+  }
 }

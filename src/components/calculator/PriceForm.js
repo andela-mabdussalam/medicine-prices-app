@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormControl, Col, ControlLabel, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
+// tooltip for link to suggestions form
+const suggestMedTooltip = (
+  <Tooltip id="suggest-med-tooltip">
+    Didn't find what you were looking for? Click here and let us know.
+  </Tooltip>
+);
+
 /*
 * The form querying the user on how much they usually pay for a certain medicine
 */
@@ -38,14 +45,14 @@ export class PriceForm extends Component {
     return (
       <Form className="price-form" horizontal onSubmit={this.handleSubmit}>
         <FormGroup controlId="formHorizontalDrug">
-          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} smOffset={2}>I buy</Col>
-          <Col sm={4}>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} md={2} mdOffset={2}>I buy</Col>
+          <Col md={4} sm={8} xs={12}>
             <Typeahead
               className={this.props.bodyFont}
               labelKey="name" options={this.props.drugs} placeholder="drug name"
               filterBy={["name", "brand_names"]}
               renderMenuItemChildren={drug => (
-                <div onClick={() => this.handleDrugChange(drug)}>
+                <div className="dropdown-drug" onClick={() => this.handleDrugChange(drug)}>
                   <span className={this.props.headerFont}>{drug.name}</span>
                   <div>
                     <small className={this.props.bodyFont}>
@@ -61,21 +68,34 @@ export class PriceForm extends Component {
                   </OverlayTrigger>
                 </div>
               )}
-            /></Col>
+            />
+            <OverlayTrigger placement="right" overlay={suggestMedTooltip}>
+              <a href="https://goo.gl/forms/DADVeRMpRcNIKqqA3"
+                className="fa fa-question-circle suggest-med"
+                aria-hidden="true"
+                target="_blank" rel="noopener noreferrer"
+              >
+              </a>
+            </OverlayTrigger>
+          </Col>
         </FormGroup>
         <FormGroup controlId="formHorizontalUserDrugPrice">
-          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} smOffset={2}>for {String.fromCharCode(8358)}</Col>
-          <Col sm={4}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
+          <Col componentClass={ControlLabel} className={this.props.headerFont} sm={2} md={2} mdOffset={2} >for {String.fromCharCode(8358)}</Col>
+          <Col md={4} sm={8} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
         </FormGroup>
         <FormGroup>
-          <Button className={"show-result-btn col-sm-offset-5 col-xs-offset-3 " + this.props.headerFont} disabled={!this.formIsValid()} type="submit">NEXT</Button>
+          <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">NEXT</Button>
         </FormGroup>
-        <p className={"sub sachet " + this.props.bodyFont}>
-          * (If you bought your medicine in a sachet, count the number of tablets in a
-            sachet and divide the price by the number of tablets. Most sachets in Nigeria
-            contain 10 tablets.)
+        <div className="row">
+          <p className={"sub sachet col-xs-12 col-sm-8 col-md-5 center-block " + (this.props.bodyFont || "")}>
+            * (Most medicine in Nigeria comes in sachets, containing 10 tablets.
+          If yours did, simply divide the cost of your sachet by 10 to get to
+          a unit cost. If your sachet has more more/less than 10 tablets,
+          count the number and then divide the purchase price by the number
+          of tablets.)
         </p>
-      </Form>
+        </div>
+      </Form >
     )
   }
 }
