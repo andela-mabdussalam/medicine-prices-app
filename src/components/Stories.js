@@ -17,7 +17,7 @@ export default class Stories extends Component {
     var _this = this;
     this.serverRequest =
       axios
-        .get(process.env.SOURCE)
+        .get(process.env.DATA)
         .then(function (response) {
           var results = Papa.parse(response.data);
           results.data.shift();
