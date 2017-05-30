@@ -36,7 +36,7 @@ export class CalculationResult extends Component {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
     let drugName = this.props.drug.name.split(/\s|\+/)[0];
     // repeated instead of using this.generateQuote so as to slot in a shortened drug name
-    let quote = encodeURIComponent(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global avg price for ${drugName}💊 #CheckMedPrices here🇳🇬`);
+    let quote = encodeURIComponent(`🇳🇬I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global avg price for ${drugName} #CheckYourMedPrices`);
     // add image
     quote += " pic.twitter.com/J93jVY2oNQ";
     let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&url=http://bit.ly/CheckMedPrices`;
