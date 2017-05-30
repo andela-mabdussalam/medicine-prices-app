@@ -15,9 +15,10 @@ export default class Stories extends Component {
 
   componentDidMount() {
     var _this = this;
+    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://docs.google.com/spreadsheets/d/1QlIqnMCprzz7w4Z3EEmXrWURmK72O1_-MRlBDpAaDzU/pub?gid=0&single=true&output=csv';
     this.serverRequest =
       axios
-        .get(process.env.REACT_APP_DATA)
+        .get(REACT_APP_LATEST_STORIES_ENDPOINT)
         .then(function (response) {
           var results = Papa.parse(response.data);
           results.data.shift();

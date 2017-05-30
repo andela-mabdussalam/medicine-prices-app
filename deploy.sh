@@ -55,11 +55,12 @@ git add . && git commit -m '[Chore] Create build'
 if [[ $(git remote | grep "$1") ]]
 then
     echo 'Pushing to dokku'
-    if [[ $(git push "$1" deploy:master --force) ]]
+    if [[ $1 ]]
     then
-        echo 'Pushed to dokku'
-    else
+        git push "$1" deploy:master --force && echo 'Pushed to dokku'
         git stash && git checkout $feature_branch
+    else
+        echo 'You did not provide the remote to push to when running the script'
     fi
 else
     echo 'No remote provided to push to'
