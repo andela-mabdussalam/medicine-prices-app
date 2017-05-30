@@ -21,9 +21,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "dokku": "node deploy.js",
-    "deploy": "serve -s build"
+    "eject": "react-scripts eject"
   }
 }

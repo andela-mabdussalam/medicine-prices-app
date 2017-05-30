@@ -15,7 +15,7 @@ export default class Stories extends Component {
 
   componentDidMount() {
     var _this = this;
-    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://docs.google.com/spreadsheets/d/1QlIqnMCprzz7w4Z3EEmXrWURmK72O1_-MRlBDpAaDzU/pub?gid=0&single=true&output=csv';
+    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://spreadsheets.google.com/feeds/list/1QlIqnMCprzz7w4Z3EEmXrWURmK72O1_-MRlBDpAaDzU/od6/public/values?alt=json-in-script&callback=x';
     this.serverRequest =
       axios
         .get(REACT_APP_LATEST_STORIES_ENDPOINT)

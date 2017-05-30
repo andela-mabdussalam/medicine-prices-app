@@ -19,8 +19,10 @@ show you how to access it or open and direct you to it on your browser.
 To deploy this application, you need to build the distributable code. This is done using
 `$ npm run build` which generates a `/build` directory at the root of the project. You can now take this and serve it as static files of a server.
 
-If pushing to dokku, you can run `$ npm run dokku` while at the root, which makes a deployment branch, builds the distributable code, stops gitignoring the distributable code and pushes the repo to the remote.
+If pushing to dokku or heroku, you can run `$ ./deploy.sh <remote_name>` which makes a deployment branch, builds the distributable code, stops gitignoring the distributable code folder, makes a
+commit and and pushes the repo to the remote provided. eg. `$ ./deploy.sh dokku`
 
-For this, you need a remote called `dokku` pointing to your dokku app. If an error occurs `Updates were rejected because a pushed branch tip is behind its remote` when doing this, `git fetch dokku` then `git merge --strategy-option ours dokku/master` and try pushing to dokku.
+Beware that pushing uses force and will overwrite whatever is on the repo that is currently on
+the server.
 
 In case the changes don't immediately reflect on the server run `dokku ps:rebuild <myapp>`
