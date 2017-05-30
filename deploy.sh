@@ -2,6 +2,7 @@
 # The following script deploys the app to dokku.
 # It takes the arguments <remote_name> to specify which remote exactly to
 # push to eg. `./deploy.sh server1`
+
 # check for uncommitted changes
 if [[ $(git diff-index HEAD --) ]]
 then
