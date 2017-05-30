@@ -34,29 +34,29 @@ export default class Footer extends Component {
 
           <div className="post-credits col-sm-6 center-block">
             <p>
-              Produced by <a href="http://punchng.com" target="_blank">PUNCH </a>
-              in partnership with the <a href="https://investigativecenters.org" target="_blank">
+              Produced by <a href="http://punchng.com" target="_blank" rel="noopener noreferrer">PUNCH </a>
+              in partnership with the <a href="https://investigativecenters.org" target="_blank" rel="noopener noreferrer">
                 African Network of Centres for Investigative Reporting (ANCIR) </a>
               with technology support
-              from <a href="https://codefornigeria.org/" target="_blank">Code for Nigeria</a>.
+              from <a href="https://codefornigeria.org/" target="_blank" rel="noopener noreferrer">Code for Nigeria</a>.
             </p>
             <p>
               ANCIR's Cost of Life project seeks to shine an investigative light on the
               human cost of profiteering and abuses in the healthcare industry.
             </p>
             <p>Co-funded by
-              the <a href="http://www.osiwa.org/" target="_blank">Open Society
+              the <a href="http://www.osiwa.org/" target="_blank" rel="noopener noreferrer">Open Society
               Initiative for West Africa</a> and the&nbsp;
-              <a href="http://www.gatesfoundation.org/" target="_blank">
+              <a href="http://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">
                 Bill and Melinda Gates Foundation&nbsp;
               </a>
-              through the <a href="http://www.icfj.org" target="_blank">
+              through the <a href="http://www.icfj.org" target="_blank" rel="noopener noreferrer">
                 International Center for Journalists</a>.
             </p>
           </div>
-          <a href="http://punchng.com" className="sponsors-link" target="_blank"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
-          <a href="https://investigativecenters.org" className="sponsors-link" target="_blank"><img className="sponsors ancir-logo" alt="ANCIR" src="/ancir-logo.jpg" /></a>
-          <a href="http://www.codefornigeria.org" className="sponsors-link" target="_blank"><img className="sponsors cfn-logo" alt="Code for Nigeria" src="/cfn-logo-white.png" /></a>
+          <a href="http://punchng.com" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
+          <a href="https://investigativecenters.org" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors ancir-logo" alt="ANCIR" src="/ancir-logo.jpg" /></a>
+          <a href="http://www.codefornigeria.org" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors cfn-logo" alt="Code for Nigeria" src="/cfn-logo-white.png" /></a>
         </div>
       </footer >
     )
