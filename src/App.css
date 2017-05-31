@@ -345,7 +345,11 @@ footer .fa-facebook-square {
   margin: 5px;
   color: #0B5D97;
 }
-
+@media (max-width:767px) and (min-width:500px) {
+  .show-result-btn{
+    margin-left: 33%;
+  }
+}
 .suggest-med:hover, .suggest-med:focus{
   text-decoration: none;
 }
