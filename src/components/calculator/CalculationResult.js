@@ -4,7 +4,7 @@ import TypeWriter from 'react-typewriter';
 
 /*
 * This contains the display for the result
-* of the calculator. I don't fancy how it's written.
+* of the calculator.
 */
 
 export class CalculationResult extends Component {
