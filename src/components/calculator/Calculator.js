@@ -26,14 +26,16 @@ export default class Calculator extends Component {
     this.baseState = this.state;
     this.onSubmit = this.onSubmit.bind(this);
     this.calculate = this.calculate.bind(this);
+    this.formatDrugs = this.formatDrugs.bind(this);
   }
 
   componentDidMount() {
     axios.get("https://dc.sourceafrica.net/javascripts/rates.json").then(
-      res => { this.EXCHNG = res.data.rates.NGN; console.log(this.EXCHNG) }
+      res => { this.EXCHNG = res.data.rates.NGN; }
     ).catch((error) => {
       alert(error);
     });;
+    this.formatDrugs();
   }
   onSubmit(drug, userDrugPrice) {
     this.setState({
@@ -48,14 +50,28 @@ export default class Calculator extends Component {
     });
   }
 
-  // get list of drug names from list of drug objects
-  getListofDrugNames() {
-    let drugNames = this.state.drugs.map(
-      (drug) => {
-        return drug.name;
+  // format list of drugs to have each brand name as it's own drug
+  formatDrugs() {
+    // make copy of state
+    let drugs = this.state.drugs.copyWithin();
+    for (let drug of drugs) {
+      if (drug.brand_names) {
+        // make each brand name into a copy of it's generic drug
+        for (let name in drug.brand_names) {
+          let new_drug = {
+            price: drug.price,
+            strength: drug.strength,
+            name: drug.brand_names[name],
+            form: drug.form,
+            id: drug.id + "3614" + name
+          };
+          drugs.push(new_drug); // peer pressure
+        }
       }
-    );
-    return Array.from(new Set(drugNames));
+      delete drug.brand_names;
+    }
+    console.log(drugs.length)
+    this.setState({ drugs: drugs });
   }
 
   // Calculate percentage of the global average
@@ -86,7 +102,6 @@ export default class Calculator extends Component {
             </p>
             <PriceForm
               drugs={this.state.drugs}
-              drugNames={this.getListofDrugNames()}
               onSubmit={this.onSubmit}
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}

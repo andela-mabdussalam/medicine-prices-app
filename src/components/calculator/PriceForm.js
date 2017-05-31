@@ -50,7 +50,6 @@ export class PriceForm extends Component {
             <Typeahead
               className={this.props.bodyFont}
               labelKey="name" options={this.props.drugs} placeholder="drug name"
-              filterBy={["name", "brand_names"]}
               renderMenuItemChildren={drug => (
                 <div className="dropdown-drug" onClick={() => this.handleDrugChange(drug)}>
                   <span className={this.props.headerFont}>{drug.name}</span>
@@ -60,12 +59,6 @@ export class PriceForm extends Component {
                       &nbsp;Strength: <i>{drug.strength}</i>
                     </small>
                   </div>
-                  <OverlayTrigger placement="right" overlay={
-                    <Tooltip id="brand-name-tooltip">
-                      Brand names: {drug.brand_names.join()}
-                    </Tooltip>}>
-                    <i className="fa fa-info-circle" style={{ float: "right" }} aria-hidden="true"></i>
-                  </OverlayTrigger>
                 </div>
               )}
             />
