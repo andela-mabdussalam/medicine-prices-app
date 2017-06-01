@@ -67,3 +67,6 @@ else
      $(git stash && git checkout $feature_branch)
     exit 1
 fi
+
+cp -f .gitignore-e .gitignore
+rm .gitignore-e
