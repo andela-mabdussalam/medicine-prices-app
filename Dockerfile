@@ -3,4 +3,4 @@ COPY . /medprices-ng
 WORKDIR /medprices-ng
 RUN npm install
 EXPOSE 5000
-CMD serve -s build
+CMD ./node_modules/serve/bin/serve -s build
