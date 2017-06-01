@@ -68,8 +68,8 @@ export default class Stories extends Component {
 
             <div className="visible-xs" style={{ "height": "50px" }}></div>
             <div className="col-sm-4">
-              <a className="twitter-timeline" href="https://twitter.com/search?q=%F0%9F%87%B3%F0%9F%87%AC" data-widget-id="869091075746607104">Tweets about <span aria-label="nigerian-flag" role="img">🇳🇬</span></a>
-              <script>{!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs")}</script>
+             <a className="twitter-timeline" href="https://twitter.com/hashtag/CheckYourMedPrices" data-widget-id="869862396499816449">#CheckYourMedPrices Tweets</a>
+             <script>{!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")}</script>
             </div>
           </div>
         </div>
