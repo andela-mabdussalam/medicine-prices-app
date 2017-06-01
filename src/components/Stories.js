@@ -15,7 +15,7 @@ export default class Stories extends Component {
 
   componentDidMount() {
     var _this = this;
-    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://spreadsheets.google.com/feeds/list/1QlIqnMCprzz7w4Z3EEmXrWURmK72O1_-MRlBDpAaDzU/od6/public/values?alt=json-in-script&callback=x';
+    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://62qgs86eq1.execute-api.eu-west-1.amazonaws.com/prod';
     this.serverRequest =
       axios
         .get(REACT_APP_LATEST_STORIES_ENDPOINT)
@@ -42,7 +42,9 @@ export default class Stories extends Component {
 
     return (
       <div>
-        <div className="stories" style={{ "maxWidth": "800px", "margin": "0 auto 30px" }}>
+
+        <div className="stories" style={{ "maxWidth": "800px", "margin": "0 auto 10px" }}>
+          <hr />
           <h3>Latest headlines:</h3><br />
           <div className="row">
             <div className="col-sm-8">
