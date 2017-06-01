@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Papa from 'papaparse';
 
 /*
 * Stories component
@@ -13,29 +12,33 @@ export default class Stories extends Component {
     }
   }
 
+ sortData(data) {
+  data = data.match(/\((.+)\)/)[1]
+  data = JSON.parse(data).feed.entry
+    const dataArray = [];
+    data.forEach((element) => {
+        const dataObj = {
+          "Title": element.gsx$title.$t,
+          "Description": element.gsx$descriptions.$t,
+          "PublishDate": element.gsx$publishdate.$t,
+          "AuthorsName": element.gsx$authorname.$t,
+          "ImageUrl": element.gsx$imageurl.$t,
+          "StoryUrl": element.gsx$storyurl.$t
+        };
+        dataArray.push(dataObj);
+      });
+      return dataArray;
+}
   componentDidMount() {
     var _this = this;
-    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://62qgs86eq1.execute-api.eu-west-1.amazonaws.com/prod';
+    const REACT_APP_LATEST_STORIES_ENDPOINT = 'https://spreadsheets.google.com/feeds/list/1QlIqnMCprzz7w4Z3EEmXrWURmK72O1_-MRlBDpAaDzU/od6/public/values?alt=json-in-script&callback=x';
     this.serverRequest =
       axios
         .get(REACT_APP_LATEST_STORIES_ENDPOINT)
         .then(function (response) {
-          var results = Papa.parse(response.data);
-          results.data.shift();
-          const dataArray = []
-          results.data.forEach((element) => {
-            const dataObj = {
-              "Title": element[0],
-              "Description": element[1],
-              "PublishDate": element[2],
-              "AuthorsName": element[3],
-              "ImageUrl": element[4],
-              "StoryUrl": element[5]
-            };
-            dataArray.push(dataObj);
-          });
+         var dataArray = _this.sortData(response.data);
           _this.setState({ data: dataArray });
-        })
+        });
   }
   render() {
     const { data } = this.state;
