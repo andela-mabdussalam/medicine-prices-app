@@ -34,7 +34,7 @@ fi
 # remove build from gitignore
 if [[ -e .gitignore ]]
 then
-    $(sed -i '/\/build/d' \\.gitignore)
+    $(sed -i '/\/build/d' .gitignore)
 else
     echo ".gitignore doesn't exist"
     $(git stash && git checkout $feature_branch)
