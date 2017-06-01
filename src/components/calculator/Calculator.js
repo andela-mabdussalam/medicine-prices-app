@@ -117,7 +117,7 @@ export default class Calculator extends Component {
                 Income levels haven’t improved much over the past 10 years but
                 medicine prices continue to soar. This tool helps shine a spotlight
                 on just how expensive medicine is and asks why Nigeria pays more
-                than the rest of the world.
+                than the rest of the world here.
               </p>
             </div></div> : null}
           </div>
