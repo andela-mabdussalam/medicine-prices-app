@@ -57,8 +57,9 @@ input[type="color"]:focus,
 }
 
 .calculator-container{
-  min-height: 115vh;
+  min-height: auto;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .price-form{
