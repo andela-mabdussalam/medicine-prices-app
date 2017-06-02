@@ -49,7 +49,7 @@ export default class Stories extends Component {
         <div className="stories" style={{ "maxWidth": "800px", "margin": "0 auto 10px" }}>
           <hr />
           <h3>Latest headlines:</h3><br />
-          <div className="row">
+          <div className="row" style={{ "marginBottom": "160px" }}>
             <div className="col-sm-8">
               {data.map((tile, index) => (
                 <div key={index} className="media">
