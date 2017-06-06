@@ -12,7 +12,7 @@ class NavigationBar extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to="/" onClick={this.props.resetCalculator}><p style={{"marginTop": "19px", "fontSize": "22px"}}>CheckYourMedPrices</p></NavLink>
+            <NavLink to="/" onClick={this.props.resetCalculator}><h2 style={{"marginTop": "14px", "color":"rgb(5, 47, 76)"}}>#CheckYourMedPrices</h2></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
