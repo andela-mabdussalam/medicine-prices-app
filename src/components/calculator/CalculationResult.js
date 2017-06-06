@@ -11,7 +11,9 @@ export class CalculationResult extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showTwitterLink: false
+      showTwitterLink: false,
+      space: " "
+
     }
   }
 
@@ -21,7 +23,7 @@ export class CalculationResult extends Component {
 
   generateQuote() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
-    return encodeURIComponent(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} in Nigeria #CheckYourMedPrices`);
+    return encodeURIComponent(` 🇳🇬 I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} in Nigeria #CheckYourMedPrices`);
   }
 
   generateFacebookLink() {
@@ -37,7 +39,7 @@ export class CalculationResult extends Component {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
     let drugName = this.props.drug.name.split(/\s|\+/)[0];
     // repeated instead of using this.generateQuote so as to slot in a shortened drug name
-    let quote = encodeURIComponent(`🇳🇬 I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global avg price for ${drugName} #CheckYourMedPrices`);
+    let quote = encodeURIComponent(`🇳🇬${this.state.space}I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global avg price for ${drugName} #CheckYourMedPrices`);
     // add image
     quote += " pic.twitter.com/J93jVY2oNQ";
     let twitterLink = `https://twitter.com/intent/tweet?text=${quote}&url=http://bit.ly/CheckMedPrices`;

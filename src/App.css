@@ -346,6 +346,11 @@ footer .fa-facebook-square {
   margin: 5px;
   color: #0B5D97;
 }
+@media screen and (min-width:730px) {
+  .marginTop{
+    margin-top: -60px;
+  }
+}
 @media (max-width:767px) and (min-width:500px) {
   .show-result-btn{
     margin-left: 33%;
