@@ -55,18 +55,47 @@ input[type="color"]:focus,
 .cfn-logo{
   height: 3.5em;
 }
-
+.calculator{
+  padding: 147px 0;
+}
 .calculator-container{
   min-height: auto;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 97px;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8), rgba(0,0,0,0.95));
 }
 .marg{
-  margin-top:120px;
   color:black;
 }
 .textColor{
-  color:black;
+    color: black;
+    line-height: 22px;
+    opacity: 0.7;
+    font-size: 16px;
+    text-align: justify;
+}
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:  50px;
+    margin-top: 50px;
+}
+.stories{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.latestHeadlines{
+    margin-top: 10px;
+    font-size: 23px;
+    opacity: 0.7;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    text-align: left;
 }
 .price-form{
   width: 80%;
@@ -80,7 +109,11 @@ input[type="color"]:focus,
   font-size: 45px;
   margin-top: 10px;
 }
-
+.price-form-container {
+    background-color: rgba(255,255,255,.9);
+    padding: 32px 0;
+    box-shadow: 0 0 2px grey
+}
 .price-form-container .sub{
   margin-bottom: 15px;
 }
@@ -111,7 +144,13 @@ input[type="color"]:focus,
   padding: 15px 0px 0px 0px;
   width: 0px;
 }
-
+.hashtag{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(200,0,0,.8);
+    margin-bottom: 20px;
+    font-family: 'Patua One', cursive;
+}
 .sub {
   color: #999;
   font-size: 16px;
@@ -128,7 +167,7 @@ input[type="color"]:focus,
 .medprices-heading{
   font-size: 2.343em;
   font-weight: 900;
-  color: #0B5D97;
+  color: black;
   margin-bottom: 20px;
   font-family: 'Patua One', cursive;
 }
@@ -144,8 +183,12 @@ input[type="color"]:focus,
   border-radius: 0;
 }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-  color: #0B5D97;
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #339865;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #339865;
 }
 
 .embed-code-input{
@@ -208,15 +251,16 @@ input[type="color"]:focus,
 }
 .show-result-btn{
   padding: 11px 60px;
-  background-color: #3cd682;
+  background-color: #339865;
   border: none;
   color: white;
   font-weight: 700;
+  margin-top: 30px;
 }
 .show-result-btn[disabled],.show-result-btn:hover,
 .show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
 {
-  background-color: #5cb85c;
+  background-color:#339865;
   color: white;
 }
 
@@ -360,7 +404,7 @@ footer .fa-facebook-square {
   float: right;
   font-size: 16px;
   margin: 5px;
-  color: #0B5D97;
+  color: #339865;
 }
 @media screen and (min-width:730px) {
   .marginTop{

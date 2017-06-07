@@ -96,7 +96,7 @@ export default class Calculator extends Component {
       <div className="calculator-container">
         {this.state.showCalculator ?
           <div className="calculator">
-            <div className="price-form-container">
+            <div className="container price-form-container">
             <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
             <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
             <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
@@ -114,16 +114,17 @@ export default class Calculator extends Component {
             {!document.location.pathname.includes("embed") ?
               <div className="row well well-lg marg">
                 <div className="about col-xs-12 col-sm-12 col-md-7 center-block textColor">
-                  <p className={"textColor" + (this.props.bodyFont || "")}>
-                    Most Nigerians struggle to afford medicines. Ministry of Health
+                  <p className={"col-md-6 textColor" + (this.props.bodyFont || "")}>
+                    Most Nigerians struggle to afford medicines, both locally made and imported.
+                    The Ministry of Health
                     research, going as far back as 2006, indicates that 90.2% of
                     citizens survive on income of just US$2 a day. Even government
-                    workers earn, on average, just US$1.4 per day.
+                    workers earn, on the average, just US$1.4 per day.
                   </p>
-                  <p className={" textColor " + (this.props.bodyFont || "")}>
+                  <p className={"col-md-6 textColor " + (this.props.bodyFont || "")}>
                     Income levels haven’t improved much over the past 10 years but
                     medicine prices continue to soar. This tool helps shine a spotlight
-                    on just how expensive medicine is and asks why Nigeria pays more
+                    on just how expensive medicine is and asks why Nigerians pays more
                     than the rest of the worlds.
                   </p>
                 </div>
