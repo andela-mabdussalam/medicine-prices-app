@@ -93,9 +93,9 @@ export default class Calculator extends Component {
   render() {
     return (
       <div>
-      <div className="calculator-container">
+      <div className="container calculator-container">
         {this.state.showCalculator ?
-          <div className="calculator">
+          <div className="calculator well well-lg">
             <div className="price-form-container">
             <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
             <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
@@ -112,7 +112,7 @@ export default class Calculator extends Component {
          </div> : null
         }
             {!document.location.pathname.includes("embed") ?
-              <div className="row well well-lg marg">
+              <div className="row">
                 <div className="about col-xs-12 col-sm-12 col-md-7 center-block textColor">
                   <p className={"textColor" + (this.props.bodyFont || "")}>
                     Most Nigerians struggle to afford medicines. Ministry of Health

@@ -44,7 +44,8 @@ export default class Stories extends Component {
     const { data } = this.state;
 
     return (
-      <div>
+      <div className="cover">
+        <hr/>
         <div className="stories" style={{ "maxWidth": "800px", "margin": "0 auto 10px", "padding": "15px" }}>
           <h3>Latest headlines:</h3><br />
           <div className="row">
@@ -57,7 +58,7 @@ export default class Stories extends Component {
                       <div class="caption" className="top-margin">
                         <h3>{tile.Title}</h3>
                         <p className="align-text">{tile.Description}</p>
-                        <p className="top-margin"><a href="{tile.StoryUrl}" className="btn btn-primary" role="button">Read more ...</a></p>
+                        <p className="top-margin"><a href={tile.StoryUrl} className="btn btn-primary" role="button">Read more ...</a></p>
                       </div>
                     </div>
                 </div>
