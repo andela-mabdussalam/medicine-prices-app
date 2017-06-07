@@ -191,7 +191,12 @@ input[type="color"]:focus,
   color: black;
   font-size: 20px;
 }
-
+.top-margin{
+  margin-top: 35px;
+}
+.align-text{
+  text-align: justify;
+}
 .show-result-btn{
   padding: 11px 60px;
   background-color: #3cd682;
