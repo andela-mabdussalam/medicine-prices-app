@@ -12,7 +12,8 @@ class NavigationBar extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to="/" onClick={this.props.resetCalculator}><h2 className="medprices-heading" style={{"marginTop": "14px", "color":"rgb(5, 47, 76)", "fontSize":"30px"}}>#CheckYourMedPrices</h2></NavLink>
+            <NavLink to="/" onClick={this.props.resetCalculator}>
+              <h2 className="medprices-heading" style={{"fontSize": "30px"}}>#CheckYourMedPrices</h2></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
