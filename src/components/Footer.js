@@ -54,8 +54,8 @@ export default class Footer extends Component {
                 International Center for Journalists</a>.
             </p>
           </div>
-          <a href="http://punchng.com" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
           <a href="https://investigativecenters.org" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors ancir-logo" alt="ANCIR" src="/ancir-logo.jpg" /></a>
+          <a href="http://punchng.com" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors" alt="Punch Nigeria" src="/punch-ng-logo-white.png" /></a>
           <a href="http://www.codefornigeria.org" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors cfn-logo" alt="Code for Nigeria" src="/cfn-logo-white.png" /></a>
         </div>
       </footer >

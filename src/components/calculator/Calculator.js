@@ -92,9 +92,11 @@ export default class Calculator extends Component {
 
   render() {
     return (
+      <div>
       <div className="container calculator-container">
-        {this.state.showCalculator ? <div className="calculator">
-          <div className="price-form-container">
+        {this.state.showCalculator ?
+          <div className="calculator well well-lg">
+            <div className="price-form-container">
             <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
             <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
             <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
@@ -105,25 +107,29 @@ export default class Calculator extends Component {
               onSubmit={this.onSubmit}
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
-            />
-            {!document.location.pathname.includes("embed") ? <div className="row"><div className="about col-xs-12 col-sm-12 col-md-7 center-block">
-              <p className={"sub post-form-paragraph " + (this.props.bodyFont || "")}>
-                Most Nigerians struggle to afford medicines. Ministry of Health
-                 research, going as far back as 2006, indicates that 90.2% of
-                citizens survive on income of just US$2 a day. Even government
-                workers earn, on average, just US$1.4 per day.
-              </p>
-              <p className={"sub " + (this.props.bodyFont || "")}>
-                Income levels haven’t improved much over the past 10 years but
-                medicine prices continue to soar. This tool helps shine a spotlight
-                on just how expensive medicine is and asks why Nigeria pays more
-                than the rest of the worlds.
-              </p>
-            </div></div> : null}
-          </div>
-        </div>
-          : null
+              />
+            </div>
+         </div> : null
         }
+            {!document.location.pathname.includes("embed") ?
+              <div className="row">
+                <div className="about col-xs-12 col-sm-12 col-md-7 center-block textColor">
+                  <p className={"textColor" + (this.props.bodyFont || "")}>
+                    Most Nigerians struggle to afford medicines. Ministry of Health
+                    research, going as far back as 2006, indicates that 90.2% of
+                    citizens survive on income of just US$2 a day. Even government
+                    workers earn, on average, just US$1.4 per day.
+                  </p>
+                  <p className={" textColor " + (this.props.bodyFont || "")}>
+                    Income levels haven’t improved much over the past 10 years but
+                    medicine prices continue to soar. This tool helps shine a spotlight
+                    on just how expensive medicine is and asks why Nigeria pays more
+                    than the rest of the worlds.
+                  </p>
+                </div>
+              </div> : null}
+
+
         {this.state.showResult ?
           <CalculationResult
             price={String(this.state.userDrugPrice)}
@@ -137,6 +143,7 @@ export default class Calculator extends Component {
           />
           : null
         }
+        </div>
       </div>
     )
   }

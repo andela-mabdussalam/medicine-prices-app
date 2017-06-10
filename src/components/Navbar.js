@@ -12,7 +12,8 @@ class NavigationBar extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to="/" onClick={this.props.resetCalculator}><img alt="logo" src="/logo.png" className="cfn-logo" /></NavLink>
+            <NavLink to="/" onClick={this.props.resetCalculator}>
+              <h2 className="medprices-heading" style={{"fontSize": "30px"}}>#CheckYourMedPrices</h2></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
