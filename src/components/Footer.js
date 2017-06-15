@@ -41,7 +41,7 @@ export default class Footer extends Component {
               from <a href="https://codefornigeria.org/" target="_blank" rel="noopener noreferrer">Code for Nigeria</a>.
             </p>
             <p>
-              ANCIR's Cost of Life project seeks to shine an investigative light on the
+              ANCIR&lsquo;s Cost of Life project seeks to shine an investigative light on the
               human cost of profiteering and abuses in the healthcare industry.
             </p>
             <p>Co-funded by

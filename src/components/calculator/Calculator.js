@@ -100,7 +100,7 @@ export default class Calculator extends Component {
             <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
             <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
             <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
-              Let's find out. Tell us how much you pay.
+              Let&lsquo;s find out. Tell us how much you pay.
             </p>
             <PriceForm
               drugs={this.state.drugs}
