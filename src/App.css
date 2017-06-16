@@ -135,11 +135,20 @@ input[type="color"]:focus,
   margin-bottom: 20px;
   font-family: 'Patua One', cursive;
 }
-
+.logoFont{
+  font-size: 30px;
+}
 .medprices-paragraph {
   font-size: 20px;
 }
-
+.stories{
+  max-width: 800px;
+  margin: 0 auto 10px;
+  padding: 15px;
+}
+.rightMargin{
+  margin-right: 40px;
+}
 .price-form input{
   border: 0px;
   border-bottom: 1px solid #b1bfd4;
