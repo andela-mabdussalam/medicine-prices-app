@@ -13,7 +13,7 @@ class NavigationBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink to="/" onClick={this.props.resetCalculator}>
-              <h2 className="medprices-heading" style={{"fontSize": "30px"}}>#CheckYourMedPrices</h2></NavLink>
+              <h2 className="medprices-heading logoFont">#CheckYourMedPrices</h2></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
