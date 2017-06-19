@@ -23,7 +23,7 @@ export class CalculationResult extends Component {
 
   generateQuote() {
     let percentage = this.percentageDecreaseOrIncrease.apply(this);
-    return encodeURIComponent(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} in Nigeria #CheckYourMedPrices`);
+    return encodeURI(`I’m paying ${this.numberWithCommas(percentage)}% ${this.props.amount} than the global average price for ${this.props.drug.name} in Nigeria #CheckYourMedPrices`);
   }
 
   generateFacebookLink() {
