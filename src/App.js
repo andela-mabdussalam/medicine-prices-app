@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Calculator from './components/calculator/Calculator';
+import EmbedSample from './components/EmbedSample';
 
 class App extends Component {
   render() {
@@ -10,7 +11,10 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/embed" component={() => <Calculator headerFont="punch-ng-header" bodyFont="punch-ng-body" />} />
+          <Route exact path="/sample" component={EmbedSample} />
+          <Route exact path="/embed" component={() =>
+            <Calculator headerFont="punch-ng-header" bodyFont="punch-ng-body"/>
+          } />
         </div>
       </BrowserRouter>
     );
