@@ -23,6 +23,7 @@ export default class Calculator extends Component {
       showResult: false,
       userDrugPrice: 0,
       userPercentage: 0,
+      counter: 0
     };
     this.baseState = this.state;
     this.onSubmit = this.onSubmit.bind(this);
@@ -65,8 +66,11 @@ export default class Calculator extends Component {
             strength: drug.strength,
             name: drug.brand_names[name],
             form: drug.form,
-            id: drug.id + "3614" + name
+            id: this.state.counter
           };
+          this.setState({
+            counter: this.state.counter++
+          });
           drugs.push(new_drug); // peer pressure
         }
       }
