@@ -52,15 +52,21 @@ class EmbedPopup extends Component {
     // generate embed code
     let url = document.location.origin;
     url += "/embed";
-    let embedCode = '<iframe src="{}" frameborder="0" scrolling="yes" height="600px" width="100%"></iframe>'.replace("{}", url);
+    let embedCode = `<div id="embed"></div><script>var pymParent = new pym.Parent('embed', {}, {});</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pym/1.2.2/pym.v1.min.js"></script>`.replace("{}", url)
     return embedCode;
+  }
+  generateLink() {
+    // generate link
+    let link = document.location.origin;
+    link += "/sample";
+    return link;
   }
   getTooltip(props) {
     return (
       <Tooltip className={this.state.toolTipClass} id="tooltip" >{this.state.tooltipText}</Tooltip >
     );
   }
-
   copyEmbedCodeToClipboard(event) {
     // copy embedcode from embedcode input to clipboard
     ReactDOM.findDOMNode(this.embedCodeInput).select();
@@ -75,7 +81,7 @@ class EmbedPopup extends Component {
   render() {
     return (
       <Popover id="popover-positioned-bottom" title="Embed this tool" {...this.props}>
-        <p>Copy the embed code below and place it on your website!</p>
+        <p>Copy the embed code below and place it on your website! Click <a href={this.generateLink()}>here</a> for detailed info on the embed.</p>
         <InputGroup>
           <FormControl className="embed-code-input" type="text" readOnly value={this.generateEmbedCode()} ref={(input) => this.embedCodeInput = input} />
           {
