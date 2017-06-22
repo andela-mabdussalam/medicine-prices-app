@@ -22,7 +22,7 @@ export default class Footer extends Component {
             </p>
             <p>Data Visualizations:
               <a href="https://github.com/ryansept" target="_blank" rel="noopener noreferrer">
-                Ryan Marvin (Kenya)
+                Ryan Marvin (Kenya), Mariam Abdussalam(Nigeria)
               </a>
             </p>
             <p>Data Source:
