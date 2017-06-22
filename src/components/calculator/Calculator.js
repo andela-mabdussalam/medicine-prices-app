@@ -3,10 +3,11 @@ import { CalculationResult } from './CalculationResult';
 import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
 import axios from 'axios';
+import pym from 'pym.js';
 
 let ReactGA = require('react-ga');
 ReactGA.initialize('UA-93090833-2');
-
+var pymChild = null;
 /*
 * The Calculator Component
 */
@@ -28,8 +29,8 @@ export default class Calculator extends Component {
     this.calculate = this.calculate.bind(this);
     this.formatDrugs = this.formatDrugs.bind(this);
   }
-
   componentDidMount() {
+    pymChild = new pym.Child();
     axios.get("https://dc.sourceafrica.net/javascripts/rates.json").then(
       res => { this.EXCHNG = res.data.rates.NGN; }
     ).catch((error) => {
@@ -42,6 +43,7 @@ export default class Calculator extends Component {
       userDrugPrice: userDrugPrice,
       currentDrug: drug
     }, this.calculate);
+    pymChild.sendHeight();
     ReactGA.event({
       category: "Search",
       action: "search",
@@ -111,10 +113,23 @@ export default class Calculator extends Component {
             </div>
          </div> : null
         }
-            {!document.location.pathname.includes("embed") ?
+        {this.state.showResult ?
+          <CalculationResult
+            price={String(this.state.userDrugPrice)}
+            percentage={this.state.userPercentage}
+            drug={this.state.currentDrug}
+            amount={this.state.userPercentage >= 100 ? "more" : "less"}
+            exchangeRate={this.EXCHNG}
+            resetCalculator={this.resetCalculator.bind(this)}
+            headerFont={this.props.headerFont}
+            bodyFont={this.props.bodyFont}
+          />
+          : null
+          }
+                    {!document.location.pathname.includes("embed") ?
               <div className="row">
                 <div className="about col-xs-12 col-sm-12 col-md-7 center-block textColor">
-                  <p className={"textColor" + (this.props.bodyFont || "")}>
+                <p className={"textColor" + (this.props.bodyFont || "")}>
                     Most Nigerians struggle to afford medicines. Ministry of Health
                     research, going as far back as 2006, indicates that 90.2% of
                     citizens survive on income of just US$2 a day. Even government
@@ -128,21 +143,6 @@ export default class Calculator extends Component {
                   </p>
                 </div>
               </div> : null}
-
-
-        {this.state.showResult ?
-          <CalculationResult
-            price={String(this.state.userDrugPrice)}
-            percentage={this.state.userPercentage}
-            drug={this.state.currentDrug}
-            amount={this.state.userPercentage >= 100 ? "more" : "less"}
-            exchangeRate={this.EXCHNG}
-            resetCalculator={this.resetCalculator.bind(this)}
-            headerFont={this.props.headerFont}
-            bodyFont={this.props.bodyFont}
-          />
-          : null
-        }
         </div>
       </div>
     )
