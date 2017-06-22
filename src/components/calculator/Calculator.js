@@ -22,8 +22,7 @@ export default class Calculator extends Component {
       showCalculator: true,
       showResult: false,
       userDrugPrice: 0,
-      userPercentage: 0,
-      counter: 0
+      userPercentage: 0
     };
     this.baseState = this.state;
     this.onSubmit = this.onSubmit.bind(this);
@@ -56,6 +55,7 @@ export default class Calculator extends Component {
   // format list of drugs to have each brand name as it's own drug
   formatDrugs() {
     // make copy of state
+    let counter = 0;
     let drugs = this.state.drugs.copyWithin();
     for (let drug of drugs) {
       if (drug.brand_names) {
@@ -66,11 +66,9 @@ export default class Calculator extends Component {
             strength: drug.strength,
             name: drug.brand_names[name],
             form: drug.form,
-            id: this.state.counter
+            id: counter
           };
-          this.setState({
-            counter: this.state.counter++
-          });
+          counter++;
           drugs.push(new_drug); // peer pressure
         }
       }
