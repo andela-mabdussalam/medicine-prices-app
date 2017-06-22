@@ -27,7 +27,7 @@ export default class EmbedSample extends Component {
       <div>
         <NavigationBar />
         <div id="spacers" style={{ "height": "40px" }}></div>
-        <div className="setWidth">
+        <div>
           <div className="container">
             <div className="col-lg-12" style={{ "marginBottom": "40px" }}>
               <h3 style={{ "marginBottom": "40px" }}> Embed the tool on your page </h3>
