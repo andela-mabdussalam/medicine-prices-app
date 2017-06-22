@@ -51,7 +51,7 @@ export default class Footer extends Component {
                 Bill and Melinda Gates Foundation&nbsp;
               </a>
               through the <a href="http://www.icfj.org" target="_blank" rel="noopener noreferrer">
-                International Center for Journalists</a>.
+                International Center for Journalists.</a>
             </p>
           </div>
           <a href="https://investigativecenters.org" className="sponsors-link" target="_blank" rel="noopener noreferrer"><img className="sponsors ancir-logo" alt="ANCIR" src="/ancir-logo.jpg" /></a>
