@@ -76,7 +76,6 @@ export default class Calculator extends Component {
       }
       delete drug.brand_names;
     }
-    console.log(drugs.length)
     this.setState({ drugs: drugs });
   }
 
