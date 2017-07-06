@@ -9,20 +9,17 @@ import { Nav, Navbar, NavItem, OverlayTrigger, Popover, InputGroup, Button, Form
 class NavigationBar extends Component {
   render() {
     return (
-      <Navbar fixedTop>
+      <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink to="/" onClick={this.props.resetCalculator}>
-              <h2 className="medprices-heading logoFont">#CheckYourMedPrices</h2></NavLink>
+              <h2 className="check-your-med-prices">#CheckYourMedPrices</h2></NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
+          <Nav pullRight className="get-in-touch">
             <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank">Get in touch</NavItem>
-            <OverlayTrigger trigger="click" placement="bottom" overlay={<EmbedPopup />} rootClose={true}>
-              <NavItem eventKey={2} href="#">Embed this <i className="fa fa-caret-down" aria-hidden="true"></i></NavItem>
-            </OverlayTrigger>
             <NavItem className="navitem-divider"></NavItem>
             <NavItem eventKey={3} href=" https://facebook.com/CodeForAfrica" target="_blank">
               <i className="fa fa-facebook" aria-hidden="true"></i>

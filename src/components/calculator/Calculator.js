@@ -95,54 +95,37 @@ export default class Calculator extends Component {
   render() {
     return (
       <div>
-      <div className="container calculator-container">
-        {this.state.showCalculator ?
-          <div className="calculator well well-lg">
-            <div className="price-form-container">
-            <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
-            <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
-            <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
-              Let&lsquo;s find out. Tell us how much you pay.
+        <div className="container calculator-container">
+          {this.state.showCalculator ?
+            <div className="calculator">
+              <div className="price-form-container">
+                <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
+                <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
+                <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
+                  Let&lsquo;s find out. Tell us how much you pay.
             </p>
-            <PriceForm
-              drugs={this.state.drugs}
-              onSubmit={this.onSubmit}
+                <PriceForm
+                  drugs={this.state.drugs}
+                  onSubmit={this.onSubmit}
+                  headerFont={this.props.headerFont}
+                  bodyFont={this.props.bodyFont}
+                />
+              </div>
+            </div> : null
+          }
+          {this.state.showResult ?
+            <CalculationResult
+              price={String(this.state.userDrugPrice)}
+              percentage={this.state.userPercentage}
+              drug={this.state.currentDrug}
+              amount={this.state.userPercentage >= 100 ? "more" : "less"}
+              exchangeRate={this.EXCHNG}
+              resetCalculator={this.resetCalculator.bind(this)}
               headerFont={this.props.headerFont}
               bodyFont={this.props.bodyFont}
-              />
-            </div>
-         </div> : null
-        }
-        {this.state.showResult ?
-          <CalculationResult
-            price={String(this.state.userDrugPrice)}
-            percentage={this.state.userPercentage}
-            drug={this.state.currentDrug}
-            amount={this.state.userPercentage >= 100 ? "more" : "less"}
-            exchangeRate={this.EXCHNG}
-            resetCalculator={this.resetCalculator.bind(this)}
-            headerFont={this.props.headerFont}
-            bodyFont={this.props.bodyFont}
-          />
-          : null
+            />
+            : null
           }
-                    {!document.location.pathname.includes("embed") ?
-              <div className="row">
-                <div className="about col-xs-12 col-sm-12 col-md-7 center-block textColor">
-                <p className={"textColor" + (this.props.bodyFont || "")}>
-                    Most Nigerians struggle to afford medicines. Ministry of Health
-                    research, going as far back as 2006, indicates that 90.2% of
-                    citizens survive on income of just US$2 a day. Even government
-                    workers earn, on average, just US$1.4 per day.
-                  </p>
-                  <p className={" textColor " + (this.props.bodyFont || "")}>
-                    Income levels haven’t improved much over the past 10 years but
-                    medicine prices continue to soar. This tool helps shine a spotlight
-                    on just how expensive medicine is and asks why Nigeria pays more
-                    than the rest of the worlds.
-                  </p>
-                </div>
-              </div> : null}
         </div>
       </div>
     )

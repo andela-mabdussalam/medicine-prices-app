@@ -14,7 +14,10 @@ export default class Home extends Component {
     return (
       <div>
         <NavigationBar resetCalculator={this.resetCalculator.bind(this)} />
-        <div id="spacer" style={{"height": "150px"}}></div>
+        <div className="illustration">
+          <img src="/illustration.svg" width="100%" height="320px" />
+          </div>
+        <div id="spacer" style={{"height": "34px"}}></div>
         <Calculator ref={(calculator) => { this.calculator = calculator; }} />
         <Stories />
         <Footer />

@@ -1,5 +1,5 @@
 *{
-  font-family: 'Open Sans', Helvetica;
+  font-family: 'Source Sans Pro';
 }
 
 body{
@@ -59,8 +59,153 @@ input[type="color"]:focus,
 .calculator-container{
   min-height: auto;
   margin-bottom: 70px;
+  width: 40%;
 }
-
+.calculator{
+  border: 1px solid #0075c5;
+  padding: 15px;
+border-radius: 4.5px;
+}
+.check-your-med-prices {
+height: 14px;
+font-size: 16px;
+font-weight: 300;
+letter-spacing: 1.1px;
+color: #0075c5;
+}
+.get-in-touch{
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.9px;
+color: #0075c5;
+}
+.story{
+	width: 100%;
+	height: 390.5px;
+	background-color: #000000;
+	border: solid 0.5px #979797;
+  color: white;
+}
+.storyHeading {
+  margin-top: 4%;
+  font-size: 18px;
+  text-align: center;
+}
+.heading{
+  line-height: 1.5;
+  display: inline;
+}
+.heading-wording{
+	background-color: #3cd682;
+  box-shadow: 10px 1px 0 3px #3cd682, -10px 1px 0 3px #3cd682;
+  font-weight: bold;
+}
+.well{
+  background: #ffffff;
+  border-radius: 0;
+}
+hr{
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ontop{
+  margin-top: 1%;
+}
+.embeds{
+	background-color: #3cd682;
+  border: solid 0.5px #979797;
+  padding: 80px;
+}
+.embed-inner{
+margin: 0 auto;
+width: 60%;
+}
+.storyBody{
+  margin-top: 2%;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.9;
+}
+.illustration {
+width: 100%;
+height: 30%;
+object-fit: contain;
+}
+.navbar {
+border: none;
+/*margin-bottom: 0px;*/
+}
+.navbar-default .navbar-nav>li>a {
+color:#0075c5;
+font-family: SourceSansPro;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.9px;
+}
+.rectangle {
+border-radius: 1px;
+background-color: #ffffff;
+border: solid 0.5px #0075c5;
+height: 50px;
+width: 60%;
+margin: 0 auto;
+padding-top: 5px;
+padding-bottom: 5px
+}
+.i_buy {
+margin-left:13px;
+font-weight: 600;
+font-size: 11px;
+}
+.form-control{
+height: 25px;
+}
+.center-div{
+  margin: 0 auto;
+}
+.rightborder{
+  border-right: 1px solid white;
+  width: 25%;
+  color: white;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+  height: 20px;
+}
+.rightborder2{
+  border-right: 1px solid white;
+  width: 15%;
+  color: white;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+  height: 20px;
+}
+.font-small{
+  font-size: 9px;
+  color: white;
+  margin-left: 6px;
+  padding-top: 5px;
+  line-height: 1.5;
+  padding-right: 0;
+  padding-left: 0;
+}
+.top-margin{
+  margin-top: 16px;
+  font-size: 10px;
+  margin-left: 13px;
+}
+.top-margin a{
+  text-decoration: none;
+    color: #4d4d4d;
+}
+.arrow {
+	width:18px;
+	height: 14px;
+	object-fit: contain;
+}
+.well{
+  padding-bottom: 0;
+}
 .lineHeight{
   line-height: 170%;
   text-align: justify;
@@ -70,13 +215,10 @@ input[type="color"]:focus,
   margin-top:120px;
   color:black;
 }
-.textColor{
-  color:black;
-}
 .price-form{
   width: 80%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 .full{
   width:100%;
@@ -84,17 +226,17 @@ input[type="color"]:focus,
 .price-form-container .medprices-heading{
   font-size: 45px;
   margin-top: 10px;
+  font-family: SourceSansPro;
+  color: #0075c5;
 }
 .cover{
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 .price-form-container .sub{
   margin-bottom: 15px;
 }
 
 .navbar{
-  height: 7em;
   background: white;
 }
 
@@ -144,19 +286,21 @@ input[type="color"]:focus,
   font-size: 30px;
 }
 .medprices-paragraph {
-  font-size: 20px;
+  font-size: 15px;
 }
 .stories{
-  max-width: 800px;
-  margin: 0 auto 10px;
+  /*max-width: 800px;*/
+  margin: 0 auto;
   padding: 15px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+
 }
 .rightMargin{
   margin-right: 40px;
 }
 .price-form input{
   border: 0px;
-  border-bottom: 1px solid #b1bfd4;
   box-shadow: none;
   border-radius: 0;
 }
@@ -217,26 +361,32 @@ input[type="color"]:focus,
   color: black;
   font-size: 20px;
 }
-.top-margin{
-  margin-top: 35px;
+.topMargin{
+  margin-top: 10px;
+  margin-left: 40px;
+  opacity: 0.85;
 }
 .align-text{
   text-align: justify;
 }
 .show-result-btn{
-  padding: 11px 60px;
+  padding: 9px 30px;
   background-color: #3cd682;
   border: none;
   color: white;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 .show-result-btn[disabled],.show-result-btn:hover,
 .show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
 {
-  background-color: #5cb85c;
+  background-color: #3cd682;
   color: white;
+}
+.margin-auto{
+  /*margin-left:21%;*/
+  /*width: 65%;*/
 }
 
 footer{
@@ -394,6 +544,9 @@ footer .fa-facebook-square {
   .show-result-btn{
     margin-left: 33%;
   }
+  .heading-wording {
+    font-size: 10px;
+  }
 }
 .suggest-med:hover, .suggest-med:focus{
   text-decoration: none;
@@ -419,8 +572,16 @@ footer .fa-facebook-square {
   margin-bottom: 15px;
   font-size: 13px;
 }
+.price-form input{
+  font-size: 10px;
 }
-
+.calculator-container{
+  width: 100%;
+}
+  .heading-wording {
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .price-form-container .medprices-heading {
     font-size: 32px;
@@ -435,6 +596,6 @@ footer .fa-facebook-square {
 
 @media screen and (min-width: 1200px) {
   .price-form-container .medprices-heading {
-    font-size: 55px;
+    font-size: 35px;
   }
 }
