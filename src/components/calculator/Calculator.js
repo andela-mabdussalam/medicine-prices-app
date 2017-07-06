@@ -4,6 +4,8 @@ import { PriceForm } from './PriceForm';
 import { getMedicine } from '../utils/Api';
 import axios from 'axios';
 import pym from 'pym.js';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 let ReactGA = require('react-ga');
 ReactGA.initialize('UA-93090833-2');
@@ -37,6 +39,12 @@ export default class Calculator extends Component {
       alert(error);
     });;
     this.formatDrugs();
+  }
+  generateLink() {
+    // generate link
+    let link = document.location.origin;
+    link += "/sample";
+    return link;
   }
   onSubmit(drug, userDrugPrice) {
     this.setState({
@@ -93,6 +101,7 @@ export default class Calculator extends Component {
   }
 
   render() {
+    const { router } = this.context;
     return (
       <div>
         <div className="container calculator-container">
@@ -126,6 +135,7 @@ export default class Calculator extends Component {
             />
             : null
           }
+          <a href={this.generateLink()}><Button className="embed-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3">EMBED THIS</Button></a>
         </div>
       </div>
     )

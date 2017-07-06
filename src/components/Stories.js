@@ -95,14 +95,16 @@ export default class Stories extends Component {
         <div className="stories">
           <div className="inner" style={{ "width": "55%", "margin": "0 auto" }}>
             <div className="row">
-              <div className="col-lg-4" >
+              <div className="col-lg-4">
                 {data.map((tile, index) => (
                   <div key={index}>
-                    <img src={tile.ImageUrl} alt="..." style={{ "maxWidth": "300px", "width": "100%", "height": "220px" }} className="img-responsive" />
+                    <img src={tile.ImageUrl} alt="..." style={{ "maxWidth": "300px", "width": "100%", "height": "220px" }} className="img-responsive" name="story" />
                     <div className="well" style={{ "width": "100%" }}>
                       <p> 7h ago </p>
-                      <h4 style={{ "font-weight": "bold" }}>{tile.Title}</h4>
-                      {desc && <p className="align-text">{tile.Description}</p>}
+
+                      <div className="description" onmouseover="story.height=150px">
+                        <h4 style={{ "font-weight": "bold" }} >{tile.Title}<span className="extra">{tile.Description}</span></h4>
+                      </div>
                       <div className="row" >
                         <div style={{ "float": "left" }}>
                           <p className="top-margin"><a href={tile.StoryUrl}>READ ARTICLE</a></p>
@@ -139,7 +141,7 @@ export default class Stories extends Component {
                   <div className="well" style={{ "width": "100%" }}>
                     <p> 7h ago </p>
                     <h4 className="align-text text-muted lead" style={{ "font-weight": "bold" }}>Coming Soon</h4>
-                    {desc && <p className="align-text">COming </p>}
+                    {desc && <p className="align-text">Cming </p>}
                     <div className="row" >
                       <div style={{ "float": "left" }}>
                         <p className="top-margin"><a href="">READ ARTICLE</a></p>

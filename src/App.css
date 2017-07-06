@@ -378,15 +378,30 @@ height: 25px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
+.embed-btn{
+  padding: 9px 30px;
+	background-color: #0075c5;
+  border: none;
+  color: white;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.extra{
+  display:none;
+}
+h4:hover .extra {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 200;
+    opacity: 0.9;
+    margin-top: 15px;
+}
 .show-result-btn[disabled],.show-result-btn:hover,
 .show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
 {
   background-color: #3cd682;
   color: white;
-}
-.margin-auto{
-  /*margin-left:21%;*/
-  /*width: 65%;*/
 }
 
 footer{
