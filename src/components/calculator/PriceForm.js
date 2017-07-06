@@ -1,5 +1,5 @@
  import React, { Component } from 'react';
-import { Form, FormGroup, FormControl, Col, ControlLabel, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Col, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
 // tooltip for link to suggestions form

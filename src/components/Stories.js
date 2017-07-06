@@ -71,13 +71,13 @@ export default class Stories extends Component {
           <div className="col-md-6 col-md-offset-3 ontop">
             <div className="row">
               <div className="col-xs-6 col-md-6" style={{ "float": "left" }}>
-                <img src="mitchell-hollander.png" className="img-responsive" />
+                <img src="mitchell-hollander.png" className="img-responsive" alt="drug"/>
               </div>
               <div className="col-xs-4 col-md-4 col-sm-4" style={{ "marginLeft": "-55px", "marginTop": "5%", "color": "black", "height": "50px" }}>
                 <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
                 <div className="row topMargin">
                   <div className="rightborder col-md-5">
-                    <img src="punch-ng-logo-white.png" width="47px" height="14px" />
+                    <img src="punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo"/>
                   </div>
                   <div className="rightborder2 font-small col-md-2">
                     <p> 7h ago</p>
@@ -108,7 +108,7 @@ export default class Stories extends Component {
                           <p className="top-margin"><a href={tile.StoryUrl}>READ ARTICLE</a></p>
                         </div>
                         <div className="pull-right" style={{ "marginTop": "12px" }}>
-                          <img src="/arrow.svg" className="arrow" />
+                          <img src="/arrow.svg" className="arrow" alt="arrow"/>
                         </div>
                       </div>
                     </div>
@@ -127,7 +127,7 @@ export default class Stories extends Component {
                         <p className="top-margin"><a href="">READ ARTICLE</a></p>
                       </div>
                       <div className="pull-right" style={{ "marginTop": "12px" }}>
-                        <img src="/arrow.svg" className="arrow" />
+                        <img src="/arrow.svg" className="arrow" alt="arrow1" />
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default class Stories extends Component {
                         <p className="top-margin"><a href="">READ ARTICLE</a></p>
                       </div>
                       <div className="pull-right" style={{ "marginTop": "12px" }}>
-                        <img src="/arrow.svg" className="arrow" />
+                        <img src="/arrow.svg" className="arrow" alt="arrow2"/>
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ export default class Stories extends Component {
             <div className="embed-inner">
               <div className="row">
                 <div className="col-md-4">
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=300&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" width="100%" height="450" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true"></iframe>              </div>
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=300&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" width="100%" height="450" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" title="facebook"></iframe>              </div>
                 <div className="col-md-4" style={{ "overflow": "hidden" }}>
                   <iframe src="https://api.medium.com/embed?type=profile&amp;path=%2Fcode-for-africa&amp;id=0&amp;" allowTransparency="true" frameBorder="0" title="Embedded profile" width="400" height="450" style={{ "display": "block", "maxWidth": "100%", "minWidth": "220px", "padding": "0", "position": "static", "visibility": "visible", "borderTopLeftRadius": "5px", "borderTopRightRadius": "5px", "borderBottomRightRadius": "5px", "borderBottomLeftRadius": "5px", "borderColor": "#eee #ddd #bbb", "borderWidth": "1px", "borderStyle": "solid", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 1px 3px" }}></iframe>
                 </div>
