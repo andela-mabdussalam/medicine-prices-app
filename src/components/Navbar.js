@@ -9,26 +9,28 @@ class NavigationBar extends Component {
   render() {
     return (
       <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand>
+        <div className="navbar-padding">
+          <Navbar.Header>
             <NavLink to="/" onClick={this.props.resetCalculator}>
               <h2 className="check-your-med-prices">#CheckYourMedPrices</h2></NavLink>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight className="get-in-touch">
-            <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank">Get in touch</NavItem>
-            <NavItem className="navitem-divider"></NavItem>
-            <NavItem eventKey={3} href=" https://facebook.com/CodeForAfrica" target="_blank">
-              <i className="fa fa-facebook" aria-hidden="true"></i>
-            </NavItem>
-            <NavItem href="https://twitter.com/code4africa" target="_blank">
-              <i className="fa fa-twitter" aria-hidden="true"></i>
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar >
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight className="get-in-touch">
+              <NavItem eventKey={1} href="https://twitter.com/code4africa" target="_blank" style={{"marginRight": "26px"}}>Get in touch</NavItem>
+              <NavItem eventKey={3} href=" https://facebook.com/CodeForAfrica" target="_blank">
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </NavItem>
+              <NavItem href="https://medium.com/code-for-africa" target="_blank">
+                <i className="fa fa-medium" aria-hidden="true"></i>
+              </NavItem>
+              <NavItem href="https://twitter.com/code4africa" target="_blank">
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
     );
   }
 }

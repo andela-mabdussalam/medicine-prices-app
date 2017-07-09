@@ -27,10 +27,42 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
+
+.left {
+  float: left;
+}
+.center-text {
+  text-align: center;
+}
+.navbar {
+  margin-bottom: 0;
+  padding-left: 20.52%;
+  padding-right: 20.52%;
+}
+.navbar > .container {
+  width: 100%;
+}
+.mg-top-11{
+  margin-top: 11px;
+}
+.navbar-right {
+  padding: 0 !important;
+}
+.navbar-default .navbar-nav>li>a {
+  font-size: 9px !important;
+}
+.nav>li>a {
+  padding: 16px 4px;
+}
+.recent-story{
+  margin-left: -75px;
+  margin-top: 9%;
+  color: black;
+  width: 40%;
+}
 .App {
   text-align: center;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -55,54 +87,147 @@ input[type="color"]:focus,
 .cfn-logo{
   height: 3.5em;
 }
-
 .calculator-container{
   min-height: auto;
-  margin-bottom: 70px;
-  width: 40%;
+  width: 47%;
 }
 .calculator{
   border: 1px solid #0075c5;
   padding: 15px;
-border-radius: 4.5px;
+  border-radius: 4.5px;
+}
+div.timeline-header{
+  font-size: 12px;
+}
+.spacer {
+  height: 34px;
 }
 .check-your-med-prices {
-height: 14px;
-font-size: 16px;
-font-weight: 300;
-letter-spacing: 1.1px;
-color: #0075c5;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  color: #0075c5;
+  height: 14px;
+  margin-top: 16px;
+}
+.fixed-width{
+  width: 960px;
+  padding: 0;
+  border: 0.5px solid #e3e8e4;
 }
 .get-in-touch{
-font-size: 11px;
-font-weight: 600;
-letter-spacing: 0.9px;
-color: #0075c5;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  color: #0075c5;
+}
+.medium-logo{
+  font-size: 16px;
+  color: #1C9963;
 }
 .story{
 	width: 100%;
-	height: 390.5px;
+	height: 370.5px;
 	background-color: #000000;
 	border: solid 0.5px #979797;
   color: white;
+  margin: 0 auto;
+}
+.story-title{
+  color: black;
+  font-size: 11px;
+  text-align: justify;
+  margin-top: 5px;
+}
+.author{
+  font-size: 10px;
+  font-weight: bold;
+  color: #3B5998;
+}
+.medium-story hr{
+  opacity: 0.4;
+  background-color: black;
 }
 .storyHeading {
-  margin-top: 4%;
+  margin-top: 3%;
   font-size: 18px;
   text-align: center;
 }
+.write-up{
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto;
+  width: 58%;
+}
+.ash-colour{
+  color: #90949c;
+  font-size: 10px;
+}
 .heading{
-  line-height: 1.5;
+  line-height: 1.6;
   display: inline;
 }
 .heading-wording{
 	background-color: #3cd682;
-  box-shadow: 10px 1px 0 3px #3cd682, -10px 1px 0 3px #3cd682;
+  box-shadow: 8px 1px 0 2px #3cd682, -8px 1px 0 2px #3cd682;
   font-weight: bold;
 }
 .well{
   background: #ffffff;
   border-radius: 0;
+}
+.set-width{
+  width: 31.8%;
+  float: left;
+  padding-right: 15px;
+}
+.set-height {
+  height: 55%;
+  width: 100%;
+}
+.set-height .row{
+  margin-right: 0;
+}
+.set-height2{
+  height: 45%;
+  width: 100%;
+}
+.hover-test{
+  height: 275px;
+}
+.story-content{
+  margin-top: 25px;
+}
+.story-content h4 {
+  font-size: 15px;
+}
+.hover-test:hover{
+  height: 275px;
+}
+.hover-test:hover .set-height{
+  height: 35%;
+}
+.hover-test:hover .set-height2{
+  height: 35%;
+}
+.hover-test:hover .story-content{
+  margin-top: 15px;
+}
+.hover-test:hover .well{
+  height: 65%;
+}
+.hover-test:hover .top-margin{
+  margin-top: 6px;
+}
+.hover-test:hover .extra {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 200;
+  opacity: 0.9;
+  margin-top: 15px;
+  height: 52px;
+  overflow: hidden;
+  width: 100%;
 }
 hr{
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -113,72 +238,100 @@ hr{
 .embeds{
 	background-color: #3cd682;
   border: solid 0.5px #979797;
-  padding: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
 }
 .embed-inner{
-margin: 0 auto;
-width: 60%;
+  margin: 0 auto;
+  width: 60%;
 }
 .storyBody{
   margin-top: 2%;
-  font-size: 13px;
+  font-size: 11px;
   text-align: center;
-  opacity: 0.9;
+  opacity: 0.8;
+}
+.story-section{
+  width: 65%;
+  margin: 0 auto;
 }
 .illustration {
-width: 100%;
-height: 30%;
-object-fit: contain;
+  width: 100%;
+  height: 30%;
+  object-fit: contain;
 }
 .navbar {
-border: none;
-/*margin-bottom: 0px;*/
+  border: none;
 }
 .navbar-default .navbar-nav>li>a {
-color:#0075c5;
-font-family: SourceSansPro;
-font-size: 11px;
-font-weight: 600;
-letter-spacing: 0.9px;
+  color:#0075c5;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
 }
 .rectangle {
-border-radius: 1px;
-background-color: #ffffff;
-border: solid 0.5px #0075c5;
-height: 50px;
-width: 60%;
-margin: 0 auto;
-padding-top: 5px;
-padding-bottom: 5px
+  border-radius: 1px;
+  background-color: #ffffff;
+  border: solid 0.5px #0075c5;
+  height: 31.8px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .i_buy {
-margin-left:13px;
-font-weight: 600;
-font-size: 11px;
+  margin-left:13px;
+  font-weight: 600;
+  font-size: 7px;
+}
+.negative-margin-top {
+  margin-top: -9px;
 }
 .form-control{
-height: 25px;
+  height: 12.5px;
+  font-size: 10px;
+  letter-spacing: -0.1px;
+}
+.form-group {
+  margin-bottom: 6px !important;
 }
 .center-div{
   margin: 0 auto;
 }
 .rightborder{
   border-right: 1px solid white;
-  width: 25%;
   color: white;
   padding-right: 0;
   padding-left: 0;
   overflow: hidden;
   height: 20px;
+  width: 22%;
+  float:left;
 }
 .rightborder2{
   border-right: 1px solid white;
-  width: 15%;
   color: white;
   padding-right: 0;
   padding-left: 0;
   overflow: hidden;
   height: 20px;
+  width: 12%;
+  float: left;
+  margin-right: 4px;
+}
+.embed-height{
+  height: 301px;
+  background-color: white;
+  overflow: scroll;
+}
+.pad-10{
+  padding: 10px;
+}
+.pic-size{
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
 }
 .font-small{
   font-size: 9px;
@@ -190,13 +343,17 @@ height: 25px;
   padding-left: 0;
 }
 .top-margin{
-  margin-top: 16px;
+  margin-top: 38px;
   font-size: 10px;
   margin-left: 13px;
+  letter-spacing: 1.5px;
 }
-.top-margin a{
+.top-margin a {
   text-decoration: none;
     color: #4d4d4d;
+}
+.top-margin p {
+  padding: 0;
 }
 .arrow {
 	width:18px;
@@ -204,111 +361,97 @@ height: 25px;
 	object-fit: contain;
 }
 .well{
-  padding-bottom: 0;
+  padding: 10px;
 }
-.lineHeight{
+.lineHeight {
   line-height: 170%;
   text-align: justify;
-
 }
-.marg{
+.marg {
   margin-top:120px;
   color:black;
 }
-.price-form{
+.price-form {
   width: 80%;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 5px;
 }
-.full{
+.full {
   width:100%;
 }
-.price-form-container .medprices-heading{
-  font-size: 45px;
+.medprices-heading {
   margin-top: 10px;
-  font-family: SourceSansPro;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #0075c5;
 }
-.cover{
-  margin-top: 50px;
+.stories-section {
+  margin-top: 10px;
 }
-.price-form-container .sub{
-  margin-bottom: 15px;
-}
-
 .navbar{
   background: white;
 }
-
-.navbar-right{
+.navbar-right {
   padding-top: 25px;
   text-transform: uppercase;
   font-size: 13px;
 }
-.navbar-right .fa-twitter:hover{
+.navbar-right .fa-twitter:hover {
   color: skyblue;
 }
-.navbar-right .fa-facebook:hover{
+.navbar-right .fa-facebook:hover {
   color: #3b5998;
 }
-
-.embed-nav-button{
+.embed-nav-button {
   font-size: 10px;
 }
-
-.navitem-divider{
+.navitem-divider {
   border-left: 1px solid #f5f5f5;
   padding: 15px 0px 0px 0px;
   width: 0px;
 }
-
 .sub {
   color: #999;
-  font-size: 16px;
-  margin-bottom: 40px;
+  font-size: 11px;
+  margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.post-form-paragraph{
+.post-form-paragraph {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.medprices-heading{
-  font-size: 2.343em;
-  font-weight: 900;
+.medprices-heading {
+  font-size: 24px;
   color: #0B5D97;
-  margin-bottom: 20px;
-  font-family: 'Patua One', cursive;
+  padding: 0;
 }
-.logoFont{
+.logoFont {
   font-size: 30px;
 }
 .medprices-paragraph {
-  font-size: 15px;
+  font-size: 11px;
+  color: #111111;
+  margin-bottom: 0px;
 }
-.stories{
-  /*max-width: 800px;*/
+.stories {
   margin: 0 auto;
-  padding: 15px;
-  margin-top: 90px;
+  padding: 10px;
+  margin-top: 40px;
   margin-bottom: 30px;
-
+  width: 66%;
 }
 .rightMargin{
   margin-right: 40px;
 }
-.price-form input{
+.price-form input {
   border: 0px;
   box-shadow: none;
   border-radius: 0;
 }
-
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
   color: #0B5D97;
 }
-
 .embed-code-input{
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -330,220 +473,201 @@ height: 25px;
   color: #999;
   margin-bottom: 50px;
 }
-
 .calculation-result .medprices-heading{
   margin-bottom: 40px;
 }
-
 .call-to-action{
   font-size: 40px;
   font-weight: 300;
 }
-
 .call-to-action:hover{
   color: black;
   text-decoration: none;
 }
-
 .assumption{
   font-size: 14px;
   margin-top: 40px;
   margin-bottom: 20px;
   color: #999;
 }
-
 .reset-calculator{
   cursor: pointer;
   font-size: 14px;
 }
-
 .reset-calculator span{
   color: black;
   font-size: 20px;
 }
 .topMargin{
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   opacity: 0.85;
 }
 .align-text{
   text-align: justify;
 }
+.btn{
+  border-radius: 2px;
+  padding: 6px 15px;
+}
 .show-result-btn{
-  padding: 9px 30px;
   background-color: #3cd682;
-  border: none;
+  border-color: #3cd682;
   color: white;
-  font-weight: 700;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  font-size: 9.5px;
+  margin: 0 auto;
+}
+.show-result-btn:hover{
+  color: #3cd682;
+  background-color: white;
+  border-color: #3cd682;
 }
 .embed-btn{
   padding: 9px 30px;
 	background-color: #0075c5;
-  border: none;
   color: white;
   font-weight: 500;
   margin-top: 15px;
   margin-bottom: 20px;
+  font-size: 9px;
 }
-.extra{
+.embed-btn:hover {
+    color: #0075c5;
+    background-color: white;
+    border-color: #0075c5;
+}
+.extra {
   display:none;
 }
-h4:hover .extra {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 200;
-    opacity: 0.9;
-    margin-top: 15px;
-}
-.show-result-btn[disabled],.show-result-btn:hover,
+.show-result-btn[disabled],
 .show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
 {
   background-color: #3cd682;
   color: white;
 }
 
+/* footer section */
 footer{
   background: #000;
   color:white;
-  font-size: 16px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight: normal;
 }
-
 footer h3{
-  font-size: 16px;
+  font-size: 14.5px;
   font-weight: 100;
   margin-bottom: 25px;
 }
-
 footer h3 span{
-  font-size: 46px;
+  font-size: 24px;
   text-transform: capitalize;
 }
-
 footer .credits{
-  margin-bottom: 37px;
+  margin-bottom: 22px;
 }
-
 footer .credits p{
-  font-size: 16px;
-  margin: 16px 0px;
+  font-size: 10px;
+  margin: 6px 0px;
   font-weight: 200;
 }
-
+.align-text{
+  text-align: justify;
+}
 footer a{
   color: #339966;
 }
-
 footer a:hover{
   color: #339966;
 }
-
 footer .credits p a{
   margin-left: 7px
 }
-
 footer .post-credits{
   float: none;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 10px;
 }
-
 footer .sponsors{
-  height: 50px;
-  padding-bottom: 5px
+  height: 30px;
+  padding-bottom: 5px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
-
 footer .ancir-logo{
-  height: 70px;
+  height: 50px;
 }
 .med {
   height: 40px;
 }
 footer .cfn-logo{
-  height: 60px;
+  height: 40px;
 }
-
 footer .sponsors-link{
   display: inline-block;
-  margin: 30px;
-  padding-bottom: 10px
+  padding-bottom: 5px
 }
 pre{
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 25px;
 }
-footer .sponsors-link:hover{
+footer .sponsors:hover{
   border-bottom: 1px solid #339966;
 }
-
 footer .fa-twitter-square {
   color: skyblue;
   margin-right: 10px;
 }
-
 footer .fa-github {
   color: white;
   margin-right: 10px;
 }
-
 footer .fa-facebook-square {
   color: #3B5998;
   margin-right: 10px;
 }
-
 .punch-ng-header{
   font-family: 'Frank Ruhl Libre', serif;
 }
-
 .punch-ng-body{
   font-family: 'Playfair Display', serif;
 }
-
 .share-results-links a{
   margin: 15px;
 }
-
 .share-results-links .share-header{
   font-size: 30px;
   font-weight: 300;
   color: #CE4415;
 }
-
 .sachet{
-  font-size: 13px;
+  font-size: 8px;
   float: none;
 }
-
 #brand-name-tooltip .tooltip-inner{
   max-width: none;
 }
-
 .dropdown-menu li a{
   padding: 0px;
 }
-
 .dropdown-drug{
   padding: 3px 20px;
   padding-bottom: 20px;
 }
-
 .share-context{
   width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
   font-size: 20px
 }
-
 .about{
   float: none;
 }
-
 .suggest-med{
   float: right;
   font-size: 16px;
@@ -569,7 +693,7 @@ footer .fa-facebook-square {
 
 @media screen and (max-width: 767px) {
   .price-form-container .medprices-heading {
-    font-size: 32px;
+    font-size: 24px;
   }
   .price-form{
   width: 73%;
@@ -577,21 +701,21 @@ footer .fa-facebook-square {
   margin-top: 25px;
  }
 .medprices-paragraph {
-  font-size: 16px;
+  font-size: 11px;
  }
 .punch-ng-body{
   font-family: 'Playfair Display', serif;
   font-size: 16px;
 }
 .price-form-container .sub{
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   font-size: 13px;
 }
 .price-form input{
   font-size: 10px;
 }
 .calculator-container{
-  width: 100%;
+  width: 70%;
 }
   .heading-wording {
     font-size: 15px;
@@ -599,18 +723,18 @@ footer .fa-facebook-square {
 }
 @media screen and (min-width: 768px) {
   .price-form-container .medprices-heading {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .price-form-container .medprices-heading{
-    font-size: 45px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .price-form-container .medprices-heading {
-    font-size: 35px;
+    font-size: 24px;
   }
 }

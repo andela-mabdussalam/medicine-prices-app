@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="row footer">
+      <footer className="footer">
         <div className="about col-sm-12 center-block text-center">
           <h3>This is a <span>&nbsp;Cost of Life&nbsp;</span> Project</h3>
           <div className="credits">
@@ -22,7 +22,10 @@ export default class Footer extends Component {
             </p>
             <p>Data Visualizations:
               <a href="https://github.com/ryansept" target="_blank" rel="noopener noreferrer">
-                Ryan Marvin (Kenya), Mariam Abdussalam(Nigeria)
+                Ryan Marvin (Kenya)
+              </a>
+              <a href="https://github.com/andela-mabdussalam" target="_blank" rel="noopener noreferrer">
+                Mariam Abdussalam(Nigeria)
               </a>
             </p>
             <p>Data Source:

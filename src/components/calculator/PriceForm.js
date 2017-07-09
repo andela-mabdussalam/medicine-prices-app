@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Form, FormGroup, FormControl, Col, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
@@ -47,7 +47,7 @@ export class PriceForm extends Component {
         <FormGroup controlId="formHorizontalDrug">
           <div className="rectangle">
             <div className="i_buy">I buy</div>
-            <div className="pull-right">
+            <div className="pull-right negative-margin-top">
               <OverlayTrigger placement="right" overlay={suggestMedTooltip}>
                 <a href="https://goo.gl/forms/DADVeRMpRcNIKqqA3"
                   className="fa fa-question-circle suggest-med"
@@ -57,7 +57,7 @@ export class PriceForm extends Component {
                 </a>
               </OverlayTrigger>
             </div>
-            <Col md={4} sm={8} xs={8}>
+            <Col md={6} sm={8} xs={8}>
               <div className="row">
                 <Typeahead
                   className={this.props.bodyFont}
@@ -82,12 +82,14 @@ export class PriceForm extends Component {
           <div className="rectangle">
             <div className="i_buy">for {String.fromCharCode(8358)}</div>
             <div className="row subString">
-            <Col md={12} sm={12} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
+              <Col md={12} sm={12} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
             </div>
           </div>
         </FormGroup>
         <FormGroup>
-          <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">NEXT</Button>
+          <div className="center-text mg-top-11">
+            <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">Next</Button>
+          </div>
         </FormGroup>
         <div className="row">
           <p className={"sub sachet col-xs-12 col-sm-11 col-md-11 center-block " + (this.props.bodyFont || "")}>
