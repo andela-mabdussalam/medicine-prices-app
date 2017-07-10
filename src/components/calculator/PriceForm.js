@@ -5,7 +5,7 @@ import { Typeahead } from 'react-bootstrap-typeahead';
 // tooltip for link to suggestions form
 const suggestMedTooltip = (
   <Tooltip id="suggest-med-tooltip">
-    Didn't find what you were looking for? Click here and let us know.
+    Didn&lsquo;t find what you were looking for? Click here and let us know.
   </Tooltip>
 );
 
