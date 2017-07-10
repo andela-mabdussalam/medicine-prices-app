@@ -104,38 +104,38 @@ export default class Calculator extends Component {
       <div>
         <div className="container calculator-container">
           <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-12">
-          {this.state.showCalculator ?
-            <div className="calculator">
-              <div className="price-form-container">
-                <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
-                <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
-                <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
-                  Let&lsquo;s find out. Tell us how much you pay.
+            {this.state.showCalculator ?
+              <div className="calculator">
+                <div className="price-form-container">
+                  <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
+                  <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
+                  <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
+                    Let&lsquo;s find out. Tell us how much you pay.
             </p>
-                <PriceForm
-                  drugs={this.state.drugs}
-                  onSubmit={this.onSubmit}
-                  headerFont={this.props.headerFont}
-                  bodyFont={this.props.bodyFont}
-                />
-              </div>
-            </div> : null
-          }
-          {this.state.showResult ?
-            <CalculationResult
-              price={String(this.state.userDrugPrice)}
-              percentage={this.state.userPercentage}
-              drug={this.state.currentDrug}
-              amount={this.state.userPercentage >= 100 ? "more" : "less"}
-              exchangeRate={this.EXCHNG}
-              resetCalculator={this.resetCalculator.bind(this)}
-              headerFont={this.props.headerFont}
-              bodyFont={this.props.bodyFont}
-            />
-            : null
-          }
-          <div className="center-text">
-            <a href={this.generateLink()}><Button className="embed-btn">EMBED THIS</Button></a>
+                  <PriceForm
+                    drugs={this.state.drugs}
+                    onSubmit={this.onSubmit}
+                    headerFont={this.props.headerFont}
+                    bodyFont={this.props.bodyFont}
+                  />
+                </div>
+              </div> : null
+            }
+            {this.state.showResult ?
+              <CalculationResult
+                price={String(this.state.userDrugPrice)}
+                percentage={this.state.userPercentage}
+                drug={this.state.currentDrug}
+                amount={this.state.userPercentage >= 100 ? "more" : "less"}
+                exchangeRate={this.EXCHNG}
+                resetCalculator={this.resetCalculator.bind(this)}
+                headerFont={this.props.headerFont}
+                bodyFont={this.props.bodyFont}
+              />
+              : null
+            }
+            <div className="center-text">
+              <a href={this.generateLink()}><Button className="embed-btn">EMBED THIS</Button></a>
             </div>
           </div>
         </div>
