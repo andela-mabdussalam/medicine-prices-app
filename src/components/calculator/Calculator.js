@@ -107,11 +107,11 @@ export default class Calculator extends Component {
             {this.state.showCalculator ?
               <div className="calculator">
                 <div className="price-form-container">
-                  <p className={"sub text-center " + (this.props.bodyFont || "")}>You might be paying too much for life saving drugs.</p>
-                  <h1 className={"medprices-heading text-center " + (this.props.headerFont || "")}>What should your medicine cost?</h1>
-                  <p className={"medprices-paragraph text-center " + (this.props.bodyFont || "")}>
+                  <p className="sub text-center">You might be paying too much for life saving drugs.</p>
+                  <h1 className="medprices-heading text-center">What should your medicine cost?</h1>
+                  <p className="medprices-paragraph text-center ">
                     Let&lsquo;s find out. Tell us how much you pay.
-            </p>
+                  </p>
                   <PriceForm
                     drugs={this.state.drugs}
                     onSubmit={this.onSubmit}

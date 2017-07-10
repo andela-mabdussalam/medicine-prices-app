@@ -13,7 +13,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/sample" component={EmbedSample} />
           <Route exact path="/embed" component={() =>
-            <Calculator headerFont="punch-ng-header" bodyFont="punch-ng-body"/>
+            <Calculator />
           } />
         </div>
       </BrowserRouter>
