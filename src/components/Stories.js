@@ -121,24 +121,24 @@ export default class Stories extends Component {
         <div className="stories">
           <div style={{"width": "100%"}}>
             <div className="row">
-              {data.map((tile, index) => (
+              {data.map((news, index) => (
                 <div key={index} className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                   <div key={index} className="hover-test">
                     <div className="set-height2">
                       <img src="heroimg.png" alt="emergency" className="img-responsive pic-size" />
                     </div>
                     <div className="well set-height">
-                      {tile.Title && <p className="ash-colour"> 7h ago </p>}
+                      {news.Title && <p className="ash-colour"> 7h ago </p>}
                       <div className="story-content">
-                        {tile.Title && <h4 style={{ "fontWeight": "bold" }}>{tile.Title || "Coming Soon"}<span className="extra ash-colour">{tile.Description}</span></h4>}
-                        {!tile.Title && <p className="text-muted lead" style={{ "fontSize": "15px" }}>More Stories coming soon...</p>}
+                        {news.Title && <h4 style={{ "fontWeight": "bold" }}>{news.Title || "Coming Soon"}<span className="extra ash-colour">{news.Description}</span></h4>}
+                        {!news.Title && <p className="text-muted lead" style={{ "fontSize": "15px" }}>More Stories coming soon...</p>}
                       </div>
                       <div className="row ">
                         <div className="top-margin left">
-                          {tile.Title && <p><a href={tile.StoryUrl}>READ ARTICLE</a></p>}
+                          {news.Title && <p><a href={news.StoryUrl}>READ ARTICLE</a></p>}
                         </div>
                         <div className="pull-right top-margin">
-                          {tile.Title && <img src="/arrow.svg" className="arrow" alt="arrow" />}
+                          {news.Title && <img src="/arrow.svg" className="arrow" alt="arrow" />}
                         </div>
                       </div>
                     </div>
