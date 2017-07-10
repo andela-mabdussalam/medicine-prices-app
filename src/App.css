@@ -176,7 +176,7 @@ input[type="color"]:focus,
   margin-right: 0;
   margin-top: 40px;
 }
-.set-height2{
+.emergency-img{
   height: 45%;
   width: 100%;
 }
@@ -197,7 +197,7 @@ input[type="color"]:focus,
 .hover-test:hover .set-height{
   height: 35%;
 }
-.hover-test:hover .set-height2{
+.hover-test:hover .emergency-img{
   height: 35%;
 }
 .hover-test:hover .story-content{
@@ -289,26 +289,21 @@ hr{
 .center-div{
   margin: 0 auto;
 }
-.rightborder{
+.latest-story-sub{
   border-right: 1px solid white;
   color: white;
   padding-right: 0;
   padding-left: 0;
   overflow: hidden;
   height: 20px;
-  width: 22%;
-  float:left;
-}
-.rightborder2{
-  border-right: 1px solid white;
-  color: white;
-  padding-right: 0;
-  padding-left: 0;
-  overflow: hidden;
-  height: 20px;
-  width: 12%;
   float: left;
-  margin-right: 4px;
+}
+.punch-logo-sm{
+  width: 22%;
+}
+.time-div{
+  width: 19%;
+  margin-right: 8px;
 }
 .embed-height{
   height: 375px;
@@ -327,7 +322,6 @@ hr{
 .font-small{
   color: white;
   margin-left: 6px;
-  padding-top: 5px;
   line-height: 1.5;
   padding-right: 0;
   padding-left: 0;
@@ -475,7 +469,7 @@ hr{
   color: black;
 }
 .topMargin{
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: 20px;
   opacity: 0.85;
 }

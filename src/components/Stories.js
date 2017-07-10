@@ -102,10 +102,10 @@ export default class Stories extends Component {
                 <div className="recent-story">
                   <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
                   <div className="row topMargin">
-                    <div className="rightborder">
+                    <div className="latest-story-sub punch-logo-sm">
                       <img src="img/punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
                     </div>
-                    <div className="rightborder2 font-small ">
+                    <div className="latest-story-sub font-small time-div">
                       <p> 7h ago</p>
                     </div>
                     <div className="font-small">
@@ -119,12 +119,11 @@ export default class Stories extends Component {
         </div>
         <hr />
         <div className="stories">
-          <div style={{"width": "100%"}}>
             <div className="row">
               {data.map((news, index) => (
                 <div key={index} className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                   <div key={index} className="hover-test">
-                    <div className="set-height2">
+                    <div className="emergency-img">
                       <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
                     </div>
                     <div className="well set-height">
@@ -133,12 +132,12 @@ export default class Stories extends Component {
                         {news.Title && <h4 style={{ "fontWeight": "bold" }}>{news.Title || "Coming Soon"}<span className="extra ash-colour">{news.Description}</span></h4>}
                         {!news.Title && <p className="text-muted lead" style={{ "fontSize": "15px" }}>More Stories coming soon...</p>}
                       </div>
-                      <div className="row ">
+                      <div className="row">
                         <div className="top-margin left">
                           {news.Title && <p><a href={news.StoryUrl}>READ ARTICLE</a></p>}
                         </div>
                         <div className="pull-right top-margin">
-                          {news.Title && <img src="/arrow.svg" className="arrow" alt="arrow" />}
+                          {news.Title && <img src="img/arrow.svg" className="arrow" alt="arrow" />}
                         </div>
                       </div>
                     </div>
@@ -146,7 +145,6 @@ export default class Stories extends Component {
                 </div>
               ))}
             </div>
-          </div>
         </div>
         <div>
           <div className="embeds">
