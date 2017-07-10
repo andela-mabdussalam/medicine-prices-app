@@ -9,10 +9,10 @@ class NavigationBar extends Component {
   render() {
     return (
       <Navbar fixedTop>
-        <div className="navbar-default">
           <Navbar.Header>
             <NavLink to="/" onClick={this.props.resetCalculator}>
-              <h2 className="check-your-med-prices">#CheckYourMedPrices</h2></NavLink>
+              <a class="navbar-brand" href="#">#CheckYourMedPrices</a>
+            </NavLink>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
@@ -29,7 +29,6 @@ class NavigationBar extends Component {
               </NavItem>
             </Nav>
           </Navbar.Collapse>
-        </div>
       </Navbar>
     );
   }
