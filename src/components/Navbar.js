@@ -9,7 +9,7 @@ class NavigationBar extends Component {
   render() {
     return (
       <Navbar>
-        <div className="navbar-padding">
+        <div className="navbar-padding navbar-fixed-top navbar-default">
           <Navbar.Header>
             <NavLink to="/" onClick={this.props.resetCalculator}>
               <h2 className="check-your-med-prices">#CheckYourMedPrices</h2></NavLink>
