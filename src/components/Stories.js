@@ -97,13 +97,13 @@ export default class Stories extends Component {
             <div className="row">
               <div className="col-lg-8 col-lg-offset-2">
                 <div className="left">
-                  <img src="mitchell-hollander.png" className="img-responsive" alt="drug" />
+                  <img src="img/mitchell-hollander.png" className="img-responsive" alt="drug" />
                 </div>
                 <div className="recent-story">
                   <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
                   <div className="row topMargin">
                     <div className="rightborder">
-                      <img src="punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
+                      <img src="img/punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
                     </div>
                     <div className="rightborder2 font-small ">
                       <p> 7h ago</p>
@@ -125,7 +125,7 @@ export default class Stories extends Component {
                 <div key={index} className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                   <div key={index} className="hover-test">
                     <div className="set-height2">
-                      <img src="heroimg.png" alt="emergency" className="img-responsive pic-size" />
+                      <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
                     </div>
                     <div className="well set-height">
                       {news.Title && <p className="ash-colour"> 7h ago </p>}

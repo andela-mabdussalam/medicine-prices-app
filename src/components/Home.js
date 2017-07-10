@@ -15,7 +15,7 @@ export default class Home extends Component {
       <div className="container page-width">
         <NavigationBar resetCalculator={this.resetCalculator.bind(this)} />
         <div className="illustration">
-          <img src="/illustration.svg" alt="banner" className="img-responsive"/>
+          <img src="img/illustration.svg" alt="banner" className="img-responsive"/>
           </div>
         <div className="spacer"></div>
         <Calculator ref={(calculator) => { this.calculator = calculator; }} />
