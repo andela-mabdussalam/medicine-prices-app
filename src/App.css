@@ -49,16 +49,18 @@ input[type="color"]:focus,
   padding: 0 !important;
 }
 .navbar-default .navbar-nav>li>a {
-  font-size: 9px !important;
+  font-size: 12px !important;
 }
 .nav>li>a {
   padding: 16px 4px;
 }
 .recent-story{
-  margin-left: -75px;
+  margin-left: -10px;
   margin-top: 9%;
   color: black;
   width: 40%;
+  float: left;
+
 }
 .App {
   text-align: center;
@@ -89,11 +91,12 @@ input[type="color"]:focus,
 }
 .calculator-container{
   min-height: auto;
-  width: 47%;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .calculator{
   border: 1px solid #0075c5;
-  padding: 15px;
+  padding: 20px;
   border-radius: 4.5px;
 }
 div.timeline-header{
@@ -103,17 +106,16 @@ div.timeline-header{
   height: 34px;
 }
 .check-your-med-prices {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.1px;
   color: #0075c5;
   height: 14px;
   margin-top: 16px;
 }
-.fixed-width{
-  width: 960px;
+.page-width{
+  width: 100%;
   padding: 0;
-  border: 0.5px solid #e3e8e4;
 }
 .get-in-touch{
   font-size: 9px;
@@ -127,7 +129,7 @@ div.timeline-header{
 }
 .story{
 	width: 100%;
-	height: 370.5px;
+	height: 430px;
 	background-color: #000000;
 	border: solid 0.5px #979797;
   color: white;
@@ -150,7 +152,7 @@ div.timeline-header{
 }
 .storyHeading {
   margin-top: 3%;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
 }
 .write-up{
@@ -176,33 +178,35 @@ div.timeline-header{
   background: #ffffff;
   border-radius: 0;
 }
-.set-width{
-  width: 31.8%;
-  float: left;
-  padding-right: 15px;
-}
 .set-height {
   height: 55%;
   width: 100%;
 }
+.spacer2 {
+  width: 15px;
+}
 .set-height .row{
   margin-right: 0;
+  margin-top: 40px;
 }
 .set-height2{
   height: 45%;
   width: 100%;
 }
 .hover-test{
-  height: 275px;
+  height: 370px;
+  margin-bottom: 15px;
 }
 .story-content{
   margin-top: 25px;
 }
 .story-content h4 {
-  font-size: 15px;
+  font-size: 22px;
+  margin-bottom: 22px;
+  margin-top: 13px;
 }
 .hover-test:hover{
-  height: 275px;
+  height: 370px;
 }
 .hover-test:hover .set-height{
   height: 35%;
@@ -244,11 +248,16 @@ hr{
 }
 .embed-inner{
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
+}
+.cfa-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .storyBody{
   margin-top: 2%;
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
   opacity: 0.8;
 }
@@ -274,8 +283,8 @@ hr{
   border-radius: 1px;
   background-color: #ffffff;
   border: solid 0.5px #0075c5;
-  height: 31.8px;
-  width: 60%;
+  height: 51.8px;
+  width: 55%;
   margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -283,14 +292,14 @@ hr{
 .i_buy {
   margin-left:13px;
   font-weight: 600;
-  font-size: 7px;
+  font-size: 11px;
 }
 .negative-margin-top {
   margin-top: -9px;
 }
 .form-control{
-  height: 12.5px;
-  font-size: 10px;
+  height: 26px;
+  font-size: 12px;
   letter-spacing: -0.1px;
 }
 .form-group {
@@ -321,15 +330,16 @@ hr{
   margin-right: 4px;
 }
 .embed-height{
-  height: 301px;
+  height: 375px;
   background-color: white;
   overflow: scroll;
+  margin-bottom: 15px;
 }
 .pad-10{
   padding: 10px;
 }
 .pic-size{
-  max-width: 300px;
+  max-width: 420px;
   width: 100%;
   height: 100%;
 }
@@ -361,7 +371,9 @@ hr{
 	object-fit: contain;
 }
 .well{
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 .lineHeight {
   line-height: 170%;
@@ -412,7 +424,7 @@ hr{
 }
 .sub {
   color: #999;
-  font-size: 11px;
+  font-size: 13px;
   margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -422,7 +434,7 @@ hr{
   margin-bottom: 10px;
 }
 .medprices-heading {
-  font-size: 24px;
+  font-size: 34px;
   color: #0B5D97;
   padding: 0;
 }
@@ -430,16 +442,16 @@ hr{
   font-size: 30px;
 }
 .medprices-paragraph {
-  font-size: 11px;
+  font-size: 13px;
   color: #111111;
   margin-bottom: 0px;
 }
 .stories {
   margin: 0 auto;
   padding: 10px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 66%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 50%;
 }
 .rightMargin{
   margin-right: 40px;
@@ -514,7 +526,7 @@ hr{
   background-color: #3cd682;
   border-color: #3cd682;
   color: white;
-  font-size: 9.5px;
+  font-size: 11.5px;
   margin: 0 auto;
 }
 .show-result-btn:hover{
@@ -529,7 +541,7 @@ hr{
   font-weight: 500;
   margin-top: 15px;
   margin-bottom: 20px;
-  font-size: 9px;
+  font-size: 11px;
 }
 .embed-btn:hover {
     color: #0075c5;
@@ -552,23 +564,23 @@ footer{
   color:white;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: normal;
 }
 footer h3{
-  font-size: 14.5px;
+  font-size: 18.5px;
   font-weight: 100;
   margin-bottom: 25px;
 }
 footer h3 span{
-  font-size: 24px;
+  font-size: 27px;
   text-transform: capitalize;
 }
 footer .credits{
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 footer .credits p{
-  font-size: 10px;
+  font-size: 14px;
   margin: 6px 0px;
   font-weight: 200;
 }
@@ -646,8 +658,10 @@ footer .fa-facebook-square {
   color: #CE4415;
 }
 .sachet{
-  font-size: 8px;
+  font-size: 11px;
   float: none;
+  width: 70%;
+  margin-top: 12px;
 }
 #brand-name-tooltip .tooltip-inner{
   max-width: none;
@@ -693,7 +707,7 @@ footer .fa-facebook-square {
 
 @media screen and (max-width: 767px) {
   .price-form-container .medprices-heading {
-    font-size: 24px;
+    font-size: 34px;
   }
   .price-form{
   width: 73%;
@@ -714,27 +728,49 @@ footer .fa-facebook-square {
 .price-form input{
   font-size: 10px;
 }
-.calculator-container{
-  width: 70%;
-}
   .heading-wording {
     font-size: 15px;
+  }
+  .stories{
+    width: 90%;
+  }
+  .rectangle {
+    width: 80%;
+  }
+  .sachet{
+    width: 100%;
+  }
+  .embed-inner{
+    width: 85%;
+  }
+  .recent-story {
+    margin-left: 0px;
+    margin-top: -15px;
+    float: right;
+    width: 52%;
+  }
+  .navbar{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .check-your-med-prices{
+    float: left;
   }
 }
 @media screen and (min-width: 768px) {
   .price-form-container .medprices-heading {
-    font-size: 24px;
+    font-size: 34px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .price-form-container .medprices-heading{
-    font-size: 24px;
+    font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .price-form-container .medprices-heading {
-    font-size: 24px;
+    font-size: 38px;
   }
 }

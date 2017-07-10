@@ -12,10 +12,10 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className="container fixed-width">
+      <div className="container page-width">
         <NavigationBar resetCalculator={this.resetCalculator.bind(this)} />
         <div className="illustration">
-          <img src="/illustration.png" alt="banner" className="img-responsive"/>
+          <img src="/illustration.svg" alt="banner" className="img-responsive"/>
           </div>
         <div className="spacer"></div>
         <Calculator ref={(calculator) => { this.calculator = calculator; }} />

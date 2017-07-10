@@ -93,22 +93,24 @@ export default class Stories extends Component {
             </div>
           </div>
           <div className="story-section">
-            <hr/>
+            <hr />
             <div className="row">
-              <div className="left">
-                <img src="mitchell-hollander.png" className="img-responsive" alt="drug" />
-              </div>
-              <div className="pull-right recent-story">
-                <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
-                <div className="row topMargin">
-                  <div className="rightborder">
-                    <img src="punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
-                  </div>
-                  <div className="rightborder2 font-small ">
-                    <p> 7h ago</p>
-                  </div>
-                  <div className="font-small">
-                    <p>By Nkechi Okwuone</p>
+              <div className="col-lg-8 col-lg-offset-2">
+                <div className="left">
+                  <img src="mitchell-hollander.png" className="img-responsive" alt="drug" />
+                </div>
+                <div className="recent-story">
+                  <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
+                  <div className="row topMargin">
+                    <div className="rightborder">
+                      <img src="punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
+                    </div>
+                    <div className="rightborder2 font-small ">
+                      <p> 7h ago</p>
+                    </div>
+                    <div className="font-small">
+                      <p>By Nkechi Okwuone</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -117,10 +119,10 @@ export default class Stories extends Component {
         </div>
         <hr />
         <div className="stories">
-          <div>
+          <div style={{"width": "100%"}}>
             <div className="row">
               {data.map((tile, index) => (
-                <div key={index} className="set-width">
+                <div key={index} className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                   <div key={index} className="hover-test">
                     <div className="set-height2">
                       <img src="heroimg.png" alt="emergency" className="img-responsive pic-size" />
@@ -131,7 +133,7 @@ export default class Stories extends Component {
                         {tile.Title && <h4 style={{ "fontWeight": "bold" }}>{tile.Title || "Coming Soon"}<span className="extra ash-colour">{tile.Description}</span></h4>}
                         {!tile.Title && <p className="text-muted lead" style={{ "fontSize": "15px" }}>More Stories coming soon...</p>}
                       </div>
-                      <div className="row">
+                      <div className="row ">
                         <div className="top-margin left">
                           {tile.Title && <p><a href={tile.StoryUrl}>READ ARTICLE</a></p>}
                         </div>
@@ -150,21 +152,24 @@ export default class Stories extends Component {
           <div className="embeds">
             <div className="embed-inner">
               <div className="row">
-                <div className="row">
-                  <div className="set-width">
-                    <div className="embed-height">
-                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=200&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" width="100%" height="100%" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" title="facebook"></iframe>
+                  <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
+                  <div className="embed-height fb-post" style={{ "width": "100%" }} data-width="auto">
+                    <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
                     </div>
                   </div>
-                  <div className="set-width">
-                    <div className="embed-height medium-logo pad-10" >
+                  <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
+                  <div className="embed-height medium-logo pad-10" >
+                    <div>
                       <i className="fa fa-medium" aria-hidden="true"></i>
-                      <img src="https://cdn-images-1.medium.com/max/492/1*Zq7KnTAeKjBf6eENRsacSQ.png" width="100%" height="90px" alt="Medium banner" />
+                    </div>
+                    <div className="cfa-logo">
+                      <img src="https://cdn-images-1.medium.com/max/492/1*Zq7KnTAeKjBf6eENRsacSQ.png" width="80%" height="100px" alt="Medium banner"  />
+                      </div>
                       {mediumStories.map((story, index) => (
                         <div className="medium-story" key={index}>
                           <hr />
                           <a href={story.link} target="_blank" rel="noopener noreferrer">
-                            <img src={story.imageUrl} width="100%" height="80px" alt="Story" />
+                            <img src={story.imageUrl} width="100%" height="120px" alt="Story" />
                             <p className="story-title">{story.title}</p>
                           </a>
                           <p className="author"> Author: {story.author}</p>
@@ -172,13 +177,12 @@ export default class Stories extends Component {
                       ))}
                     </div>
                   </div>
-                  <div className="set-width">
+                  <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                     <div className="embed-height">
-                      <a className="twitter-timeline" href="https://twitter.com/hashtag/CheckYourMedPrices" data-widget-id="869862396499816449" data-width="100%" data-height="100%">Tweets</a>
+                      <a className="twitter-timeline" href="https://twitter.com/hashtag/CheckYourMedPrices" data-widget-id="869862396499816449">Tweets</a>
                       <script>{!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs")}</script>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
