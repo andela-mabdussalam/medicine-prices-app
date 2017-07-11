@@ -315,9 +315,13 @@ hr{
   overflow: hidden;
   height: 20px;
   float: left;
+  font-size: 11px;
 }
 .punch-logo-sm{
-  width: 22%;
+  width: 26%;
+}
+.navbar-default .navbar-brand{
+  color: #0075c5;
 }
 .time-div{
   width: 19%;
@@ -343,6 +347,7 @@ hr{
   line-height: 1.5;
   padding-right: 0;
   padding-left: 0;
+  font-size: 11px;
 }
 .top-margin{
   margin-top: 38px;
