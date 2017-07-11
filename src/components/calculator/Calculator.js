@@ -103,12 +103,12 @@ export default class Calculator extends Component {
     return (
       <div>
         <div className="container calculator-container">
-          <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-12">
+          <div className="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-12">
             {this.state.showCalculator ?
               <div className="calculator">
                 <div className="price-form-container">
                   <p className="sub text-center">You might be paying too much for life saving drugs.</p>
-                  <h1 className="medprices-heading text-center">What should your medicine cost?</h1>
+                  <h2 className="medprices-heading text-center">What should your medicine cost?</h2>
                   <p className="medprices-paragraph text-center ">
                     Let&lsquo;s find out. Tell us how much you pay.
                   </p>

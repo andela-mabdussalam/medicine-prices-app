@@ -60,7 +60,7 @@ input[type="color"]:focus,
   margin-left: -10px;
   margin-top: 9%;
   color: black;
-  width: 40%;
+  width: 30%;
   float: left;
 
 }
@@ -98,7 +98,7 @@ input[type="color"]:focus,
   border-radius: 4.5px;
 }
 .spacer {
-  height: 34px;
+  height: 30px;
 }
 .check-your-med-prices {
   font-weight: 600;
@@ -227,13 +227,14 @@ hr{
 .embeds{
 	background-color: #3cd682;
   border: solid 0.5px #979797;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 35px;
   width: 100%;
 }
 .embed-inner{
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
+  padding: 10px;
 }
 .cfa-logo img{
     display: block;
@@ -250,10 +251,22 @@ hr{
   margin: 0 auto;
 }
 .illustration {
-  width: 100%;
+  /*width: 100%;
   height: 30%;
-  object-fit: contain;
-}
+  object-fit: contain;*/
+  border-bottom: 3px solid rgba(0, 117, 197, 0.78);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  max-height: 270px;
+  overflow-y: hidden;
+  position: relative;
+  margin-top: 37px;
+    }
+  .img-responsive{
+      height: 270px;
+    }
 .navbar {
   border: none;
 }
@@ -262,11 +275,14 @@ hr{
   font-weight: 600;
   letter-spacing: 0.9px;
 }
+.navbar-brand{
+  color: #0075c5;
+}
 .rectangle {
   border-radius: 1px;
   background-color: #ffffff;
   border: solid 0.5px #0075c5;
-  height: 53.8px;
+  height: 43.8px;
   width: 55%;
   margin: 0 auto;
   padding-top: 5px;
@@ -275,13 +291,15 @@ hr{
 .i_buy {
   margin-left:13px;
   font-weight: 600;
+  font-size: 10px;
 }
 .negative-margin-top {
   margin-top: -9px;
 }
 .form-control{
-  height: 26px;
+  height: 20px;
   letter-spacing: -0.1px;
+
 }
 .form-group {
   margin-bottom: 6px !important;
@@ -413,8 +431,8 @@ hr{
   margin: 0 auto;
   padding: 10px;
   margin-top: 70px;
-  margin-bottom: 50px;
-  width: 50%;
+  margin-bottom: 35px;
+  width: 45%;
 }
 .rightMargin{
   margin-right: 40px;
@@ -518,19 +536,20 @@ hr{
 footer{
   background: #000;
   color:white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: normal;
 }
 footer h3{
   font-weight: 100;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 footer h3 span{
   text-transform: capitalize;
+  font-size: 35px;
 }
 footer .credits{
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 footer .credits p{
   margin: 6px 0px;
@@ -550,7 +569,7 @@ footer .credits p a{
 }
 footer .post-credits{
   float: none;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
   font-weight: 200;
 }
@@ -559,7 +578,7 @@ footer .sponsors{
   padding-bottom: 5px;
   margin-right: 30px;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 footer .ancir-logo{
   height: 50px;
@@ -605,6 +624,7 @@ footer .fa-facebook-square {
   float: none;
   width: 70%;
   margin-top: 12px;
+  font-size: 10px;
 }
 #brand-name-tooltip .tooltip-inner{
   max-width: none;

@@ -10,8 +10,8 @@ class NavigationBar extends Component {
     return (
       <Navbar fixedTop>
           <Navbar.Header>
-            <NavLink to="/" onClick={this.props.resetCalculator}>
-              <a class="navbar-brand" href="#">#CheckYourMedPrices</a>
+            <NavLink to="/" onClick={this.props.resetCalculator} className="navbar-brand">
+              #CheckYourMedPrices
             </NavLink>
             <Navbar.Toggle />
           </Navbar.Header>
