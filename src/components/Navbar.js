@@ -8,7 +8,9 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap';
 class NavigationBar extends Component {
   render() {
     return (
+
       <Navbar fixedTop>
+        <div className="nav-container">
           <Navbar.Header>
             <NavLink to="/" onClick={this.props.resetCalculator} className="navbar-brand">
               #CheckYourMedPrices
@@ -29,7 +31,8 @@ class NavigationBar extends Component {
               </NavItem>
             </Nav>
           </Navbar.Collapse>
-      </Navbar>
+          </div>
+        </Navbar>
     );
   }
 }

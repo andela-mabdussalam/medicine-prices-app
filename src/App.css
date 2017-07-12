@@ -1,11 +1,15 @@
 *{
   font-family: 'Source Sans Pro';
+  font-weight: 300;
 }
 
 body{
   overflow-x: hidden;
 }
-
+.container{
+  padding-left: 100px;
+  padding-right: 100px;
+}
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -36,16 +40,10 @@ input[type="color"]:focus,
 }
 .navbar {
   margin-bottom: 0;
-}
-.navbar-fixed-top{
-  padding-left: 20.52%;
-  padding-right: 20.52%;
+  box-shadow: 0 1px 2px -1px #cccccc;
 }
 .navbar-default {
   background-color: white;
-}
-.navbar > .container {
-  width: 100%;
 }
 .mg-top-11{
   margin-top: 11px;
@@ -60,7 +58,7 @@ input[type="color"]:focus,
   margin-left: -10px;
   margin-top: 9%;
   color: black;
-  width: 30%;
+  width: 35%;
   float: left;
 
 }
@@ -112,7 +110,6 @@ input[type="color"]:focus,
   padding: 0;
 }
 .get-in-touch{
-  font-weight: 600;
   letter-spacing: 0.9px;
   color: #0075c5;
 }
@@ -143,11 +140,11 @@ input[type="color"]:focus,
 .storyHeading {
   margin-top: 3%;
   text-align: center;
+  font-size: 25px;
 }
 .write-up{
   text-align: center;
   margin: 0 auto;
-  width: 58%;
 }
 .ash-colour{
   color: #90949c;
@@ -174,25 +171,28 @@ input[type="color"]:focus,
 }
 .set-height .row{
   margin-right: 0;
-  margin-top: 40px;
 }
 .emergency-img{
   height: 45%;
   width: 100%;
 }
 .hover-test{
-  height: 370px;
+  height: 320px;
   margin-bottom: 15px;
 }
 .story-content{
   margin-top: 25px;
+}
+.evenly {
+  display:flex;
+  justify-content:space-between;
 }
 .story-content h4 {
   margin-bottom: 22px;
   margin-top: 13px;
 }
 .hover-test:hover{
-  height: 370px;
+  height: 320px;
 }
 .hover-test:hover .set-height{
   height: 35%;
@@ -233,8 +233,7 @@ hr{
 }
 .embed-inner{
   margin: 0 auto;
-  width: 45%;
-  padding: 10px;
+  width: 60%;
 }
 .cfa-logo img{
     display: block;
@@ -251,10 +250,6 @@ hr{
   margin: 0 auto;
 }
 .illustration {
-  /*width: 100%;
-  height: 30%;
-  object-fit: contain;*/
-  border-bottom: 3px solid rgba(0, 117, 197, 0.78);
   display: flex;
   width: 100%;
   justify-content: center;
@@ -264,19 +259,20 @@ hr{
   position: relative;
   margin-top: 37px;
     }
-  .img-responsive{
-      height: 270px;
-    }
+
 .navbar {
   border: none;
 }
 .navbar-default .navbar-nav>li>a {
   color:#0075c5;
-  font-weight: 600;
+  /*font-weight: 600;*/
   letter-spacing: 0.9px;
 }
 .navbar-brand{
   color: #0075c5;
+}
+.fa{
+  font-size: 12px;
 }
 .rectangle {
   border-radius: 1px;
@@ -290,8 +286,10 @@ hr{
 }
 .i_buy {
   margin-left:13px;
-  font-weight: 600;
-  font-size: 10px;
+  font-weight: 800;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 .negative-margin-top {
   margin-top: -9px;
@@ -328,10 +326,17 @@ hr{
   margin-right: 8px;
 }
 .embed-height{
-  height: 375px;
+  height: 405px;
   background-color: white;
   overflow: scroll;
   margin-bottom: 15px;
+}
+.nav-container{
+width: 89%;
+margin: 0 auto;
+}
+.navbar-right{
+  margin-right: 0px;
 }
 .pad-10{
   padding: 10px;
@@ -437,7 +442,7 @@ hr{
   padding: 10px;
   margin-top: 70px;
   margin-bottom: 35px;
-  width: 45%;
+  width: 70%;
 }
 .rightMargin{
   margin-right: 40px;

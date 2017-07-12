@@ -12,7 +12,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className="container page-width">
+      <div className="page-width">
         <NavigationBar resetCalculator={this.resetCalculator.bind(this)} />
         <div className="illustration">
           <img src="img/illustration.svg" alt="banner" className="img-responsive"/>
