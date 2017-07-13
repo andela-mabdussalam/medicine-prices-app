@@ -3,12 +3,19 @@ import Calculator from './calculator/Calculator';
 import NavigationBar from './Navbar';
 import Footer from './Footer';
 import Stories from './Stories';
+import { Button } from 'react-bootstrap';
 /*
 * Home component
 */
 export default class Home extends Component {
   resetCalculator() {
     this.calculator.resetCalculator();
+  }
+  generateLink() {
+    // generate link
+    let link = document.location.origin;
+    link += "/sample";
+    return link;
   }
   render() {
     return (
@@ -19,6 +26,9 @@ export default class Home extends Component {
           </div>
         <div className="spacer"></div>
         <Calculator ref={(calculator) => { this.calculator = calculator; }} />
+          <div className="center-text">
+            <a href={this.generateLink()}><Button className="embed-btn">EMBED THIS</Button></a>
+          </div>
         <Stories />
         <Footer />
       </div>
