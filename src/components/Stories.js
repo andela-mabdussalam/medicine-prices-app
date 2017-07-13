@@ -124,7 +124,7 @@ export default class Stories extends Component {
         <div className="stories">
           <div className="row">
             {data.map((news, index) => (
-              <div key={index} className="col-lg-4 col-md-6 col-xs-12 col-sm-10">
+              <div key={index} className="col-lg-4 col-md-6 col-xs-10 col-xs-offset-1 col-sm-10">
                 <div key={index} className="hover-test">
                   <div className="emergency-img">
                     <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
@@ -153,12 +153,12 @@ export default class Stories extends Component {
           <div className="embeds">
             <div className="embed-inner">
               <div className="row">
-                <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
+                <div className="col-lg-4 col-md-8 col-xs-10 col-xs-offset-1 col-sm-10">
                   <div className="embed-height fb-post" style={{ "width": "100%" }} data-width="auto">
                     <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
+                <div className="col-lg-4 col-md-8 col-xs-10 col-xs-offset-1 col-sm-10">
                   <div className="embed-height medium-logo pad-10" >
                     <div>
                       <i className="fa fa-medium" aria-hidden="true"></i>
@@ -178,7 +178,7 @@ export default class Stories extends Component {
                     ))}
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
+                <div className="col-lg-4 col-md-8 col-xs-10 col-xs-offset-1 col-sm-10">
                   <div className="embed-height">
                     <a className="twitter-timeline" href="https://twitter.com/hashtag/CheckYourMedPrices" data-widget-id="869862396499816449">Tweets</a>
                     <script>{!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs")}</script>
