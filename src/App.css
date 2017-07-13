@@ -88,7 +88,7 @@ input[type="color"]:focus,
 .calculator-container{
   min-height: auto;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .calculator{
   border: 1px solid #0075c5;
@@ -123,6 +123,7 @@ input[type="color"]:focus,
 	border: solid 0.5px #979797;
   color: white;
   margin: 0 auto;
+  padding: 5%;
 }
 .story-title{
   color: black;
@@ -182,10 +183,6 @@ input[type="color"]:focus,
 }
 .story-content{
   margin-top: 25px;
-}
-.evenly {
-  display:flex;
-  justify-content:space-between;
 }
 .story-content h4 {
   margin-bottom: 22px;
@@ -684,6 +681,13 @@ footer .fa-facebook-square {
     padding-right: 0px;
 
   }
+  .illustration{
+    display: inline-block;
+  }
+  .calculator-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .price-form{
     width: 73%;
     margin: 0 auto;
@@ -693,7 +697,7 @@ footer .fa-facebook-square {
    margin-bottom: 8px;
  }
   .stories{
-    width: 90%;
+    width: 80%;
   }
   .rectangle {
     width: 80%;
@@ -702,13 +706,16 @@ footer .fa-facebook-square {
     width: 100%;
   }
   .embed-inner{
-    width: 85%;
+    width: 80%;
   }
   .recent-story {
     margin-left: 0px;
-    margin-top: -15px;
+    margin-top: -25px;
     float: right;
     width: 52%;
+  }
+  .recent-story h3 {
+    font-size: 14px;
   }
   .navbar{
     padding-right: 0px;

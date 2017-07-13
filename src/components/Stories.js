@@ -80,7 +80,7 @@ export default class Stories extends Component {
         <div className="about story">
           <div className="container">
             <div className="row">
-              <div className="col-md-9 col-lg-10 col-lg-offset-1">
+              <div className="col-md-9 col-lg-10 col-lg-offset-1 col-sm-12">
                 <p className="storyHeading"> Most Nigerians struggle to afford medicines.</p>
                 <div className="write-up">
                   <p className="storyBody">Ministry of Health research, going as far back as 2006, indicates that 90.2% of
@@ -122,7 +122,7 @@ export default class Stories extends Component {
 
         <hr />
         <div className="stories">
-          <div className="row evenly">
+          <div className="row">
             {data.map((news, index) => (
               <div key={index} className="col-lg-4 col-md-6 col-xs-12 col-sm-10">
                 <div key={index} className="hover-test">
@@ -152,7 +152,7 @@ export default class Stories extends Component {
         <div>
           <div className="embeds">
             <div className="embed-inner">
-              <div className="row evenly">
+              <div className="row">
                 <div className="col-lg-4 col-md-8 col-xs-12 col-sm-10">
                   <div className="embed-height fb-post" style={{ "width": "100%" }} data-width="auto">
                     <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>

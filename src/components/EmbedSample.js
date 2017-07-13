@@ -28,7 +28,7 @@ export default class EmbedSample extends Component {
         <NavigationBar />
         <div id="spacers" style={{ "height": "40px" }}></div>
         <div>
-          <div className="container">
+          <div className="container" style={{"paddingRight":"140px", "paddingLeft":"140px"}}>
             <div className="col-lg-12" style={{ "marginBottom": "40px" }}>
               <h3 style={{ "marginBottom": "40px" }}> Embed the tool on your page </h3>
               <h4><strong>In your html add: </strong></h4>
@@ -41,15 +41,18 @@ export default class EmbedSample extends Component {
               <pre>
                 {embedLoaderUrl}<br />{pymloader}
               </pre>
-            </div>
-            <div className="row" style={{ "marginLeft": "0px" }}>
-              <div className="col-lg-7">
-                <p className="lineHeight"> An example of using our embed responsively is displayed to the right. The code used is displayed below. The embed
+
+                <p className="lineHeight"> An example of using our embed responsively is displayed below. The code used is displayed below. The embed
                   scales to fit in properly based on the width of the parent container that we specified. This ensures
                   that the embed fits in well into your page.<br /></p>
                 <p className="lineHeight">(Quick Tip: Do not apply any padding or border to your container div. In our example,
                   that is <strong>example div</strong>. It may distort the height calculation. Instead, create an outer div and add the padding to it.)</p>
-                <strong>Sample Code:</strong>
+
+            </div>
+
+            <div className="row" style={{ "marginLeft": "0px" }}>
+
+              <div className="col-lg-7"><strong>Sample Code:</strong>
                 <p><strong> Using alternative 1:</strong></p>
                 <pre>
                   {sampleDiv}{closingTag}<br />
