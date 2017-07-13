@@ -124,7 +124,7 @@ export default class Stories extends Component {
         <div className="stories">
           <div className="row evenly">
             {data.map((news, index) => (
-              <div key={index} className="col-lg-3 col-md-6 col-xs-12 col-sm-10">
+              <div key={index} className="col-lg-4 col-md-6 col-xs-12 col-sm-10">
                 <div key={index} className="hover-test">
                   <div className="emergency-img">
                     <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
