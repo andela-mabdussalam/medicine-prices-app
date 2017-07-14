@@ -123,7 +123,6 @@ input[type="color"]:focus,
 	border: solid 0.5px #979797;
   color: white;
   margin: 0 auto;
-  padding: 5%;
 }
 .story-title{
   color: black;
@@ -680,6 +679,9 @@ footer .fa-facebook-square {
     padding-left: 0px;
     padding-right: 0px;
 
+  }
+  .story{
+    padding: 5%;
   }
   .illustration{
     display: inline-block;
