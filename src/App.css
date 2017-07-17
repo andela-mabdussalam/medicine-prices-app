@@ -230,6 +230,7 @@ hr{
   padding-top: 50px;
   padding-bottom: 35px;
   width: 100%;
+  text-align: center;
 }
 .embed-inner{
   margin: 0 auto;
@@ -726,4 +727,27 @@ footer .fa-facebook-square {
   .check-your-med-prices{
     float: left;
   }
+}
+
+
+.embeds-inner {
+  position: relative;
+}
+
+.embed-item {
+  position: relative;
+  width: 270px;
+  height: 500px;
+  display: inline-block;
+  border-radius: 5px;
+  overflow-y: hidden;
+  margin-right: 33px;
+  margin-bottom: 33px;
+  overflow: hidden;
+}
+
+.medium-embed {
+  overflow: auto;
+  background-color: #fff;
+  padding: 5px;
 }
