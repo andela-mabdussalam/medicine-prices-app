@@ -736,13 +736,14 @@ footer .fa-facebook-square {
 
 .embed-item {
   position: relative;
-  width: 300px;
+  width: 270px;
   height: 500px;
   display: inline-block;
   border-radius: 5px;
   overflow-y: hidden;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 33px;
+  margin-bottom: 33px;
+  overflow: hidden;
 }
 
 .medium-embed {
