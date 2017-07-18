@@ -757,10 +757,17 @@ footer .fa-facebook-square {
   .recent-story {
     display: block;
     position: absolute;
-    background: rgba(0,0,0,0.6);
+    /* background: rgba(0,0,0,0.6); */
     padding: 5px 15px;
     min-width: 250px;
     right: -10px;
+  }
+  .recent-story .topMargin {
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 15px 15px 5px 15px;
+    opacity: 0.85;
+    background-color: #000;
   }
 }
 @media screen and (max-width: 640px) {
