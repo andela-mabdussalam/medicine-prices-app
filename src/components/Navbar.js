@@ -10,7 +10,7 @@ class NavigationBar extends Component {
     return (
 
       <Navbar fixedTop>
-        <div className="nav-container">
+        <div className="inner-container">
           <Navbar.Header>
             <NavLink to="/" onClick={this.props.resetCalculator} className="navbar-brand">
               #CheckYourMedPrices
