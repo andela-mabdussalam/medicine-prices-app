@@ -6,10 +6,10 @@
 body{
   overflow-x: hidden;
 }
-.container{
+/* .container{
   padding-left: 100px;
   padding-right: 100px;
-}
+} */
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -59,7 +59,7 @@ input[type="color"]:focus,
 }
 .recent-story{
   margin-left: -10px;
-  margin-top: 11%;
+  margin-top: 9%;
   color: black;
   width: 35%;
   float: left;
@@ -99,7 +99,7 @@ input[type="color"]:focus,
   border-radius: 4.5px;
 }
 .spacer {
-  height: 30px;
+  height: 20px;
 }
 .check-your-med-prices {
   font-weight: 600;
@@ -121,7 +121,7 @@ input[type="color"]:focus,
 }
 .story{
 	width: 100%;
-	height: 430px;
+	height: 442px;
 	background-color: #000000;
 	border: solid 0.5px #979797;
   color: white;
@@ -141,7 +141,7 @@ input[type="color"]:focus,
   background-color: black;
 }
 .storyHeading {
-  margin-top: 3%;
+  margin-top: 45px;
   text-align: center;
   font-size: 25px;
 }
@@ -335,10 +335,6 @@ hr{
   overflow: scroll;
   margin-bottom: 15px;
 }
-.nav-container{
-width: 89%;
-margin: 0 auto;
-}
 .navbar-right{
   margin-right: 0px;
 }
@@ -448,7 +444,8 @@ margin: 0 auto;
   margin: 0 auto;
   margin-top: 70px;
   margin-bottom: 35px;
-  width: 60%;
+  text-align: center;
+  padding: 30px 0;
 }
 .rightMargin{
   margin-right: 40px;
@@ -532,8 +529,7 @@ margin: 0 auto;
 	background-color: #0075c5;
   color: white;
   font-weight: 500;
-  margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .embed-btn:hover {
     color: #0075c5;
@@ -682,11 +678,6 @@ footer .fa-facebook-square {
 }
 
 @media screen and (max-width: 767px) {
-  .container{
-    padding-left: 0px;
-    padding-right: 0px;
-
-  }
   .story{
     padding: 5%;
   }
@@ -717,43 +708,76 @@ footer .fa-facebook-square {
   .embed-inner{
     width: 80%;
   }
-  .recent-story {
+  /* .recent-story {
     margin-left: 0px;
     margin-top: -25px;
     float: right;
     width: 52%;
-  }
+  } */
   .recent-story h3 {
     font-size: 14px;
   }
-  .navbar{
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+
   .check-your-med-prices{
     float: left;
   }
+
+  .navbar-brand { padding-left: 0; }
+
+  .recent-story {
+    float: none;
+    position: relative;
+  }
 }
 
-
-.embeds-inner {
-  position: relative;
-}
-
-.embed-item {
+.embed-item, .story-box {
   position: relative;
   width: 270px;
-  height: 500px;
   display: inline-block;
   border-radius: 5px;
   overflow-y: hidden;
-  margin-right: 33px;
-  margin-bottom: 33px;
+  margin-right: 25px;
   overflow: hidden;
+}
+
+.embed-item {
+  margin: 0 28px 10px 0;
+  height: 500px;
+}
+
+.embed-item:last-child, .story-box:last-child {
+  margin-right: 0;
 }
 
 .medium-embed {
   overflow: auto;
   background-color: #fff;
   padding: 5px;
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .recent-story {
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 15px;
+    min-width: 250px;
+    right: -10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .embed-item, .story-box {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .embed-item:last-child, .story-box:last-child {
+    margin: 0 auto 20px auto;
+  }
 }

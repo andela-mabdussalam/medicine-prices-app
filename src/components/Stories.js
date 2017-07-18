@@ -79,8 +79,8 @@ export default class Stories extends Component {
       <div className="stories-section">
         <div className="about story">
           <div className="container">
-            <div className="row">
-              <div className="col-md-9 col-lg-10 col-lg-offset-1 col-sm-12">
+
+              <div className="inner-container">
                 <p className="storyHeading"> Most Nigerians struggle to afford medicines.</p>
                 <div className="write-up">
                   <p className="storyBody">Ministry of Health research, going as far back as 2006, indicates that 90.2% of
@@ -92,7 +92,7 @@ export default class Stories extends Component {
                 </p>
                 </div>
               </div>
-            </div>
+
             <div className="story-section">
               <hr />
               <div className="row pic-margin">
@@ -121,19 +121,20 @@ export default class Stories extends Component {
         </div>
 
         <hr />
-        <div className="stories">
-          <div className="row">
+        <div className="stories inner-container">
+
             {data.map((news, index) => (
-              <div key={index} className="col-lg-4 col-md-4 col-xs-10 col-sm-10">
+              <div key={index} className="story-box">
                 <div key={index} className="hover-test">
                   <div className="emergency-img">
                     <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
                   </div>
                   <div className="well set-height">
                     {news.Title && <p className="ash-colour"> 7h ago </p>}
+                    {!news.Title && <p className="ash-colour">&nbsp;</p>}
                     <div className="story-content">
                       {news.Title && <h4 style={{ "fontWeight": "bold" }}>{news.Title || "Coming Soon"}<span className="extra ash-colour">{news.Description}</span></h4>}
-                      {!news.Title && <p className="text-muted lead" style={{ "fontSize": "15px" }}>More Stories coming soon...</p>}
+                      {!news.Title && <p className="text-muted lead" style={{ "fontSize": "18px" }}>More Stories coming soon...</p>}
                     </div>
                     <div className="row">
                       <div className="top-margin left">
@@ -147,12 +148,12 @@ export default class Stories extends Component {
                 </div>
               </div>
             ))}
-          </div>
+
         </div>
         <div>
 
             <div className="embeds">
-              <div className="embeds-inner">
+              <div className="inner-container">
 
                   <div className="embed-item">
                       <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
