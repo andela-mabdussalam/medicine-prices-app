@@ -48,6 +48,9 @@ input[type="color"]:focus,
 .mg-top-11{
   margin-top: 11px;
 }
+.navbar-default .navbar-brand:hover{
+  color: #72abd1;
+}
 .navbar-right {
   padding: 0 !important;
 }
@@ -56,7 +59,7 @@ input[type="color"]:focus,
 }
 .recent-story{
   margin-left: -10px;
-  margin-top: 9%;
+  margin-top: 11%;
   color: black;
   width: 35%;
   float: left;
@@ -213,7 +216,7 @@ input[type="color"]:focus,
   height: 52px;
   overflow: hidden;
   width: 100%;
-  font-size: 13px;
+  font-size: 11px;
 }
 .btn{
   border-radius: 4px;
@@ -347,6 +350,9 @@ margin: 0 auto;
   width: 100%;
   height: 100%;
 }
+.pic-margin{
+  margin-top: 33px;
+}
 .font-small{
   color: white;
   margin-left: 6px;
@@ -453,7 +459,7 @@ margin: 0 auto;
   border-radius: 0;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-  color: #0B5D97;
+  color: #72abd1;
 }
 .embed-code-input{
   box-shadow: none;
@@ -497,7 +503,7 @@ margin: 0 auto;
   color: black;
 }
 .topMargin{
-  margin-top: 7px;
+  margin-top: 14px;
   margin-left: 20px;
   opacity: 0.85;
 }
@@ -636,7 +642,7 @@ footer .fa-facebook-square {
   float: none;
   width: 70%;
   margin-top: 12px;
-  font-size: 10px;
+  font-size: 11px;
 }
 #brand-name-tooltip .tooltip-inner{
   max-width: none;

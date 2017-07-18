@@ -95,7 +95,7 @@ export default class Stories extends Component {
             </div>
             <div className="story-section">
               <hr />
-              <div className="row">
+              <div className="row pic-margin">
                 <div className="col-lg-12">
                   <div className="left">
                     <img src="img/mitchell-hollander.png" className="img-responsive" alt="drug" />
