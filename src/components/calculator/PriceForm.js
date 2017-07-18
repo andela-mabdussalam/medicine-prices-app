@@ -88,7 +88,7 @@ export class PriceForm extends Component {
         </FormGroup>
         <FormGroup>
           <div className="center-text mg-top-11">
-            <Button className={"show-result-btn col-md-offset-5 col-sm-offset-4 col-xs-offset-3 " + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">Next</Button>
+            <Button className={"show-result-btn" + (this.props.headerFont || "")} disabled={!this.formIsValid()} type="submit">Next</Button>
           </div>
         </FormGroup>
         <div className="row">

@@ -660,31 +660,25 @@ footer .fa-facebook-square {
   margin: 5px;
   color: #0B5D97;
 }
+
+.suggest-med:hover, .suggest-med:focus{
+  text-decoration: none;
+}
+
 @media screen and (min-width:730px) {
   .marginTop{
     margin-top: -60px;
   }
 }
-@media (max-width:767px) and (min-width:500px) {
-  .show-result-btn{
-    margin-left: 33%;
-  }
-}
-.suggest-med:hover, .suggest-med:focus{
-  text-decoration: none;
-}
 
 @media screen and (max-width: 767px) {
-  .story{
-    padding: 5%;
-  }
   .illustration{
     display: inline-block;
   }
-  .calculator-container{
+  /* .calculator-container{
     padding-top: 0px;
     padding-bottom: 0px;
-  }
+  } */
   .price-form{
     width: 73%;
     margin: 0 auto;
@@ -706,7 +700,7 @@ footer .fa-facebook-square {
     width: 80%;
   }
   .recent-story h3 {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .check-your-med-prices{
@@ -757,10 +751,16 @@ footer .fa-facebook-square {
   .recent-story {
     display: block;
     position: absolute;
-    background: rgba(0,0,0,0.6);
     padding: 5px 15px;
     min-width: 250px;
     right: -10px;
+  }
+  .recent-story .topMargin {
+    margin-top: 5px;
+    margin-left: -8px;
+    padding: 10px 10px 0px 10px;
+    opacity: 0.85;
+    background-color: #000;
   }
 }
 @media screen and (max-width: 640px) {
@@ -771,4 +771,35 @@ footer .fa-facebook-square {
   .embed-item:last-child, .story-box:last-child {
     margin: 0 auto 20px auto;
   }
+  .story {
+    height: 680px;
+  }
+  .recent-story {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+  }
+  .recent-story .topMargin {
+    margin-top: 5px;
+    margin-left: -8px;
+    padding: 10px 10px 0px 10px;
+    opacity: 0.85;
+    background-color: #000;
+  }
+  .story-section {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .pic-margin .left {
+    float: none;
+    text-align: center;
+  }
+  .pic-margin img {
+    margin: 0 auto;
+  }
+  .topMargin{
+    text-align: left;
+    max-width: 250px;
+  }
+  .stories { padding-top: 10px; }
 }
