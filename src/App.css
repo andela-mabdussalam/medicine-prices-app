@@ -276,10 +276,11 @@ hr{
   font-size: 12px;
 }
 .rectangle {
+  position: relative;
   border-radius: 1px;
   background-color: #ffffff;
   border: solid 0.5px #0075c5;
-  height: 43.8px;
+  height: 53px;
   width: 55%;
   margin: 0 auto;
   padding-top: 5px;
@@ -291,6 +292,11 @@ hr{
   font-size: 9px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+}
+.rectangle .negative-margin-top{
+  position: absolute;
+  right: 0;
+  z-index: 500;
 }
 .negative-margin-top {
   margin-top: -9px;
@@ -676,7 +682,7 @@ footer .fa-facebook-square {
     display: inline-block;
   }
   .price-form{
-    width: 73%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 25px;
  }
@@ -798,4 +804,22 @@ footer .fa-facebook-square {
     max-width: 250px;
   }
   .stories { padding-top: 10px; }
+}
+
+@media screen and (max-width: 420px) {
+  .bootstrap-typeahead-menu{
+    width: 120%;
+    left: -10%;
+  }
+  .dropdown-drug {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px !important;
+  }
 }
