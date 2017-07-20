@@ -62,6 +62,9 @@ input[type="color"]:focus,
   float: left;
 
 }
+.cont{
+  object-fit: contain;
+}
 .App {
   text-align: center;
 }
@@ -118,11 +121,14 @@ input[type="color"]:focus,
 }
 .story{
 	width: 100%;
-	height: 442px;
+	height: 409px;
 	background-color: #000000;
 	border: solid 0.5px #979797;
   color: white;
   margin: 0 auto;
+}
+.banner-img{
+  opacity: 0.5;
 }
 .story-title{
   color: black;
@@ -148,6 +154,9 @@ input[type="color"]:focus,
 }
 .ash-colour{
   color: #90949c;
+}
+.dosage-form{
+  display: none;
 }
 .heading{
   line-height: 1.6;
@@ -225,8 +234,7 @@ hr{
   margin-top: 1%;
 }
 .embeds{
-	background-color: #3cd682;
-  border: solid 0.5px #979797;
+	background-color: #3280b5;
   padding-top: 50px;
   padding-bottom: 35px;
   width: 100%;
@@ -299,7 +307,7 @@ hr{
   z-index: 500;
 }
 .negative-margin-top {
-  margin-top: -9px;
+  margin-top: -18px;
 }
 .form-control{
   height: 20px;
@@ -519,8 +527,7 @@ hr{
   border-color: #3cd682;
   color: white;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 9px 20px;
 }
 .show-result-btn:hover{
   color: #3cd682;
@@ -542,6 +549,14 @@ hr{
 .extra {
   display:none;
 }
+.section-title{
+  font-size: 30px;
+}
+.section-title hr{
+  border-color: black;
+  opacity: 0.2;
+  margin-top: 0px;
+}
 .show-result-btn[disabled],
 .show-result-btn[disabled]:hover, .show-result-btn:active, .show-result-btn:focus
 {
@@ -549,6 +564,14 @@ hr{
   color: white;
 }
 
+.carousel-caption{
+  text-align: left;
+  bottom: 120px;
+}
+.sub-text{
+font-size: 16px;
+line-height: 1.8;
+}
 /* footer section */
 footer{
   background: #000;
@@ -576,10 +599,10 @@ footer .credits p{
   text-align: justify;
 }
 footer a{
-  color: #339966;
+  color: #3280b5;
 }
 footer a:hover{
-  color: #339966;
+  color: #3280b5;
 }
 footer .credits p a{
   margin-left: 7px
@@ -663,7 +686,8 @@ footer .fa-facebook-square {
 }
 .suggest-med{
   float: right;
-  margin: 5px;
+  margin-top: 4px;
+  margin-right: 5px;
   color: #0B5D97;
 }
 
@@ -675,6 +699,26 @@ footer .fa-facebook-square {
   .marginTop{
     margin-top: -60px;
   }
+  .i_buy{
+    font-size: 11px;
+  }
+  .sub .medprices-paragraph{
+    font-size: 17px;
+  }
+  .price-form-container h2{
+    font-size: 35px
+  }
+  .price-form input{
+    font-size: 17px;
+  }
+  .sachet{
+    font-size: 13px;
+  }
+  .show-result-btn{
+      padding: 9px 52px;
+      font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -814,18 +858,24 @@ footer .fa-facebook-square {
   .dropdown-drug {
     padding: 5px 15px;
   }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
   select,
   textarea,
   input {
     font-size: 17px !important;
   }
   .calculator .form-control {
-    height: 35px;
+    height: 34px;
   }
   .bootstrap-typeahead-input-hint {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .dosage-form{
+    display: inline;
+  }
+  .break-space{
+    display: none;
   }
 }
