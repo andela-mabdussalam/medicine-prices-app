@@ -57,18 +57,20 @@ export class PriceForm extends Component {
                 </a>
               </OverlayTrigger>
             </div>
-            <Col md={6} sm={8} xs={8}>
-              <div className="row">
+            <Col md={12} sm={12} xs={12}>
+              <div className="row" >
                 <Typeahead
                   className={this.props.bodyFont}
                   labelKey="name" options={this.props.drugs} placeholder="Drug name"
                   renderMenuItemChildren={drug => (
-                    <div className="dropdown-drug" onClick={() => this.handleDrugChange(drug)}>
+                    <div className="dropdown-drug" style={{"width": "100%"}} onClick={() => this.handleDrugChange(drug)}>
                       <span className={this.props.headerFont}>{drug.name}</span>
                       <div>
-                        <small className={this.props.bodyFont}>
+                        <small className={this.props.bodyFont} style={{"display":"inline-block"}}>
                           Dosage form: {drug.form}
-                          &nbsp;Strength: <i>{drug.strength}</i>
+                          <span className="dosage-form"><br /></span>
+                          <span className="break-space">&nbsp;</span>
+                          Strength: <i>{drug.strength}</i>
                         </small>
                       </div>
                     </div>
@@ -82,7 +84,7 @@ export class PriceForm extends Component {
           <div className="rectangle">
             <div className="i_buy">for {String.fromCharCode(8358)}</div>
             <div className="row subString">
-              <Col md={12} sm={12} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
+              <Col md={12} sm={12} xs={12}><FormControl type="number" value={this.state.userDrugPrice} placeholder="unit price, e.g. price per tablet" onChange={this.handleUserDrugPriceChange} /></Col>
             </div>
           </div>
         </FormGroup>

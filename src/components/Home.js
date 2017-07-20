@@ -24,7 +24,6 @@ export default class Home extends Component {
         <div className="illustration">
           <img src="img/illustration.svg" alt="banner" className="img-responsive"/>
           </div>
-        <div className="spacer"></div>
         <Calculator ref={(calculator) => { this.calculator = calculator; }} />
           <div className="center-text">
             <a href={this.generateLink()}><Button className="embed-btn">EMBED THIS</Button></a>
