@@ -78,7 +78,7 @@ export default class Stories extends Component {
     return (
       <div className="stories-section">
         <div className="about story">
-          <div className="row">
+          {/*<div className="row">
 
             <div className="col-md-12">
 
@@ -93,13 +93,13 @@ export default class Stories extends Component {
                 </p>
               </div>
             </div>
-          </div>
+          </div>*/}
           {/*
             Still testing
             <div style={{ "width": "100%", "height": "440px", "backgroundColor": "#000000"}}>
               <img src="img/fn.png" className="img-responsive banner-img"/>
             </div>*/}
-          <div className="container">
+          {/*<div className="container">*/}
 
             {/*<div className="inner-container">
               <p className="storyHeading"> Most Nigerians struggle to afford medicines.</p>
@@ -138,14 +138,14 @@ export default class Stories extends Component {
                 </div>
               </div>
             </div>*/}
-          </div>
+          {/*</div>*/}
         </div>
 
         <hr />
         <div className="stories inner-container">
           <div className="section-title">
             <p>READ OUR STORIES</p>
-            <hr />
+            {/*<hr />*/}
           </div>
           {data.map((news, index) => (
             <div key={index} className="story-box">
@@ -179,7 +179,7 @@ export default class Stories extends Component {
             <div className="inner-container">
               <div className="section-title">
                 <p>TAKE ACTION</p>
-                <hr />
+                {/*<hr />*/}
               </div>
               <div className="embed-item">
                 <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
