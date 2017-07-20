@@ -57,7 +57,7 @@ export class PriceForm extends Component {
                 </a>
               </OverlayTrigger>
             </div>
-            <Col md={6} sm={8} xs={12}>
+            <Col md={12} sm={12} xs={12}>
               <div className="row">
                 <Typeahead
                   className={this.props.bodyFont}
