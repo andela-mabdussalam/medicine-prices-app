@@ -95,7 +95,6 @@ export default class Stories extends Component {
 
           {/*</div>*/}
         </div>
-        <hr />
         <div className="stories inner-container">
           <div className="section-title">
             <p className="font-500">Read our stories</p>
@@ -124,31 +123,41 @@ export default class Stories extends Component {
               </div>*/}
             </div>
           </div>
+          <div className="inner-container">
           {data.map((news, index) => (
+
             <div key={index} className="story-box">
-              <div key={index} className="hover-test">
-                <div className="emergency-img">
-                  <img src="img/heroimg.png" alt="emergency" className="img-responsive pic-size" />
-                </div>
-                <div className="well set-height">
-                  {news.Title && <p className="ash-colour"> 7h ago </p>}
-                  {!news.Title && <p className="ash-colour">&nbsp;</p>}
-                  <div className="story-content">
-                    {news.Title && <h4 style={{ "fontWeight": "bold" }}>{news.Title || "Coming Soon"}<span className="extra ash-colour">{news.Description}</span></h4>}
-                    {!news.Title && <p className="text-muted lead" style={{ "fontSize": "18px" }}>More Stories coming soon...</p>}
-                  </div>
-                  <div className="row">
-                    <div className="top-margin left">
-                      {news.Title && <p><a href={news.StoryUrl}>READ ARTICLE</a></p>}
-                    </div>
-                    <div className="pull-right top-margin">
-                      {news.Title && <img src="img/arrow.svg" className="arrow" alt="arrow" />}
-                    </div>
-                  </div>
-                </div>
+
+              {news.Title &&
+              <div>
+              <div className="story-img">
+                <a href={news.StoryUrl}><img src="img/heroimg.png" alt="emergency"/></a>
               </div>
+              <div className="story-content">
+                 <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
+                 <h4>{news.Title}</h4>
+
+                 <p className="story-desc">
+                  {news.Description}
+                </p>
+
+                 <div className="read-more">
+                 <a href={news.StoryUrl}>READ ARTICLE</a>
+                 <i className="fa fa-long-arrow-right"></i>
+                </div>
+              </div></div>}
+
+              {!news.Title &&
+              <div><div className="story-img">
+                <a href='#'><img src="img/heroimg.png" alt="emergency"/></a>
+              </div>
+              <div className="story-content">
+                <p className="story-meta"> &nbsp; </p>
+                <h4 className="text-muted">More Stories coming soon...</h4>
+              </div></div>}
             </div>
           ))}
+          </div>
 
         </div>
         <div>
@@ -195,4 +204,3 @@ export default class Stories extends Component {
     )
   }
 }
-
