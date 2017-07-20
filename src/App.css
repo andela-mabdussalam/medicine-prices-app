@@ -94,7 +94,7 @@ input[type="color"]:focus,
   padding-bottom: 20px;
 }
 .calculator{
-  border: 1px solid #0075c5;
+  border: 1px solid #3280b5;
   padding: 20px;
   border-radius: 4.5px;
 }
@@ -104,7 +104,7 @@ input[type="color"]:focus,
 .check-your-med-prices {
   font-weight: 600;
   letter-spacing: 1.1px;
-  color: #0075c5;
+  color: #3280b5;
   height: 14px;
   margin-top: 16px;
 }
@@ -114,7 +114,7 @@ input[type="color"]:focus,
 }
 .get-in-touch{
   letter-spacing: 0.9px;
-  color: #0075c5;
+  color: #3280b5;
 }
 .medium-logo{
   color: #1C9963;
@@ -122,10 +122,12 @@ input[type="color"]:focus,
 .story{
 	width: 100%;
 	height: 409px;
-	background-color: #000000;
-	border: solid 0.5px #979797;
   color: white;
-  margin: 0 auto;
+}
+.pad-stories{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
 .banner-img{
   opacity: 0.5;
@@ -255,7 +257,7 @@ hr{
   opacity: 0.8;
 }
 .story-section{
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
 }
 .illustration {
@@ -273,12 +275,11 @@ hr{
   border: none;
 }
 .navbar-default .navbar-nav>li>a {
-  color:#0075c5;
-  /*font-weight: 600;*/
+  color:#3280b5;
   letter-spacing: 0.9px;
 }
 .navbar-brand{
-  color: #0075c5;
+  color: #3280b5;
 }
 .fa{
   font-size: 12px;
@@ -287,7 +288,7 @@ hr{
   position: relative;
   border-radius: 1px;
   background-color: #ffffff;
-  border: solid 0.5px #0075c5;
+  border: solid 0.5px #3280b5;
   height: 53px;
   width: 55%;
   margin: 0 auto;
@@ -321,8 +322,7 @@ hr{
   margin: 0 auto;
 }
 .latest-story-sub{
-  border-right: 1px solid white;
-  color: white;
+  border-right: 1px solid black;
   padding-right: 0;
   padding-left: 0;
   overflow: hidden;
@@ -330,11 +330,12 @@ hr{
   float: left;
   font-size: 11px;
 }
+body.collection-type-index .color-weight-dark .punch-logo-sm img { -webkit-filter: invert(100%); filter: invert(100%); }
 .punch-logo-sm{
   width: 26%;
 }
 .navbar-default .navbar-brand{
-  color: #0075c5;
+  color: #3280b5;
 }
 .time-div{
   width: 19%;
@@ -361,7 +362,6 @@ hr{
   margin-top: 33px;
 }
 .font-small{
-  color: white;
   margin-left: 6px;
   line-height: 1.5;
   padding-right: 0;
@@ -410,7 +410,7 @@ hr{
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  color: #0075c5;
+  color: #3280b5;
 }
 .stories-section {
   margin-top: 10px;
@@ -468,6 +468,9 @@ hr{
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
   color: #72abd1;
+}
+.pad-stories h1{
+  font-size: 30px;
 }
 .embed-code-input{
   box-shadow: none;
@@ -536,15 +539,15 @@ hr{
 }
 .embed-btn{
   padding: 9px 30px;
-	background-color: #0075c5;
+	background-color: #3280b5;
   color: white;
   font-weight: 500;
   margin-bottom: 40px;
 }
 .embed-btn:hover {
-    color: #0075c5;
+    color: #3280b5;
     background-color: white;
-    border-color: #0075c5;
+    border-color: #3280b5;
 }
 .extra {
   display:none;
@@ -569,8 +572,9 @@ hr{
   bottom: 120px;
 }
 .sub-text{
-font-size: 16px;
+font-size: 17px;
 line-height: 1.8;
+margin-top: 30px;
 }
 /* footer section */
 footer{
@@ -745,10 +749,6 @@ footer .fa-facebook-square {
   .embed-inner{
     width: 80%;
   }
-  .recent-story h3 {
-    /* font-size: 14px; */
-  }
-
   .check-your-med-prices{
     float: left;
   }

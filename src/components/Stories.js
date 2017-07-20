@@ -77,45 +77,30 @@ export default class Stories extends Component {
 
     return (
       <div className="stories-section">
-        <div className="about story">
-          {/*<div className="row">
+        <div className="story" style={{"background": "#000000 url('img/drug-banner.png')"}}>
+          <div className="row" style={{ "backgroundColor": "rgba(0, 0, 0, 0.5)", "height": "100%"}}>
 
             <div className="col-md-12">
-
-              <img src="img/drug-banner.png" className="img-responsive banner-img" />
-
-              <div className="carousel-caption col-lg-6 col-lg-offset-2">
+              <div className="col-lg-8 col-lg-offset-2 pad-stories">
                 <h1>Most Nigerians struggle to afford medicines.</h1>
                 <p className="sub-text">Ministry of Health research, going as far back as 2006, indicates that 90.2% of
-                    citizens survive on income of just US$2 a day. Even government workers earn, on average, just US$1.4 per day.Income levels haven’t improved much over the past 10 years but
+                    citizens survive on income of just US$2 a day. Even government workers earn, on average, just US$1.4 per day. Income levels haven’t improved much over the past 10 years but
                     medicine prices continue to soar. This tool helps shine a spotlight on just how expensive medicine is and asks why Nigeria pays more
                     than the rest of the worlds.
                 </p>
               </div>
             </div>
-          </div>*/}
-          {/*
-            Still testing
-            <div style={{ "width": "100%", "height": "440px", "backgroundColor": "#000000"}}>
-              <img src="img/fn.png" className="img-responsive banner-img"/>
-            </div>*/}
-          {/*<div className="container">*/}
+          </div>
 
-            {/*<div className="inner-container">
-              <p className="storyHeading"> Most Nigerians struggle to afford medicines.</p>
-              <div className="write-up">
-                <p className="storyBody">Ministry of Health research, going as far back as 2006, indicates that 90.2% of
-                    citizens survive on income of just US$2 a day. Even government workers earn, on average, just US$1.4 per day.
-                </p>
-                <p className="storyBody">Income levels haven’t improved much over the past 10 years but
-                    medicine prices continue to soar. This tool helps shine a spotlight on just how expensive medicine is and asks why Nigeria pays more
-                    than the rest of the worlds.
-                </p>
-              </div>
-            </div>*/}
 
-            {/*<div className="story-section">
-              <hr />
+          {/*</div>*/}
+        </div>
+        <hr />
+        <div className="stories inner-container">
+          <div className="section-title">
+            <p>READ OUR STORIES</p>
+            <hr />
+                        <div className="story-section">
               <div className="row pic-margin">
                 <div className="col-lg-12">
                   <div className="left">
@@ -125,7 +110,7 @@ export default class Stories extends Component {
                     <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
                     <div className="row topMargin">
                       <div className="latest-story-sub punch-logo-sm">
-                        <img src="img/punch-ng-logo-white.png" width="47px" height="14px" alt="punch-logo" />
+                        <img src="img/punch-ng-logo-dark.png" width="47px" height="14px" alt="punch-logo" />
                       </div>
                       <div className="latest-story-sub font-small time-div">
                         <p> 7h ago</p>
@@ -137,15 +122,7 @@ export default class Stories extends Component {
                   </div>
                 </div>
               </div>
-            </div>*/}
-          {/*</div>*/}
-        </div>
-
-        <hr />
-        <div className="stories inner-container">
-          <div className="section-title">
-            <p>READ OUR STORIES</p>
-            {/*<hr />*/}
+            </div>
           </div>
           {data.map((news, index) => (
             <div key={index} className="story-box">
@@ -179,7 +156,7 @@ export default class Stories extends Component {
             <div className="inner-container">
               <div className="section-title">
                 <p>TAKE ACTION</p>
-                {/*<hr />*/}
+                <hr />
               </div>
               <div className="embed-item">
                 <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
