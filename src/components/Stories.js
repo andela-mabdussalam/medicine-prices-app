@@ -95,7 +95,6 @@ export default class Stories extends Component {
 
           {/*</div>*/}
         </div>
-        <hr />
         <div className="stories inner-container">
           <div className="section-title">
             <p className="font-500">Read our stories</p>
@@ -200,4 +199,3 @@ export default class Stories extends Component {
     )
   }
 }
-
