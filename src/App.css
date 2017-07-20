@@ -211,6 +211,7 @@ input[type="color"]:focus,
 .story-box {
   border: 1px solid #e3e3e3;
   min-height: 427px;
+  margin-bottom: 20px;
 }
 
 .story-img img {
@@ -498,7 +499,7 @@ body.collection-type-index .color-weight-dark .punch-logo-sm img { -webkit-filte
 .stories {
   margin: 0 auto;
   margin-bottom: 35px;
-  padding: 40px 0 50px 0;
+  padding: 40px 0 30px 0;
   text-align: center;
 }
 .rightMargin{
