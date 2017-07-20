@@ -127,10 +127,12 @@ export default class Stories extends Component {
           {data.map((news, index) => (
 
             <div key={index} className="story-box">
-              <div className="story-img">
-                <a href='{news.StoryUrl}'><img src="img/heroimg.png" alt="emergency"/></a>
-              </div>
+
               {news.Title &&
+              <div>
+              <div className="story-img">
+                <a href={news.StoryUrl}><img src="img/heroimg.png" alt="emergency"/></a>
+              </div>
               <div className="story-content">
                  <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
                  <h4>{news.Title}</h4>
@@ -143,13 +145,16 @@ export default class Stories extends Component {
                  <a href={news.StoryUrl}>READ ARTICLE</a>
                  <i className="fa fa-long-arrow-right"></i>
                 </div>
-              </div>}
+              </div></div>}
 
               {!news.Title &&
+              <div><div className="story-img">
+                <a href='#'><img src="img/heroimg.png" alt="emergency"/></a>
+              </div>
               <div className="story-content">
                 <p className="story-meta"> &nbsp; </p>
                 <h4 className="text-muted">More Stories coming soon...</h4>
-              </div>}
+              </div></div>}
             </div>
           ))}
           </div>
