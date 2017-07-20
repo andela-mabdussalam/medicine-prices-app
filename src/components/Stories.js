@@ -77,8 +77,8 @@ export default class Stories extends Component {
 
     return (
       <div className="stories-section">
-        <div className="story" style={{"background": "#000000 url('img/drug-banner.png')"}}>
-          <div className="row" style={{ "backgroundColor": "rgba(0, 0, 0, 0.5)", "height": "100%"}}>
+        <div className="story" style={{ "background": "#000000 url('img/drug-banner.png')" }}>
+          <div className="row" style={{ "backgroundColor": "rgba(0, 0, 0, 0.5)", "height": "100%" }}>
 
             <div className="col-md-12">
               <div className="col-lg-8 col-lg-offset-2 pad-stories">
@@ -98,10 +98,10 @@ export default class Stories extends Component {
         <hr />
         <div className="stories inner-container">
           <div className="section-title">
-            <p>READ OUR STORIES</p>
+            <p className="font-500">Read our stories</p>
             <hr />
-                        <div className="story-section">
-              <div className="row pic-margin">
+            <div className="story-section">
+              {/*<div className="row pic-margin">
                 <div className="col-lg-12">
                   <div className="left">
                     <img src="img/mitchell-hollander.png" className="img-responsive" alt="drug" />
@@ -121,7 +121,7 @@ export default class Stories extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
           {data.map((news, index) => (
@@ -155,7 +155,7 @@ export default class Stories extends Component {
           <div className="embeds">
             <div className="inner-container">
               <div className="section-title">
-                <p>TAKE ACTION</p>
+                <p className="font-500">Take action</p>
                 <hr />
               </div>
               <div className="embed-item">
