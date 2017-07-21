@@ -913,9 +913,6 @@ input {
 .calculator .form-control {
   height: 34px;
 }
-.bootstrap-typeahead-input-hint {
-  /* display: none !important; */
-}
 
 @media screen and (max-width: 440px) {
   .dosage-form{
@@ -925,5 +922,3 @@ input {
     display: none;
   }
 }
-
-.embeds .section-title {color: #fff;}
