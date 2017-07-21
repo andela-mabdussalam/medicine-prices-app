@@ -131,7 +131,7 @@ export default class Stories extends Component {
               {news.Title &&
               <div>
               <div className="story-img">
-                <a href={news.StoryUrl}><img src="img/heroimg.png" alt="emergency"/></a>
+                <a href={news.StoryUrl} target="_blank"><img src="img/heroimg.png" alt="emergency"/></a>
               </div>
               <div className="story-content">
                  <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
@@ -142,14 +142,14 @@ export default class Stories extends Component {
                 </p>
 
                  <div className="read-more">
-                 <a href={news.StoryUrl}>READ ARTICLE</a>
+                 <a href={news.StoryUrl} target="_blank">READ ARTICLE</a>
                  <i className="fa fa-long-arrow-right"></i>
                 </div>
               </div></div>}
 
               {!news.Title &&
               <div><div className="story-img">
-                <a href='#'><img src="img/heroimg.png" alt="emergency"/></a>
+                <a href='#' target="_blank"><img src="img/heroimg.png" alt="emergency"/></a>
               </div>
               <div className="story-content">
                 <p className="story-meta"> &nbsp; </p>
