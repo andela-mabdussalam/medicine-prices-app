@@ -78,8 +78,7 @@ export default class Stories extends Component {
     return (
       <div className="stories-section">
         <div className="story" style={{ "background": "#000000 url('img/drug-banner.png')" }}>
-          <div className="row" style={{ "backgroundColor": "rgba(0, 0, 0, 0.5)", "height": "100%" }}>
-
+          <div className="row bg-color">
             <div className="col-md-12">
               <div className="col-lg-8 col-lg-offset-2 pad-stories">
                 <h1>Most Nigerians struggle to afford medicines.</h1>
@@ -100,63 +99,42 @@ export default class Stories extends Component {
             <p className="font-500">Read our stories</p>
             <hr />
             <div className="story-section">
-              {/*<div className="row pic-margin">
-                <div className="col-lg-12">
-                  <div className="left">
-                    <img src="img/mitchell-hollander.png" className="img-responsive" alt="drug" />
-                  </div>
-                  <div className="recent-story">
-                    <h3 className="heading heading-wording">Crisis looms as drug prices rise by 200%</h3>
-                    <div className="row topMargin">
-                      <div className="latest-story-sub punch-logo-sm">
-                        <img src="img/punch-ng-logo-dark.png" width="47px" height="14px" alt="punch-logo" />
-                      </div>
-                      <div className="latest-story-sub font-small time-div">
-                        <p> 7h ago</p>
-                      </div>
-                      <div className="font-small">
-                        <p>By Nkechi Okwuone</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>*/}
             </div>
           </div>
           <div className="inner-container">
-          {data.map((news, index) => (
+            {data.map((news, index) => (
 
-            <div key={index} className="story-box">
+              <div key={index} className="story-box">
 
-              {news.Title &&
-              <div>
-              <div className="story-img">
-                <a href={news.StoryUrl} target="_blank"><img src="img/heroimg.png" alt="emergency"/></a>
+                {news.Title &&
+                  <div>
+                    <div className="story-img">
+                      <a href={news.StoryUrl} target="_blank"><img src="img/heroimg.png" alt="emergency" /></a>
+                    </div>
+                    <div className="story-content">
+                      <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
+                      <h4>{news.Title}</h4>
+
+                      <p className="story-desc">
+                        {news.Description}
+                      </p>
+
+                      <div className="read-more">
+                        <a href={news.StoryUrl} target="_blank">READ ARTICLE</a>
+                        <i className="fa fa-long-arrow-right"></i>
+                      </div>
+                    </div></div>}
+
+                {!news.Title &&
+                  <div><div className="story-img">
+                    <a href='#' target="_blank"><img src="img/heroimg.png" alt="emergency" /></a>
+                  </div>
+                    <div className="story-content">
+                      <p className="story-meta"> &nbsp; </p>
+                      <h4 className="text-muted">More Stories coming soon...</h4>
+                    </div></div>}
               </div>
-              <div className="story-content">
-                 <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
-                 <h4>{news.Title}</h4>
-
-                 <p className="story-desc">
-                  {news.Description}
-                </p>
-
-                 <div className="read-more">
-                 <a href={news.StoryUrl} target="_blank">READ ARTICLE</a>
-                 <i className="fa fa-long-arrow-right"></i>
-                </div>
-              </div></div>}
-
-              {!news.Title &&
-              <div><div className="story-img">
-                <a href='#' target="_blank"><img src="img/heroimg.png" alt="emergency"/></a>
-              </div>
-              <div className="story-content">
-                <p className="story-meta"> &nbsp; </p>
-                <h4 className="text-muted">More Stories coming soon...</h4>
-              </div></div>}
-            </div>
-          ))}
+            ))}
           </div>
 
         </div>

@@ -143,6 +143,10 @@ input[type="color"]:focus,
 	height: 409px;
   color: white;
 }
+.bg-color{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
 .pad-stories{
   padding-left: 40px;
   padding-right: 40px;
@@ -726,6 +730,7 @@ footer .fa-facebook-square {
 .dropdown-drug{
   padding: 3px 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 .share-context{
   width: 70%;
