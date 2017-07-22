@@ -228,8 +228,8 @@ input[type="color"]:focus,
 
 .story-meta {
   color: #90949c;
-  text-align: center;
-  padding: 15px 0;
+  text-align: left;
+  padding: 5px 0 15px 0;
   margin: 0;
   font-size: 13px;
 }
@@ -244,8 +244,7 @@ input[type="color"]:focus,
   text-align: left;
 }
 .story-content h4 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 15px 0 0 0;
 }
 
 .read-more{

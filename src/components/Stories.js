@@ -134,8 +134,8 @@ export default class Stories extends Component {
                 <a href={news.StoryUrl}><img src="img/heroimg.png" alt="emergency"/></a>
               </div>
               <div className="story-content">
-                 <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
                  <h4>{news.Title}</h4>
+                 <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
 
                  <p className="story-desc">
                   {news.Description}
