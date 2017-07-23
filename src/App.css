@@ -145,6 +145,10 @@ input[type="color"]:focus,
   background-position: center;
   background-size: cover;
 }
+.bg-color{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
 .pad-stories{
   padding: 70px 0;
   text-align: center;
@@ -276,7 +280,7 @@ hr{
 
 .embeds{
 	background-color: #3280b5;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 35px;
   width: 100%;
   text-align: center;
@@ -733,6 +737,7 @@ footer .fa-facebook-square {
 .dropdown-drug{
   padding: 3px 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 .share-context{
   width: 70%;
@@ -829,7 +834,7 @@ footer .fa-facebook-square {
 
 .embed-item {
   margin: 0 28px 10px 0;
-  height: 500px;
+  height: 425px;
 }
 
 .embed-item:last-child, .story-box:last-child {
@@ -918,9 +923,6 @@ input {
 .calculator .form-control {
   height: 34px;
 }
-.bootstrap-typeahead-input-hint {
-  /* display: none !important; */
-}
 
 @media screen and (max-width: 440px) {
   .dosage-form{
@@ -930,5 +932,3 @@ input {
     display: none;
   }
 }
-
-.embeds .section-title {color: #fff;}

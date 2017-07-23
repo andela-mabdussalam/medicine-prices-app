@@ -63,7 +63,7 @@ export class PriceForm extends Component {
                   className={this.props.bodyFont}
                   labelKey="name" options={this.props.drugs} placeholder="Drug name"
                   renderMenuItemChildren={drug => (
-                    <div className="dropdown-drug" style={{"width": "100%"}} onClick={() => this.handleDrugChange(drug)}>
+                    <div className="dropdown-drug" onClick={() => this.handleDrugChange(drug)}>
                       <span className={this.props.headerFont}>{drug.name}</span>
                       <div>
                         <small className={this.props.bodyFont} style={{"display":"inline-block"}}>
