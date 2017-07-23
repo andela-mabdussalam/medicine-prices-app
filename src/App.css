@@ -138,15 +138,15 @@ input[type="color"]:focus,
 .medium-logo{
   color: #1C9963;
 }
-.story{
+.story {
 	width: 100%;
-	height: 409px;
   color: white;
+  background-image: url("/img/drug-banner.png");
+  background-position: center;
+  background-size: cover;
 }
 .pad-stories{
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
+  padding: 70px 0;
   text-align: center;
 }
 .banner-img{
@@ -333,7 +333,7 @@ hr{
   border-radius: 1px;
   background-color: #ffffff;
   border: solid 0.5px #3280b5;
-  height: 58px;
+  height: 60px;
   width: 55%;
   margin: 0 auto;
   padding-top: 5px;
@@ -483,6 +483,12 @@ body.collection-type-index .color-weight-dark .punch-logo-sm img { -webkit-filte
   margin-left: auto;
   margin-right: auto;
 }
+
+.sub,
+.medprices-paragraph,
+.sachet
+ { font-size: 16px; }
+
 .post-form-paragraph {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -513,8 +519,10 @@ body.collection-type-index .color-weight-dark .punch-logo-sm img { -webkit-filte
   color: #72abd1;
 }
 .pad-stories h1{
-  font-size: 30px;
+  font-size: 35px;
+  margin-top: 0;
 }
+.pad-stories p { margin-bottom: 0; }
 .embed-code-input{
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -618,7 +626,7 @@ body.collection-type-index .color-weight-dark .punch-logo-sm img { -webkit-filte
   bottom: 120px;
 }
 .sub-text{
-font-size: 17px;
+font-size: 20px;
 line-height: 1.8;
 margin-top: 30px;
 }
@@ -712,7 +720,7 @@ footer .fa-facebook-square {
 }
 .sachet{
   float: none;
-  width: 70%;
+  width: 80%;
   margin-top: 12px;
   font-size: 11px;
 }
@@ -750,7 +758,8 @@ footer .fa-facebook-square {
     margin-top: -60px;
   }
   .i_buy{
-    font-size: 11px;
+    font-size: 13px;
+
   }
   .sub .medprices-paragraph{
     font-size: 17px;
@@ -762,7 +771,7 @@ footer .fa-facebook-square {
     font-size: 17px;
   }
   .sachet{
-    font-size: 13px;
+    font-size: 16px;
   }
   .show-result-btn{
       padding: 9px 52px;
@@ -863,9 +872,6 @@ footer .fa-facebook-square {
   }
   .embed-item:last-child, .story-box:last-child {
     margin: 0 auto 20px auto;
-  }
-  .story {
-    height: 680px;
   }
   .recent-story {
     position: relative;
