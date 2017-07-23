@@ -77,7 +77,7 @@ export default class Stories extends Component {
 
     return (
       <div className="stories-section">
-        <div className="story" style={{ "background": "#000000 url('img/drug-banner.png')" }}>
+        <div className="story">
           <div className="row bg-color">
             <div className="col-md-12">
               <div className="col-lg-8 col-lg-offset-2 pad-stories">
@@ -106,14 +106,14 @@ export default class Stories extends Component {
 
               <div key={index} className="story-box">
 
-                {news.Title &&
-                  <div>
-                    <div className="story-img">
-                      <a href={news.StoryUrl} target="_blank"><img src="img/heroimg.png" alt="emergency" /></a>
-                    </div>
-                    <div className="story-content">
-                      <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
-                      <h4>{news.Title}</h4>
+              {news.Title &&
+              <div>
+              <div className="story-img">
+                <a href={news.StoryUrl}><img src="img/heroimg.png" alt="emergency"/></a>
+              </div>
+              <div className="story-content">
+                 <h4>{news.Title}</h4>
+                 <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
 
                       <p className="story-desc">
                         {news.Description}
@@ -149,9 +149,6 @@ export default class Stories extends Component {
                 <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
               </div>
               <div className="embed-item medium-embed">
-                <div>
-                  <i className="fa fa-medium" aria-hidden="true"></i>
-                </div>
                 <div className="cfa-logo">
                   <img src="https://cdn-images-1.medium.com/max/492/1*Zq7KnTAeKjBf6eENRsacSQ.png" width="80%" height="100px" alt="Medium banner" />
                 </div>
