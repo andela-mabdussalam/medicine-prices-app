@@ -214,7 +214,7 @@ input[type="color"]:focus,
 
 .story-box {
   border: 1px solid #e3e3e3;
-  min-height: 427px;
+  min-height: 412px;
   margin-bottom: 20px;
 }
 
@@ -262,6 +262,7 @@ input[type="color"]:focus,
 }
 .read-more .fa {
   float: right;
+  margin-top: 4px;
 }
 
 .btn{
