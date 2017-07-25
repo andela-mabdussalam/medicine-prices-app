@@ -127,7 +127,7 @@ export default class Stories extends Component {
 
                 {!news.Title &&
                   <div><div className="story-img">
-                    <a href='#' target="_blank"><img src="img/heroimg.png" alt="emergency" /></a>
+                    <a href='#!'><img src="img/heroimg.png" alt="emergency" /></a>
                   </div>
                     <div className="story-content">
                       <p className="story-meta"> &nbsp; </p>
