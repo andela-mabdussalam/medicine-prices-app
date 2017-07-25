@@ -90,9 +90,6 @@ export default class Stories extends Component {
               </div>
             </div>
           </div>
-
-
-          {/*</div>*/}
         </div>
         <div className="stories inner-container">
           <div className="section-title">
@@ -103,9 +100,7 @@ export default class Stories extends Component {
           </div>
           <div className="inner-container">
             {data.map((news, index) => (
-
               <div key={index} className="story-box">
-
               {news.Title &&
               <div>
               <div className="story-img">
@@ -114,13 +109,11 @@ export default class Stories extends Component {
               <div className="story-content">
                  <h4>{news.Title}</h4>
                  <p className="story-meta"> <img src="img/punch-ng-logo.png" alt="punch-logo" /> | 7h ago | By Nkechi Okwuone </p>
-
                       <p className="story-desc">
                         {news.Description}
                       </p>
-
                       <div className="read-more">
-                        <a href={news.StoryUrl} target="_blank">READ ARTICLE</a>
+                        <a href={news.StoryUrl} target="_blank" rel="noopener noreferrer">READ ARTICLE</a>
                         <i className="fa fa-long-arrow-right"></i>
                       </div>
                     </div></div>}
@@ -146,33 +139,17 @@ export default class Stories extends Component {
                 <hr />
               </div>
               <div className="embed-item">
+                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmedprices.codefornigeria.org%2F&layout=button_count&size=large&mobile_iframe=true&appId=407156042743738&width=84&height=28" width="84" height="28" style={{"border":"none","overflow":"hidden"}} scrolling="no" frameBorder="0" allowTransparency="true" title="share-button"></iframe>
                 <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCodeForAfrica%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=106054503300342" height="500" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowTransparency="true" data-width="100%"></iframe>
               </div>
-              <div className="embed-item medium-embed">
-                <div className="cfa-logo">
-                  <img src="https://cdn-images-1.medium.com/max/492/1*Zq7KnTAeKjBf6eENRsacSQ.png" width="80%" height="100px" alt="Medium banner" />
-                </div>
-                {mediumStories.map((story, index) => (
-                  <div className="medium-story" key={index}>
-                    <hr />
-                    <a href={story.link} target="_blank" rel="noopener noreferrer">
-                      <img src={story.imageUrl} width="100%" height="120px" alt="Story" />
-                      <p className="story-title">{story.title}</p>
-                    </a>
-                    <p className="author"> Author: {story.author}</p>
-                  </div>
-                ))}
-              </div>
-
               <div className="embed-item">
+                <a href="https://twitter.com/share" className="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
                 <a className="twitter-timeline" href="https://twitter.com/hashtag/CheckYourMedPrices" data-widget-id="869862396499816449">Tweets</a>
                 <script>{!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs")}</script>
                 <div className="clearfix"></div>
               </div>
-
             </div>
           </div>
-
 
         </div>
       </div>
